@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=6;
+		nextID=7;
 	};
 	class Camera
 	{
 		pos[]={1783.4109,379.97763,1782.1384};
-		dir[]={-0.61292458,-0.28046986,0.73884064};
-		up[]={-0.17912249,0.95983827,0.21592085};
-		aside[]={0.7697323,-7.2293915e-008,0.63854408};
+		dir[]={-0.69897872,-0.37704009,-0.60786128};
+		up[]={-0.28455263,0.92617077,-0.24745874};
+		aside[]={-0.65628207,7.3458068e-007,0.75466639};
 	};
 };
 binarizationWanted=0;
@@ -46105,7 +46105,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="0 = [""AmmoboxInit"",[this,true]] spawn BIS_fnc_arsenal;";
+				init="call{this addAction [""Arsenal"",{ " \n "    [_this select 0, player, true] call ace_arsenal_fnc_openBox; " \n "}];}";
 			};
 			id=1724;
 			type="C_supplyCrate_F";
@@ -46184,7 +46184,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="0 = [""AmmoboxInit"",[this,true]] spawn BIS_fnc_arsenal;";
+				init="call{this addAction [""Arsenal"",{ " \n "    [_this select 0, player, true] call ace_arsenal_fnc_openBox; " \n "}];}";
 			};
 			id=1725;
 			type="C_supplyCrate_F";
@@ -46263,7 +46263,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="0 = [""AmmoboxInit"",[this,true]] spawn BIS_fnc_arsenal;";
+				init="call{this addAction [""Arsenal"",{ " \n "    [_this select 0, player, true] call ace_arsenal_fnc_openBox; " \n "}];}";
 			};
 			id=1726;
 			type="C_supplyCrate_F";
@@ -46341,7 +46341,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="0 = [""AmmoboxInit"",[this,true]] spawn BIS_fnc_arsenal;";
+				init="call{this addAction [""Arsenal"",{ " \n "    [_this select 0, player, true] call ace_arsenal_fnc_openBox; " \n "}];}";
 			};
 			id=1727;
 			type="C_supplyCrate_F";
@@ -46419,7 +46419,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="0 = [""AmmoboxInit"",[this,true]] spawn BIS_fnc_arsenal;";
+				init="call{this addAction [""Arsenal"",{ " \n "    [_this select 0, player, true] call ace_arsenal_fnc_openBox; " \n "}];}";
 			};
 			id=1728;
 			type="C_supplyCrate_F";
@@ -46498,7 +46498,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="0 = [""AmmoboxInit"",[this,true]] spawn BIS_fnc_arsenal;";
+				init="call{this addAction [""Arsenal"",{ " \n "    [_this select 0, player, true] call ace_arsenal_fnc_openBox; " \n "}];}";
 			};
 			id=1729;
 			type="C_supplyCrate_F";
@@ -46577,7 +46577,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="0 = [""AmmoboxInit"",[this,true]] spawn BIS_fnc_arsenal;";
+				init="call{this addAction [""Arsenal"",{ " \n "    [_this select 0, player, true] call ace_arsenal_fnc_openBox; " \n "}];}";
 			};
 			id=1730;
 			type="C_supplyCrate_F";
@@ -46656,7 +46656,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="0 = [""AmmoboxInit"",[this,true]] spawn BIS_fnc_arsenal;";
+				init="call{this addAction [""Arsenal"",{ " \n "    [_this select 0, player, true] call ace_arsenal_fnc_openBox; " \n "}];}";
 			};
 			id=1731;
 			type="C_supplyCrate_F";
@@ -46735,7 +46735,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="0 = [""AmmoboxInit"",[this,true]] spawn BIS_fnc_arsenal;";
+				init="call{this addAction [""Arsenal"",{ " \n "    [_this select 0, player, true] call ace_arsenal_fnc_openBox; " \n "}];}";
 			};
 			id=1732;
 			type="C_supplyCrate_F";
@@ -46814,7 +46814,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="0 = [""AmmoboxInit"",[this,true]] spawn BIS_fnc_arsenal;";
+				init="call{this addAction [""Arsenal"",{ " \n "    [_this select 0, player, true] call ace_arsenal_fnc_openBox; " \n "}];}";
 			};
 			id=1733;
 			type="C_supplyCrate_F";
@@ -46893,7 +46893,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="0 = [""AmmoboxInit"",[this,true]] spawn BIS_fnc_arsenal;";
+				init="call{this addAction [""Arsenal"",{ " \n "    [_this select 0, player, true] call ace_arsenal_fnc_openBox; " \n "}];}";
 			};
 			id=1734;
 			type="C_supplyCrate_F";
@@ -46972,7 +46972,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="0 = [""AmmoboxInit"",[this,true]] spawn BIS_fnc_arsenal;";
+				init="call{this addAction [""Arsenal"",{ " \n "    [_this select 0, player, true] call ace_arsenal_fnc_openBox; " \n "}];}";
 			};
 			id=1735;
 			type="C_supplyCrate_F";
@@ -47044,16 +47044,15 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={1732.6451,339.89224,1710.7252};
-				angles[]={0,2.5955019,6.2818937};
+				position[]={1732.6453,339.89224,1710.725};
+				angles[]={0,2.5954967,6.2818937};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
-				init="call{0 = [""AmmoboxInit"",[this,true]] spawn BIS_fnc_arsenal; [this, true, true, false, true, true] call LT_fnc_addAction; }";
-				name="ArsenalBox";
+				init="call{this addAction [""Arsenal"",{ " \n "    [_this select 0, player, true] call ace_arsenal_fnc_openBox; " \n "}];" \n "" \n "[this, true, true, false, true, true] call LT_fnc_addAction; }";
 				disableSimulation=1;
 			};
 			id=1736;
@@ -47165,7 +47164,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={1736.9602,339.58688,1733.6158};
-				angles[]={-0,2.6409729,0};
+				angles[]={0,2.6409729,0};
 			};
 			side="Empty";
 			flags=4;
@@ -47225,7 +47224,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={1739.6125,339.58334,1730.2374};
-				angles[]={-0,4.1958914,0};
+				angles[]={0,4.1958914,0};
 			};
 			side="Empty";
 			class Attributes

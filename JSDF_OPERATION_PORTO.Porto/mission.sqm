@@ -12,14 +12,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=5;
+		nextID=6;
 	};
 	class Camera
 	{
-		pos[]={1865.7415,90.740524,2428.8777};
-		dir[]={-0.6968208,-0.55770785,-0.45126569};
-		up[]={-0.46817929,0.82998574,-0.30319872};
-		aside[]={-0.54363978,-2.8451905e-007,0.83945358};
+		pos[]={1832.8505,90.740524,2345.4475};
+		dir[]={-0.82923836,-0.55004328,0.1002696};
+		up[]={-0.54614234,0.83508432,0.066035889};
+		aside[]={0.12005352,-2.575689e-007,0.99288225};
 	};
 };
 binarizationWanted=0;
@@ -9196,21 +9196,20 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={1710.2235,3.5139124,2358.6082};
-				angles[]={0.15114357,2.9115665,0.0045281379};
+				position[]={1710.224,3.513886,2358.6084};
+				angles[]={0.1511455,2.9115584,0.0045204028};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
-				init="call{0 = [""AmmoboxInit"",[this,true]] spawn BIS_fnc_arsenal; [this, true, true, false, true, true] call LT_fnc_addAction; }";
-				name="ArsenalBox_1";
+				init="call{this addAction [""Arsenal"",{ " \n "    [_this select 0, player, true] call ace_arsenal_fnc_openBox; " \n "}];" \n "" \n "[this, true, true, false, true, true] call LT_fnc_addAction; }";
 				disableSimulation=1;
 			};
 			id=255;
 			type="C_supplyCrate_F";
-			atlOffset=-0.00999403;
+			atlOffset=-0.0099999905;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -12235,7 +12234,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={1740.5461,2.3565087,2377.2209};
-				angles[]={-0,2.8947697,0};
+				angles[]={0,2.8947697,0};
 			};
 			side="Empty";
 			flags=4;
@@ -12294,7 +12293,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={1742.2654,2.3565087,2373.2849};
-				angles[]={-0,4.449688,0};
+				angles[]={0,4.449688,0};
 			};
 			side="Empty";
 			flags=4;
@@ -12378,7 +12377,7 @@ class Mission
 			};
 			id=298;
 			type="Land_HBarrier_5_F";
-			atlOffset=7.1525574e-007;
+			atlOffset=8.3446503e-007;
 		};
 		class Item212
 		{
@@ -12395,6 +12394,7 @@ class Mission
 			};
 			id=299;
 			type="Land_HBarrier_1_F";
+			atlOffset=1.1920929e-007;
 		};
 	};
 	class Connections

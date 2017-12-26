@@ -12,7 +12,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=4;
+		nextID=5;
 	};
 	class Camera
 	{
@@ -9153,21 +9153,20 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={3211.1748,10.484366,326.8457};
-				angles[]={0.017500184,4.7392578,0.034986377};
+				position[]={3211.1748,10.484428,326.84558};
+				angles[]={0.017505653,4.7392497,0.034993853};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
-				init="call{0 = [""AmmoboxInit"",[this,true]] spawn BIS_fnc_arsenal; [this, true, true, false, true, true] call LT_fnc_addAction; }";
-				name="ArsenalBox_1";
+				init="call{this addAction [""Arsenal"",{ " \n "    [_this select 0, player, true] call ace_arsenal_fnc_openBox; " \n "}];" \n "" \n "[this, true, true, false, true, true] call LT_fnc_addAction; }";
 				disableSimulation=1;
 			};
 			id=255;
 			type="C_supplyCrate_F";
-			atlOffset=-5.9127808e-005;
+			atlOffset=9.5367432e-007;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -11969,7 +11968,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={3221.51,11.18574,292.72684};
-				angles[]={-0,4.7283893,0};
+				angles[]={0,4.7283893,0};
 			};
 			side="Empty";
 			flags=4;
@@ -12029,7 +12028,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={3217.2625,11.122244,292.0892};
-				angles[]={-0,0.00012207031,0};
+				angles[]={0,0.00012207031,0};
 			};
 			side="Empty";
 			class Attributes

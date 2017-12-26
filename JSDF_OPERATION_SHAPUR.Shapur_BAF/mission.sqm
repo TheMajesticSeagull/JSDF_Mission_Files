@@ -12,7 +12,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=4;
+		nextID=5;
 	};
 	class Camera
 	{
@@ -9207,16 +9207,15 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={666.30579,36.272423,445.65036};
-				angles[]={0,0.69572151,0};
+				position[]={666.30603,36.272423,445.64999};
+				angles[]={0,0.69572312,0};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
-				init="call{0 = [""AmmoboxInit"",[this,true]] spawn BIS_fnc_arsenal; [this, true, true, false, true, true] call LT_fnc_addAction; }";
-				name="ArsenalBox_1";
+				init="call{this addAction [""Arsenal"",{ " \n "    [_this select 0, player, true] call ace_arsenal_fnc_openBox; " \n "}];" \n "" \n "[this, true, true, false, true, true] call LT_fnc_addAction; }";
 				disableSimulation=1;
 			};
 			id=255;
@@ -12106,7 +12105,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={633.19305,35.972813,458.75159};
-				angles[]={-0,0.68726653,0};
+				angles[]={0,0.68726653,0};
 			};
 			side="Empty";
 			flags=4;
@@ -12165,7 +12164,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={635.33569,35.972813,462.47418};
-				angles[]={-0,2.2421846,0};
+				angles[]={0,2.2421846,0};
 			};
 			side="Empty";
 			flags=4;
@@ -12224,7 +12223,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={632.60773,36.120514,456.54077};
-				angles[]={-0,3.8412476,0};
+				angles[]={0,3.8412476,0};
 			};
 			side="Empty";
 			flags=4;
@@ -12240,7 +12239,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={628.42035,36.120514,460.11252};
-				angles[]={-0,0.68633527,0};
+				angles[]={0,0.68633527,0};
 			};
 			side="Empty";
 			flags=4;
@@ -12256,7 +12255,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={624.02942,36.082108,463.74423};
-				angles[]={-0,0.72821254,0};
+				angles[]={0,0.72821254,0};
 			};
 			side="Empty";
 			flags=4;

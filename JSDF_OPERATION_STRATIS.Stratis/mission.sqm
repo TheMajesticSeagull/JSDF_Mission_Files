@@ -12,14 +12,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=5;
+		nextID=6;
 	};
 	class Camera
 	{
-		pos[]={1846.3013,55.400158,5633.6377};
-		dir[]={-0.36441571,-0.51918006,-0.77314591};
-		up[]={-0.22138101,0.85463089,-0.46968386};
-		aside[]={-0.90460145,6.6275243e-007,0.42637625};
+		pos[]={1809.0212,55.400158,5605.7471};
+		dir[]={0.52804989,-0.84927624,0.00080110866};
+		up[]={0.8492893,0.52793026,0.0012892304};
+		aside[]={0.0015171974,5.1375537e-007,-1.0000511};
 	};
 };
 binarizationWanted=0;
@@ -9127,15 +9127,14 @@ class Mission
 			class PositionInfo
 			{
 				position[]={1824.8409,6.3924227,5601.6958};
-				angles[]={0,4.9883685,0};
+				angles[]={0,4.9883604,0};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
-				init="call{0 = [""AmmoboxInit"",[this,true]] spawn BIS_fnc_arsenal; [this, true, true, false, true, true] call LT_fnc_addAction; }";
-				name="ArsenalBox_1";
+				init="call{this addAction [""Arsenal"",{ " \n "    [_this select 0, player, true] call ace_arsenal_fnc_openBox; " \n "}];" \n "" \n "[this, true, true, false, true, true] call LT_fnc_addAction; }";
 				disableSimulation=1;
 			};
 			id=255;
@@ -11895,7 +11894,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={1826.4817,6.0928116,5566.165};
-				angles[]={-0,4.9823132,0};
+				angles[]={0,4.9823132,0};
 			};
 			side="Empty";
 			flags=4;
@@ -11954,7 +11953,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={1822.2104,6.0928116,5566.6147};
-				angles[]={-0,0.25404596,0};
+				angles[]={0,0.25404596,0};
 			};
 			side="Empty";
 			flags=4;
@@ -12013,7 +12012,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={1828.7402,6.2405143,5566.5259};
-				angles[]={-0,1.8531084,0};
+				angles[]={0,1.8531084,0};
 			};
 			side="Empty";
 			flags=4;
@@ -12029,7 +12028,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={1827.1718,6.2405143,5561.2505};
-				angles[]={-0,4.9813814,0};
+				angles[]={0,4.9813814,0};
 			};
 			side="Empty";
 			flags=4;
@@ -12045,7 +12044,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={1825.6316,6.2021055,5555.7646};
-				angles[]={-0,5.0232592,0};
+				angles[]={0,5.0232592,0};
 			};
 			side="Empty";
 			flags=4;
