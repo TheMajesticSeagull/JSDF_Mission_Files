@@ -12,14 +12,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=6;
+		nextID=7;
 	};
 	class Camera
 	{
-		pos[]={1402.4102,56.980862,1087.7087};
-		dir[]={0.50577688,-0.50447696,-0.69994736};
-		up[]={0.29548493,0.86340898,-0.4089269};
-		aside[]={-0.81063187,1.2060627e-007,-0.58575946};
+		pos[]={1409.4802,56.980862,1091.6199};
+		dir[]={-0.55524522,-0.39464912,-0.73224938};
+		up[]={-0.23848526,0.91881239,-0.31450742};
+		aside[]={-0.79692066,2.5483314e-007,0.60428107};
 	};
 };
 binarizationWanted=0;
@@ -6556,12 +6556,12 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="call{this addAction [""Arsenal"",{ " \n "    [_this select 0, player, true] call ace_arsenal_fnc_openBox; " \n "}];" \n "" \n "[this, true, true, false, true, true] call LT_fnc_addAction; }";
+				init="call{0 = [""AmmoboxInit"",[this,true]] spawn BIS_fnc_arsenal;" \n "[this, true, true, false, true, true] call LT_fnc_addAction;}";
 				disableSimulation=1;
 			};
 			id=254;
 			type="C_supplyCrate_F";
-			atlOffset=6.7570181;
+			atlOffset=6.7570171;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -6598,7 +6598,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],true]";
+							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
 						};
 					};
 				};

@@ -16,7 +16,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=7;
+		nextID=8;
 	};
 	class Camera
 	{
@@ -46105,7 +46105,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{this addAction [""Arsenal"",{ " \n "    [_this select 0, player, true] call ace_arsenal_fnc_openBox; " \n "}];}";
+				init="call{0 = [""AmmoboxInit"",[this,true]] spawn BIS_fnc_arsenal;" \n "[this, true, true, false, true, true] call LT_fnc_addAction;}";
 			};
 			id=1724;
 			type="C_supplyCrate_F";
@@ -46146,7 +46146,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],true]";
+							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
 						};
 					};
 				};
@@ -46184,7 +46184,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{this addAction [""Arsenal"",{ " \n "    [_this select 0, player, true] call ace_arsenal_fnc_openBox; " \n "}];}";
+				init="call{0 = [""AmmoboxInit"",[this,true]] spawn BIS_fnc_arsenal;" \n "[this, true, true, false, true, true] call LT_fnc_addAction;}";
 			};
 			id=1725;
 			type="C_supplyCrate_F";
@@ -46225,7 +46225,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],true]";
+							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
 						};
 					};
 				};
@@ -46263,7 +46263,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{this addAction [""Arsenal"",{ " \n "    [_this select 0, player, true] call ace_arsenal_fnc_openBox; " \n "}];}";
+				init="call{0 = [""AmmoboxInit"",[this,true]] spawn BIS_fnc_arsenal;" \n "[this, true, true, false, true, true] call LT_fnc_addAction;}";
 			};
 			id=1726;
 			type="C_supplyCrate_F";
@@ -46303,7 +46303,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],true]";
+							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
 						};
 					};
 				};
@@ -46341,7 +46341,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{this addAction [""Arsenal"",{ " \n "    [_this select 0, player, true] call ace_arsenal_fnc_openBox; " \n "}];}";
+				init="call{0 = [""AmmoboxInit"",[this,true]] spawn BIS_fnc_arsenal;" \n "[this, true, true, false, true, true] call LT_fnc_addAction;}";
 			};
 			id=1727;
 			type="C_supplyCrate_F";
@@ -46381,7 +46381,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],true]";
+							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
 						};
 					};
 				};
@@ -46419,7 +46419,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{this addAction [""Arsenal"",{ " \n "    [_this select 0, player, true] call ace_arsenal_fnc_openBox; " \n "}];}";
+				init="call{0 = [""AmmoboxInit"",[this,true]] spawn BIS_fnc_arsenal;" \n "[this, true, true, false, true, true] call LT_fnc_addAction;}";
 			};
 			id=1728;
 			type="C_supplyCrate_F";
@@ -46460,7 +46460,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],true]";
+							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
 						};
 					};
 				};
@@ -46498,7 +46498,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{this addAction [""Arsenal"",{ " \n "    [_this select 0, player, true] call ace_arsenal_fnc_openBox; " \n "}];}";
+				init="call{0 = [""AmmoboxInit"",[this,true]] spawn BIS_fnc_arsenal;" \n "[this, true, true, false, true, true] call LT_fnc_addAction;}";
 			};
 			id=1729;
 			type="C_supplyCrate_F";
@@ -46539,7 +46539,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],true]";
+							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
 						};
 					};
 				};
@@ -46577,7 +46577,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{this addAction [""Arsenal"",{ " \n "    [_this select 0, player, true] call ace_arsenal_fnc_openBox; " \n "}];}";
+				init="call{0 = [""AmmoboxInit"",[this,true]] spawn BIS_fnc_arsenal;" \n "[this, true, true, false, true, true] call LT_fnc_addAction;}";
 			};
 			id=1730;
 			type="C_supplyCrate_F";
@@ -46618,7 +46618,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],true]";
+							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
 						};
 					};
 				};
@@ -46656,7 +46656,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{this addAction [""Arsenal"",{ " \n "    [_this select 0, player, true] call ace_arsenal_fnc_openBox; " \n "}];}";
+				init="call{0 = [""AmmoboxInit"",[this,true]] spawn BIS_fnc_arsenal;" \n "[this, true, true, false, true, true] call LT_fnc_addAction;}";
 			};
 			id=1731;
 			type="C_supplyCrate_F";
@@ -46697,7 +46697,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],true]";
+							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
 						};
 					};
 				};
@@ -46735,7 +46735,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{this addAction [""Arsenal"",{ " \n "    [_this select 0, player, true] call ace_arsenal_fnc_openBox; " \n "}];}";
+				init="call{0 = [""AmmoboxInit"",[this,true]] spawn BIS_fnc_arsenal;" \n "[this, true, true, false, true, true] call LT_fnc_addAction;}";
 			};
 			id=1732;
 			type="C_supplyCrate_F";
@@ -46776,7 +46776,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],true]";
+							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
 						};
 					};
 				};
@@ -46814,7 +46814,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{this addAction [""Arsenal"",{ " \n "    [_this select 0, player, true] call ace_arsenal_fnc_openBox; " \n "}];}";
+				init="call{0 = [""AmmoboxInit"",[this,true]] spawn BIS_fnc_arsenal;" \n "[this, true, true, false, true, true] call LT_fnc_addAction;}";
 			};
 			id=1733;
 			type="C_supplyCrate_F";
@@ -46855,7 +46855,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],true]";
+							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
 						};
 					};
 				};
@@ -46893,7 +46893,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{this addAction [""Arsenal"",{ " \n "    [_this select 0, player, true] call ace_arsenal_fnc_openBox; " \n "}];}";
+				init="call{0 = [""AmmoboxInit"",[this,true]] spawn BIS_fnc_arsenal;" \n "[this, true, true, false, true, true] call LT_fnc_addAction;}";
 			};
 			id=1734;
 			type="C_supplyCrate_F";
@@ -46934,7 +46934,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],true]";
+							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
 						};
 					};
 				};
@@ -46972,7 +46972,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{this addAction [""Arsenal"",{ " \n "    [_this select 0, player, true] call ace_arsenal_fnc_openBox; " \n "}];}";
+				init="call{0 = [""AmmoboxInit"",[this,true]] spawn BIS_fnc_arsenal;" \n "[this, true, true, false, true, true] call LT_fnc_addAction;}";
 			};
 			id=1735;
 			type="C_supplyCrate_F";
@@ -47013,7 +47013,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],true]";
+							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
 						};
 					};
 				};
@@ -47052,7 +47052,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="call{this addAction [""Arsenal"",{ " \n "    [_this select 0, player, true] call ace_arsenal_fnc_openBox; " \n "}];" \n "" \n "[this, true, true, false, true, true] call LT_fnc_addAction; }";
+				init="call{0 = [""AmmoboxInit"",[this,true]] spawn BIS_fnc_arsenal;" \n "[this, true, true, false, true, true] call LT_fnc_addAction;}";
 				disableSimulation=1;
 			};
 			id=1736;
@@ -47093,7 +47093,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="[[[[""launch_NLAW_F"",""arifle_MX_F"",""arifle_MX_SW_F"",""FirstAidKit""],[1,2,1,10]],[[""30Rnd_65x39_caseless_mag"",""16Rnd_9x21_Mag"",""30Rnd_45ACP_Mag_SMG_01"",""20Rnd_762x51_Mag"",""100Rnd_65x39_caseless_mag"",""1Rnd_HE_Grenade_shell"",""3Rnd_HE_Grenade_shell"",""1Rnd_Smoke_Grenade_shell"",""1Rnd_SmokeGreen_Grenade_shell"",""Chemlight_green"",""NLAW_F"",""Laserbatteries"",""HandGrenade"",""MiniGrenade"",""SmokeShell"",""SmokeShellGreen"",""UGL_FlareWhite_F"",""UGL_FlareGreen_F""],[24,6,6,6,6,3,1,2,2,6,3,2,6,6,2,2,2,2]],[[""Laserdesignator"",""acc_flashlight"",""bipod_01_F_blk""],[1,2,1]],[[""B_Kitbag_mcamo""],[2]]],false]";
+							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
 						};
 					};
 				};

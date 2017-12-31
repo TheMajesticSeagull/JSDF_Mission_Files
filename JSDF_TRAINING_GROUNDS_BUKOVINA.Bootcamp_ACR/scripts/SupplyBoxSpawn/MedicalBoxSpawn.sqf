@@ -7,7 +7,7 @@ clearBackpackCargoGlobal _box;
 clearMagazineCargoGlobal _box;
 [_box, 3] call ace_cargo_fnc_setSize;
 //Add All The Items!
-_box addItemCargoGlobal ["ACE_bloodIV_500", 32];
+_box addItemCargoGlobal ["ACE_bloodIV", 20];
 _box addItemCargoGlobal ["ACE_morphine", 60];
 _box addItemCargoGlobal ["ACE_epinephrine", 40];
 _box addItemCargoGlobal ["ACE_fieldDressing", 120];
