@@ -1,3 +1,4 @@
+#include "..\..\script_component.hpp"
 [] spawn
 {
   private _crate = createVehicle ["B_supplyCrate_F", position SpawnPad1, [], 0, "NONE"];
@@ -18,6 +19,6 @@
   _crate addItemCargoGlobal ["ACE_EarPlugs", 20];
   _crate addItemCargoGlobal ["rhs_weap_M136", 2];
   _crate addItemCargoGlobal ["DemoCharge_Remote_Mag", 8];
-  hint "Ammo Box Spawned!";
-  [_crate, true, [0, 1.5, 0], 90] call ace_dragging_fnc_setDraggable;
+  ["Ammo Box Spawned!"] call ace_common_fnc_displayTextStructured;
+  [QGVAR(setDragable), [_crate]] call CBA_fnc_globalEvent;
 };
