@@ -1,41 +1,19 @@
-// Break
-	if (isServer) then
+private _zeusUsers = [
+	// [CuratorModuleName]
+	[Teal],
+	[Buda],
+	[Steel],
+	[Arrow],
+	[Joram],
+	[Seagull],
+	[Tub]
+];
+
 {
-	[Teal,true] execVM "scripts\ADV_zeus\ADV_zeus.sqf";
-};
-// Break
-	if (isServer) then
-{
-	[Buda,true] execVM "scripts\ADV_zeus\ADV_zeus.sqf";
-};
-// Break
-	if (isServer) then
-{
-	[Steel,true] execVM "scripts\ADV_zeus\ADV_zeus.sqf";
-};
-// Break
-	if (isServer) then
-{
-	[Arrow,true] execVM "scripts\ADV_zeus\ADV_zeus.sqf";
-};
-// Break
-	if (isServer) then
-{
-	[Joram,true] execVM "scripts\ADV_zeus\ADV_zeus.sqf";
-};
-// Break
-	if (isServer) then
-{
-	[Seagull,true] execVM "scripts\ADV_zeus\ADV_zeus.sqf";
-};
-//Break
-	if (isServer) then
-{
-	[Tub,true] execVM "scripts\ADV_zeus\ADV_zeus.sqf";
-};
-//Break
-	if (isServer) then
-{
-	[Gil,true] execVM "scripts\ADV_zeus\ADV_zeus.sqf";
-};
-// Break
+		_x params ["_CuratorModuleName"];
+
+		if (isServer) then
+		{
+			[_CuratorModuleName, true] execVM "scripts\ADV_zeus\ADV_zeus.sqf";
+		};
+} forEach _zeusUsers;
