@@ -8,18 +8,18 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=296;
+		nextID=297;
 	};
 	class LayerIndexProvider
 	{
-		nextID=6;
+		nextID=7;
 	};
 	class Camera
 	{
-		pos[]={5948.561,117.70562,11517.766};
-		dir[]={0.19734439,-0.46662793,-0.86225963};
-		up[]={0.10414002,0.88436663,-0.45502481};
-		aside[]={-0.97488075,-5.1129609e-007,-0.22311537};
+		pos[]={5893.8267,117.70562,11561.324};
+		dir[]={0.62767684,-0.53745037,-0.56334203};
+		up[]={0.4000895,0.84319878,-0.35908341};
+		aside[]={-0.66800123,-1.3050158e-007,-0.74428082};
 	};
 };
 binarizationWanted=0;
@@ -11693,7 +11693,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5950.3164,84.875381,11543.118};
+						position[]={5937.9482,86.590446,11524.115};
 						angles[]={0,2.3551443,0};
 					};
 					side="Empty";
@@ -11703,8 +11703,92 @@ class Mission
 						init="call{_nul = [ this, 7200, 10, LVR_fnc_hunterInit ] spawn LVR_fnc_vehRespawn}";
 						reportOwnPosition=1;
 					};
-					id=258;
-					type="RHS_UH60M_MEV2_d";
+					id=65;
+					type="RHS_CH_47F_10";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ammoBox";
+							expression="[_this,_value] call bis_fnc_initAmmoBox;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="[[[[],[]],[[],[]],[[""ACE_fieldDressing"",""ACE_EarPlugs"",""ACE_morphine""],[10,5,5]],[[],[]]],false]";
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+				class Item19
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={5933.936,85.258659,11560.994};
+						angles[]={0,2.3557231,0};
+					};
+					side="Empty";
+					flags=4;
+					class Attributes
+					{
+						init="call{_nul = [ this, 7200, 10, LVR_fnc_hunterInit ] spawn LVR_fnc_vehRespawn}";
+						reportRemoteTargets=1;
+						receiveRemoteTargets=1;
+						reportOwnPosition=1;
+					};
+					id=50;
+					type="RHS_AH64D";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ammoBox";
+							expression="[_this,_value] call bis_fnc_initAmmoBox;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="[[[[],[]],[[],[]],[[""ACE_fieldDressing"",""ACE_EarPlugs"",""ACE_morphine""],[10,5,5]],[[],[]]],false]";
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+				class Item20
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={5950.3208,85.635979,11543.148};
+						angles[]={0,2.3551474,0};
+					};
+					side="Empty";
+					flags=4;
+					class Attributes
+					{
+						init="call{_nul = [ this, 7200, 10, LVR_fnc_hunterInit ] spawn LVR_fnc_vehRespawn}";
+						reportOwnPosition=1;
+					};
+					id=296;
+					type="RHS_UH60M_d";
 					class CustomAttributes
 					{
 						class Attribute0
@@ -11746,90 +11830,6 @@ class Mission
 							};
 						};
 						nAttributes=2;
-					};
-				};
-				class Item19
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={5937.9482,86.590446,11524.115};
-						angles[]={0,2.3551443,0};
-					};
-					side="Empty";
-					flags=4;
-					class Attributes
-					{
-						init="call{_nul = [ this, 7200, 10, LVR_fnc_hunterInit ] spawn LVR_fnc_vehRespawn}";
-						reportOwnPosition=1;
-					};
-					id=65;
-					type="RHS_CH_47F_10";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="ammoBox";
-							expression="[_this,_value] call bis_fnc_initAmmoBox;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="[[[[],[]],[[],[]],[[""ACE_fieldDressing"",""ACE_EarPlugs"",""ACE_morphine""],[10,5,5]],[[],[]]],false]";
-								};
-							};
-						};
-						nAttributes=1;
-					};
-				};
-				class Item20
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={5933.936,85.258659,11560.994};
-						angles[]={0,2.3557231,0};
-					};
-					side="Empty";
-					flags=4;
-					class Attributes
-					{
-						init="call{_nul = [ this, 7200, 10, LVR_fnc_hunterInit ] spawn LVR_fnc_vehRespawn}";
-						reportRemoteTargets=1;
-						receiveRemoteTargets=1;
-						reportOwnPosition=1;
-					};
-					id=50;
-					type="RHS_AH64D";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="ammoBox";
-							expression="[_this,_value] call bis_fnc_initAmmoBox;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="[[[[],[]],[[],[]],[[""ACE_fieldDressing"",""ACE_EarPlugs"",""ACE_morphine""],[10,5,5]],[[],[]]],false]";
-								};
-							};
-						};
-						nAttributes=1;
 					};
 				};
 			};

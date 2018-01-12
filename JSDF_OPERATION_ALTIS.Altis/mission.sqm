@@ -8,18 +8,18 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=317;
+		nextID=319;
 	};
 	class LayerIndexProvider
 	{
-		nextID=11;
+		nextID=12;
 	};
 	class Camera
 	{
-		pos[]={11471.717,112.44211,11827.969};
-		dir[]={0.80177242,-0.55237591,0.22862604};
-		up[]={0.53130412,0.83351362,0.15150008};
-		aside[]={0.27425146,-9.1298716e-007,-0.96176183};
+		pos[]={11673.222,29.754406,11886.904};
+		dir[]={0.92685765,-0.33604759,-0.16803797};
+		up[]={0.33081016,0.94177926,-0.059977125};
+		aside[]={-0.17840488,-1.8393621e-008,-0.98405951};
 	};
 };
 binarizationWanted=0;
@@ -11781,66 +11781,6 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={11686.716,24.821926,11887.347};
-						angles[]={6.2751846,3.7380533,6.2818484};
-					};
-					side="Empty";
-					flags=4;
-					class Attributes
-					{
-						init="call{_nul = [ this, 7200, 10, LVR_fnc_hunterInit ] spawn LVR_fnc_vehRespawn}";
-						reportOwnPosition=1;
-					};
-					id=258;
-					type="RHS_UH60M_MEV2_d";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="ammoBox";
-							expression="[_this,_value] call bis_fnc_initAmmoBox;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="[[[[],[]],[[],[]],[[""ACE_fieldDressing"",""ACE_EarPlugs"",""ACE_morphine""],[10,5,5]],[[],[]]],false]";
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="ace_fastroping_equipFRIES";
-							expression="[_this] call ace_fastroping_fnc_equipFRIES";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						nAttributes=2;
-					};
-				};
-				class Item18
-				{
-					dataType="Object";
-					class PositionInfo
-					{
 						position[]={11701.198,25.381636,11906.802};
 						angles[]={6.2778587,3.7386322,0};
 					};
@@ -11879,7 +11819,7 @@ class Mission
 						nAttributes=1;
 					};
 				};
-				class Item19
+				class Item18
 				{
 					dataType="Object";
 					class PositionInfo
@@ -11939,7 +11879,7 @@ class Mission
 						nAttributes=2;
 					};
 				};
-				class Item20
+				class Item19
 				{
 					dataType="Object";
 					class PositionInfo
@@ -11980,9 +11920,69 @@ class Mission
 						nAttributes=1;
 					};
 				};
+				class Item20
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={11686.722,25.582743,11887.371};
+						angles[]={6.2751913,3.738059,6.2818413};
+					};
+					side="Empty";
+					flags=4;
+					class Attributes
+					{
+						init="call{_nul = [ this, 7200, 10, LVR_fnc_hunterInit ] spawn LVR_fnc_vehRespawn}";
+						reportOwnPosition=1;
+					};
+					id=318;
+					type="RHS_UH60M_d";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ammoBox";
+							expression="[_this,_value] call bis_fnc_initAmmoBox;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="[[[[],[]],[[],[]],[[""ACE_fieldDressing"",""ACE_EarPlugs"",""ACE_morphine""],[10,5,5]],[[],[]]],false]";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ace_fastroping_equipFRIES";
+							expression="[_this] call ace_fastroping_fnc_equipFRIES";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
 			};
 			id=307;
-			atlOffset=0.070995331;
+			atlOffset=0.033704758;
 		};
 		class Item206
 		{
