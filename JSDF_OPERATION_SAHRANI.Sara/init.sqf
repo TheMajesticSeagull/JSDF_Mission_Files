@@ -1,7 +1,6 @@
 ﻿[]execVM "scripts\repetitive_cleanup.sqf";
 []execVM "scripts\FirstPersonInf.sqf";
 []execVM "scripts\ADV_zeus\ADV_users.sqf";
-[]execVM "scripts\SupplyBoxSpawn\BoxMakeDraggable.sqf";
 
 // Sitting Fix
 
@@ -16,3 +15,7 @@
         detach _x;
     } forEach allMissionObjects "babe_helper";
 }] call CBA_fnc_addEventHandler;
+
+// Set max drag/carry weight
+ACE_maxWeightDrag = 1600;
+ACE_maxWeightCarry = 600;
