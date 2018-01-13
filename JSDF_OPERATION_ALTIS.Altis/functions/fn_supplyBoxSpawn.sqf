@@ -19,7 +19,7 @@ params ["_controller", "_spawnLocation"];
 _controller addAction [
   "Spawn Ammo Supply Box",
   {
-    private _crate = createVehicle ["B_supplyCrate_F", position _this select 3, [_spawnLocation], 0, "NONE"];
+    private _crate = createVehicle ["B_supplyCrate_F", _this select 3, [], 0, "NONE"];
     clearItemCargoGlobal _crate;
     clearWeaponCargoGlobal _crate;
     clearBackpackCargoGlobal _crate;
@@ -42,7 +42,7 @@ _controller addAction [
       ];
 
     {
-      _x params ["_item", _amount];
+      _x params ["_item", "_amount"];
 
       _crate addItemCargoGlobal [_item, _amount];
     } forEach _ammoItems;
@@ -50,7 +50,7 @@ _controller addAction [
     ["Ammo Box Spawned!"] call ace_common_fnc_displayTextStructured;
     [QGVAR(setDragable), [_crate]] call CBA_fnc_globalEvent;
   },
-  "nil",
+  _spawnLocation,
   1.5,
   true,
   true,
