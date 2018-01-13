@@ -12,14 +12,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=12;
+		nextID=13;
 	};
 	class Camera
 	{
 		pos[]={11673.222,29.754406,11886.904};
-		dir[]={0.92685765,-0.33604759,-0.16803797};
-		up[]={0.33081016,0.94177926,-0.059977125};
-		aside[]={-0.17840488,-1.8393621e-008,-0.98405951};
+		dir[]={0.33093724,-0.36831957,0.86893767};
+		up[]={0.1311449,0.92963004,0.34434041};
+		aside[]={0.93461424,-1.3387762e-007,-0.35594672};
 	};
 };
 binarizationWanted=0;
@@ -8075,13 +8075,13 @@ class Mission
 			class PositionInfo
 			{
 				position[]={11688.597,24.025034,11927.702};
-				angles[]={0.0026520467,0.58811164,6.2778587};
+				angles[]={0.0026529003,0.5881061,6.2778621};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
-				init="call{this addAction [""Spawn Ammo Supply Box"", ""scripts\SupplyBoxSpawn\AmmoBoxSpawn.sqf"", ""nil"", 1.5, true, true, """", ""true"", 2.5, false, """"];" \n "" \n "this addAction [""Spawn Medical Supply Box"", ""scripts\SupplyBoxSpawn\MedicalBoxSpawn.sqf"", ""nil"", 1.5, true, true, """", ""true"", 2.5, false, """"];}";
+				init="call{[this, SpawnPad1] call JSDF_Mission_fnc_supplyBoxSpawn}";
 				disableSimulation=1;
 			};
 			id=223;
@@ -11982,7 +11982,7 @@ class Mission
 				};
 			};
 			id=307;
-			atlOffset=0.033704758;
+			atlOffset=0.060480118;
 		};
 		class Item206
 		{
