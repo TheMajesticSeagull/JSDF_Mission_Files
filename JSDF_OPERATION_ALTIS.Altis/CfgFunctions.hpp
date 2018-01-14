@@ -4,6 +4,7 @@ class CfgFunctions {
         class functions {
             file = "functions";
             class supplyBoxSpawn;
+            class serviceVehicle;
         };
     };
 };
