@@ -1,8 +1,6 @@
 #include "script_component.hpp"
-[]execVM "scripts\ADV_zeus\ADV_users.sqf";
 
 // Sitting Fix
-
 ["ace_satDown", {
     {
         _x attachTo [_this select 0];
@@ -23,3 +21,28 @@ ACE_maxWeightCarry = 600;
 [QGVAR(setDragable), {
     [(_this select 0), true, [0, 1.5, 0], 90] call ace_dragging_fnc_setDraggable;
 }] call CBA_fnc_addEventHandler;
+
+[QGVAR(addCuratorEditableObjects), {
+    (_this select 0) addCuratorEditableObjects [[(_this select 1)], (_this select 2)]
+}] call CBA_fnc_addEventHandler;
+
+// ADV_Zeus users
+private _zeusUsers = [
+	// [CuratorModuleName]
+	[Teal],
+	[Buda],
+	[Steel],
+	[Arrow],
+	[Joram],
+	[Seagull],
+	[Tub]
+];
+
+{
+		_x params ["_CuratorModuleName"];
+
+		if (isServer) then
+		{
+			[_CuratorModuleName, true] call JSDF_Mission_fnc_advZeus;
+		};
+} forEach _zeusUsers;
