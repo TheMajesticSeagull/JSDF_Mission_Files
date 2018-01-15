@@ -1,7 +1,6 @@
 #define PREFIX JSDF
 #define COMPONENT Mission
 
-
 // Version
 #define MAJOR 2
 #define MINOR 0
