@@ -22,10 +22,6 @@ ACE_maxWeightCarry = 600;
     [(_this select 0), true, [0, 1.5, 0], 90] call ace_dragging_fnc_setDraggable;
 }] call CBA_fnc_addEventHandler;
 
-[QGVAR(addCuratorEditableObjects), {
-    (_this select 0) addCuratorEditableObjects [[(_this select 1)], (_this select 2)]
-}] call CBA_fnc_addEventHandler;
-
 // ADV_Zeus users
 private _zeusUsers = [
 	// [CuratorModuleName]
