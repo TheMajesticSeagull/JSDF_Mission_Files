@@ -1,15 +1,12 @@
 /*
  * Author: JoramD
- * Vehicle server script.
- *
- * Arguments:
- * 0: Vehicle <OBJECT>
+ * Safezone function.
  *
  * Return Value:
  * None
  *
  * Example:
- * [(thisList select 0)] call JSDF_Mission_fnc_serviceVehicle
+ * [] call JSDF_Mission_fnc_safezone
  */
 #include "..\script_component.hpp"
 
