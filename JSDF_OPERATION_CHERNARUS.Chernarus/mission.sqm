@@ -12,14 +12,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=12;
+		nextID=15;
 	};
 	class Camera
 	{
 		pos[]={4619.7153,70.031372,2571.175};
-		dir[]={0.07336247,-0.35383663,-0.93251997};
-		up[]={0.027760662,0.93524915,-0.35288912};
-		aside[]={-0.99700081,-2.1408196e-006,-0.078431226};
+		dir[]={0.40736407,-0.49519047,-0.76747507};
+		up[]={0.23221622,0.86871374,-0.43749917};
+		aside[]={-0.88336003,-1.5649712e-006,-0.46886948};
 	};
 };
 binarizationWanted=0;
@@ -8042,14 +8042,14 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={4601.9634,9.5403194,2490.4133};
-				angles[]={6.247201,4.587502,0.05461248};
+				position[]={4601.9629,9.5402861,2490.4131};
+				angles[]={6.2471962,4.5874929,0.054611351};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
-				init="call{this addAction [""Spawn Ammo Supply Box"", ""scripts\SupplyBoxSpawn\AmmoBoxSpawn.sqf"", ""nil"", 1.5, true, true, """", ""true"", 2.5, false, """"];" \n "" \n "this addAction [""Spawn Medical Supply Box"", ""scripts\SupplyBoxSpawn\MedicalBoxSpawn.sqf"", ""nil"", 1.5, true, true, """", ""true"", 2.5, false, """"];}";
+				init="call{[this, SpawnPad1] call JSDF_Mission_fnc_supplyBoxSpawn}";
 				disableSimulation=1;
 			};
 			id=222;
@@ -9152,7 +9152,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="call{0 = [""AmmoboxInit"",[this,true]] spawn BIS_fnc_arsenal;" \n "[this, true, true, false, true, true] call LT_fnc_addAction;}";
+				init="call{[this] call JSDF_Mission_fnc_arsenalBoxInit}";
 				disableSimulation=1;
 			};
 			id=254;
@@ -9276,12 +9276,12 @@ class Mission
 		class Item191
 		{
 			dataType="Trigger";
-			position[]={4611.8896,8.9267426,2492.0056};
-			angle=4.5875006;
+			position[]={4611.8901,8.9267483,2492.0061};
+			angle=4.587492;
 			class Attributes
 			{
 				condition="call{this and ((getPos (thisList select 0)) select 2 < 1)}";
-				onActivation="call{_handle = [(thisList select 0)] execVM ""scripts\rearmhelicopter.sqf"";}";
+				onActivation="call{[(thisList select 0)] call JSDF_Mission_fnc_serviceVehicle}";
 				sizeA=10;
 				sizeB=10;
 				sizeC=12;
@@ -11880,7 +11880,7 @@ class Mission
 				};
 			};
 			id=288;
-			atlOffset=-0.0074386597;
+			atlOffset=-0.014878273;
 		};
 		class Item205
 		{
