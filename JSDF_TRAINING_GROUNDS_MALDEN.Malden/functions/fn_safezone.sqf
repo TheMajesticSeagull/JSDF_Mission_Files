@@ -1,3 +1,15 @@
+/*
+ * Author: JoramD
+ * Safezone function.
+ *
+ * Return Value:
+ * None
+ *
+ * Example:
+ * [] call JSDF_Mission_fnc_safezone
+ */
+#include "..\script_component.hpp"
+
 if (isNil "inSafezone") then {
     inSafezone = false;
 };
