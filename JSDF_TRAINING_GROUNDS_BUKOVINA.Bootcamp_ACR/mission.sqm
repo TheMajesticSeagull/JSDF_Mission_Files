@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=8;
+		nextID=10;
 	};
 	class Camera
 	{
-		pos[]={1783.4109,379.97763,1782.1384};
-		dir[]={-0.69897872,-0.37704009,-0.60786128};
-		up[]={-0.28455263,0.92617077,-0.24745874};
-		aside[]={-0.65628207,7.3458068e-007,0.75466639};
+		pos[]={1761.3743,351.31354,1698.9144};
+		dir[]={-0.8105967,-0.54816073,0.20663241};
+		up[]={-0.5312103,0.83635175,0.13541414};
+		aside[]={0.24705003,1.6166596e-006,0.96913016};
 	};
 };
 binarizationWanted=0;
@@ -361,6 +361,9 @@ class ScenarioData
 	{
 		gameType="Coop";
 	};
+	wreckRemovalMaxTime=3600;
+	corpseManagerMode=1;
+	corpseLimit=30;
 };
 class CustomAttributes
 {
@@ -1675,7 +1678,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{_nul = [ this, 300, 10, LVR_fnc_hunterInit ] spawn LVR_fnc_vehRespawn}";
+				init="call{_nul = [ this, 300, 10, JSDF_Mission_fnc_hunterInit ] spawn JSDF_Mission_fnc_vehRespawn}";
 			};
 			id=97;
 			type="RHS_CH_47F_10";
@@ -5546,7 +5549,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{_nul = [ this, 300, 10, LVR_fnc_hunterInit ] spawn LVR_fnc_vehRespawn}";
+				init="call{_nul = [ this, 300, 10, JSDF_Mission_fnc_hunterInit ] spawn JSDF_Mission_fnc_vehRespawn}";
 			};
 			id=387;
 			type="RHS_CH_47F_10";
@@ -5587,7 +5590,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{_nul = [ this, 300, 10, LVR_fnc_hunterInit ] spawn LVR_fnc_vehRespawn}";
+				init="call{_nul = [ this, 300, 10, JSDF_Mission_fnc_hunterInit ] spawn JSDF_Mission_fnc_vehRespawn}";
 			};
 			id=388;
 			type="RHS_CH_47F_10";
@@ -5628,7 +5631,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{_nul = [ this, 300, 10, LVR_fnc_hunterInit ] spawn LVR_fnc_vehRespawn}";
+				init="call{_nul = [ this, 300, 10, JSDF_Mission_fnc_hunterInit ] spawn JSDF_Mission_fnc_vehRespawn}";
 			};
 			id=389;
 			type="RHS_CH_47F_10";
@@ -24837,11 +24840,11 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={1538,339,1937};
-			angle=2.6106532;
+			angle=2.610646;
 			class Attributes
 			{
-				condition="this and ((getPos (thisList select 0)) select 2 < 1)";
-				onActivation="_handle = [(thisList select 0)] execVM ""scripts\VehicleRearm\rearmHelicopter.sqf"";";
+				condition="call{this and ((getPos (thisList select 0)) select 2 < 1)}";
+				onActivation="call{[(thisList select 0)] call JSDF_Mission_fnc_serviceVehicle}";
 				sizeA=4;
 				sizeB=4;
 				repeatable=1;
@@ -24857,8 +24860,8 @@ class Mission
 			position[]={1728,339,1602};
 			class Attributes
 			{
-				condition="this and ((getPos (thisList select 0)) select 2 < 1)";
-				onActivation="_handle = [(thisList select 0)] execVM ""scripts\VehicleRearm\rearmPlane.sqf"";";
+				condition="call{this and ((getPos (thisList select 0)) select 2 < 1)}";
+				onActivation="call{[(thisList select 0)] call JSDF_Mission_fnc_serviceVehicle}";
 				sizeA=8;
 				sizeB=8;
 				repeatable=1;
@@ -24873,8 +24876,8 @@ class Mission
 			position[]={1336,338.79196,2552};
 			class Attributes
 			{
-				condition="this and ((getPos (thisList select 0)) select 2 < 1)";
-				onActivation="_handle = [(thisList select 0)] execVM ""scripts\VehicleRearm\rearmGround.sqf"";";
+				condition="call{this and ((getPos (thisList select 0)) select 2 < 1)}";
+				onActivation="call{[(thisList select 0)] call JSDF_Mission_fnc_serviceVehicle}";
 				sizeA=8;
 				sizeB=8;
 				repeatable=1;
@@ -24887,13 +24890,13 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={1736,339,1704};
-			angle=5.7548728;
+			angle=5.7548742;
 			class Attributes
 			{
 				name="safezone";
 				condition="call{(player distance safezone) < 25;}";
-				onActivation="call{hint ""You have entered a safe zone."";  inSafeZone = true;}";
-				onDeactivation="hint ""You are leaving the safe zone.""; inSafeZone = false; inPVEzone = true;";
+				onActivation="call{[""Entered safezone!""] call ace_common_fnc_displayTextStructured; inSafeZone = true;}";
+				onDeactivation="call{[""Left safezone!""] call ace_common_fnc_displayTextStructured; inSafeZone = false; inPVEzone = true;}";
 				sizeA=25;
 				sizeB=25;
 				repeatable=1;
@@ -24991,7 +24994,7 @@ class Mission
 			flags=6;
 			class Attributes
 			{
-				init="call{_nul = [ this, 300, 10, LVR_fnc_hunterInit ] spawn LVR_fnc_vehRespawn}";
+				init="call{_nul = [ this, 300, 10, JSDF_Mission_fnc_UAVInit ] spawn JSDF_Mission_fnc_vehRespawn}";
 			};
 			id=1253;
 			type="B_UAV_02_F";
@@ -25110,7 +25113,7 @@ class Mission
 			flags=6;
 			class Attributes
 			{
-				init="call{_nul = [ this, 300, 10, LVR_fnc_hunterInit ] spawn LVR_fnc_vehRespawn}";
+				init="call{_nul = [ this, 300, 10, JSDF_Mission_fnc_UAVInit ] spawn JSDF_Mission_fnc_vehRespawn}";
 			};
 			id=1259;
 			type="B_UAV_02_F";
@@ -37899,19 +37902,19 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={1489.8527,339.7952,2026.1865};
-				angles[]={0,2.6005399,0};
+				position[]={1489.853,339.79541,2026.187};
+				angles[]={0,2.6005406,0};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
-				init="call{this addAction [""Spawn Ammo Supply Box"", ""scripts\SupplyBoxSpawn\AmmoBoxSpawn.sqf"", ""nil"", 1.5, true, true, """", ""true"", 2.5, false, """"];" \n "" \n "this addAction [""Spawn Medical Supply Box"", ""scripts\SupplyBoxSpawn\MedicalBoxSpawn.sqf"", ""nil"", 1.5, true, true, """", ""true"", 2.5, false, """"];}";
+				init="call{[this, SpawnPad1] call JSDF_Mission_fnc_supplyBoxSpawn}";
 				disableSimulation=1;
 			};
 			id=1681;
 			type="Land_Noticeboard_F";
-			atlOffset=0.0037841797;
+			atlOffset=0.0039978027;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -39017,7 +39020,7 @@ class Mission
 					class Attributes
 					{
 						lock="UNLOCKED";
-						init="call{_nul = [ this, 300, 10, LVR_fnc_wipeoutInit ] spawn LVR_fnc_vehRespawn}";
+						init="call{_nul = [ this, 300, 10, JSDF_Mission_fnc_wipeoutInit ] spawn JSDF_Mission_fnc_vehRespawn}";
 						pylons="PylonRack_1Rnd_Missile_AA_04_F;PylonRack_7Rnd_Rocket_04_HE_F;PylonRack_1Rnd_Missile_AGM_02_F;PylonMissile_1Rnd_Bomb_04_F;PylonMissile_1Rnd_Bomb_04_F;PylonMissile_1Rnd_Bomb_04_F;PylonMissile_1Rnd_Bomb_04_F;PylonRack_1Rnd_Missile_AGM_02_F;PylonRack_7Rnd_Rocket_04_HE_F;PylonRack_1Rnd_Missile_AA_04_F;";
 					};
 					id=1698;
@@ -39060,7 +39063,7 @@ class Mission
 					class Attributes
 					{
 						lock="UNLOCKED";
-						init="call{_nul = [ this, 300, 10, LVR_fnc_wipeoutInit ] spawn LVR_fnc_vehRespawn}";
+						init="call{_nul = [ this, 300, 10, JSDF_Mission_fnc_wipeoutInit ] spawn JSDF_Mission_fnc_vehRespawn}";
 						pylons="PylonRack_1Rnd_Missile_AA_04_F;PylonRack_7Rnd_Rocket_04_HE_F;PylonRack_1Rnd_Missile_AGM_02_F;PylonMissile_1Rnd_Bomb_04_F;PylonMissile_1Rnd_Bomb_04_F;PylonMissile_1Rnd_Bomb_04_F;PylonMissile_1Rnd_Bomb_04_F;PylonRack_1Rnd_Missile_AGM_02_F;PylonRack_7Rnd_Rocket_04_HE_F;PylonRack_1Rnd_Missile_AA_04_F;";
 					};
 					id=1699;
@@ -39103,7 +39106,7 @@ class Mission
 					class Attributes
 					{
 						lock="UNLOCKED";
-						init="call{_nul = [ this, 300, 10, LVR_fnc_wipeoutInit ] spawn LVR_fnc_vehRespawn}";
+						init="call{_nul = [ this, 300, 10, JSDF_Mission_fnc_wipeoutInit ] spawn JSDF_Mission_fnc_vehRespawn}";
 						pylons="PylonRack_1Rnd_Missile_AA_04_F;PylonRack_7Rnd_Rocket_04_HE_F;PylonRack_1Rnd_Missile_AGM_02_F;PylonMissile_1Rnd_Bomb_04_F;PylonMissile_1Rnd_Bomb_04_F;PylonMissile_1Rnd_Bomb_04_F;PylonMissile_1Rnd_Bomb_04_F;PylonRack_1Rnd_Missile_AGM_02_F;PylonRack_7Rnd_Rocket_04_HE_F;PylonRack_1Rnd_Missile_AA_04_F;";
 					};
 					id=1700;
@@ -39146,7 +39149,7 @@ class Mission
 					class Attributes
 					{
 						lock="UNLOCKED";
-						init="call{_nul = [ this, 300, 10, LVR_fnc_wipeoutInit ] spawn LVR_fnc_vehRespawn}";
+						init="call{_nul = [ this, 300, 10, JSDF_Mission_fnc_wipeoutInit ] spawn JSDF_Mission_fnc_vehRespawn}";
 						pylons="PylonRack_1Rnd_Missile_AA_04_F;PylonRack_7Rnd_Rocket_04_HE_F;PylonRack_1Rnd_Missile_AGM_02_F;PylonMissile_1Rnd_Bomb_04_F;PylonMissile_1Rnd_Bomb_04_F;PylonMissile_1Rnd_Bomb_04_F;PylonMissile_1Rnd_Bomb_04_F;PylonRack_1Rnd_Missile_AGM_02_F;PylonRack_7Rnd_Rocket_04_HE_F;PylonRack_1Rnd_Missile_AA_04_F;";
 					};
 					id=1701;
@@ -39189,7 +39192,7 @@ class Mission
 					class Attributes
 					{
 						lock="UNLOCKED";
-						init="call{_nul = [ this, 300, 10, LVR_fnc_wipeoutInit ] spawn LVR_fnc_vehRespawn}";
+						init="call{_nul = [ this, 300, 10, JSDF_Mission_fnc_wipeoutInit ] spawn JSDF_Mission_fnc_vehRespawn}";
 						textures="DarkGrey";
 						pylons="PylonRack_1Rnd_Missile_AA_04_F;PylonRack_7Rnd_Rocket_04_HE_F;PylonRack_1Rnd_Missile_AGM_02_F;PylonMissile_1Rnd_Bomb_04_F;PylonMissile_1Rnd_Bomb_04_F;PylonMissile_1Rnd_Bomb_04_F;PylonMissile_1Rnd_Bomb_04_F;PylonRack_1Rnd_Missile_AGM_02_F;PylonRack_7Rnd_Rocket_04_HE_F;PylonRack_1Rnd_Missile_AA_04_F;";
 					};
@@ -39397,7 +39400,7 @@ class Mission
 					class Attributes
 					{
 						lock="UNLOCKED";
-						init="call{_nul = [ this, 300, 10, LVR_fnc_wipeoutInit ] spawn LVR_fnc_vehRespawn}";
+						init="call{_nul = [ this, 300, 10, JSDF_Mission_fnc_wipeoutInit ] spawn JSDF_Mission_fnc_vehRespawn}";
 						textures="DarkGrey";
 						pylons="PylonRack_1Rnd_Missile_AA_04_F;PylonRack_7Rnd_Rocket_04_HE_F;PylonRack_1Rnd_Missile_AGM_02_F;PylonMissile_1Rnd_Bomb_04_F;PylonMissile_1Rnd_Bomb_04_F;PylonMissile_1Rnd_Bomb_04_F;PylonMissile_1Rnd_Bomb_04_F;PylonRack_1Rnd_Missile_AGM_02_F;PylonRack_7Rnd_Rocket_04_HE_F;PylonRack_1Rnd_Missile_AA_04_F;";
 					};
@@ -39604,7 +39607,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="call{_nul = [ this, 300, 10, LVR_fnc_hunterInit ] spawn LVR_fnc_vehRespawn}";
+						init="call{_nul = [ this, 300, 10, JSDF_Mission_fnc_hunterInit ] spawn JSDF_Mission_fnc_vehRespawn}";
 					};
 					id=402;
 					type="RHS_AH64D_AA";
@@ -39645,7 +39648,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="call{_nul = [ this, 300, 10, LVR_fnc_hunterInit ] spawn LVR_fnc_vehRespawn}";
+						init="call{_nul = [ this, 300, 10, JSDF_Mission_fnc_hunterInit ] spawn JSDF_Mission_fnc_vehRespawn}";
 					};
 					id=403;
 					type="RHS_AH64D_AA";
@@ -39686,7 +39689,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="call{_nul = [ this, 300, 10, LVR_fnc_hunterInit ] spawn LVR_fnc_vehRespawn}";
+						init="call{_nul = [ this, 300, 10, JSDF_Mission_fnc_hunterInit ] spawn JSDF_Mission_fnc_vehRespawn}";
 					};
 					id=404;
 					type="RHS_AH64D_AA";
@@ -39727,7 +39730,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="call{_nul = [ this, 300, 10, LVR_fnc_hunterInit ] spawn LVR_fnc_vehRespawn}";
+						init="call{_nul = [ this, 300, 10, JSDF_Mission_fnc_hunterInit ] spawn JSDF_Mission_fnc_vehRespawn}";
 					};
 					id=405;
 					type="RHS_AH64D_AA";
@@ -39768,7 +39771,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="call{_nul = [ this, 300, 10, LVR_fnc_littlebirdInit ] spawn LVR_fnc_vehRespawn}";
+						init="call{_nul = [ this, 300, 10, JSDF_Mission_fnc_littlebirdInit ] spawn JSDF_Mission_fnc_vehRespawn}";
 					};
 					id=410;
 					type="RHS_MELB_AH6M_M";
@@ -39827,7 +39830,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="call{_nul = [ this, 300, 10, LVR_fnc_littlebirdInit ] spawn LVR_fnc_vehRespawn}";
+						init="call{_nul = [ this, 300, 10, JSDF_Mission_fnc_littlebirdInit ] spawn JSDF_Mission_fnc_vehRespawn}";
 					};
 					id=413;
 					type="RHS_MELB_AH6M_M";
@@ -39887,7 +39890,7 @@ class Mission
 					class Attributes
 					{
 						lock="UNLOCKED";
-						init="call{_nul = [ this, 300, 10, LVR_fnc_blackwaspInit ] spawn LVR_fnc_vehRespawn}";
+						init="call{_nul = [ this, 300, 10, JSDF_Mission_fnc_blackwaspInit ] spawn JSDF_Mission_fnc_vehRespawn}";
 						textures="DarkGrey";
 						pylons="PylonRack_Missile_BIM9X_x1;PylonRack_Missile_BIM9X_x1;PylonRack_Missile_AGM_02_x1;PylonRack_Missile_AGM_02_x1;PylonMissile_Missile_BIM9X_x1;PylonMissile_Missile_BIM9X_x1;PylonMissile_Missile_AMRAAM_D_INT_x1;PylonMissile_Missile_AMRAAM_D_INT_x1;PylonMissile_Missile_AMRAAM_D_INT_x1;PylonMissile_Missile_AMRAAM_D_INT_x1;PylonMissile_Bomb_GBU12_x1;PylonMissile_Bomb_GBU12_x1;";
 					};
@@ -40094,7 +40097,7 @@ class Mission
 					class Attributes
 					{
 						lock="UNLOCKED";
-						init="call{_nul = [ this, 300, 10, LVR_fnc_blackwaspInit ] spawn LVR_fnc_vehRespawn}";
+						init="call{_nul = [ this, 300, 10, JSDF_Mission_fnc_blackwaspInit ] spawn JSDF_Mission_fnc_vehRespawn}";
 						textures="DarkGrey";
 						pylons="PylonRack_Missile_BIM9X_x1;PylonRack_Missile_BIM9X_x1;PylonRack_Missile_AGM_02_x1;PylonRack_Missile_AGM_02_x1;PylonMissile_Missile_BIM9X_x1;PylonMissile_Missile_BIM9X_x1;PylonMissile_Missile_AMRAAM_D_INT_x1;PylonMissile_Missile_AMRAAM_D_INT_x1;PylonMissile_Missile_AMRAAM_D_INT_x1;PylonMissile_Missile_AMRAAM_D_INT_x1;PylonMissile_Bomb_GBU12_x1;PylonMissile_Bomb_GBU12_x1;";
 					};
@@ -40301,7 +40304,7 @@ class Mission
 					class Attributes
 					{
 						lock="UNLOCKED";
-						init="call{_nul = [ this, 300, 10, LVR_fnc_blackwaspInit ] spawn LVR_fnc_vehRespawn}";
+						init="call{_nul = [ this, 300, 10, JSDF_Mission_fnc_blackwaspInit ] spawn JSDF_Mission_fnc_vehRespawn}";
 						textures="DarkGrey";
 						pylons="PylonRack_Missile_BIM9X_x1;PylonRack_Missile_BIM9X_x1;PylonRack_Missile_AGM_02_x1;PylonRack_Missile_AGM_02_x1;PylonMissile_Missile_BIM9X_x1;PylonMissile_Missile_BIM9X_x1;PylonMissile_Missile_AMRAAM_D_INT_x1;PylonMissile_Missile_AMRAAM_D_INT_x1;PylonMissile_Missile_AMRAAM_D_INT_x1;PylonMissile_Missile_AMRAAM_D_INT_x1;PylonMissile_Bomb_GBU12_x1;PylonMissile_Bomb_GBU12_x1;";
 					};
@@ -40508,7 +40511,7 @@ class Mission
 					class Attributes
 					{
 						lock="UNLOCKED";
-						init="call{_nul = [ this, 300, 10, LVR_fnc_blackwaspInit ] spawn LVR_fnc_vehRespawn}";
+						init="call{_nul = [ this, 300, 10, JSDF_Mission_fnc_blackwaspInit ] spawn JSDF_Mission_fnc_vehRespawn}";
 						textures="DarkGrey";
 						pylons="PylonRack_Missile_BIM9X_x1;PylonRack_Missile_BIM9X_x1;PylonRack_Missile_AGM_02_x1;PylonRack_Missile_AGM_02_x1;PylonMissile_Missile_BIM9X_x1;PylonMissile_Missile_BIM9X_x1;PylonMissile_Missile_AMRAAM_D_INT_x1;PylonMissile_Missile_AMRAAM_D_INT_x1;PylonMissile_Missile_AMRAAM_D_INT_x1;PylonMissile_Missile_AMRAAM_D_INT_x1;PylonMissile_Bomb_GBU12_x1;PylonMissile_Bomb_GBU12_x1;";
 					};
@@ -40715,7 +40718,7 @@ class Mission
 					class Attributes
 					{
 						lock="UNLOCKED";
-						init="call{_nul = [ this, 300, 10, LVR_fnc_blackwaspInit ] spawn LVR_fnc_vehRespawn}";
+						init="call{_nul = [ this, 300, 10, JSDF_Mission_fnc_blackwaspInit ] spawn JSDF_Mission_fnc_vehRespawn}";
 						textures="DarkGrey";
 						pylons="PylonRack_Missile_BIM9X_x1;PylonRack_Missile_BIM9X_x1;PylonRack_Missile_AGM_02_x1;PylonRack_Missile_AGM_02_x1;PylonMissile_Missile_BIM9X_x1;PylonMissile_Missile_BIM9X_x1;PylonMissile_Missile_AMRAAM_D_INT_x1;PylonMissile_Missile_AMRAAM_D_INT_x1;PylonMissile_Missile_AMRAAM_D_INT_x1;PylonMissile_Missile_AMRAAM_D_INT_x1;PylonMissile_Bomb_GBU12_x1;PylonMissile_Bomb_GBU12_x1;";
 					};
@@ -40922,7 +40925,7 @@ class Mission
 					class Attributes
 					{
 						lock="UNLOCKED";
-						init="call{_nul = [ this, 300, 10, LVR_fnc_blackwaspInit ] spawn LVR_fnc_vehRespawn}";
+						init="call{_nul = [ this, 300, 10, JSDF_Mission_fnc_blackwaspInit ] spawn JSDF_Mission_fnc_vehRespawn}";
 						textures="DarkGrey";
 						pylons="PylonRack_Missile_BIM9X_x1;PylonRack_Missile_BIM9X_x1;PylonRack_Missile_AGM_02_x1;PylonRack_Missile_AGM_02_x1;PylonMissile_Missile_BIM9X_x1;PylonMissile_Missile_BIM9X_x1;PylonMissile_Missile_AMRAAM_D_INT_x1;PylonMissile_Missile_AMRAAM_D_INT_x1;PylonMissile_Missile_AMRAAM_D_INT_x1;PylonMissile_Missile_AMRAAM_D_INT_x1;PylonMissile_Bomb_GBU12_x1;PylonMissile_Bomb_GBU12_x1;";
 					};
@@ -41128,7 +41131,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="call{_nul = [ this, 300, 10, LVR_fnc_hunterInit ] spawn LVR_fnc_vehRespawn}";
+						init="call{_nul = [ this, 300, 10, JSDF_Mission_fnc_hunterInit ] spawn JSDF_Mission_fnc_vehRespawn}";
 					};
 					id=73;
 					type="rhsusf_m1025_w_m2";
@@ -41168,7 +41171,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="call{_nul = [ this, 300, 10, LVR_fnc_hunterInit ] spawn LVR_fnc_vehRespawn}";
+						init="call{_nul = [ this, 300, 10, JSDF_Mission_fnc_hunterInit ] spawn JSDF_Mission_fnc_vehRespawn}";
 					};
 					id=74;
 					type="rhsusf_m1025_w_m2";
@@ -41209,7 +41212,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="call{_nul = [ this, 300, 10, LVR_fnc_hunterInit ] spawn LVR_fnc_vehRespawn}";
+						init="call{_nul = [ this, 300, 10, JSDF_Mission_fnc_hunterInit ] spawn JSDF_Mission_fnc_vehRespawn}";
 					};
 					id=75;
 					type="rhsusf_m1025_w_m2";
@@ -41250,7 +41253,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="call{_nul = [ this, 300, 10, LVR_fnc_hunterInit ] spawn LVR_fnc_vehRespawn}";
+						init="call{_nul = [ this, 300, 10, JSDF_Mission_fnc_hunterInit ] spawn JSDF_Mission_fnc_vehRespawn}";
 					};
 					id=76;
 					type="rhsusf_m1025_w_m2";
@@ -41291,7 +41294,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="call{_nul = [ this, 300, 10, LVR_fnc_hunterInit ] spawn LVR_fnc_vehRespawn}";
+						init="call{_nul = [ this, 300, 10, JSDF_Mission_fnc_hunterInit ] spawn JSDF_Mission_fnc_vehRespawn}";
 					};
 					id=105;
 					type="rhsusf_m1025_w_m2";
@@ -41370,7 +41373,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="call{_nul = [ this, 300, 10, LVR_fnc_hunterInit ] spawn LVR_fnc_vehRespawn}";
+						init="call{_nul = [ this, 300, 10, JSDF_Mission_fnc_hunterInit ] spawn JSDF_Mission_fnc_vehRespawn}";
 					};
 					id=106;
 					type="rhsusf_m1025_w_m2";
@@ -41410,7 +41413,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="call{_nul = [ this, 300, 10, LVR_fnc_hunterInit ] spawn LVR_fnc_vehRespawn}";
+						init="call{_nul = [ this, 300, 10, JSDF_Mission_fnc_hunterInit ] spawn JSDF_Mission_fnc_vehRespawn}";
 					};
 					id=61;
 					type="rhsusf_m998_w_4dr";
@@ -41450,7 +41453,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="call{_nul = [ this, 300, 10, LVR_fnc_hunterInit ] spawn LVR_fnc_vehRespawn}";
+						init="call{_nul = [ this, 300, 10, JSDF_Mission_fnc_hunterInit ] spawn JSDF_Mission_fnc_vehRespawn}";
 					};
 					id=62;
 					type="rhsusf_m998_w_4dr";
@@ -41491,7 +41494,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="call{_nul = [ this, 300, 10, LVR_fnc_hunterInit ] spawn LVR_fnc_vehRespawn}";
+						init="call{_nul = [ this, 300, 10, JSDF_Mission_fnc_hunterInit ] spawn JSDF_Mission_fnc_vehRespawn}";
 					};
 					id=63;
 					type="rhsusf_m998_w_4dr";
@@ -41570,7 +41573,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="call{_nul = [ this, 300, 10, LVR_fnc_hunterInit ] spawn LVR_fnc_vehRespawn}";
+						init="call{_nul = [ this, 300, 10, JSDF_Mission_fnc_hunterInit ] spawn JSDF_Mission_fnc_vehRespawn}";
 					};
 					id=64;
 					type="rhsusf_m998_w_4dr";
@@ -41648,7 +41651,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="call{_nul = [ this, 300, 10, LVR_fnc_hunterInit ] spawn LVR_fnc_vehRespawn}";
+						init="call{_nul = [ this, 300, 10, JSDF_Mission_fnc_hunterInit ] spawn JSDF_Mission_fnc_vehRespawn}";
 					};
 					id=253;
 					type="rhsusf_m998_w_4dr";
@@ -41726,7 +41729,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="call{_nul = [ this, 300, 10, LVR_fnc_hunterInit ] spawn LVR_fnc_vehRespawn}";
+						init="call{_nul = [ this, 300, 10, JSDF_Mission_fnc_hunterInit ] spawn JSDF_Mission_fnc_vehRespawn}";
 					};
 					id=256;
 					type="rhsusf_m998_w_4dr";
@@ -41804,7 +41807,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="call{_nul = [ this, 300, 10, LVR_fnc_hunterInit ] spawn LVR_fnc_vehRespawn}";
+						init="call{_nul = [ this, 300, 10, JSDF_Mission_fnc_hunterInit ] spawn JSDF_Mission_fnc_vehRespawn}";
 					};
 					id=698;
 					type="rhsusf_m998_w_4dr";
@@ -41883,7 +41886,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="call{_nul = [ this, 300, 10, LVR_fnc_hunterInit ] spawn LVR_fnc_vehRespawn}";
+						init="call{_nul = [ this, 300, 10, JSDF_Mission_fnc_hunterInit ] spawn JSDF_Mission_fnc_vehRespawn}";
 					};
 					id=959;
 					type="rhsusf_m998_w_4dr";
@@ -41962,7 +41965,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="call{_nul = [ this, 300, 10, LVR_fnc_hunterInit ] spawn LVR_fnc_vehRespawn}";
+						init="call{_nul = [ this, 300, 10, JSDF_Mission_fnc_hunterInit ] spawn JSDF_Mission_fnc_vehRespawn}";
 					};
 					id=960;
 					type="rhsusf_m998_w_4dr";
@@ -42040,7 +42043,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="call{_nul = [ this, 300, 10, LVR_fnc_hunterInit ] spawn LVR_fnc_vehRespawn}";
+						init="call{_nul = [ this, 300, 10, JSDF_Mission_fnc_hunterInit ] spawn JSDF_Mission_fnc_vehRespawn}";
 					};
 					id=697;
 					type="rhsusf_m998_w_4dr";
@@ -42118,7 +42121,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="call{_nul = [ this, 300, 10, LVR_fnc_hunterInit ] spawn LVR_fnc_vehRespawn}";
+						init="call{_nul = [ this, 300, 10, JSDF_Mission_fnc_hunterInit ] spawn JSDF_Mission_fnc_vehRespawn}";
 					};
 					id=543;
 					type="rhsusf_m998_w_4dr";
@@ -42196,7 +42199,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="call{_nul = [ this, 300, 10, LVR_fnc_hunterInit ] spawn LVR_fnc_vehRespawn}";
+						init="call{_nul = [ this, 300, 10, JSDF_Mission_fnc_hunterInit ] spawn JSDF_Mission_fnc_vehRespawn}";
 					};
 					id=542;
 					type="rhsusf_m998_w_4dr";
@@ -42274,7 +42277,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="call{_nul = [ this, 300, 10, LVR_fnc_hunterInit ] spawn LVR_fnc_vehRespawn}";
+						init="call{_nul = [ this, 300, 10, JSDF_Mission_fnc_hunterInit ] spawn JSDF_Mission_fnc_vehRespawn}";
 					};
 					id=261;
 					type="rhsusf_m998_w_4dr";
@@ -42352,7 +42355,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="call{_nul = [ this, 300, 10, LVR_fnc_hunterInit ] spawn LVR_fnc_vehRespawn}";
+						init="call{_nul = [ this, 300, 10, JSDF_Mission_fnc_hunterInit ] spawn JSDF_Mission_fnc_vehRespawn}";
 					};
 					id=259;
 					type="rhsusf_m998_w_4dr";
@@ -42430,7 +42433,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="call{_nul = [ this, 300, 10, LVR_fnc_hunterInit ] spawn LVR_fnc_vehRespawn}";
+						init="call{_nul = [ this, 300, 10, JSDF_Mission_fnc_hunterInit ] spawn JSDF_Mission_fnc_vehRespawn}";
 					};
 					id=260;
 					type="rhsusf_m998_w_4dr";
@@ -42508,7 +42511,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="call{_nul = [ this, 300, 10, LVR_fnc_hunterInit ] spawn LVR_fnc_vehRespawn}";
+						init="call{_nul = [ this, 300, 10, JSDF_Mission_fnc_hunterInit ] spawn JSDF_Mission_fnc_vehRespawn}";
 					};
 					id=257;
 					type="rhsusf_m998_w_4dr";
@@ -42586,7 +42589,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="call{_nul = [ this, 300, 10, LVR_fnc_hunterInit ] spawn LVR_fnc_vehRespawn}";
+						init="call{_nul = [ this, 300, 10, JSDF_Mission_fnc_hunterInit ] spawn JSDF_Mission_fnc_vehRespawn}";
 					};
 					id=258;
 					type="rhsusf_m998_w_4dr";
@@ -42664,7 +42667,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="call{_nul = [ this, 300, 10, LVR_fnc_hunterInit ] spawn LVR_fnc_vehRespawn}";
+						init="call{_nul = [ this, 300, 10, JSDF_Mission_fnc_hunterInit ] spawn JSDF_Mission_fnc_vehRespawn}";
 					};
 					id=255;
 					type="rhsusf_m998_w_4dr";
@@ -42742,7 +42745,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="call{_nul = [ this, 300, 10, LVR_fnc_hunterInit ] spawn LVR_fnc_vehRespawn}";
+						init="call{_nul = [ this, 300, 10, JSDF_Mission_fnc_hunterInit ] spawn JSDF_Mission_fnc_vehRespawn}";
 					};
 					id=254;
 					type="rhsusf_m998_w_4dr";
@@ -42821,7 +42824,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="call{_nul = [ this, 300, 10, LVR_fnc_hunterInit ] spawn LVR_fnc_vehRespawn}";
+						init="call{_nul = [ this, 300, 10, JSDF_Mission_fnc_hunterInit ] spawn JSDF_Mission_fnc_vehRespawn}";
 					};
 					id=252;
 					type="rhsusf_m998_w_4dr";
@@ -42899,7 +42902,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="call{_nul = [ this, 300, 10, LVR_fnc_hunterInit ] spawn LVR_fnc_vehRespawn}";
+						init="call{_nul = [ this, 300, 10, JSDF_Mission_fnc_hunterInit ] spawn JSDF_Mission_fnc_vehRespawn}";
 					};
 					id=491;
 					type="rhsusf_M1117_W";
@@ -42940,7 +42943,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="call{_nul = [ this, 300, 10, LVR_fnc_hunterInit ] spawn LVR_fnc_vehRespawn}";
+						init="call{_nul = [ this, 300, 10, JSDF_Mission_fnc_hunterInit ] spawn JSDF_Mission_fnc_vehRespawn}";
 					};
 					id=490;
 					type="rhsusf_M1117_W";
@@ -42981,7 +42984,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="call{_nul = [ this, 300, 10, LVR_fnc_hunterInit ] spawn LVR_fnc_vehRespawn}";
+						init="call{_nul = [ this, 300, 10, JSDF_Mission_fnc_hunterInit ] spawn JSDF_Mission_fnc_vehRespawn}";
 					};
 					id=488;
 					type="rhsusf_M1117_W";
@@ -43022,7 +43025,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="call{_nul = [ this, 300, 10, LVR_fnc_hunterInit ] spawn LVR_fnc_vehRespawn}";
+						init="call{_nul = [ this, 300, 10, JSDF_Mission_fnc_hunterInit ] spawn JSDF_Mission_fnc_vehRespawn}";
 					};
 					id=489;
 					type="rhsusf_M1117_W";
@@ -43063,7 +43066,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="call{_nul = [ this, 300, 10, LVR_fnc_hunterInit ] spawn LVR_fnc_vehRespawn}";
+						init="call{_nul = [ this, 300, 10, JSDF_Mission_fnc_hunterInit ] spawn JSDF_Mission_fnc_vehRespawn}";
 					};
 					id=529;
 					type="rhsusf_m109_usarmy";
@@ -43199,7 +43202,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="call{_nul = [ this, 300, 10, LVR_fnc_hunterInit ] spawn LVR_fnc_vehRespawn}";
+						init="call{_nul = [ this, 300, 10, JSDF_Mission_fnc_hunterInit ] spawn JSDF_Mission_fnc_vehRespawn}";
 					};
 					id=534;
 					type="rhsusf_m109_usarmy";
@@ -43334,7 +43337,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="call{_nul = [ this, 300, 10, LVR_fnc_hunterInit ] spawn LVR_fnc_vehRespawn}";
+						init="call{_nul = [ this, 300, 10, JSDF_Mission_fnc_hunterInit ] spawn JSDF_Mission_fnc_vehRespawn}";
 					};
 					id=524;
 					type="rhsusf_m109_usarmy";
@@ -43470,7 +43473,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="call{_nul = [ this, 300, 10, LVR_fnc_hunterInit ] spawn LVR_fnc_vehRespawn}";
+						init="call{_nul = [ this, 300, 10, JSDF_Mission_fnc_hunterInit ] spawn JSDF_Mission_fnc_vehRespawn}";
 					};
 					id=115;
 					type="rhsusf_m109_usarmy";
@@ -43606,7 +43609,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="call{_nul = [ this, 300, 10, LVR_fnc_hunterInit ] spawn LVR_fnc_vehRespawn}";
+						init="call{_nul = [ this, 300, 10, JSDF_Mission_fnc_hunterInit ] spawn JSDF_Mission_fnc_vehRespawn}";
 					};
 					id=120;
 					type="rhsusf_m109_usarmy";
@@ -43742,7 +43745,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="call{_nul = [ this, 300, 10, LVR_fnc_hunterInit ] spawn LVR_fnc_vehRespawn}";
+						init="call{_nul = [ this, 300, 10, JSDF_Mission_fnc_hunterInit ] spawn JSDF_Mission_fnc_vehRespawn}";
 					};
 					id=125;
 					type="rhsusf_m109_usarmy";
@@ -43878,7 +43881,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="call{_nul = [ this, 300, 10, LVR_fnc_hunterInit ] spawn LVR_fnc_vehRespawn}";
+						init="call{_nul = [ this, 300, 10, JSDF_Mission_fnc_hunterInit ] spawn JSDF_Mission_fnc_vehRespawn}";
 					};
 					id=481;
 					type="rhsusf_m113_usarmy";
@@ -43919,7 +43922,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="call{_nul = [ this, 300, 10, LVR_fnc_hunterInit ] spawn LVR_fnc_vehRespawn}";
+						init="call{_nul = [ this, 300, 10, JSDF_Mission_fnc_hunterInit ] spawn JSDF_Mission_fnc_vehRespawn}";
 					};
 					id=450;
 					type="rhsusf_m113_usarmy_MK19";
@@ -43960,7 +43963,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="call{_nul = [ this, 300, 10, LVR_fnc_hunterInit ] spawn LVR_fnc_vehRespawn}";
+						init="call{_nul = [ this, 300, 10, JSDF_Mission_fnc_hunterInit ] spawn JSDF_Mission_fnc_vehRespawn}";
 					};
 					id=448;
 					type="rhsusf_m113_usarmy_M240";
@@ -44001,7 +44004,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="call{_nul = [ this, 300, 10, LVR_fnc_hunterInit ] spawn LVR_fnc_vehRespawn}";
+						init="call{_nul = [ this, 300, 10, JSDF_Mission_fnc_hunterInit ] spawn JSDF_Mission_fnc_vehRespawn}";
 					};
 					id=473;
 					type="rhsusf_M1232_M2_usarmy_wd";
@@ -44041,7 +44044,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="call{_nul = [ this, 300, 10, LVR_fnc_hunterInit ] spawn LVR_fnc_vehRespawn}";
+						init="call{_nul = [ this, 300, 10, JSDF_Mission_fnc_hunterInit ] spawn JSDF_Mission_fnc_vehRespawn}";
 					};
 					id=483;
 					type="rhsusf_m113_usarmy_MK19";
@@ -44082,7 +44085,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="call{_nul = [ this, 300, 10, LVR_fnc_hunterInit ] spawn LVR_fnc_vehRespawn}";
+						init="call{_nul = [ this, 300, 10, JSDF_Mission_fnc_hunterInit ] spawn JSDF_Mission_fnc_vehRespawn}";
 					};
 					id=475;
 					type="rhsusf_M1232_M2_usarmy_wd";
@@ -44122,7 +44125,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="call{_nul = [ this, 300, 10, LVR_fnc_hunterInit ] spawn LVR_fnc_vehRespawn}";
+						init="call{_nul = [ this, 300, 10, JSDF_Mission_fnc_hunterInit ] spawn JSDF_Mission_fnc_vehRespawn}";
 					};
 					id=474;
 					type="rhsusf_M1232_M2_usarmy_wd";
@@ -44162,7 +44165,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="call{_nul = [ this, 300, 10, LVR_fnc_hunterInit ] spawn LVR_fnc_vehRespawn}";
+						init="call{_nul = [ this, 300, 10, JSDF_Mission_fnc_hunterInit ] spawn JSDF_Mission_fnc_vehRespawn}";
 					};
 					id=477;
 					type="rhsusf_M1232_M2_usarmy_wd";
@@ -44202,7 +44205,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="call{_nul = [ this, 300, 10, LVR_fnc_hunterInit ] spawn LVR_fnc_vehRespawn}";
+						init="call{_nul = [ this, 300, 10, JSDF_Mission_fnc_hunterInit ] spawn JSDF_Mission_fnc_vehRespawn}";
 					};
 					id=478;
 					type="rhsusf_M1232_M2_usarmy_wd";
@@ -44242,7 +44245,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="call{_nul = [ this, 300, 10, LVR_fnc_hunterInit ] spawn LVR_fnc_vehRespawn}";
+						init="call{_nul = [ this, 300, 10, JSDF_Mission_fnc_hunterInit ] spawn JSDF_Mission_fnc_vehRespawn}";
 					};
 					id=476;
 					type="rhsusf_M1232_M2_usarmy_wd";
@@ -44282,7 +44285,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="call{_nul = [ this, 300, 10, LVR_fnc_hunterInit ] spawn LVR_fnc_vehRespawn}";
+						init="call{_nul = [ this, 300, 10, JSDF_Mission_fnc_hunterInit ] spawn JSDF_Mission_fnc_vehRespawn}";
 					};
 					id=513;
 					type="rhsusf_m1a2sep1wd_usarmy";
@@ -44418,7 +44421,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="call{_nul = [ this, 300, 10, LVR_fnc_hunterInit ] spawn LVR_fnc_vehRespawn}";
+						init="call{_nul = [ this, 300, 10, JSDF_Mission_fnc_hunterInit ] spawn JSDF_Mission_fnc_vehRespawn}";
 					};
 					id=514;
 					type="rhsusf_m1a2sep1wd_usarmy";
@@ -44553,7 +44556,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="call{_nul = [ this, 300, 10, LVR_fnc_hunterInit ] spawn LVR_fnc_vehRespawn}";
+						init="call{_nul = [ this, 300, 10, JSDF_Mission_fnc_hunterInit ] spawn JSDF_Mission_fnc_vehRespawn}";
 					};
 					id=515;
 					type="rhsusf_m1a2sep1wd_usarmy";
@@ -44689,7 +44692,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="call{_nul = [ this, 300, 10, LVR_fnc_hunterInit ] spawn LVR_fnc_vehRespawn}";
+						init="call{_nul = [ this, 300, 10, JSDF_Mission_fnc_hunterInit ] spawn JSDF_Mission_fnc_vehRespawn}";
 					};
 					id=516;
 					type="rhsusf_m1a2sep1wd_usarmy";
@@ -44824,7 +44827,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="call{_nul = [ this, 300, 10, LVR_fnc_hunterInit ] spawn LVR_fnc_vehRespawn}";
+						init="call{_nul = [ this, 300, 10, JSDF_Mission_fnc_hunterInit ] spawn JSDF_Mission_fnc_vehRespawn}";
 					};
 					id=445;
 					type="RHS_M2A3_wd";
@@ -44865,7 +44868,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="call{_nul = [ this, 300, 10, LVR_fnc_hunterInit ] spawn LVR_fnc_vehRespawn}";
+						init="call{_nul = [ this, 300, 10, JSDF_Mission_fnc_hunterInit ] spawn JSDF_Mission_fnc_vehRespawn}";
 					};
 					id=444;
 					type="RHS_M2A3_wd";
@@ -44906,7 +44909,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="call{_nul = [ this, 300, 10, LVR_fnc_hunterInit ] spawn LVR_fnc_vehRespawn}";
+						init="call{_nul = [ this, 300, 10, JSDF_Mission_fnc_hunterInit ] spawn JSDF_Mission_fnc_vehRespawn}";
 					};
 					id=446;
 					type="RHS_M2A3_wd";
@@ -44947,7 +44950,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="call{_nul = [ this, 300, 10, LVR_fnc_hunterInit ] spawn LVR_fnc_vehRespawn}";
+						init="call{_nul = [ this, 300, 10, JSDF_Mission_fnc_hunterInit ] spawn JSDF_Mission_fnc_vehRespawn}";
 					};
 					id=505;
 					type="RHS_M2A3_wd";
@@ -44987,7 +44990,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="call{_nul = [ this, 300, 10, LVR_fnc_hunterInit ] spawn LVR_fnc_vehRespawn}";
+						init="call{_nul = [ this, 300, 10, JSDF_Mission_fnc_hunterInit ] spawn JSDF_Mission_fnc_vehRespawn}";
 					};
 					id=506;
 					type="RHS_M2A3_wd";
@@ -45027,7 +45030,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="call{_nul = [ this, 300, 10, LVR_fnc_hunterInit ] spawn LVR_fnc_vehRespawn}";
+						init="call{_nul = [ this, 300, 10, JSDF_Mission_fnc_hunterInit ] spawn JSDF_Mission_fnc_vehRespawn}";
 					};
 					id=415;
 					type="RHS_MELB_MH6M";
@@ -45086,7 +45089,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="call{_nul = [ this, 300, 10, LVR_fnc_hunterInit ] spawn LVR_fnc_vehRespawn}";
+						init="call{_nul = [ this, 300, 10, JSDF_Mission_fnc_hunterInit ] spawn JSDF_Mission_fnc_vehRespawn}";
 					};
 					id=414;
 					type="RHS_MELB_MH6M";
@@ -45146,7 +45149,7 @@ class Mission
 					class Attributes
 					{
 						lock="UNLOCKED";
-						init="call{_nul = [ this, 300, 10, LVR_fnc_hunterInit ] spawn LVR_fnc_vehRespawn}";
+						init="call{_nul = [ this, 300, 10, JSDF_Mission_fnc_hunterInit ] spawn JSDF_Mission_fnc_vehRespawn}";
 					};
 					id=277;
 					type="RHS_C130J";
@@ -45187,7 +45190,7 @@ class Mission
 					class Attributes
 					{
 						lock="UNLOCKED";
-						init="call{_nul = [ this, 300, 10, LVR_fnc_hunterInit ] spawn LVR_fnc_vehRespawn}";
+						init="call{_nul = [ this, 300, 10, JSDF_Mission_fnc_hunterInit ] spawn JSDF_Mission_fnc_vehRespawn}";
 					};
 					id=228;
 					type="RHS_C130J";
@@ -45228,7 +45231,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="call{_nul = [ this, 300, 10, LVR_fnc_hunterInit ] spawn LVR_fnc_vehRespawn}";
+						init="call{_nul = [ this, 300, 10, JSDF_Mission_fnc_hunterInit ] spawn JSDF_Mission_fnc_vehRespawn}";
 					};
 					id=396;
 					type="RHS_UH60M_d";
@@ -45288,7 +45291,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="call{_nul = [ this, 300, 10, LVR_fnc_hunterInit ] spawn LVR_fnc_vehRespawn}";
+						init="call{_nul = [ this, 300, 10, JSDF_Mission_fnc_hunterInit ] spawn JSDF_Mission_fnc_vehRespawn}";
 					};
 					id=395;
 					type="RHS_UH60M_d";
@@ -45348,7 +45351,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="call{_nul = [ this, 300, 10, LVR_fnc_hunterInit ] spawn LVR_fnc_vehRespawn}";
+						init="call{_nul = [ this, 300, 10, JSDF_Mission_fnc_hunterInit ] spawn JSDF_Mission_fnc_vehRespawn}";
 					};
 					id=394;
 					type="RHS_UH60M_d";
@@ -45408,7 +45411,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="call{_nul = [ this, 300, 10, LVR_fnc_hunterInit ] spawn LVR_fnc_vehRespawn}";
+						init="call{_nul = [ this, 300, 10, JSDF_Mission_fnc_hunterInit ] spawn JSDF_Mission_fnc_vehRespawn}";
 					};
 					id=397;
 					type="RHS_UH60M_d";
@@ -46105,7 +46108,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{0 = [""AmmoboxInit"",[this,true]] spawn BIS_fnc_arsenal;" \n "[this, true, true, false, true, true] call LT_fnc_addAction;}";
+				init="call{[this] call JSDF_Mission_fnc_arsenalBoxInit}";
 			};
 			id=1724;
 			type="C_supplyCrate_F";
@@ -46146,7 +46149,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
+							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],true]";
 						};
 					};
 				};
@@ -46184,7 +46187,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{0 = [""AmmoboxInit"",[this,true]] spawn BIS_fnc_arsenal;" \n "[this, true, true, false, true, true] call LT_fnc_addAction;}";
+				init="call{[this] call JSDF_Mission_fnc_arsenalBoxInit}";
 			};
 			id=1725;
 			type="C_supplyCrate_F";
@@ -46225,7 +46228,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
+							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],true]";
 						};
 					};
 				};
@@ -46263,7 +46266,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{0 = [""AmmoboxInit"",[this,true]] spawn BIS_fnc_arsenal;" \n "[this, true, true, false, true, true] call LT_fnc_addAction;}";
+				init="call{[this] call JSDF_Mission_fnc_arsenalBoxInit}";
 			};
 			id=1726;
 			type="C_supplyCrate_F";
@@ -46303,7 +46306,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
+							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],true]";
 						};
 					};
 				};
@@ -46341,7 +46344,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{0 = [""AmmoboxInit"",[this,true]] spawn BIS_fnc_arsenal;" \n "[this, true, true, false, true, true] call LT_fnc_addAction;}";
+				init="call{[this] call JSDF_Mission_fnc_arsenalBoxInit}";
 			};
 			id=1727;
 			type="C_supplyCrate_F";
@@ -46381,7 +46384,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
+							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],true]";
 						};
 					};
 				};
@@ -46419,7 +46422,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{0 = [""AmmoboxInit"",[this,true]] spawn BIS_fnc_arsenal;" \n "[this, true, true, false, true, true] call LT_fnc_addAction;}";
+				init="call{[this] call JSDF_Mission_fnc_arsenalBoxInit}";
 			};
 			id=1728;
 			type="C_supplyCrate_F";
@@ -46460,7 +46463,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
+							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],true]";
 						};
 					};
 				};
@@ -46498,7 +46501,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{0 = [""AmmoboxInit"",[this,true]] spawn BIS_fnc_arsenal;" \n "[this, true, true, false, true, true] call LT_fnc_addAction;}";
+				init="call{[this] call JSDF_Mission_fnc_arsenalBoxInit}";
 			};
 			id=1729;
 			type="C_supplyCrate_F";
@@ -46539,7 +46542,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
+							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],true]";
 						};
 					};
 				};
@@ -46577,7 +46580,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{0 = [""AmmoboxInit"",[this,true]] spawn BIS_fnc_arsenal;" \n "[this, true, true, false, true, true] call LT_fnc_addAction;}";
+				init="call{[this] call JSDF_Mission_fnc_arsenalBoxInit}";
 			};
 			id=1730;
 			type="C_supplyCrate_F";
@@ -46618,7 +46621,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
+							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],true]";
 						};
 					};
 				};
@@ -46656,7 +46659,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{0 = [""AmmoboxInit"",[this,true]] spawn BIS_fnc_arsenal;" \n "[this, true, true, false, true, true] call LT_fnc_addAction;}";
+				init="call{[this] call JSDF_Mission_fnc_arsenalBoxInit}";
 			};
 			id=1731;
 			type="C_supplyCrate_F";
@@ -46697,7 +46700,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
+							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],true]";
 						};
 					};
 				};
@@ -46735,7 +46738,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{0 = [""AmmoboxInit"",[this,true]] spawn BIS_fnc_arsenal;" \n "[this, true, true, false, true, true] call LT_fnc_addAction;}";
+				init="call{[this] call JSDF_Mission_fnc_arsenalBoxInit}";
 			};
 			id=1732;
 			type="C_supplyCrate_F";
@@ -46776,7 +46779,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
+							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],true]";
 						};
 					};
 				};
@@ -46814,7 +46817,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{0 = [""AmmoboxInit"",[this,true]] spawn BIS_fnc_arsenal;" \n "[this, true, true, false, true, true] call LT_fnc_addAction;}";
+				init="call{[this] call JSDF_Mission_fnc_arsenalBoxInit}";
 			};
 			id=1733;
 			type="C_supplyCrate_F";
@@ -46855,7 +46858,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
+							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],true]";
 						};
 					};
 				};
@@ -46893,7 +46896,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{0 = [""AmmoboxInit"",[this,true]] spawn BIS_fnc_arsenal;" \n "[this, true, true, false, true, true] call LT_fnc_addAction;}";
+				init="call{[this] call JSDF_Mission_fnc_arsenalBoxInit}";
 			};
 			id=1734;
 			type="C_supplyCrate_F";
@@ -46934,7 +46937,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
+							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],true]";
 						};
 					};
 				};
@@ -46972,7 +46975,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{0 = [""AmmoboxInit"",[this,true]] spawn BIS_fnc_arsenal;" \n "[this, true, true, false, true, true] call LT_fnc_addAction;}";
+				init="call{[this] call JSDF_Mission_fnc_arsenalBoxInit}";
 			};
 			id=1735;
 			type="C_supplyCrate_F";
@@ -47013,7 +47016,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
+							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],true]";
 						};
 					};
 				};
@@ -47052,7 +47055,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="call{0 = [""AmmoboxInit"",[this,true]] spawn BIS_fnc_arsenal;" \n "[this, true, true, false, true, true] call LT_fnc_addAction;}";
+				init="call{[this] call JSDF_Mission_fnc_arsenalBoxInit}";
 				disableSimulation=1;
 			};
 			id=1736;
@@ -47093,7 +47096,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
+							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],true]";
 						};
 					};
 				};
