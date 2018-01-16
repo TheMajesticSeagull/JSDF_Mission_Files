@@ -22,4 +22,3 @@ ACE_maxWeightCarry = 600;
     [(_this select 0), true, [0, 1.5, 0], 90] call ace_dragging_fnc_setDraggable;
 }] call CBA_fnc_addEventHandler;
 
-[] call JSDF_Mission_fnc_safezone;
