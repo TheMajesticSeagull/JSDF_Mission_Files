@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=11;
+		nextID=13;
 	};
 	class Camera
 	{
-		pos[]={7884.7983,147.20433,10063.456};
-		dir[]={0.78097516,-0.59776914,0.18122655};
-		up[]={0.58237785,0.80160695,0.13514248};
-		aside[]={0.22605702,-3.8190046e-007,-0.9741559};
+		pos[]={7981.0923,116.49195,9932.1563};
+		dir[]={0.04568636,-0.45623043,0.88875508};
+		up[]={0.023426492,0.88980275,0.45574334};
+		aside[]={0.99873632,4.5623165e-007,-0.051335972};
 	};
 };
 binarizationWanted=0;
@@ -368,8 +368,6 @@ class ScenarioData
 	wreckRemovalMaxTime=3600;
 	corpseManagerMode=1;
 	corpseLimit=30;
-	corpseRemovalMinTime=30.000002;
-	minPlayerDistance=300;
 };
 class CustomAttributes
 {
@@ -1946,8 +1944,8 @@ class Mission
 			{
 				name="safezone";
 				condition="call{(player distance safezone) < 25;}";
-				onActivation="call{hint ""You have entered a safe zone."";  inSafeZone = true;}";
-				onDeactivation="hint ""You are leaving the safe zone.""; inSafeZone = false; inPVEzone = true;";
+				onActivation="call{[""Entered safezone!""] call ace_common_fnc_displayTextStructured;  inSafeZone = true;}";
+				onDeactivation="call{[""Left safezone!""] call ace_common_fnc_displayTextStructured; inSafeZone = false; inPVEzone = true;}";
 				sizeA=25;
 				sizeB=25;
 				sizeC=50;
@@ -2048,7 +2046,7 @@ class Mission
 			flags=6;
 			class Attributes
 			{
-				init="call{_nul = [ this, 300, 10, JSDF_Mission_fnc_hunterInit ] spawn JSDF_Mission_fnc_vehRespawn}";
+				init="call{_nul = [ this, 300, 10, JSDF_Mission_fnc_UAVInit ] spawn JSDF_Mission_fnc_vehRespawn}";
 			};
 			id=194;
 			type="B_UAV_02_F";
@@ -2169,7 +2167,7 @@ class Mission
 			flags=6;
 			class Attributes
 			{
-				init="call{_nul = [ this, 300, 10, JSDF_Mission_fnc_hunterInit ] spawn JSDF_Mission_fnc_vehRespawn}";
+				init="call{_nul = [ this, 300, 10, JSDF_Mission_fnc_UAVInit ] spawn JSDF_Mission_fnc_vehRespawn}";
 			};
 			id=198;
 			type="B_UAV_02_F";

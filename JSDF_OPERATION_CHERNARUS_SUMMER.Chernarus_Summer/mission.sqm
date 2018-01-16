@@ -12,14 +12,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=8;
+		nextID=10;
 	};
 	class Camera
 	{
-		pos[]={4625.7202,92.706825,2471.3933};
-		dir[]={0.6281606,-0.74573332,0.22218841};
-		up[]={0.70307404,0.66622281,0.24868613};
-		aside[]={0.33347932,2.9336661e-008,-0.94279724};
+		pos[]={4648.436,17.538965,2477.6587};
+		dir[]={-0.87222242,-0.48621717,-0.054014184};
+		up[]={-0.4853625,0.87380528,-0.0300573};
+		aside[]={-0.061810724,-1.8475112e-007,0.99813998};
 	};
 };
 binarizationWanted=0;
@@ -323,6 +323,9 @@ class ScenarioData
 	{
 		gameType="Coop";
 	};
+	wreckRemovalMaxTime=3600;
+	corpseManagerMode=1;
+	corpseLimit=30;
 };
 class CustomAttributes
 {
@@ -6417,8 +6420,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={4644.6548,9.6405134,2467.8223};
-				angles[]={0,6.1481533,0};
+				position[]={4644.7017,9.6405134,2467.781};
+				angles[]={-0,6.1481533,0};
 			};
 			side="Empty";
 			flags=4;
@@ -8016,14 +8019,14 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={4601.9194,9.5410976,2490.5015};
-				angles[]={6.247201,4.587502,0.05461248};
+				position[]={4601.9189,9.541048,2490.501};
+				angles[]={6.2471962,4.5874929,0.054611351};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
-				init="call{this addAction [""Spawn Ammo Supply Box"", ""scripts\SupplyBoxSpawn\AmmoBoxSpawn.sqf"", ""nil"", 1.5, true, true, """", ""true"", 2.5, false, """"];" \n "" \n "this addAction [""Spawn Medical Supply Box"", ""scripts\SupplyBoxSpawn\MedicalBoxSpawn.sqf"", ""nil"", 1.5, true, true, """", ""true"", 2.5, false, """"];}";
+				init="call{[this, SpawnPad1] call JSDF_Mission_fnc_supplyBoxSpawn}";
 				disableSimulation=1;
 			};
 			id=222;
@@ -9116,7 +9119,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="call{0 = [""AmmoboxInit"",[this,true]] spawn BIS_fnc_arsenal;" \n "[this, true, true, false, true, true] call LT_fnc_addAction;}";
+				init="call{[this] call JSDF_Mission_fnc_arsenalBoxInit}";
 				disableSimulation=1;
 			};
 			id=254;
@@ -9237,12 +9240,12 @@ class Mission
 		class Item190
 		{
 			dataType="Trigger";
-			position[]={4611.8896,8.9267426,2492.0056};
-			angle=4.5875006;
+			position[]={4611.8901,8.9267483,2492.0061};
+			angle=4.5874925;
 			class Attributes
 			{
 				condition="call{this and ((getPos (thisList select 0)) select 2 < 1)}";
-				onActivation="call{_handle = [(thisList select 0)] execVM ""scripts\rearmhelicopter.sqf"";}";
+				onActivation="call{[(thisList select 0)] call JSDF_Mission_fnc_serviceVehicle}";
 				sizeA=10;
 				sizeB=10;
 				sizeC=12;
@@ -11840,7 +11843,7 @@ class Mission
 				};
 			};
 			id=287;
-			atlOffset=-0.0079097748;
+			atlOffset=-0.010363579;
 		};
 		class Item204
 		{
