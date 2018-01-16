@@ -5,6 +5,7 @@ class CfgFunctions {
             file = "functions";
             class supplyBoxSpawn;
             class serviceVehicle;
+            class safezone;
         };
     };
 };
