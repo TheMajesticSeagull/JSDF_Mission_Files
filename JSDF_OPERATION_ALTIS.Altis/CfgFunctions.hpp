@@ -6,6 +6,7 @@ class CfgFunctions {
             class supplyBoxSpawn;
             class serviceVehicle;
             class safezone;
+            class arsenalBoxInit;
         };
     };
 };
