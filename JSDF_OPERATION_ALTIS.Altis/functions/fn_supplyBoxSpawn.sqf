@@ -49,6 +49,7 @@ _controller addAction [
 
     ["Ammo Box Spawned!"] call ace_common_fnc_displayTextStructured;
     [QGVAR(setDragable), [_crate]] call CBA_fnc_globalEvent;
+    [QGVAR(addToCurator), [_crate]] call CBA_fnc_globalEvent;
   },
   _spawnLocation,
   1.5,
@@ -87,6 +88,7 @@ _controller addAction [
 
     ["Medical Box Spawned!"] call ace_common_fnc_displayTextStructured;
     [QGVAR(setDragable), [_crate]] call CBA_fnc_globalEvent;
+    [QGVAR(addToCurator), [_crate]] call CBA_fnc_globalEvent;
   },
   _spawnLocation,
   1.5,

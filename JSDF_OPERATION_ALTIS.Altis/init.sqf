@@ -22,3 +22,20 @@ ACE_maxWeightCarry = 600;
     [(_this select 0), true, [0, 1.5, 0], 90] call ace_dragging_fnc_setDraggable;
 }] call CBA_fnc_addEventHandler;
 
+[QGVAR(addToCurator), {
+  private _zeusUsers = [
+  	// [CuratorModuleName]
+  	[Teal],
+  	[Buda],
+  	[Steel],
+  	[Arrow],
+  	[Joram],
+  	[Seagull],
+  	[Tub]
+  ];
+  {
+  		_x params ["_curatorModuleName"];
+
+      _curatorModuleName addCuratorEditableObjects [[(_this select 0)], false]
+  } forEach _zeusUsers;
+}] call CBA_fnc_addEventHandler;
