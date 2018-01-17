@@ -3,7 +3,7 @@
 
 // Version
 #define MAJOR 2
-#define MINOR 0
+#define MINOR 1
 #define PATCHLVL 0
 
 #include "\x\cba\addons\main\script_macros_mission.hpp"
