@@ -13,6 +13,7 @@ class CfgFunctions {
             class supplyBoxSpawn;
             class serviceVehicle;
             class arsenalBoxInit;
+            class infoBriefing;
         };
     };
 };

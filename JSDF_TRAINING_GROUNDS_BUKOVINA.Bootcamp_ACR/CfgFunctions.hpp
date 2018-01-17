@@ -17,6 +17,7 @@ class CfgFunctions {
             class serviceVehicle;
             class safezone;
             class arsenalBoxInit;
+            class infoBriefing;
         };
     };
 };
