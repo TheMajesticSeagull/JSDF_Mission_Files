@@ -24,7 +24,7 @@ player createDiaryRecord [
   "infoDiary",
   [
     "Supply Box Spawn",
-    "Open the scroll action menu to spawn an ammo supply box or a medical supply box. It will then spawn on the vehicle service pad.<br /> In order to move/drag crates, press the windows key while the container is in focus, highlight: Interactions and then Drag."
+    "Open the scroll action menu to spawn an ammo supply box or a medical supply box. It will then spawn on the vehicle service pad.<br />In order to move/drag crates, press the windows key while the container is in focus, highlight: Interactions and then Drag."
   ]
 ];
 

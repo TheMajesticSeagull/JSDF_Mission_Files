@@ -39,5 +39,3 @@ ACE_maxWeightCarry = 600;
       _curatorModuleName addCuratorEditableObjects [[(_this select 0)], false]
   } forEach _zeusUsers;
 }] call CBA_fnc_addEventHandler;
-
-[] call JSDF_Mission_fnc_infoBriefing;
