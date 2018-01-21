@@ -98,3 +98,28 @@ _controller addAction [
   "true",
   2.5
 ];
+
+_controller addAction [
+  "Spawn Vehicle Supply Box",
+  {
+    private _crate = createVehicle ["Box_NATO_AmmoVeh_F", _this select 3, [], 0, "NONE"];
+
+    _crate addItemCargoGlobal ["ToolKit", 1];
+    [_crate, 4] call ace_cargo_fnc_setSpace;
+    ["ACE_Wheel", _crate] call ace_cargo_fnc_loadItem;
+    ["ACE_Wheel", _crate] call ace_cargo_fnc_loadItem;
+    ["ACE_Wheel", _crate] call ace_cargo_fnc_loadItem;
+    ["ACE_Wheel", _crate] call ace_cargo_fnc_loadItem;
+
+    ["Vehicle Supply Box Spawned!"] call ace_common_fnc_displayTextStructured;
+    [QGVAR(setDragable), [_crate]] call CBA_fnc_globalEvent;
+    [QGVAR(addToCurator), [_crate]] call CBA_fnc_globalEvent;
+  },
+  _spawnLocation,
+  1.5,
+  true,
+  true,
+  "",
+  "true",
+  2.5
+];
