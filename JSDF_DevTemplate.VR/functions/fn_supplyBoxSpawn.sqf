@@ -47,7 +47,7 @@ _controller addAction [
       _crate addItemCargoGlobal [_item, _amount];
     } forEach _ammoItems;
 
-    ["Ammo Box Spawned!"] call ace_common_fnc_displayTextStructured;
+    ["Ammo Supply Box Spawned!"] call ace_common_fnc_displayTextStructured;
     [QGVAR(setDragable), [_crate]] call CBA_fnc_globalEvent;
     [QGVAR(addToCurator), [_crate]] call CBA_fnc_globalEvent;
   },
@@ -86,7 +86,7 @@ _controller addAction [
       _crate addItemCargoGlobal [_item, _amount];
     } forEach _ammoItems;
 
-    ["Medical Box Spawned!"] call ace_common_fnc_displayTextStructured;
+    ["Medical Supply Box Spawned!"] call ace_common_fnc_displayTextStructured;
     [QGVAR(setDragable), [_crate]] call CBA_fnc_globalEvent;
     [QGVAR(addToCurator), [_crate]] call CBA_fnc_globalEvent;
   },
