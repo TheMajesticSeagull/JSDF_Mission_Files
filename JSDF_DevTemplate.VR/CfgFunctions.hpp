@@ -12,7 +12,7 @@ class CfgFunctions {
             file = "functions";
             class supplyBoxAmmo;
             class supplyBoxMedical;
-            class supplBoxVehicle;
+            class supplyBoxVehicle;
             class supplyBoxController;
             class serviceVehicle;
             class arsenalBoxInit;
