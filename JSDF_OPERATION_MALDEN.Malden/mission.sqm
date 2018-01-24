@@ -8,18 +8,18 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=297;
+		nextID=298;
 	};
 	class LayerIndexProvider
 	{
-		nextID=10;
+		nextID=11;
 	};
 	class Camera
 	{
-		pos[]={6883.2979,101.70128,3450.9746};
-		dir[]={0.88585836,-0.45237797,-0.10326058};
-		up[]={0.44936994,0.89180779,-0.052380867};
-		aside[]={-0.11578532,2.8088107e-007,-0.99329937};
+		pos[]={6952.1416,132.58131,3407.4404};
+		dir[]={-0.92649037,-0.20804234,0.31370068};
+		up[]={-0.19710997,0.97810757,0.066738971};
+		aside[]={0.32071707,-1.983135e-007,0.94721049};
 	};
 };
 binarizationWanted=0;
@@ -72,13 +72,14 @@ addons[]=
 	"ace_compat_rhs_usf3",
 	"RHS_US_A2Port_Armor",
 	"rhsusf_c_melb",
-	"RHS_US_A2_AirImport"
+	"RHS_US_A2_AirImport",
+	"A3_Modules_F"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=35;
+		items=36;
 		class Item0
 		{
 			className="A3_Characters_F";
@@ -314,6 +315,13 @@ class AddonsMetaData
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
+		class Item35
+		{
+			className="A3_Modules_F";
+			name="Arma 3 Alpha - Scripted Modules";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
 	};
 };
 randomSeed=1664672;
@@ -407,7 +415,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=210;
+		items=211;
 		class Item0
 		{
 			dataType="Group";
@@ -11280,6 +11288,7 @@ class Mission
 					};
 					id=214;
 					type="rhsusf_M1220_M2_usarmy_d";
+					atlOffset=-0.00016021729;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -11320,6 +11329,7 @@ class Mission
 					};
 					id=215;
 					type="rhsusf_M1220_M2_usarmy_d";
+					atlOffset=-0.00016021729;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -11360,6 +11370,7 @@ class Mission
 					};
 					id=216;
 					type="rhsusf_M1230a1_usarmy_d";
+					atlOffset=-0.00015258789;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -11400,6 +11411,7 @@ class Mission
 					};
 					id=217;
 					type="rhsusf_m1a2sep1tuskid_usarmy";
+					atlOffset=-0.15369415;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -11535,6 +11547,7 @@ class Mission
 					};
 					id=218;
 					type="RHS_M2A3";
+					atlOffset=-0.15499878;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -11635,6 +11648,7 @@ class Mission
 					};
 					id=65;
 					type="RHS_CH_47F_10";
+					atlOffset=-0.015937805;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -11779,6 +11793,7 @@ class Mission
 					};
 					id=296;
 					type="RHS_UH60M_d";
+					atlOffset=-0.029762268;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -11824,7 +11839,7 @@ class Mission
 				};
 			};
 			id=288;
-			atlOffset=0.00049591064;
+			atlOffset=-0.019004822;
 		};
 		class Item203
 		{
@@ -12049,6 +12064,61 @@ class Mission
 			};
 			id=295;
 			type="Land_HBarrier_1_F";
+		};
+		class Item210
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={6818.6982,82.955185,3456.6611};
+			};
+			areaSize[]={16.542969,0,29.762777};
+			flags=1;
+			id=297;
+			type="ModuleHideTerrainObjects_F";
+			atlOffset=0.54518127;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="#filter";
+					expression="_this setVariable [""#filter"",_value]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=15;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="#hideLocally";
+					expression="_this setVariable [""#hideLocally"",_value]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=2;
+			};
 		};
 	};
 	class Connections
