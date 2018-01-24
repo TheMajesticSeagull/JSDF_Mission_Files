@@ -14,7 +14,10 @@ class CfgFunctions {
         };
         class functions {
             file = "functions";
-            class supplyBoxSpawn;
+            class supplyBoxAmmo;
+            class supplyBoxMedical;
+            class supplyBoxVehicle;
+            class supplyBoxController;
             class serviceVehicle;
             class safezone;
             class arsenalBoxInit;
