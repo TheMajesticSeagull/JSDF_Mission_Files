@@ -56,7 +56,7 @@ private _supplyBoxSpawnAmmo = [
   "Spawn Ammo Supply Box",
   "",
   {
-    [SpawnPad_Demo] call JSDF_Mission_fnc_supplyBoxAmmo;
+    [SpawnPad1] call JSDF_Mission_fnc_supplyBoxAmmo;
   },
   {true}
 ] call ace_interact_menu_fnc_createAction;
@@ -66,7 +66,7 @@ private _supplyBoxSpawnMedical = [
   "Spawn Medical Supply Box",
   "",
   {
-    [SpawnPad_Demo] call JSDF_Mission_fnc_supplyBoxMedical;
+    [SpawnPad1] call JSDF_Mission_fnc_supplyBoxMedical;
   },
   {true}
 ] call ace_interact_menu_fnc_createAction;
@@ -76,7 +76,7 @@ private _supplyBoxSpawnVehicle = [
   "Spawn Vehicle Supply Box",
   "",
   {
-    [SpawnPad_Demo] call JSDF_Mission_fnc_supplyBoxVehicle;
+    [SpawnPad1] call JSDF_Mission_fnc_supplyBoxVehicle;
   },
   {true}
 ] call ace_interact_menu_fnc_createAction;
