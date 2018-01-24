@@ -1,6 +1,6 @@
 /*
  * Author: JoramD
- * Allows spawning of ammo box.
+ * Allows spawning of vehicle supply box.
  *
  * Arguments:
  * 0: Spawn Location <POSITION>

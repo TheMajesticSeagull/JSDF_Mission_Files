@@ -1,6 +1,6 @@
 /*
  * Author: JoramD
- * Allows spawning of ammo box.
+ * Allows spawning of medical box.
  *
  * Arguments:
  * 0: Spawn Location <POSITION>
