@@ -41,8 +41,6 @@ ACE_maxWeightCarry = 600;
   } forEach _zeusUsers;
 }] call CBA_fnc_addEventHandler;
 
-[] call JSDF_Mission_fnc_safezone;
-
 // SupplyBoxSpawn zeus actions
 private _supplyBoxSpawnBase = [
   QGVAR(supplyBoxSpawnBase),
@@ -87,3 +85,5 @@ private _supplyBoxSpawnVehicle = [
 [["ACE_ZeusActions", QGVAR(supplyBoxSpawnBase)], _supplyBoxSpawnAmmo] call ace_interact_menu_fnc_addActionToZeus;
 [["ACE_ZeusActions", QGVAR(supplyBoxSpawnBase)], _supplyBoxSpawnMedical] call ace_interact_menu_fnc_addActionToZeus;
 [["ACE_ZeusActions", QGVAR(supplyBoxSpawnBase)], _supplyBoxSpawnVehicle] call ace_interact_menu_fnc_addActionToZeus;
+
+[] call JSDF_Mission_fnc_safezone;
