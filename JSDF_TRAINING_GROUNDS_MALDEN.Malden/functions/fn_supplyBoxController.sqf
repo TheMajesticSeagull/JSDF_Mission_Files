@@ -10,7 +10,7 @@
  * None
  *
  * Example:
- * [this, spawnLocation] call JSDF_Mission_fnc_supplyController
+ * [this, spawnLocation] call JSDF_Mission_fnc_supplyBoxController
  */
 #include "..\script_component.hpp"
 
