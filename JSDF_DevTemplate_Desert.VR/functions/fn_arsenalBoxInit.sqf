@@ -21,7 +21,9 @@ private _arsenalAction = [
     "Arsenal",
     "",
     {
-      ["AmmoboxInit",[_crate,true]] spawn BIS_fnc_arsenal;
+      params ["_crate"];
+
+      ["AmmoboxInit", [_crate, true]] spawn BIS_fnc_arsenal;
     },
     {true}
 ] call ace_interact_menu_fnc_createAction;
@@ -34,6 +36,8 @@ private _loadoutTransferAction = [
     "Loadout Transfer",
     "",
     {
+      params ["_crate"];
+
       [_crate, true, true, false, true, true] call LT_fnc_mainMenuLoad;
     },
     {true}
