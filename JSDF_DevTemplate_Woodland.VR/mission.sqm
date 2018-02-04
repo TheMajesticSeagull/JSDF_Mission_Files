@@ -12,14 +12,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=26;
+		nextID=31;
 	};
 	class Camera
 	{
-		pos[]={7559.397,59.801514,5920.5957};
-		dir[]={-0.38642907,-0.48133081,0.78681129};
-		up[]={-0.21223128,0.87648559,0.43212619};
-		aside[]={0.89762121,1.1648517e-006,0.44085291};
+		pos[]={7582.9395,55.441216,5909.8857};
+		dir[]={-0.46872628,-0.50181288,0.72702765};
+		up[]={-0.2719762,0.86491072,0.42185438};
+		aside[]={0.84050161,1.5905825e-006,0.54188734};
 	};
 };
 binarizationWanted=0;
@@ -6322,6 +6322,7 @@ class Mission
 							flags=6;
 							class Attributes
 							{
+								init="call{[""JSDF_Mission_setCamoCoef"", [this]] call CBA_fnc_globalEvent;}";
 								description="RECON SPOTTER - SL";
 								isPlayable=1;
 								class Inventory
@@ -6454,6 +6455,7 @@ class Mission
 							flags=5;
 							class Attributes
 							{
+								init="call{[""JSDF_Mission_setCamoCoef"", [this]] call CBA_fnc_globalEvent;}";
 								description="RECON SNIPER";
 								isPlayable=1;
 								class Inventory
@@ -6605,6 +6607,7 @@ class Mission
 							flags=5;
 							class Attributes
 							{
+								init="call{[""JSDF_Mission_setCamoCoef"", [this]] call CBA_fnc_globalEvent;}";
 								description="RECON MARKSMAN";
 								isPlayable=1;
 								class Inventory
@@ -6737,6 +6740,7 @@ class Mission
 							flags=5;
 							class Attributes
 							{
+								init="call{[""JSDF_Mission_setCamoCoef"", [this]] call CBA_fnc_globalEvent;}";
 								description="RECON MARKSMAN";
 								isPlayable=1;
 								class Inventory
@@ -6831,6 +6835,7 @@ class Mission
 							flags=5;
 							class Attributes
 							{
+								init="call{[""JSDF_Mission_setCamoCoef"", [this]] call CBA_fnc_globalEvent;}";
 								description="RECON MARKSMAN";
 								isPlayable=1;
 								class Inventory
@@ -6925,6 +6930,7 @@ class Mission
 							flags=4;
 							class Attributes
 							{
+								init="call{[""JSDF_Mission_setCamoCoef"", [this]] call CBA_fnc_globalEvent;}";
 								description="RECON SPOTTER - SL";
 								isPlayable=1;
 								class Inventory
@@ -13042,7 +13048,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={7520.7061,5.5287609,6056.7407};
-						angles[]={-0,0.13051572,0};
+						angles[]={0,0.13051572,0};
 					};
 					side="Empty";
 					flags=4;
@@ -13059,7 +13065,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={7510.7012,6.3620372,6079.2676};
-						angles[]={-0,1.6044463,0};
+						angles[]={0,1.6044463,0};
 					};
 					side="Empty";
 					flags=4;
@@ -13156,7 +13162,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={7520.3452,6.3624501,6076.4106};
-						angles[]={-0,2.878397,0};
+						angles[]={0,2.878397,0};
 					};
 					side="Empty";
 					flags=4;
@@ -13215,7 +13221,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={7501.3081,6.3605165,6076.4316};
-						angles[]={-0,3.5188107,0};
+						angles[]={0,3.5188107,0};
 					};
 					side="Empty";
 					flags=4;
