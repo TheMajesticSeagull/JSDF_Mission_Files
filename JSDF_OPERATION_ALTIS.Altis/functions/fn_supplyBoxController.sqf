@@ -16,44 +16,47 @@
 
 params ["_controller", "_spawnLocation"];
 
-_controller addAction [
-  "Spawn Ammo Supply Box",
-  {
-    [(_this select 3)] call JSDF_Mission_fnc_supplyBoxAmmo;
-  },
-  _spawnLocation,
-  1.5,
-  true,
-  true,
-  "",
-  "true",
-  2.5
-];
+// Add ammo box action
+private _ammoBoxAction = [
+    QGVAR(ammoBoxInteraction),
+    "Spawn Ammo Supply Box",
+    "",
+    {
+    params ["_spawnLocation"];
 
-_controller addAction [
-  "Spawn Medical Supply Box",
-  {
-    [(_this select 3)] call JSDF_Mission_fnc_supplyBoxMedical;
-  },
-  _spawnLocation,
-  1.5,
-  true,
-  true,
-  "",
-  "true",
-  2.5
-];
+    [_spawnLocation] call JSDF_Mission_fnc_supplyBoxAmmo;
+    },
+    {true}
+] call ace_interact_menu_fnc_createAction;
 
-_controller addAction [
-  "Spawn Vehicle Supply Box",
-  {
-    [(_this select 3)] call JSDF_Mission_fnc_supplyBoxVehicle;
-  },
-  _spawnLocation,
-  1.5,
-  true,
-  true,
-  "",
-  "true",
-  2.5
-];
+[_controller, 0, ["ACE_MainActions"], _ammoBoxAction] call ace_interact_menu_fnc_addActionToObject;
+
+// Add medical box action
+private _medicalBoxAction = [
+    QGVAR(medicalBoxInteraction),
+    "Spawn Medical Supply Box",
+    "",
+    {
+    params ["_spawnLocation"];
+
+    [_spawnLocation] call JSDF_Mission_fnc_supplyBoxMedical;
+    },
+    {true}
+] call ace_interact_menu_fnc_createAction;
+
+[_controller, 0, ["ACE_MainActions"], _medicalBoxAction] call ace_interact_menu_fnc_addActionToObject;
+
+// Add vehicle box action
+private _vehicleBoxAction = [
+    QGVAR(vehicleBoxInteraction),
+    "Spawn Vehicle Supply Box",
+    "",
+    {
+    params ["_spawnLocation"];
+
+    [_spawnLocation] call JSDF_Mission_fnc_supplyBoxVehicle;
+    },
+    {true}
+] call ace_interact_menu_fnc_createAction;
+
+[_controller, 0, ["ACE_MainActions"], _vehicleBoxAction] call ace_interact_menu_fnc_addActionToObject;

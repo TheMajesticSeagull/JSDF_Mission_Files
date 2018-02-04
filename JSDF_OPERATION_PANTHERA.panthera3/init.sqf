@@ -40,6 +40,10 @@ ACE_maxWeightCarry = 600;
   } forEach _zeusUsers;
 }] call CBA_fnc_addEventHandler;
 
+[QGVAR(setCamoCoef), {
+    (_this select 0) setUnitTrait ["camouflageCoef", 0.3];
+}] call CBA_fnc_addEventHandler;
+
 // SupplyBoxSpawn zeus actions
 private _supplyBoxSpawnBase = [
   QGVAR(supplyBoxSpawnBase),
@@ -56,7 +60,7 @@ private _supplyBoxSpawnAmmo = [
   "Spawn Ammo Supply Box",
   "",
   {
-    [SpawnPad1] call JSDF_Mission_fnc_supplyBoxAmmo;
+    [SpawnPad_Demo] call JSDF_Mission_fnc_supplyBoxAmmo;
   },
   {true}
 ] call ace_interact_menu_fnc_createAction;
@@ -66,7 +70,7 @@ private _supplyBoxSpawnMedical = [
   "Spawn Medical Supply Box",
   "",
   {
-    [SpawnPad1] call JSDF_Mission_fnc_supplyBoxMedical;
+    [SpawnPad_Demo] call JSDF_Mission_fnc_supplyBoxMedical;
   },
   {true}
 ] call ace_interact_menu_fnc_createAction;
@@ -76,7 +80,7 @@ private _supplyBoxSpawnVehicle = [
   "Spawn Vehicle Supply Box",
   "",
   {
-    [SpawnPad1] call JSDF_Mission_fnc_supplyBoxVehicle;
+    [SpawnPad_Demo] call JSDF_Mission_fnc_supplyBoxVehicle;
   },
   {true}
 ] call ace_interact_menu_fnc_createAction;

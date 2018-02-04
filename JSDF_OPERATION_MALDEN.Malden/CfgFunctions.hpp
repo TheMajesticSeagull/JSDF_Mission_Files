@@ -14,7 +14,6 @@ class CfgFunctions {
             class supplyBoxMedical;
             class supplyBoxVehicle;
             class supplyBoxController;
-            class serviceVehicle;
             class arsenalBoxInit;
             class infoBriefing;
         };

@@ -12,14 +12,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=9;
+		nextID=11;
 	};
 	class Camera
 	{
-		pos[]={1314.3505,67.757889,999.24341};
-		dir[]={0.81153077,-0.58439761,-0.0020078765};
-		up[]={0.58442181,0.81144565,-0.0014453158};
-		aside[]={-0.0024762754,6.3273546e-008,-1.0000498};
+		pos[]={1211.8732,144.74672,856.38538};
+		dir[]={0.68121469,-0.48581636,0.54777026};
+		up[]={0.37863076,0.87403417,0.30446011};
+		aside[]={0.62668031,3.0978117e-007,-0.77935171};
 	};
 };
 binarizationWanted=0;
@@ -4710,6 +4710,7 @@ class Mission
 					flags=6;
 					class Attributes
 					{
+						init="call{[""JSDF_Mission_setCamoCoef"", [this]] call CBA_fnc_globalEvent;}";
 						description="RECON SPOTTER - SL";
 						isPlayable=1;
 						class Inventory
@@ -4773,6 +4774,25 @@ class Mission
 					{
 						class Attribute0
 						{
+							property="acex_headless_blacklist";
+							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
 							property="pitch";
 							expression="_this setpitch _value;";
 							class Value
@@ -4790,7 +4810,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute1
+						class Attribute2
 						{
 							property="enableStamina";
 							expression="_this enablestamina _value;";
@@ -4809,7 +4829,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						nAttributes=3;
 					};
 				};
 				class Item1
@@ -4824,6 +4844,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						init="call{[""JSDF_Mission_setCamoCoef"", [this]] call CBA_fnc_globalEvent;}";
 						description="RECON SNIPER";
 						isPlayable=1;
 						class Inventory
@@ -4887,6 +4908,25 @@ class Mission
 					{
 						class Attribute0
 						{
+							property="acex_headless_blacklist";
+							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
 							property="speaker";
 							expression="_this setspeaker _value;";
 							class Value
@@ -4904,7 +4944,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute1
+						class Attribute2
 						{
 							property="pitch";
 							expression="_this setpitch _value;";
@@ -4923,7 +4963,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute2
+						class Attribute3
 						{
 							property="enableStamina";
 							expression="_this enablestamina _value;";
@@ -4942,7 +4982,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=3;
+						nAttributes=4;
 					};
 				};
 				class Item2
@@ -4957,6 +4997,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						init="call{[""JSDF_Mission_setCamoCoef"", [this]] call CBA_fnc_globalEvent;}";
 						description="RECON MARKSMAN";
 						isPlayable=1;
 						class Inventory
@@ -5019,6 +5060,25 @@ class Mission
 					{
 						class Attribute0
 						{
+							property="acex_headless_blacklist";
+							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
 							property="speaker";
 							expression="_this setspeaker _value;";
 							class Value
@@ -5036,7 +5096,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute1
+						class Attribute2
 						{
 							property="pitch";
 							expression="_this setpitch _value;";
@@ -5055,7 +5115,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						nAttributes=3;
 					};
 				};
 				class Item3
@@ -5070,6 +5130,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
+						init="call{[""JSDF_Mission_setCamoCoef"", [this]] call CBA_fnc_globalEvent;}";
 						description="RECON MARKSMAN";
 						isPlayable=1;
 						class Inventory
@@ -5129,6 +5190,29 @@ class Mission
 					id=48;
 					type="B_soldier_M_F";
 					atlOffset=0.0003490448;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="acex_headless_blacklist";
+							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=1;
+					};
 				};
 				class Item4
 				{
@@ -5142,6 +5226,7 @@ class Mission
 					flags=1;
 					class Attributes
 					{
+						init="call{[""JSDF_Mission_setCamoCoef"", [this]] call CBA_fnc_globalEvent;}";
 						description="RECON MARKSMAN";
 						isPlayable=1;
 						class Inventory
@@ -5201,6 +5286,29 @@ class Mission
 					id=304;
 					type="B_soldier_M_F";
 					atlOffset=6.7571173;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="acex_headless_blacklist";
+							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=1;
+					};
 				};
 				class Item5
 				{
@@ -5214,6 +5322,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						init="call{[""JSDF_Mission_setCamoCoef"", [this]] call CBA_fnc_globalEvent;}";
 						description="RECON SPOTTER - SL";
 						isPlayable=1;
 						class Inventory
@@ -5277,6 +5386,25 @@ class Mission
 					{
 						class Attribute0
 						{
+							property="acex_headless_blacklist";
+							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
 							property="pitch";
 							expression="_this setpitch _value;";
 							class Value
@@ -5294,7 +5422,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute1
+						class Attribute2
 						{
 							property="enableStamina";
 							expression="_this enablestamina _value;";
@@ -5313,7 +5441,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						nAttributes=3;
 					};
 				};
 			};
@@ -9097,7 +9225,7 @@ class Mission
 					};
 					id=213;
 					type="rhsusf_M1220_M2_usarmy_wd";
-					atlOffset=114.86685;
+					atlOffset=114.86669;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -9136,7 +9264,7 @@ class Mission
 					};
 					id=214;
 					type="rhsusf_M1220_M2_usarmy_wd";
-					atlOffset=114.87671;
+					atlOffset=114.87656;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -9169,13 +9297,13 @@ class Mission
 						position[]={1353.019,18.970058,902.44189};
 					};
 					side="Empty";
-					flags=4;
 					class Attributes
 					{
 						init="call{_nul = [ this, 7200, 10, JSDF_Mission_fnc_hunterInit ] spawn JSDF_Mission_fnc_vehRespawn}";
 					};
 					id=215;
 					type="rhsusf_M1230a1_usarmy_wd";
+					atlOffset=114.88494;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -9215,7 +9343,7 @@ class Mission
 					};
 					id=216;
 					type="rhsusf_m1a2sep1tuskiwd_usarmy";
-					atlOffset=0.51662064;
+					atlOffset=0.36292458;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -9349,7 +9477,7 @@ class Mission
 					};
 					id=217;
 					type="RHS_M2A3_wd";
-					atlOffset=0.60751343;
+					atlOffset=0.45251274;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -9426,7 +9554,6 @@ class Mission
 						angles[]={0,3.1415927,0};
 					};
 					side="Empty";
-					flags=4;
 					class Attributes
 					{
 						init="call{_nul = [ this, 7200, 10, JSDF_Mission_fnc_hunterInit ] spawn JSDF_Mission_fnc_vehRespawn}";
@@ -9434,6 +9561,7 @@ class Mission
 					};
 					id=64;
 					type="RHS_CH_47F_10";
+					atlOffset=114.70703;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -9595,7 +9723,7 @@ class Mission
 					};
 					id=314;
 					type="RHS_UH60M";
-					atlOffset=114.51104;
+					atlOffset=114.48232;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -9641,7 +9769,7 @@ class Mission
 				};
 			};
 			id=306;
-			atlOffset=114.71997;
+			atlOffset=114.69086;
 		};
 		class Item62
 		{
