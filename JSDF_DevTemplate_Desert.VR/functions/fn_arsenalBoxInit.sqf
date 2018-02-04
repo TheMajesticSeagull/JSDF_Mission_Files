@@ -23,7 +23,7 @@ private _arsenalAction = [
     {
       params ["_crate"];
 
-      ["AmmoboxInit", [_crate, true]] spawn BIS_fnc_arsenal;
+      [_crate, ace_player, true] call ace_arsenal_fnc_openBox;
     },
     {true}
 ] call ace_interact_menu_fnc_createAction;
