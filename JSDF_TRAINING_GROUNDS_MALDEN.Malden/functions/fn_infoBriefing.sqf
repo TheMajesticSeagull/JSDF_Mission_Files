@@ -24,7 +24,7 @@ player createDiaryRecord [
   "infoDiary",
   [
     "Supply Box Spawn",
-    "Open the scroll action menu to spawn an ammo supply box or a medical supply box. It will then spawn inside the marked area.<br />In order to move/drag crates, press the windows key while the container is in focus, highlight Interactions and then Drag."
+    "Use the ACE interaction menu to spawn an ammo supply box, vehicle supply box or a medical supply box. It will then spawn on the vehicle service pad.<br />In order to move/drag crates, use the ACE interaction menu on the container, then select Interactions and then Drag.<br />The vehicle supply box will spawn with four spare wheels in its cargo, one toolkit to repair a broken vehicle and if the vehicle is low on ammo it will also have an option to rearm it."
   ]
 ];
 
@@ -40,6 +40,6 @@ player createDiaryRecord [
   "infoDiary",
   [
     "Arsenal",
-    "Access the arsenal box via the scroll wheel interactions menu. Please note that there is an instruction sign above the Arsenal box.<br />Face wear customization is allowed according to your personal preference.<br />Aside from the default scope you may use the M68 CCO as well as the EOTech 552 (base version)."
+    "Access the arsenal box via the ACE interactions menu. Please note that there is an instruction sign above the Arsenal box.<br />Face wear customization is allowed according to your personal preference.<br />Aside from the default scope you may use the M68 CCO as well as the EOTech 552 (base version)."
   ]
 ];
