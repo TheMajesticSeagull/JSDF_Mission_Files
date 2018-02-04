@@ -40,6 +40,10 @@ ACE_maxWeightCarry = 600;
   } forEach _zeusUsers;
 }] call CBA_fnc_addEventHandler;
 
+[QGVAR(setCamoCoef), {
+    (_this select 0) setUnitTrait ["camouflageCoef", 0.3];
+}] call CBA_fnc_addEventHandler;
+
 // SupplyBoxSpawn zeus actions
 private _supplyBoxSpawnBase = [
   QGVAR(supplyBoxSpawnBase),
