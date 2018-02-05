@@ -36,9 +36,7 @@ private _loadoutTransferAction = [
     "Loadout Transfer",
     "",
     {
-      params ["_crate"];
-
-      [_crate, true, true, false, true, true] call LT_fnc_mainMenuLoad;
+      [true, true, false, true, true] call LT_fnc_mainMenuLoad;
     },
     {true}
 ] call ace_interact_menu_fnc_createAction;
