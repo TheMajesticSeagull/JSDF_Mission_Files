@@ -2,8 +2,8 @@
 _this setVehicleAmmo 1;
 _this setDammage 0;
 // Set texture
-_this setObjectTextureGlobal [0,"\JSDF_Resources\img\vehicles\buzzard_tex_1.paa"];
-_this setObjectTextureGlobal [1,"\JSDF_Resources\img\vehicles\buzzard_tex_2.paa"];
+_this setObjectTextureGlobal [0,"\z\jsdf\JSDF_Resources\img\vehicles\buzzard_tex_1.paa"];
+_this setObjectTextureGlobal [1,"\z\jsdf\JSDF_Resources\img\vehicles\buzzard_tex_2.paa"];
 // Remove all items
 clearItemCargoGlobal _this;
 clearWeaponCargoGlobal _this;
