@@ -8,18 +8,18 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=303;
+		nextID=305;
 	};
 	class LayerIndexProvider
 	{
-		nextID=17;
+		nextID=19;
 	};
 	class Camera
 	{
-		pos[]={6843.9912,91.593689,3470.8408};
-		dir[]={-0.71294892,-0.66708338,0.21638212};
-		up[]={-0.63840175,0.74491805,0.19375539};
-		aside[]={0.29043734,3.351015e-007,0.95694935};
+		pos[]={6810.2896,105.41795,3413.582};
+		dir[]={0.82306099,-0.35911962,0.44014394};
+		up[]={0.31679142,0.93324488,0.16941079};
+		aside[]={0.47159755,4.5122579e-007,-0.88187718};
 	};
 };
 binarizationWanted=0;
@@ -16712,7 +16712,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=207;
+		items=209;
 		class Item0
 		{
 			dataType="Group";
@@ -28581,6 +28581,38 @@ class Mission
 			};
 			id=63;
 			type="Land_Cargo10_military_green_F";
+		};
+		class Item207
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={6831.1035,84.513588,3427.0757};
+				angles[]={6.2824135,1.575845,0.00077204045};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=303;
+			type="JSDF_M1083A1P2_flatbed_d";
+		};
+		class Item208
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={6831.1919,84.516747,3430.9253};
+				angles[]={6.2824135,1.575845,0.00077204045};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=304;
+			type="JSDF_M1083A1P2_d";
 		};
 	};
 	class Connections

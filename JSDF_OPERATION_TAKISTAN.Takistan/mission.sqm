@@ -8,18 +8,18 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=302;
+		nextID=304;
 	};
 	class LayerIndexProvider
 	{
-		nextID=14;
+		nextID=16;
 	};
 	class Camera
 	{
-		pos[]={5963.6133,90.977844,11477.828};
-		dir[]={0.16583593,-0.57120401,-0.8040027};
-		up[]={0.11541649,0.82070482,-0.5595687};
-		aside[]={-0.97947603,4.9523078e-007,-0.20202646};
+		pos[]={6017.7563,100.37226,11497.983};
+		dir[]={-0.94497645,-0.28069371,0.16861081};
+		up[]={-0.27653369,0.95973331,0.049343143};
+		aside[]={0.17567433,-5.2026007e-007,0.98454517};
 	};
 };
 binarizationWanted=0;
@@ -16703,7 +16703,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=206;
+		items=208;
 		class Item0
 		{
 			dataType="Group";
@@ -28514,6 +28514,38 @@ class Mission
 				};
 			};
 			id=297;
+		};
+		class Item206
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={6001.7788,85.147041,11499.133};
+				angles[]={-0,5.4947567,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=302;
+			type="JSDF_M1083A1P2_flatbed_d";
+		};
+		class Item207
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5998.9888,85.147041,11496.271};
+				angles[]={-0,5.49405,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=303;
+			type="JSDF_M1083A1P2_d";
 		};
 	};
 	class Connections
