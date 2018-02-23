@@ -8,7 +8,7 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=2040;
+		nextID=2049;
 	};
 	class MarkerIDProvider
 	{
@@ -16,7 +16,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=38;
+		nextID=39;
 	};
 	class Camera
 	{
@@ -637,7 +637,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=963;
+		items=972;
 		class Item0
 		{
 			dataType="Object";
@@ -45581,6 +45581,115 @@ class Mission
 				};
 				nAttributes=2;
 			};
+		};
+		class Item963
+		{
+			dataType="Marker";
+			position[]={6111.9541,120.32,10793.868};
+			name="marker_22";
+			text=" LIVE COMBAT ZONE";
+			type="mil_circle";
+			colorName="ColorCIV";
+			angle=27.576979;
+			id=2040;
+		};
+		class Item964
+		{
+			dataType="Marker";
+			position[]={6111.9541,120.32,10793.868};
+			name="EOSzone1";
+			text="EOSzone1";
+			markerType="ELLIPSE";
+			type="ellipse";
+			a=250;
+			b=250;
+			id=2041;
+		};
+		class Item965
+		{
+			dataType="Marker";
+			position[]={6111.9546,120.32,10793.868};
+			name="marker_20";
+			markerType="RECTANGLE";
+			type="rectangle";
+			fillName="DiagGrid";
+			a=500;
+			b=500;
+			id=2042;
+		};
+		class Item966
+		{
+			dataType="Marker";
+			position[]={5689.9541,61.159859,11256.868};
+			name="marker_23";
+			text="NO FLY ZONE";
+			type="hd_warning";
+			colorName="ColorRed";
+			id=2043;
+		};
+		class Item967
+		{
+			dataType="Marker";
+			position[]={6521.9541,40.00626,11256.868};
+			name="marker_24";
+			text="NO FLY ZONE";
+			type="hd_warning";
+			colorName="ColorRed";
+			id=2044;
+			atlOffset=0.053657532;
+		};
+		class Item968
+		{
+			dataType="Marker";
+			position[]={6521.9541,95.961304,10360.868};
+			name="marker_25";
+			text="NO FLY ZONE";
+			type="hd_warning";
+			colorName="ColorRed";
+			id=2045;
+			atlOffset=7.6293945e-006;
+		};
+		class Item969
+		{
+			dataType="Marker";
+			position[]={5689.9541,187.9613,10360.868};
+			name="marker_26";
+			text="NO FLY ZONE";
+			type="hd_warning";
+			colorName="ColorRed";
+			id=2046;
+			atlOffset=0.23266602;
+		};
+		class Item970
+		{
+			dataType="Trigger";
+			position[]={6111.9546,120.32,10793.868};
+			class Attributes
+			{
+				condition="call{this}";
+				onActivation="call{[]execVM ""eos\OpenMe.sqf""; hint ""The Combat Zone Is Now Live!."";}";
+				onDeactivation="call{[]execVM ""eos\OpenMe.sqf""; hint ""Combat Zone Clear"";}";
+				sizeA=250;
+				sizeB=250;
+				repeatable=1;
+				activationBy="ANYPLAYER";
+			};
+			id=2047;
+			type="EmptyDetector";
+		};
+		class Item971
+		{
+			dataType="Marker";
+			position[]={6111.9541,120.32,10793.868};
+			name="Combat Zone";
+			markerType="ELLIPSE";
+			type="ellipse";
+			colorName="ColorRed";
+			fillName="Border";
+			a=250;
+			b=250;
+			drawBorder=1;
+			id=2048;
 		};
 	};
 	class Connections
