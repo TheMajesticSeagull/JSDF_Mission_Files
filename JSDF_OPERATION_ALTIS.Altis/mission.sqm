@@ -12,7 +12,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=26;
+		nextID=28;
 	};
 	class Camera
 	{
@@ -28809,12 +28809,13 @@ class Mission
 			class PositionInfo
 			{
 				position[]={11652.788,24.874617,11828.809};
-				angles[]={6.2805333,0.60368377,0.0026520467};
+				angles[]={6.2805324,0.60369194,0.0026529003};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
+				init="call{_nul = [ this, 7200, 10, JSDF_Mission_fnc_basicVehicleInit ] spawn JSDF_Mission_fnc_vehRespawn}";
 			};
 			id=339;
 			type="JSDF_M1083A1P2_flatbed_d";
@@ -28826,12 +28827,13 @@ class Mission
 			class PositionInfo
 			{
 				position[]={11650.039,24.871885,11830.522};
-				angles[]={6.2805333,0.60368377,0.0026520467};
+				angles[]={6.2805324,0.60369194,0.0026529003};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
+				init="call{_nul = [ this, 7200, 10, JSDF_Mission_fnc_basicVehicleInit ] spawn JSDF_Mission_fnc_vehRespawn}";
 			};
 			id=340;
 			type="JSDF_M1083A1P2_d";

@@ -12,7 +12,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=24;
+		nextID=26;
 	};
 	class Camera
 	{
@@ -28603,15 +28603,17 @@ class Mission
 			class PositionInfo
 			{
 				position[]={4699.8818,11.107038,2525.3787};
-				angles[]={-0,4.5808764,0};
+				angles[]={0,4.5808764,0};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
+				init="call{_nul = [ this, 7200, 10, JSDF_Mission_fnc_basicVehicleInit ] spawn JSDF_Mission_fnc_vehRespawn}";
 			};
 			id=303;
 			type="JSDF_M1083A1P2_wd";
+			atlOffset=-9.5367432e-007;
 		};
 		class Item207
 		{
@@ -28619,15 +28621,17 @@ class Mission
 			class PositionInfo
 			{
 				position[]={4699.4502,11.107038,2529.3992};
-				angles[]={-0,4.5885315,0};
+				angles[]={0,4.5885315,0};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
+				init="call{_nul = [ this, 7200, 10, JSDF_Mission_fnc_basicVehicleInit ] spawn JSDF_Mission_fnc_vehRespawn}";
 			};
 			id=304;
 			type="JSDF_M1083A1P2_flatbed_wd";
+			atlOffset=-9.5367432e-007;
 		};
 	};
 	class Connections

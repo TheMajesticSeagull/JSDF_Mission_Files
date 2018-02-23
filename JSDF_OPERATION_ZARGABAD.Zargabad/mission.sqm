@@ -12,7 +12,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=16;
+		nextID=18;
 	};
 	class Camera
 	{
@@ -28609,9 +28609,11 @@ class Mission
 			flags=4;
 			class Attributes
 			{
+				init="call{_nul = [ this, 7200, 10, JSDF_Mission_fnc_basicVehicleInit ] spawn JSDF_Mission_fnc_vehRespawn}";
 			};
 			id=302;
 			type="JSDF_M1083A1P2_flatbed_d";
+			atlOffset=-4.7683716e-007;
 		};
 		class Item207
 		{
@@ -28625,9 +28627,11 @@ class Mission
 			flags=4;
 			class Attributes
 			{
+				init="call{_nul = [ this, 7200, 10, JSDF_Mission_fnc_basicVehicleInit ] spawn JSDF_Mission_fnc_vehRespawn}";
 			};
 			id=303;
 			type="JSDF_M1083A1P2_d";
+			atlOffset=-9.5367432e-007;
 		};
 	};
 	class Connections

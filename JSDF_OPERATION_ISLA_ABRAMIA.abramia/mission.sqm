@@ -12,7 +12,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=51;
+		nextID=56;
 	};
 	class Camera
 	{
@@ -17345,7 +17345,7 @@ class Mission
 			position[]={3972.158,12.49,2783.4971};
 			name="respawn_west";
 			type="Empty";
-			angle=1.4029995;
+			angle=1.4029994;
 			id=519;
 		};
 		class Item8
@@ -29791,6 +29791,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
+				init="call{_nul = [ this, 7200, 10, JSDF_Mission_fnc_basicVehicleInit ] spawn JSDF_Mission_fnc_vehRespawn}";
 			};
 			id=576;
 			type="JSDF_M1083A1P2_wd";
@@ -29806,6 +29807,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
+				init="call{_nul = [ this, 7200, 10, JSDF_Mission_fnc_basicVehicleInit ] spawn JSDF_Mission_fnc_vehRespawn}";
 			};
 			id=577;
 			type="JSDF_M1083A1P2_flatbed_wd";
