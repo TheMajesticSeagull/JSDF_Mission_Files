@@ -29,16 +29,3 @@ private _arsenalAction = [
 ] call ace_interact_menu_fnc_createAction;
 
 [_crate, 0, ["ACE_MainActions"], _arsenalAction] call ace_interact_menu_fnc_addActionToObject;
-
-// Add loadout transfer interaction
-private _loadoutTransferAction = [
-    QGVAR(arsenal),
-    "Loadout Transfer",
-    "",
-    {
-      [true, true, false, true, true] call LT_fnc_mainMenuLoad;
-    },
-    {true}
-] call ace_interact_menu_fnc_createAction;
-
-[_crate, 0, ["ACE_MainActions"], _loadoutTransferAction] call ace_interact_menu_fnc_addActionToObject;

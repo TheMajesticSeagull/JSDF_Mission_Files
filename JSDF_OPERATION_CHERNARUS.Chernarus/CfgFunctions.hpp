@@ -4,9 +4,8 @@ class CfgFunctions {
         class vehInitFncs
         {
             file = "functions\LVR";
-            class vehRespawn      	  {};
-            class hunterInit          {};
-            class littlebirdInit      {};
+            class vehRespawn {};
+            class basicVehicleInit {};
         };
         class functions {
             file = "functions";
