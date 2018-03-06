@@ -31,7 +31,8 @@ ACE_maxWeightCarry = 600;
   	[Arrow],
   	[Joram],
   	[Seagull],
-  	[Tub]
+  	[Tub],
+    [MissionSpecificZeus]
   ];
   {
   		_x params ["_curatorModuleName"];
@@ -47,7 +48,7 @@ ACE_maxWeightCarry = 600;
 // SupplyBoxSpawn zeus actions
 private _supplyBoxSpawnBase = [
   QGVAR(supplyBoxSpawnBase),
-  "Supply Box Spawn",
+  localize "str_jsdf_baseSupplyBoxAction",
   "",
   {},
   {true}
@@ -57,30 +58,30 @@ private _supplyBoxSpawnBase = [
 
 private _supplyBoxSpawnAmmo = [
   QGVAR(supplyBoxSpawnAmmo),
-  "Spawn Ammo Supply Box",
+  localize "str_jsdf_spawnAmmoSupply",
   "",
   {
-    [SpawnPad_Demo] call JSDF_Mission_fnc_supplyBoxAmmo;
+    [SpawnPad1] call JSDF_Mission_fnc_supplyBoxAmmo;
   },
   {true}
 ] call ace_interact_menu_fnc_createAction;
 
 private _supplyBoxSpawnMedical = [
   QGVAR(supplyBoxSpawnMedical),
-  "Spawn Medical Supply Box",
+  localize "str_jsdf_spawnMedicalSupply",
   "",
   {
-    [SpawnPad_Demo] call JSDF_Mission_fnc_supplyBoxMedical;
+    [SpawnPad1] call JSDF_Mission_fnc_supplyBoxMedical;
   },
   {true}
 ] call ace_interact_menu_fnc_createAction;
 
 private _supplyBoxSpawnVehicle = [
   QGVAR(supplyBoxSpawnVehicle),
-  "Spawn Vehicle Supply Box",
+  localize "str_jsdf_spawnVehicleSupply",
   "",
   {
-    [SpawnPad_Demo] call JSDF_Mission_fnc_supplyBoxVehicle;
+    [SpawnPad1] call JSDF_Mission_fnc_supplyBoxVehicle;
   },
   {true}
 ] call ace_interact_menu_fnc_createAction;

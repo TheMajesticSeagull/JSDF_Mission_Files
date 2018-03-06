@@ -1,6 +1,6 @@
 /*
  * Author: JoramD
- * Allows spawning of ammo box.
+ * Allows spawning of medical box.
  *
  * Arguments:
  * 0: Spawn Location <POSITION>
@@ -9,13 +9,13 @@
  * None
  *
  * Example:
- * [spawnLocation] call JSDF_Mission_fnc_supplyBoxAmmo
+ * [spawnLocation] call JSDF_Mission_fnc_supplyBoxMedical
  */
 #include "..\script_component.hpp"
 
 params ["_spawnLocation"];
 
-private _crate = createVehicle ["B_supplyCrate_F", _spawnLocation, [], 0, "NONE"];
+private _crate = createVehicle ["C_IDAP_supplycrate_F", _spawnLocation, [], 0, "NONE"];
 clearItemCargoGlobal _crate;
 clearWeaponCargoGlobal _crate;
 clearBackpackCargoGlobal _crate;
@@ -24,17 +24,12 @@ clearMagazineCargoGlobal _crate;
 
 private _ammoItems = [
   // ["item", amount],
-  ["SMA_30Rnd_556x45_M855A1", 50],
-  ["SMA_150Rnd_762_M80A1", 8],
-  ["SMA_20Rnd_762x51mm_M80A1_EPR", 5],
-  ["rhsusf_mag_17Rnd_9x19_JHP", 16],
-  ["rhs_mag_smaw_HEAA", 2],
-  ["1Rnd_HE_Grenade_shell", 10],
-  ["1Rnd_Smoke_Grenade_shell", 10],
-  ["UGL_FlareWhite_F", 2],
-  ["ACE_EarPlugs", 20],
-  ["rhs_weap_M136", 2],
-  ["DemoCharge_Remote_Mag", 8]
+  ["ACE_bloodIV", 20],
+  ["ACE_morphine", 60],
+  ["ACE_epinephrine", 40],
+  ["ACE_fieldDressing", 120],
+  ["ACE_bodyBag", 10],
+  ["ACE_EarPlugs", 20]
   ];
 
 {
@@ -43,6 +38,6 @@ private _ammoItems = [
   _crate addItemCargoGlobal [_item, _amount];
 } forEach _ammoItems;
 
-["Ammo Supply Box Spawned!"] call ace_common_fnc_displayTextStructured;
+[localize "str_jsdf_medicalSupplySpawned"] call ace_common_fnc_displayTextStructured;
 [QGVAR(setDragable), [_crate]] call CBA_fnc_globalEvent;
 [QGVAR(addToCurator), [_crate]] call CBA_fnc_globalEvent;
