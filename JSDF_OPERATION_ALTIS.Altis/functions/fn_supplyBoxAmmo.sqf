@@ -43,6 +43,6 @@ private _ammoItems = [
   _crate addItemCargoGlobal [_item, _amount];
 } forEach _ammoItems;
 
-["Ammo Supply Box Spawned!"] call ace_common_fnc_displayTextStructured;
+[localize "str_jsdf_ammoSupplySpawned"] call ace_common_fnc_displayTextStructured;
 [QGVAR(setDragable), [_crate]] call CBA_fnc_globalEvent;
 [QGVAR(addToCurator), [_crate]] call CBA_fnc_globalEvent;
