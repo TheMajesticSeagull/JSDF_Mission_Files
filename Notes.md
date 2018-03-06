@@ -11,3 +11,4 @@ Dummy objects:
 * JSDF_DummyObject_barracks
 * JSDF_DummyObject_bunker
 * JSDF_DummyObject_flexFuelTank
+* CustomZeusUID
