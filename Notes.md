@@ -1,0 +1,13 @@
+Dummy objects:
+* JSDF_DummyObject_MRAPMed
+* JSDF_DummyObject_MRAP
+* JSDF_DummyObject_truckCovered
+* JSDF_DummyObject_truckFlatbed
+* JSDF_DummyObject_APC
+* JSDF_DummyObject_IFV
+* JSDF_DummyObject_tank
+* JSDF_DummyObject_lightTransport
+* JSDF_DummyObject_tower
+* JSDF_DummyObject_barracks
+* JSDF_DummyObject_bunker
+* JSDF_DummyObject_flexFuelTank
