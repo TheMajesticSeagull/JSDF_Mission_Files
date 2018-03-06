@@ -4,6 +4,6 @@
 // Version
 #define MAJOR 2
 #define MINOR 4
-#define PATCHLVL DEV
+#define PATCHLVL "DEV"
 
 #include "\x\cba\addons\main\script_macros_mission.hpp"
