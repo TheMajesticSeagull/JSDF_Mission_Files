@@ -23,16 +23,16 @@ player createDiaryRecord [
 player createDiaryRecord [
   "infoDiary",
   [
-    localize "str_jsdf_serviceTitle",
-    format [localize "str_jsdf_serviceText"]
+    localize "str_jsdf_versionTitle",
+    format [localize "str_jsdf_versionText"]
   ]
 ];
 
 player createDiaryRecord [
   "infoDiary",
   [
-    localize "str_jsdf_supplyTitle",
-    format [localize "str_jsdf_supplyText"]
+    localize "str_jsdf_serviceTitle",
+    format [localize "str_jsdf_serviceText"]
   ]
 ];
 
