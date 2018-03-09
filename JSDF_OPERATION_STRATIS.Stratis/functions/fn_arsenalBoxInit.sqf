@@ -18,7 +18,7 @@ params ["_crate"];
 // Add loadout transfer interaction
 private _arsenalAction = [
     QGVAR(arsenal),
-    "Arsenal",
+    localize "str_jsdf_openArsenal",
     "",
     {
       params ["_crate"];

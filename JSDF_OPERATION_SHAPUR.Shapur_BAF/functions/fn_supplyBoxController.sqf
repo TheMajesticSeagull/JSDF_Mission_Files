@@ -19,7 +19,7 @@ params ["_controller", "_spawnLocation"];
 // Add ammo box action
 private _ammoBoxAction = [
     QGVAR(ammoBoxInteraction),
-    "Spawn Ammo Supply Box",
+    localize "str_jsdf_spawnAmmoSupply",
     "",
     {
     params ["_spawnLocation"];
@@ -34,7 +34,7 @@ private _ammoBoxAction = [
 // Add medical box action
 private _medicalBoxAction = [
     QGVAR(medicalBoxInteraction),
-    "Spawn Medical Supply Box",
+    localize "str_jsdf_spawnMedicalSupply",
     "",
     {
     params ["_spawnLocation"];
@@ -49,7 +49,7 @@ private _medicalBoxAction = [
 // Add vehicle box action
 private _vehicleBoxAction = [
     QGVAR(vehicleBoxInteraction),
-    "Spawn Vehicle Supply Box",
+    localize "str_jsdf_spawnVehicleSupply",
     "",
     {
     params ["_spawnLocation"];

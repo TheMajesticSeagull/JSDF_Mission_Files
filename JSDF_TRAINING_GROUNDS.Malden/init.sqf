@@ -48,7 +48,7 @@ ACE_maxWeightCarry = 600;
 // SupplyBoxSpawn zeus actions
 private _supplyBoxSpawnBase = [
   QGVAR(supplyBoxSpawnBase),
-  "Supply Box Spawn",
+  localize "str_jsdf_baseSupplyBoxAction",
   "",
   {},
   {true}
@@ -58,7 +58,7 @@ private _supplyBoxSpawnBase = [
 
 private _supplyBoxSpawnAmmo = [
   QGVAR(supplyBoxSpawnAmmo),
-  "Spawn Ammo Supply Box",
+  localize "str_jsdf_spawnAmmoSupply",
   "",
   {
     [SpawnPad1] call JSDF_Mission_fnc_supplyBoxAmmo;
@@ -68,7 +68,7 @@ private _supplyBoxSpawnAmmo = [
 
 private _supplyBoxSpawnMedical = [
   QGVAR(supplyBoxSpawnMedical),
-  "Spawn Medical Supply Box",
+  localize "str_jsdf_spawnMedicalSupply",
   "",
   {
     [SpawnPad1] call JSDF_Mission_fnc_supplyBoxMedical;
@@ -78,7 +78,7 @@ private _supplyBoxSpawnMedical = [
 
 private _supplyBoxSpawnVehicle = [
   QGVAR(supplyBoxSpawnVehicle),
-  "Spawn Vehicle Supply Box",
+  localize "str_jsdf_spawnVehicleSupply",
   "",
   {
     [SpawnPad1] call JSDF_Mission_fnc_supplyBoxVehicle;
