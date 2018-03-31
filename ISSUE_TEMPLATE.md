@@ -1,5 +1,4 @@
 **Mission Version:** `x.x.x` (found here: Map > Info / Help > Version)
-
 **Mission Map:** `mapName`
 
 **Description:**
