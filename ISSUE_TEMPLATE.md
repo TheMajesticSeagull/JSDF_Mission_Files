@@ -1,4 +1,5 @@
 **Mission Version:** `x.x.x` (found here: Map > Info / Help > Version)
+**Mission Map:** `mapName`
 
 **Description:**
 - Add a detailed description of the error. This makes it easier for us to fix the issue.
