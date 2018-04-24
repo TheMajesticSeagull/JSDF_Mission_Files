@@ -1,201 +1,87 @@
-force force ace_medical_blood_enabledFor = 2;
-force force ace_common_checkPBOsAction = 0;
-force force ace_common_checkPBOsCheckAll = false;
-force force ace_common_checkPBOsWhitelist = "[]";
-force force ace_cookoff_enable = true;
-force force ace_cookoff_enableAmmobox = true;
-force force ace_cookoff_enableAmmoCookoff = true;
-force force ace_cookoff_ammoCookoffDuration = 1;
-force force ace_cookoff_probabilityCoef = 1;
-force force ace_finger_enabled = true;
-force force ace_finger_maxRange = 5;
-force force ace_frag_enabled = true;
-force force ace_frag_spallEnabled = false;
-force force ace_frag_reflectionsEnabled = false;
-force force ace_frag_maxTrack = 10;
-force force ace_frag_maxTrackPerFrame = 10;
-force force ace_gforces_enabledFor = 1;
-force force ace_goggles_effects = 2;
-force force ace_hitreactions_minDamageToTrigger = 0.1;
-force force ace_interaction_enableTeamManagement = true;
-force force ace_interaction_disableNegativeRating = true;
-force force ace_laser_dispersionCount = 2;
-force force ace_laserpointer_enabled = true;
-force force ace_magazinerepack_timePerAmmo = 1.5;
-force force ace_magazinerepack_timePerMagazine = 2;
-force force ace_magazinerepack_timePerBeltLink = 8;
-force force ace_map_BFT_Interval = 1;
-force force ace_map_BFT_Enabled = false;
-force force ace_map_BFT_HideAiGroups = false;
-force force ace_map_BFT_ShowPlayerNames = false;
-force force ace_map_mapIllumination = true;
-force force ace_map_mapGlow = true;
-force force ace_map_mapShake = true;
-force force ace_map_mapLimitZoom = false;
-force force ace_map_mapShowCursorCoordinates = false;
-force force ace_map_defaultChannel = -1;
-force force ace_map_gestures_enabled = true;
-force force ace_map_gestures_maxRange = 7;
-force force ace_map_gestures_interval = 0.03;
-force force ace_markers_movableMarkersEnabled = true;
-force force ace_markers_moveRestriction = 0;
-force force ace_medical_level = 1;
-force force ace_medical_medicSetting = 1;
-force force ace_medical_increaseTrainingInLocations = true;
-force force ace_medical_enableFor = 0;
-force force ace_medical_enableOverdosing = true;
-force force ace_medical_bleedingCoefficient = 1;
-force force ace_medical_painCoefficient = 1;
-force force ace_medical_enableAdvancedWounds = false;
-force force ace_medical_enableVehicleCrashes = true;
-force force ace_medical_enableScreams = true;
-force force ace_medical_playerDamageThreshold = 1;
-force force ace_medical_AIDamageThreshold = 1;
-force force ace_medical_enableUnconsciousnessAI = 0;
-force force ace_medical_remoteControlledAI = true;
-force force ace_medical_preventInstaDeath = true;
-force force ace_medical_enableRevive = 1;
-force force ace_medical_maxReviveTime = 600;
-force force ace_medical_amountOfReviveLives = -1;
-force force ace_medical_allowDeadBodyMovement = false;
-force force ace_medical_allowLitterCreation = true;
-force force ace_medical_litterSimulationDetail = 3;
-force force ace_medical_litterCleanUpDelay = 0;
-force force ace_medical_medicSetting_basicEpi = 1;
-force force ace_medical_medicSetting_PAK = 1;
-force force ace_medical_medicSetting_SurgicalKit = 1;
-force force ace_medical_consumeItem_PAK = 0;
-force force ace_medical_consumeItem_SurgicalKit = 0;
-force force ace_medical_useLocation_basicEpi = 0;
-force force ace_medical_useLocation_PAK = 3;
-force force ace_medical_useLocation_SurgicalKit = 2;
-force force ace_medical_useCondition_PAK = 0;
-force force ace_medical_useCondition_SurgicalKit = 0;
-force force ace_medical_keepLocalSettingsSynced = true;
-force force ace_medical_healHitPointAfterAdvBandage = false;
-force force ace_medical_painIsOnlySuppressed = true;
-force force ace_medical_painEffectType = 0;
-force force ace_medical_allowUnconsciousAnimationOnTreatment = false;
-force force ace_medical_moveUnitsFromGroupOnUnconscious = false;
-force force ace_medical_delayUnconCaptive = 3;
-force force ace_medical_ai_enabledFor = 2;
-force force ace_medical_menu_allow = 1;
-force force ace_medical_menu_maxRange = 3;
-force force ace_microdagr_mapDataAvailable = 2;
-force force ace_mk6mortar_airResistanceEnabled = false;
-force force ace_mk6mortar_allowComputerRangefinder = true;
-force force ace_mk6mortar_allowCompass = true;
-force force ace_mk6mortar_useAmmoHandling = false;
-force force ace_nametags_playerNamesViewDistance = 5;
-force force ace_nametags_playerNamesMaxAlpha = 0.8;
-force force ace_nightvision_disableNVGsWithSights = false;
-force forceace_nightvision_fogScaling = 0;
-force force ace_nightvision_effectScaling = 0.2;
-force force ace_nightvision_aimDownSightsBlur = 0;
-force force ace_overheating_overheatingDispersion = true;
-force force ace_overheating_unJamOnreload = false;
-force force ace_overheating_unJamFailChance = 0.1;
-force force ace_overheating_enabled = true;
-force force ace_overpressure_distanceCoefficient = 1;
-force force ace_pylons_enabled = true;
-force force ace_pylons_rearmNewPylons = true;
-force force ace_pylons_searchDistance = 15;
-force force ace_pylons_timePerPylon = 5;
-force force ace_pylons_requireEngineer = false;
-force force ace_pylons_requireToolkit = false;
-force force ace_rearm_level = 0;
-force force ace_rearm_supply = 0;
-force force ace_refuel_rate = 1;
-force force ace_refuel_hoseLength = 16;
-force force ace_repair_engineerSetting_repair = 0;
-force force ace_repair_engineerSetting_wheel = 0;
-force force ace_repair_repairDamageThreshold = 0.7;
-force force ace_repair_repairDamageThreshold_engineer = 0.4;
-force force ace_repair_consumeItem_toolKit = 0;
-force force ace_repair_fullRepairLocation = 2;
-force force ace_repair_engineerSetting_fullRepair = 0;
-force force ace_repair_addSpareParts = true;
-force force ace_repair_wheelRepairRequiredItems = 0;
-force force ace_repair_autoShutOffEngineWhenStartingRepair = false;
-force force ace_respawn_savePreDeathGear = true;
-force force ace_respawn_removeDeadBodiesDisconnected = true;
-force force ace_scopes_enabled = true;
-force force ace_scopes_forceUseOfAdjustmentTurrets = false;
-force force ace_scopes_correctZeroing = true;
-force force ace_scopes_overwriteZeroRange = false;
-force force ace_scopes_defaultZeroRange = 100;
-force force ace_scopes_zeroReferenceTemperature = 15;
-force force ace_scopes_zeroReferenceBarometricPressure = 1013.25;
-force force ace_scopes_zeroReferenceHumidity = 0;
-force force ace_scopes_deduceBarometricPressureFromTerrainAltitude = false;
-force force ace_scopes_simplifiedZeroing = false;
-force force ace_spectator_enableAI = false;
-force force ace_spectator_restrictModes = 0;
-force force ace_spectator_restrictVisions = 0;
-force force ace_switchunits_enableSwitchUnits = false;
-force force ace_switchunits_switchToWest = false;
-force force ace_switchunits_switchToEast = false;
-force force ace_switchunits_switchToIndependent = false;
-force force ace_switchunits_switchToCivilian = false;
-force force ace_switchunits_enableSafeZone = true;
-force force ace_switchunits_safeZoneRadius = 100;
-force force ace_ui_allowSelectiveUI = true;
-force force ace_vehiclelock_defaultLockpickStrength = 10;
-force force ace_vehiclelock_lockVehicleInventory = false;
-force force ace_vehiclelock_vehicleStartingLockState = -1;
-force force ace_viewdistance_enabled = true;
-force force ace_viewdistance_limitViewDistance = 5000;
-force force ace_weather_enabled = true;
-force force ace_weather_updateInterval = 60;
-force force ace_weather_windSimulation = true;
-force force ace_winddeflection_enabled = false;
-force force ace_winddeflection_vehicleEnabled = false;
-force force ace_winddeflection_simulationInterval = 0.05;
-force force acex_sitting_enable = true;
-force force acex_viewrestriction_mode = 3;
-force force acex_viewrestriction_modeSelectiveFoot = 1;
-force force acex_viewrestriction_modeSelectiveLand = 0;
-force force acex_viewrestriction_modeSelectiveAir = 0;
-force force acex_viewrestriction_modeSelectiveSea = 0;
-force force ace_advanced_fatigue_enabled = true;
-force force ace_advanced_fatigue_performanceFactor = 2;
-force force ace_advanced_fatigue_recoveryFactor = 4;
-force force ace_advanced_fatigue_loadFactor = 1;
-force force ace_advanced_fatigue_terrainGradientFactor = 1;
-force force ace_advanced_throwing_enablePickUp = true;
-force force ace_advanced_throwing_enablePickUpAttached = true;
-force force ace_captives_allowHandcuffOwnSide = true;
-force force ace_captives_requireSurrender = 2;
-force force ace_captives_allowSurrender = true;
-force force ace_captives_requireSurrenderAi = false;
-force force ace_cargo_enable = true;
-force force ace_cargo_paradropTimeCoefficent = 2.5;
-force force ace_explosives_requireSpecialist = false;
-force force ace_explosives_punishNonSpecialists = true;
-force force ace_explosives_explodeOnDefuse = true;
-force force ace_hearing_enableCombatDeafness = true;
-force force ace_hearing_earplugsVolume = 0.5;
-force force ace_hearing_unconsciousnessVolume = 0.4;
-force force ace_hearing_disableEarRinging = false;
-force force ace_hearing_enabledForZeusUnits = false;
-force force ace_hearing_autoAddEarplugsToUnits = true;
-force force ace_zeus_zeusAscension = false;
-force force ace_zeus_zeusBird = true;
-force force ace_zeus_remoteWind = false;
-force force ace_zeus_radioOrdnance = false;
-force force ace_zeus_revealMines = 0;
-force force ace_zeus_autoAddObjects = true;
-force force acex_headless_enabled = false;
-force force acex_headless_delay = 15;
-force force acex_headless_endMission = 0;
-force force acex_headless_log = false;
-force force ace_advanced_ballistics_enabled = false;
-force force ace_advanced_ballistics_muzzleVelocityVariationEnabled = true;
-force force ace_advanced_ballistics_ammoTemperatureEnabled = true;
-force force ace_advanced_ballistics_barrelLengthInfluenceEnabled = true;
-force force ace_advanced_ballistics_bulletTraceEnabled = true;
-force force ace_advanced_ballistics_simulationInterval = 0.05;
-force force ace_noradio_enabled = true;
-force force ace_arsenal_allowDefaultLoadouts = true;
-force force ace_arsenal_allowSharedLoadouts = true;
-force force ace_refuel_hoseLength = 16;
+// ACE Advanced Fatigue
+force ace_advanced_fatigue_enabled = false;
+force ace_advanced_fatigue_performanceFactor = 2;
+force ace_advanced_fatigue_recoveryFactor = 4;
+
+// ACE Captives
+force ace_captives_requireSurrender = 2;
+
+// ACE Cook off
+force ace_cookoff_enable = true;
+
+// ACE Hearing
+force ace_hearing_disableEarRinging = false;
+force ace_hearing_enabledForZeusUnits = false;
+
+// ACE Interaction
+force ace_interaction_disableNegativeRating = true;
+
+// ACE Interaction Menu
+ace_gestures_showOnInteractionMenu = 1;
+ace_interact_menu_addBuildingActions = true;
+
+// ACE Logistics
+force ace_refuel_hoseLength = 16;
+force ace_repair_engineerSetting_repair = 0;
+force ace_repair_repairDamageThreshold = 0.7;
+
+// ACE Map
+force ace_markers_moveRestriction = 0;
+
+// ACE Medical
+force ace_medical_enableRevive = 1;
+force ace_medical_enableUnconsciousnessAI = 0;
+force ace_medical_increaseTrainingInLocations = true;
+force ace_medical_maxReviveTime = 600;
+ace_medical_menu_useMenu = 1;
+force ace_medical_painEffectType = 0;
+force ace_medical_preventInstaDeath = true;
+
+// ACE Nightvision
+force ace_nightvision_aimDownSightsBlur = 0;
+force ace_nightvision_effectScaling = 0.2;
+force ace_nightvision_fogScaling = 0;
+
+// ACE Overheating
+force ace_overheating_unJamOnreload = true;
+
+// ACE Pointing
+force ace_finger_enabled = true;
+force ace_finger_maxRange = 5;
+
+// ACE Pylons
+force ace_pylons_rearmNewPylons = true;
+force ace_pylons_requireToolkit = false;
+
+// ACE Respawn
+force ace_respawn_savePreDeathGear = true;
+
+// ACE Scopes
+force ace_scopes_enabled = false;
+
+// ACE View Distance Limiter
+force ace_viewdistance_limitViewDistance = 5000;
+ace_viewdistance_viewDistanceAirVehicle = 9;
+ace_viewdistance_viewDistanceLandVehicle = 3;
+ace_viewdistance_viewDistanceOnFoot = 3;
+
+// ACE Weapons
+ace_common_persistentLaserEnabled = true;
+
+// ACE Wind Deflection
+force ace_winddeflection_enabled = false;
+force ace_winddeflection_vehicleEnabled = false;
+
+// ACE Zeus
+force ace_zeus_autoAddObjects = true;
+force ace_zeus_zeusBird = true;
+
+// ACEX Sitting
+force acex_sitting_enable = true;
+
+// ACEX View Restriction
+force acex_viewrestriction_modeSelectiveFoot = 1;
+
+// ACEX Volume
+acex_volume_enabled = true;
+acex_volume_showNotification = false;
