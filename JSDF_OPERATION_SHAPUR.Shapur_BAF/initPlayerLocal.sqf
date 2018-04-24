@@ -1,3 +1,7 @@
 #include "script_component.hpp"
 
-[] call JSDF_Mission_fnc_infoBriefing;
+params ["_player"];
+
+[_player, specScreen] call FUNC(baseSpectator);
+
+[] call FUNC(infoBriefing);
