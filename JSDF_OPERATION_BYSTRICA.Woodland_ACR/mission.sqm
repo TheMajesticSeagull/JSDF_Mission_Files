@@ -8,18 +8,18 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=308;
+		nextID=309;
 	};
 	class LayerIndexProvider
 	{
-		nextID=29;
+		nextID=31;
 	};
 	class Camera
 	{
 		pos[]={3335.2068,25.478504,1437.3545};
-		dir[]={-0.29098293,-0.63976771,0.71139818};
-		up[]={-0.24221407,0.76855177,0.59216678};
-		aside[]={0.9255982,-6.0931779e-007,0.37859586};
+		dir[]={-0.35443002,-0.47190315,0.80730963};
+		up[]={-0.1897141,0.881634,0.43212402};
+		aside[]={0.91567475,-8.053612e-007,0.40200421};
 	};
 };
 binarizationWanted=0;
@@ -36202,7 +36202,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=210;
+		items=211;
 		class Item0
 		{
 			dataType="Group";
@@ -47458,16 +47458,128 @@ class Mission
 				nAttributes=1;
 			};
 		};
+		class Item210
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={3402.0964,187.27565,1450.5629};
+			};
+			name="Rambi";
+			init="call{[this, [-1, -2, 0]] call bis_fnc_setcuratorvisionmodes; Rambi setVariable [""showNotification"", false]}";
+			id=308;
+			type="ModuleCurator_F";
+			atlOffset=181.23277;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ModuleCurator_F_Owner";
+					expression="_this setVariable ['Owner',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="76561198147073389";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ModuleCurator_F_Forced";
+					expression="_this setVariable ['Forced',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ModuleCurator_F_Name";
+					expression="_this setVariable ['Name',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Zeus";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="ModuleInfo";
+					expression="false";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="ModuleCurator_F_Addons";
+					expression="_this setVariable ['Addons',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=3;
+						};
+					};
+				};
+				nAttributes=5;
+			};
+		};
 	};
 	class Connections
 	{
 		class LinkIDProvider
 		{
-			nextID=13;
+			nextID=14;
 		};
 		class Links
 		{
-			items=13;
+			items=14;
 			class Item0
 			{
 				linkID=0;
@@ -47593,6 +47705,16 @@ class Mission
 				linkID=12;
 				item0=29;
 				item1=27;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item13
+			{
+				linkID=13;
+				item0=308;
+				item1=262;
 				class CustomData
 				{
 					type="Sync";

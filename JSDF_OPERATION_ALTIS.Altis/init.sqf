@@ -31,7 +31,9 @@ ACE_maxWeightCarry = 600;
   	[Arrow],
   	[Joram],
   	[Seagull],
-  	[Tub]
+  	[Tub],
+    [Rambi],
+    [Rambi]
   ];
   {
   		_x params ["_curatorModuleName"];
