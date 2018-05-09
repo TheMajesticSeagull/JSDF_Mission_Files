@@ -1,5 +1,5 @@
 // ACE Advanced Fatigue
-force ace_advanced_fatigue_enabled = false;
+force ace_advanced_fatigue_enabled = true;
 force ace_advanced_fatigue_performanceFactor = 2;
 force ace_advanced_fatigue_recoveryFactor = 4;
 
@@ -80,7 +80,9 @@ force ace_zeus_zeusBird = true;
 force acex_sitting_enable = true;
 
 // ACEX View Restriction
-force acex_viewrestriction_modeSelectiveFoot = 1;
+force force acex_viewrestriction_mode = 3;
+force force acex_viewrestriction_modeSelectiveFoot = 1;
+
 
 // ACEX Volume
 acex_volume_enabled = true;
