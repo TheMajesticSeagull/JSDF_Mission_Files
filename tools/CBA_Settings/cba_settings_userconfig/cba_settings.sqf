@@ -41,6 +41,8 @@ force ace_medical_preventInstaDeath = true;
 force ace_nightvision_aimDownSightsBlur = 0;
 force ace_nightvision_effectScaling = 0.2;
 force ace_nightvision_fogScaling = 0;
+force force ace_nightvision_noiseScaling = 0;
+
 
 // ACE Overheating
 force ace_overheating_unJamOnreload = true;
