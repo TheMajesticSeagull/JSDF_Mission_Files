@@ -5,6 +5,7 @@ force ace_advanced_fatigue_recoveryFactor = 4;
 
 // ACE Captives
 force ace_captives_requireSurrender = 2;
+force ace_captives_allowHandcuffOwnSide = false;
 
 // ACE Cook off
 force ace_cookoff_enable = true;
