@@ -24,17 +24,16 @@ clearMagazineCargoGlobal _crate;
 
 private _ammoItems = [
   // ["item", amount],
-  ["SMA_30Rnd_556x45_M855A1", 50],
-  ["SMA_150Rnd_762_M80A1", 8],
-  ["SMA_20Rnd_762x51mm_M80A1_EPR", 5],
+  ["rhs_mag_30Rnd_556x45_m855_stanag", 50],
+  ["rhs_200rnd_556x45_M_SAW", 8],
+  ["20rnd_762x51_Mag", 5],
   ["rhsusf_mag_17Rnd_9x19_JHP", 16],
-  ["rhs_mag_smaw_HEAA", 2],
+  ["MRAWS_HEAT_F", 2],
   ["1Rnd_HE_Grenade_shell", 10],
-  ["1Rnd_Smoke_Grenade_shell", 10],
+  ["rhs_mag_m714_White", 10],
   ["UGL_FlareWhite_F", 2],
   ["ACE_EarPlugs", 20],
-  ["rhs_weap_M136", 2],
-  ["DemoCharge_Remote_Mag", 8]
+  ["SatchelCharge_Remote_Ammo", 8]
   ];
 
 {
