@@ -27,11 +27,14 @@ ACE_maxWeightCarry = 600;
   	// [CuratorModuleName]
   	[Teal],
   	[Buda],
-  	[Steel],
+  	[danvontrap],
   	[Arrow],
   	[Seagull],
   	[Tub],
+    [Gil],
     [Rambi],
+    [Kenny],
+    [Sage],
     [Lime]
   ];
   {
@@ -89,3 +92,5 @@ private _supplyBoxSpawnVehicle = [
 [["ACE_ZeusActions", QGVAR(supplyBoxSpawnBase)], _supplyBoxSpawnAmmo] call ace_interact_menu_fnc_addActionToZeus;
 [["ACE_ZeusActions", QGVAR(supplyBoxSpawnBase)], _supplyBoxSpawnMedical] call ace_interact_menu_fnc_addActionToZeus;
 [["ACE_ZeusActions", QGVAR(supplyBoxSpawnBase)], _supplyBoxSpawnVehicle] call ace_interact_menu_fnc_addActionToZeus;
+
+[] call JSDF_Mission_fnc_safezone;
