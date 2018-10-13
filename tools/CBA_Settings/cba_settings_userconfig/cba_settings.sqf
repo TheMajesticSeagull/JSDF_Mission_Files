@@ -57,7 +57,7 @@ force ace_pylons_rearmNewPylons = true;
 force ace_pylons_requireToolkit = false;
 
 // ACE Respawn
-force ace_respawn_savePreDeathGear = true;
+ace_respawn_savePreDeathGear = true;
 
 // ACE Scopes
 force ace_scopes_enabled = false;
@@ -77,16 +77,25 @@ force ace_winddeflection_vehicleEnabled = false;
 
 // ACE Zeus
 force ace_zeus_autoAddObjects = true;
-force ace_zeus_zeusBird = true;
+force ace_zeus_zeusBird = false;
 
 // ACEX Sitting
 force acex_sitting_enable = true;
 
 // ACEX View Restriction
-force force acex_viewrestriction_mode = 3;
-force force acex_viewrestriction_modeSelectiveFoot = 1;
+ acex_viewrestriction_mode = 3;
+ acex_viewrestriction_modeSelectiveFoot = 1;
 
 
 // ACEX Volume
 acex_volume_enabled = true;
 acex_volume_showNotification = false;
+
+// Grad Trenches
+grad_trenches_functions_allowGiantEnvelope = False;
+grad_trenches_functions_allowVehicleEnvelope = False;
+
+// UKSF
+force force uksf_zeus_main_curatorsLocked = true;
+force force uksf_zeus_main_curatorsMax = 20;
+force force uksf_zeus_main_curatorsWhitelist = "76561198008656666,76561198080877212";
