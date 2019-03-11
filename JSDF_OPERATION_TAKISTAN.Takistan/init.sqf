@@ -1,5 +1,44 @@
 #include "script_component.hpp"
 
+// Default Loadouts
+if (isMultiplayer) then {
+
+
+/// 1 = Woodland ///
+/// 2 = Desert   ///
+/// 3 = Arid     ///
+/// 4 = Snow     ///
+/// 5 = Urban    ///
+/// 6 = Custom 1 ///
+
+_map = "2";
+
+if (_map isEqualTo "1") then {
+    [] ExecVM "functions\fn_loadout_w.sqf";
+};
+
+if (_map isEqualTo "2") then {
+    [] ExecVM "functions\fn_loadout_d.sqf";
+};
+
+if (_map isEqualTo "3") then {
+    [] ExecVM "functions\fn_loadout_a.sqf";
+};
+
+if (_map isEqualTo "4") then {
+    [] ExecVM "functions\fn_loadout_s.sqf";
+};
+
+if (_map isEqualTo "5") then {
+    [] ExecVM "functions\fn_loadout_u.sqf";
+};
+
+if (_map isEqualTo "6") then {
+    [] ExecVM "functions\fn_loadout_c1.sqf";
+};
+
+}
+
 // Sitting Fix
 ["ace_satDown", {
     {
