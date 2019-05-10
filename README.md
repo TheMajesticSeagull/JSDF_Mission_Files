@@ -10,7 +10,7 @@
         <img src="https://img.shields.io/badge/Website-up-brightgreen.svg?style=flat-square"
     </a>
     <a href="https://github.com/JoramD0/JSDF_Mission_Files/releases/latest">
-        <img src="https://img.shields.io/badge/Version-2.4.1-blue.svg?style=flat-square" alt="Version"
+        <img src="https://img.shields.io/badge/Version-2.6.5-blue.svg?style=flat-square" alt="Version"
     </a>
     <a href="https://github.com/JoramD0/JSDF_Mission_Files/issues">
         <img src="https://img.shields.io/github/issues-raw/JoramD0/JSDF_Mission_Files.svg?style=flat-square&label=Issues" alt="Issues">
