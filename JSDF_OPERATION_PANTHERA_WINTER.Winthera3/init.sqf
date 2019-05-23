@@ -1,5 +1,60 @@
 #include "script_component.hpp"
 
+// Default Loadouts
+
+if (isMultiplayer) then {
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+// To select what loadouts that will be loaded,                                                    //
+// you need to set the corresponding parameter do either true or false.                            //
+// True will enable the loadout and false will desable it.                                         //
+// Here is a array showing the order of the loadouts:                                              //
+// [Woodland, Desert, Arid, Snow, Urban, Crew/Driver/Pilot, Custom/Extra]                          //
+//                                                                                                 //
+// Example of how the values down bellow would be set if Desert and Crew loadouts where enabled:   //
+// [false, true, false, false, false, true, false]                                                 //
+///////////////////////////////////////////////////////////////////////////////////////////////////// 
+
+
+
+// ||||||| Edit these values |||||||||| //
+// vvvvvvv                   vvvvvvvvvv //
+
+[false, false, false, true, false, false, false] call {
+
+//////////////////////////////////////| DON'T EDIT ANYTHING BELLOW THIS LINE |//////////////////////////////////////
+
+if (_this select 0) then {
+    [] ExecVM "functions\fn_loadout_w.sqf";
+};
+
+if (_this select 1) then {
+    [] ExecVM "functions\fn_loadout_d.sqf";
+};
+
+if (_this select 2) then {
+    [] ExecVM "functions\fn_loadout_a.sqf";
+};
+
+if (_this select 3) then {
+    [] ExecVM "functions\fn_loadout_s.sqf";
+};
+
+if (_this select 4) then {
+    [] ExecVM "functions\fn_loadout_u.sqf";
+};
+
+if (_this select 5) then {
+    [] ExecVM "functions\fn_loadout_v.sqf";
+};
+
+if (_this select 6) then {
+    [] ExecVM "functions\fn_loadout_c1.sqf";
+};
+
+}
+
+}
+
 // Sitting Fix
 ["ace_satDown", {
     {
@@ -27,7 +82,7 @@ ACE_maxWeightCarry = 600;
   	// [CuratorModuleName]
   	[Teal],
   	[Buda],
-  	[danvontrap],
+  	[mrg],
   	[Arrow],
   	[Seagull],
   	[Tub],
