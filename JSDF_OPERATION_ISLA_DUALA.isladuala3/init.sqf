@@ -149,3 +149,5 @@ private _supplyBoxSpawnVehicle = [
 [["ACE_ZeusActions", QGVAR(supplyBoxSpawnBase)], _supplyBoxSpawnVehicle] call ace_interact_menu_fnc_addActionToZeus;
 
 [] call JSDF_Mission_fnc_safezone;
+
+

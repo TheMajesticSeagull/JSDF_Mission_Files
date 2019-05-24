@@ -5,25 +5,359 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=1033;
+	toggles=1;
 	class ItemIDProvider
 	{
 		nextID=730;
 	};
 	class LayerIndexProvider
 	{
-		nextID=44;
+		nextID=60;
 	};
 	class Camera
 	{
-		pos[]={2572.238,14.523008,586.81891};
-		dir[]={0.89706576,-0.22771372,0.37891376};
-		up[]={0.2098846,0.9737041,0.08865422};
-		aside[]={0.38912684,-1.5938422e-006,-0.92125607};
+		pos[]={2567.938,72.499001,454.73523};
+		dir[]={0.60783178,-0.49988964,0.61714464};
+		up[]={0.35084638,0.86604226,0.35622397};
+		aside[]={0.71252507,-3.061723e-007,-0.70177543};
 	};
 };
 binarizationWanted=0;
-
+addons[]=
+{
+	"A3_Ui_F",
+	"A3_Structures_F_Walls",
+	"A3_Structures_F_Civ_InfoBoards",
+	"A3_Structures_F_Heli_Ind_Cargo",
+	"A3_Structures_F_Mil_Flags",
+	"A3_Supplies_F_Heli_Fuel",
+	"A3_Structures_F_Mil_Fortification",
+	"A3_Structures_F_Mil_Helipads",
+	"A3_Structures_F_Civ_Lamps",
+	"A3_Structures_F_Heli_Items_Luggage",
+	"ace_cargo",
+	"A3_Structures_F_Items_Electronics",
+	"A3_Structures_F_Heli_Items_Airport",
+	"A3_Structures_F_EPA_Civ_Constructions",
+	"ace_interaction",
+	"ace_dragging",
+	"A3_Structures_F_Heli_Ind_Machines",
+	"A3_Weapons_F_Ammoboxes",
+	"A3_Structures_F_Heli_Civ_Constructions",
+	"A3_Modules_F_Curator_Curator",
+	"A3_Modules_F",
+	"rhsusf_c_melb",
+	"ace_compat_rhs_usf3",
+	"RHS_US_A2_AirImport",
+	"ace_medical",
+	"A3_Supplies_F_Heli_CargoNets",
+	"A3_Supplies_F_Heli_Slingload",
+	"ace_rearm",
+	"ace_refuel",
+	"ace_repair",
+	"A3_Props_F_Exp_Military_Camps",
+	"rhsusf_vehicles",
+	"A3_Structures_F_Exp_Industrial_SurfaceMine_01",
+	"rhsusf_c_Caiman",
+	"rhsusf_c_HEMTT_A4",
+	"rhsusf_c_fmtv",
+	"CUP_CAStructures_E_Mil",
+	"A3_Structures_F_Mil_Cargo",
+	"CUP_CAStructures_Mil",
+	"A3_Structures_F_Exp_Military_ContainerBases",
+	"A3_Structures_F_Exp_Military_Fortifications",
+	"CUP_Misc3_Config",
+	"RHS_US_A2Port_Armor",
+	"UK3CB_BAF_Vehicles_LandRover",
+	"UK3CB_BAF_Vehicles_Coyote_Jackal",
+	"UK3CB_BAF_Vehicles_Merlin",
+	"A3_Characters_F",
+	"A3_Weapons_F",
+	"task_force_radio_items",
+	"Splinter_camo_addon",
+	"ace_hearing",
+	"ace_explosives",
+	"rhsusf_c_weapons",
+	"UK3CB_BAF_Vehicles_Bulldog"
+};
+class AddonsMetaData
+{
+	class List
+	{
+		items=40;
+		class Item0
+		{
+			className="A3_Ui_F";
+			name="Arma 3 - User Interface";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item1
+		{
+			className="A3_Structures_F";
+			name="Arma 3 - Buildings and Structures";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item2
+		{
+			className="A3_Structures_F_Heli";
+			name="Arma 3 Helicopters - Buildings and Structures";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item3
+		{
+			className="A3_Structures_F_Mil";
+			name="Arma 3 - Military Buildings and Structures";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item4
+		{
+			className="A3_Supplies_F_Heli";
+			name="Arma 3 Helicopters - Ammoboxes and Supplies";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item5
+		{
+			className="ace_cargo";
+			name="ACE3 - Cargo";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
+		};
+		class Item6
+		{
+			className="A3_Structures_F_EPA";
+			name="Arma 3 Survive Episode - Buildings and Structures";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item7
+		{
+			className="ace_interaction";
+			name="ACE3 - Interaction";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
+		};
+		class Item8
+		{
+			className="ace_dragging";
+			name="ACE3 - Dragging";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
+		};
+		class Item9
+		{
+			className="A3_Weapons_F";
+			name="Arma 3 Alpha - Weapons and Accessories";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item10
+		{
+			className="A3_Modules_F_Curator";
+			name="Arma 3 Zeus Update - Scripted Modules";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item11
+		{
+			className="A3_Modules_F";
+			name="Arma 3 Alpha - Scripted Modules";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item12
+		{
+			className="rhsusf_c_melb";
+			name="MELB";
+			author="Red Hammer Studios";
+			url="http://www.rhsmods.org/";
+		};
+		class Item13
+		{
+			className="ace_compat_rhs_usf3";
+			name="ACE3 - RHS USF Compatibility";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
+		};
+		class Item14
+		{
+			className="RHS_US_A2_AirImport";
+			name="RHSUSF A2 Air Ports";
+			author="Red Hammer Studios";
+			url="http://www.rhsmods.org/";
+		};
+		class Item15
+		{
+			className="ace_medical";
+			name="ACE3 - Medical";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
+		};
+		class Item16
+		{
+			className="ace_rearm";
+			name="ACE3 - Rearm";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
+		};
+		class Item17
+		{
+			className="ace_refuel";
+			name="ACE3 - Refuel";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
+		};
+		class Item18
+		{
+			className="ace_repair";
+			name="ACE3 - Repair";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
+		};
+		class Item19
+		{
+			className="A3_Props_F_Exp";
+			name="Arma 3 Apex - Decorative and Mission Objects";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item20
+		{
+			className="rhsusf_vehicles";
+			name="rhsusf_vehicles";
+		};
+		class Item21
+		{
+			className="A3_Structures_F_Exp_Industrial";
+			name="Arma 3 Apex - Industrial Structures";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item22
+		{
+			className="rhsusf_c_Caiman";
+			name="Caiman MRAP";
+			author="Red Hammer Studios";
+			url="http://www.rhsmods.org/";
+		};
+		class Item23
+		{
+			className="rhsusf_c_HEMTT_A4";
+			name="HEMMTT A4 Trucks";
+			author="Red Hammer Studios";
+			url="http://www.rhsmods.org/";
+		};
+		class Item24
+		{
+			className="rhsusf_c_fmtv";
+			name="FMTV Trucks";
+			author="Red Hammer Studios";
+			url="http://www.rhsmods.org/";
+		};
+		class Item25
+		{
+			className="CUP_CAStructures_E_Mil";
+			name="CUP_CAStructures_E_Mil";
+		};
+		class Item26
+		{
+			className="CUP_CAStructures_Mil";
+			name="CUP_CAStructures_Mil";
+		};
+		class Item27
+		{
+			className="A3_Structures_F_Exp";
+			name="Arma 3 Apex - Buildings and Structures";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item28
+		{
+			className="CUP_Misc3_Config";
+			name="CUP_Misc3_Config";
+		};
+		class Item29
+		{
+			className="RHS_US_A2Port_Armor";
+			name="M2 Bradley IFV";
+			author="Red Hammer Studios";
+			url="http://www.rhsmods.org/";
+		};
+		class Item30
+		{
+			className="UK3CB_BAF_Vehicles_LandRover";
+			name="3CB BAF Vehicles - Land Rover";
+			author="3 Commando Brigade";
+			url="www.3commandobrigade.com";
+		};
+		class Item31
+		{
+			className="UK3CB_BAF_Vehicles_Coyote_Jackal";
+			name="3CB BAF Vehicles - Coyote and Jackal";
+			author="3 Commando Brigade";
+			url="www.3commandobrigade.com";
+		};
+		class Item32
+		{
+			className="UK3CB_BAF_Vehicles_Merlin";
+			name="3CB BAF Vehicles - Merlin";
+			author="3 Commando Brigade";
+			url="www.3commandobrigade.com";
+		};
+		class Item33
+		{
+			className="A3_Characters_F";
+			name="Arma 3 Alpha - Characters and Clothing";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item34
+		{
+			className="task_force_radio_items";
+			name="task_force_radio_items";
+			author="[TF]Nkey";
+			url="https://github.com/michail-nikolaev/task-force-arma-3-radio";
+		};
+		class Item35
+		{
+			className="Splinter_camo_addon";
+			name="Splinter_camo_addon";
+			author="Rainman";
+		};
+		class Item36
+		{
+			className="ace_hearing";
+			name="ACE3 - Hearing";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
+		};
+		class Item37
+		{
+			className="ace_explosives";
+			name="ACE3 - Explosives";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
+		};
+		class Item38
+		{
+			className="rhsusf_c_weapons";
+			name="RHSUSF Weapons & Accessories";
+			author="Red Hammer Studios";
+			url="http://www.rhsmods.org/";
+		};
+		class Item39
+		{
+			className="UK3CB_BAF_Vehicles_Bulldog";
+			name="3CB BAF Vehicles - Bulldog";
+			author="3 Commando Brigade";
+			url="www.3commandobrigade.com";
+		};
+	};
+};
 randomSeed=11110437;
 class ScenarioData
 {
@@ -157,7 +491,7 @@ class CustomAttributes
 								};
 								class value
 								{
-									items=213;
+									items=211;
 									class Item0
 									{
 										class data
@@ -1695,7 +2029,7 @@ class CustomAttributes
 													"STRING"
 												};
 											};
-											value="ace_viewdistance_enabled";
+											value="ace_viewdistance_limitviewdistance";
 										};
 									};
 									class Item110
@@ -1709,7 +2043,7 @@ class CustomAttributes
 													"STRING"
 												};
 											};
-											value="ace_viewdistance_viewdistanceonfoot";
+											value="ace_weather_enabled";
 										};
 									};
 									class Item111
@@ -1723,7 +2057,7 @@ class CustomAttributes
 													"STRING"
 												};
 											};
-											value="ace_viewdistance_limitviewdistance";
+											value="ace_weather_updateinterval";
 										};
 									};
 									class Item112
@@ -1737,7 +2071,7 @@ class CustomAttributes
 													"STRING"
 												};
 											};
-											value="ace_weather_enabled";
+											value="ace_weather_windsimulation";
 										};
 									};
 									class Item113
@@ -1751,7 +2085,7 @@ class CustomAttributes
 													"STRING"
 												};
 											};
-											value="ace_weather_updateinterval";
+											value="ace_winddeflection_enabled";
 										};
 									};
 									class Item114
@@ -1765,7 +2099,7 @@ class CustomAttributes
 													"STRING"
 												};
 											};
-											value="ace_weather_windsimulation";
+											value="ace_winddeflection_vehicleenabled";
 										};
 									};
 									class Item115
@@ -1779,7 +2113,7 @@ class CustomAttributes
 													"STRING"
 												};
 											};
-											value="ace_winddeflection_enabled";
+											value="ace_winddeflection_simulationinterval";
 										};
 									};
 									class Item116
@@ -1793,7 +2127,7 @@ class CustomAttributes
 													"STRING"
 												};
 											};
-											value="ace_winddeflection_vehicleenabled";
+											value="acex_sitting_enable";
 										};
 									};
 									class Item117
@@ -1807,7 +2141,7 @@ class CustomAttributes
 													"STRING"
 												};
 											};
-											value="ace_winddeflection_simulationinterval";
+											value="acex_viewrestriction_mode";
 										};
 									};
 									class Item118
@@ -1821,7 +2155,7 @@ class CustomAttributes
 													"STRING"
 												};
 											};
-											value="acex_sitting_enable";
+											value="acex_viewrestriction_modeselectivefoot";
 										};
 									};
 									class Item119
@@ -1835,7 +2169,7 @@ class CustomAttributes
 													"STRING"
 												};
 											};
-											value="acex_viewrestriction_mode";
+											value="acex_viewrestriction_modeselectiveland";
 										};
 									};
 									class Item120
@@ -1849,7 +2183,7 @@ class CustomAttributes
 													"STRING"
 												};
 											};
-											value="acex_viewrestriction_modeselectivefoot";
+											value="acex_viewrestriction_modeselectiveair";
 										};
 									};
 									class Item121
@@ -1863,7 +2197,7 @@ class CustomAttributes
 													"STRING"
 												};
 											};
-											value="acex_viewrestriction_modeselectiveland";
+											value="acex_viewrestriction_modeselectivesea";
 										};
 									};
 									class Item122
@@ -1877,7 +2211,7 @@ class CustomAttributes
 													"STRING"
 												};
 											};
-											value="acex_viewrestriction_modeselectiveair";
+											value="acex_volume_enabled";
 										};
 									};
 									class Item123
@@ -1891,7 +2225,7 @@ class CustomAttributes
 													"STRING"
 												};
 											};
-											value="acex_viewrestriction_modeselectivesea";
+											value="acex_volume_shownotification";
 										};
 									};
 									class Item124
@@ -1905,7 +2239,7 @@ class CustomAttributes
 													"STRING"
 												};
 											};
-											value="acex_volume_enabled";
+											value="ace_advanced_throwing_enablepickup";
 										};
 									};
 									class Item125
@@ -1919,7 +2253,7 @@ class CustomAttributes
 													"STRING"
 												};
 											};
-											value="acex_volume_shownotification";
+											value="ace_advanced_throwing_enablepickupattached";
 										};
 									};
 									class Item126
@@ -1933,7 +2267,7 @@ class CustomAttributes
 													"STRING"
 												};
 											};
-											value="ace_advanced_throwing_enablepickup";
+											value="ace_captives_allowhandcuffownside";
 										};
 									};
 									class Item127
@@ -1947,7 +2281,7 @@ class CustomAttributes
 													"STRING"
 												};
 											};
-											value="ace_advanced_throwing_enablepickupattached";
+											value="ace_captives_requiresurrender";
 										};
 									};
 									class Item128
@@ -1961,7 +2295,7 @@ class CustomAttributes
 													"STRING"
 												};
 											};
-											value="ace_captives_allowhandcuffownside";
+											value="ace_captives_allowsurrender";
 										};
 									};
 									class Item129
@@ -1975,7 +2309,7 @@ class CustomAttributes
 													"STRING"
 												};
 											};
-											value="ace_captives_requiresurrender";
+											value="ace_captives_requiresurrenderai";
 										};
 									};
 									class Item130
@@ -1989,7 +2323,7 @@ class CustomAttributes
 													"STRING"
 												};
 											};
-											value="ace_captives_allowsurrender";
+											value="ace_explosives_requirespecialist";
 										};
 									};
 									class Item131
@@ -2003,7 +2337,7 @@ class CustomAttributes
 													"STRING"
 												};
 											};
-											value="ace_captives_requiresurrenderai";
+											value="ace_explosives_punishnonspecialists";
 										};
 									};
 									class Item132
@@ -2017,7 +2351,7 @@ class CustomAttributes
 													"STRING"
 												};
 											};
-											value="ace_explosives_requirespecialist";
+											value="ace_explosives_explodeondefuse";
 										};
 									};
 									class Item133
@@ -2031,7 +2365,7 @@ class CustomAttributes
 													"STRING"
 												};
 											};
-											value="ace_explosives_punishnonspecialists";
+											value="ace_gestures_showoninteractionmenu";
 										};
 									};
 									class Item134
@@ -2045,7 +2379,7 @@ class CustomAttributes
 													"STRING"
 												};
 											};
-											value="ace_explosives_explodeondefuse";
+											value="ace_hearing_enablecombatdeafness";
 										};
 									};
 									class Item135
@@ -2059,7 +2393,7 @@ class CustomAttributes
 													"STRING"
 												};
 											};
-											value="ace_gestures_showoninteractionmenu";
+											value="ace_hearing_earplugsvolume";
 										};
 									};
 									class Item136
@@ -2073,7 +2407,7 @@ class CustomAttributes
 													"STRING"
 												};
 											};
-											value="ace_hearing_enablecombatdeafness";
+											value="ace_hearing_unconsciousnessvolume";
 										};
 									};
 									class Item137
@@ -2087,7 +2421,7 @@ class CustomAttributes
 													"STRING"
 												};
 											};
-											value="ace_hearing_earplugsvolume";
+											value="ace_hearing_disableearringing";
 										};
 									};
 									class Item138
@@ -2101,7 +2435,7 @@ class CustomAttributes
 													"STRING"
 												};
 											};
-											value="ace_hearing_unconsciousnessvolume";
+											value="ace_hearing_enabledforzeusunits";
 										};
 									};
 									class Item139
@@ -2115,7 +2449,7 @@ class CustomAttributes
 													"STRING"
 												};
 											};
-											value="ace_hearing_disableearringing";
+											value="ace_hearing_autoaddearplugstounits";
 										};
 									};
 									class Item140
@@ -2129,7 +2463,7 @@ class CustomAttributes
 													"STRING"
 												};
 											};
-											value="ace_hearing_enabledforzeusunits";
+											value="ace_zeus_zeusascension";
 										};
 									};
 									class Item141
@@ -2143,7 +2477,7 @@ class CustomAttributes
 													"STRING"
 												};
 											};
-											value="ace_hearing_autoaddearplugstounits";
+											value="ace_zeus_zeusbird";
 										};
 									};
 									class Item142
@@ -2157,7 +2491,7 @@ class CustomAttributes
 													"STRING"
 												};
 											};
-											value="ace_zeus_zeusascension";
+											value="ace_zeus_remotewind";
 										};
 									};
 									class Item143
@@ -2171,7 +2505,7 @@ class CustomAttributes
 													"STRING"
 												};
 											};
-											value="ace_zeus_zeusbird";
+											value="ace_zeus_radioordnance";
 										};
 									};
 									class Item144
@@ -2185,7 +2519,7 @@ class CustomAttributes
 													"STRING"
 												};
 											};
-											value="ace_zeus_remotewind";
+											value="ace_zeus_revealmines";
 										};
 									};
 									class Item145
@@ -2199,7 +2533,7 @@ class CustomAttributes
 													"STRING"
 												};
 											};
-											value="ace_zeus_radioordnance";
+											value="ace_zeus_autoaddobjects";
 										};
 									};
 									class Item146
@@ -2213,7 +2547,7 @@ class CustomAttributes
 													"STRING"
 												};
 											};
-											value="ace_zeus_revealmines";
+											value="acex_headless_enabled";
 										};
 									};
 									class Item147
@@ -2227,7 +2561,7 @@ class CustomAttributes
 													"STRING"
 												};
 											};
-											value="ace_zeus_autoaddobjects";
+											value="acex_headless_delay";
 										};
 									};
 									class Item148
@@ -2241,7 +2575,7 @@ class CustomAttributes
 													"STRING"
 												};
 											};
-											value="acex_headless_enabled";
+											value="acex_headless_endmission";
 										};
 									};
 									class Item149
@@ -2255,7 +2589,7 @@ class CustomAttributes
 													"STRING"
 												};
 											};
-											value="acex_headless_delay";
+											value="acex_headless_log";
 										};
 									};
 									class Item150
@@ -2269,7 +2603,7 @@ class CustomAttributes
 													"STRING"
 												};
 											};
-											value="acex_headless_endmission";
+											value="ace_advanced_ballistics_enabled";
 										};
 									};
 									class Item151
@@ -2283,7 +2617,7 @@ class CustomAttributes
 													"STRING"
 												};
 											};
-											value="acex_headless_log";
+											value="ace_advanced_ballistics_muzzlevelocityvariationenabled";
 										};
 									};
 									class Item152
@@ -2297,7 +2631,7 @@ class CustomAttributes
 													"STRING"
 												};
 											};
-											value="ace_advanced_ballistics_enabled";
+											value="ace_advanced_ballistics_ammotemperatureenabled";
 										};
 									};
 									class Item153
@@ -2311,7 +2645,7 @@ class CustomAttributes
 													"STRING"
 												};
 											};
-											value="ace_advanced_ballistics_muzzlevelocityvariationenabled";
+											value="ace_advanced_ballistics_barrellengthinfluenceenabled";
 										};
 									};
 									class Item154
@@ -2325,7 +2659,7 @@ class CustomAttributes
 													"STRING"
 												};
 											};
-											value="ace_advanced_ballistics_ammotemperatureenabled";
+											value="ace_advanced_ballistics_bullettraceenabled";
 										};
 									};
 									class Item155
@@ -2339,7 +2673,7 @@ class CustomAttributes
 													"STRING"
 												};
 											};
-											value="ace_advanced_ballistics_barrellengthinfluenceenabled";
+											value="ace_advanced_ballistics_simulationinterval";
 										};
 									};
 									class Item156
@@ -2353,7 +2687,7 @@ class CustomAttributes
 													"STRING"
 												};
 											};
-											value="ace_advanced_ballistics_bullettraceenabled";
+											value="ace_common_persistentlaserenabled";
 										};
 									};
 									class Item157
@@ -2367,7 +2701,7 @@ class CustomAttributes
 													"STRING"
 												};
 											};
-											value="ace_advanced_ballistics_simulationinterval";
+											value="ace_common_allowfademusic";
 										};
 									};
 									class Item158
@@ -2381,7 +2715,7 @@ class CustomAttributes
 													"STRING"
 												};
 											};
-											value="ace_common_persistentlaserenabled";
+											value="ace_map_mapillumination";
 										};
 									};
 									class Item159
@@ -2395,7 +2729,7 @@ class CustomAttributes
 													"STRING"
 												};
 											};
-											value="ace_common_allowfademusic";
+											value="ace_map_mapglow";
 										};
 									};
 									class Item160
@@ -2409,7 +2743,7 @@ class CustomAttributes
 													"STRING"
 												};
 											};
-											value="ace_map_mapillumination";
+											value="ace_map_mapshake";
 										};
 									};
 									class Item161
@@ -2423,7 +2757,7 @@ class CustomAttributes
 													"STRING"
 												};
 											};
-											value="ace_map_mapglow";
+											value="ace_map_maplimitzoom";
 										};
 									};
 									class Item162
@@ -2437,7 +2771,7 @@ class CustomAttributes
 													"STRING"
 												};
 											};
-											value="ace_map_mapshake";
+											value="ace_map_mapshowcursorcoordinates";
 										};
 									};
 									class Item163
@@ -2451,7 +2785,7 @@ class CustomAttributes
 													"STRING"
 												};
 											};
-											value="ace_map_maplimitzoom";
+											value="ace_map_defaultchannel";
 										};
 									};
 									class Item164
@@ -2465,7 +2799,7 @@ class CustomAttributes
 													"STRING"
 												};
 											};
-											value="ace_map_mapshowcursorcoordinates";
+											value="ace_map_bft_enabled";
 										};
 									};
 									class Item165
@@ -2479,7 +2813,7 @@ class CustomAttributes
 													"STRING"
 												};
 											};
-											value="ace_map_defaultchannel";
+											value="ace_map_bft_interval";
 										};
 									};
 									class Item166
@@ -2493,7 +2827,7 @@ class CustomAttributes
 													"STRING"
 												};
 											};
-											value="ace_map_bft_enabled";
+											value="ace_map_bft_showplayernames";
 										};
 									};
 									class Item167
@@ -2507,7 +2841,7 @@ class CustomAttributes
 													"STRING"
 												};
 											};
-											value="ace_map_bft_interval";
+											value="ace_map_bft_hideaigroups";
 										};
 									};
 									class Item168
@@ -2521,7 +2855,7 @@ class CustomAttributes
 													"STRING"
 												};
 											};
-											value="ace_map_bft_showplayernames";
+											value="ace_markers_moverestriction";
 										};
 									};
 									class Item169
@@ -2535,7 +2869,7 @@ class CustomAttributes
 													"STRING"
 												};
 											};
-											value="ace_map_bft_hideaigroups";
+											value="ace_nightvision_effectscaling";
 										};
 									};
 									class Item170
@@ -2549,7 +2883,7 @@ class CustomAttributes
 													"STRING"
 												};
 											};
-											value="ace_markers_moverestriction";
+											value="ace_nightvision_fogscaling";
 										};
 									};
 									class Item171
@@ -2563,7 +2897,7 @@ class CustomAttributes
 													"STRING"
 												};
 											};
-											value="ace_nightvision_effectscaling";
+											value="ace_nightvision_noisescaling";
 										};
 									};
 									class Item172
@@ -2577,7 +2911,7 @@ class CustomAttributes
 													"STRING"
 												};
 											};
-											value="ace_nightvision_fogscaling";
+											value="ace_nightvision_aimdownsightsblur";
 										};
 									};
 									class Item173
@@ -2591,7 +2925,7 @@ class CustomAttributes
 													"STRING"
 												};
 											};
-											value="ace_nightvision_noisescaling";
+											value="ace_nightvision_disablenvgswithsights";
 										};
 									};
 									class Item174
@@ -2605,7 +2939,7 @@ class CustomAttributes
 													"STRING"
 												};
 											};
-											value="ace_nightvision_aimdownsightsblur";
+											value="ace_noradio_enabled";
 										};
 									};
 									class Item175
@@ -2619,7 +2953,7 @@ class CustomAttributes
 													"STRING"
 												};
 											};
-											value="ace_nightvision_disablenvgswithsights";
+											value="ace_rearm_level";
 										};
 									};
 									class Item176
@@ -2633,7 +2967,7 @@ class CustomAttributes
 													"STRING"
 												};
 											};
-											value="ace_noradio_enabled";
+											value="ace_rearm_supply";
 										};
 									};
 									class Item177
@@ -2647,7 +2981,7 @@ class CustomAttributes
 													"STRING"
 												};
 											};
-											value="ace_rearm_level";
+											value="ace_refuel_rate";
 										};
 									};
 									class Item178
@@ -2661,7 +2995,7 @@ class CustomAttributes
 													"STRING"
 												};
 											};
-											value="ace_rearm_supply";
+											value="ace_refuel_hoselength";
 										};
 									};
 									class Item179
@@ -2675,7 +3009,7 @@ class CustomAttributes
 													"STRING"
 												};
 											};
-											value="ace_refuel_rate";
+											value="ace_repair_engineersetting_repair";
 										};
 									};
 									class Item180
@@ -2689,7 +3023,7 @@ class CustomAttributes
 													"STRING"
 												};
 											};
-											value="ace_refuel_hoselength";
+											value="ace_repair_engineersetting_wheel";
 										};
 									};
 									class Item181
@@ -2703,7 +3037,7 @@ class CustomAttributes
 													"STRING"
 												};
 											};
-											value="ace_repair_engineersetting_repair";
+											value="ace_repair_repairdamagethreshold";
 										};
 									};
 									class Item182
@@ -2717,7 +3051,7 @@ class CustomAttributes
 													"STRING"
 												};
 											};
-											value="ace_repair_engineersetting_wheel";
+											value="ace_repair_repairdamagethreshold_engineer";
 										};
 									};
 									class Item183
@@ -2731,7 +3065,7 @@ class CustomAttributes
 													"STRING"
 												};
 											};
-											value="ace_repair_repairdamagethreshold";
+											value="ace_repair_consumeitem_toolkit";
 										};
 									};
 									class Item184
@@ -2745,7 +3079,7 @@ class CustomAttributes
 													"STRING"
 												};
 											};
-											value="ace_repair_repairdamagethreshold_engineer";
+											value="ace_repair_fullrepairlocation";
 										};
 									};
 									class Item185
@@ -2759,7 +3093,7 @@ class CustomAttributes
 													"STRING"
 												};
 											};
-											value="ace_repair_consumeitem_toolkit";
+											value="ace_repair_engineersetting_fullrepair";
 										};
 									};
 									class Item186
@@ -2773,7 +3107,7 @@ class CustomAttributes
 													"STRING"
 												};
 											};
-											value="ace_repair_fullrepairlocation";
+											value="ace_repair_addspareparts";
 										};
 									};
 									class Item187
@@ -2787,7 +3121,7 @@ class CustomAttributes
 													"STRING"
 												};
 											};
-											value="ace_repair_engineersetting_fullrepair";
+											value="ace_repair_wheelrepairrequireditems";
 										};
 									};
 									class Item188
@@ -2801,7 +3135,7 @@ class CustomAttributes
 													"STRING"
 												};
 											};
-											value="ace_repair_addspareparts";
+											value="ace_repair_autoshutoffenginewhenstartingrepair";
 										};
 									};
 									class Item189
@@ -2815,7 +3149,7 @@ class CustomAttributes
 													"STRING"
 												};
 											};
-											value="ace_repair_wheelrepairrequireditems";
+											value="ace_vehiclelock_defaultlockpickstrength";
 										};
 									};
 									class Item190
@@ -2829,7 +3163,7 @@ class CustomAttributes
 													"STRING"
 												};
 											};
-											value="ace_repair_autoshutoffenginewhenstartingrepair";
+											value="ace_vehiclelock_lockvehicleinventory";
 										};
 									};
 									class Item191
@@ -2843,7 +3177,7 @@ class CustomAttributes
 													"STRING"
 												};
 											};
-											value="ace_vehiclelock_defaultlockpickstrength";
+											value="ace_vehiclelock_vehiclestartinglockstate";
 										};
 									};
 									class Item192
@@ -2857,7 +3191,7 @@ class CustomAttributes
 													"STRING"
 												};
 											};
-											value="ace_vehiclelock_lockvehicleinventory";
+											value="ace_advanced_fatigue_enabled";
 										};
 									};
 									class Item193
@@ -2871,7 +3205,7 @@ class CustomAttributes
 													"STRING"
 												};
 											};
-											value="ace_vehiclelock_vehiclestartinglockstate";
+											value="ace_advanced_fatigue_enablestaminabar";
 										};
 									};
 									class Item194
@@ -2885,7 +3219,7 @@ class CustomAttributes
 													"STRING"
 												};
 											};
-											value="ace_advanced_fatigue_enabled";
+											value="ace_advanced_fatigue_performancefactor";
 										};
 									};
 									class Item195
@@ -2899,7 +3233,7 @@ class CustomAttributes
 													"STRING"
 												};
 											};
-											value="ace_advanced_fatigue_enablestaminabar";
+											value="ace_advanced_fatigue_recoveryfactor";
 										};
 									};
 									class Item196
@@ -2913,7 +3247,7 @@ class CustomAttributes
 													"STRING"
 												};
 											};
-											value="ace_advanced_fatigue_performancefactor";
+											value="ace_advanced_fatigue_loadfactor";
 										};
 									};
 									class Item197
@@ -2927,7 +3261,7 @@ class CustomAttributes
 													"STRING"
 												};
 											};
-											value="ace_advanced_fatigue_recoveryfactor";
+											value="ace_advanced_fatigue_terraingradientfactor";
 										};
 									};
 									class Item198
@@ -2941,7 +3275,7 @@ class CustomAttributes
 													"STRING"
 												};
 											};
-											value="ace_advanced_fatigue_loadfactor";
+											value="ace_advanced_fatigue_swayfactor";
 										};
 									};
 									class Item199
@@ -2955,7 +3289,7 @@ class CustomAttributes
 													"STRING"
 												};
 											};
-											value="ace_advanced_fatigue_terraingradientfactor";
+											value="ace_arsenal_enableidentitytabs";
 										};
 									};
 									class Item200
@@ -2969,7 +3303,7 @@ class CustomAttributes
 													"STRING"
 												};
 											};
-											value="ace_advanced_fatigue_swayfactor";
+											value="ace_arsenal_allowdefaultloadouts";
 										};
 									};
 									class Item201
@@ -2983,7 +3317,7 @@ class CustomAttributes
 													"STRING"
 												};
 											};
-											value="ace_arsenal_enableidentitytabs";
+											value="ace_arsenal_allowsharedloadouts";
 										};
 									};
 									class Item202
@@ -2997,7 +3331,7 @@ class CustomAttributes
 													"STRING"
 												};
 											};
-											value="ace_arsenal_allowdefaultloadouts";
+											value="ace_cargo_enable";
 										};
 									};
 									class Item203
@@ -3011,7 +3345,7 @@ class CustomAttributes
 													"STRING"
 												};
 											};
-											value="ace_arsenal_allowsharedloadouts";
+											value="ace_cargo_paradroptimecoefficent";
 										};
 									};
 									class Item204
@@ -3025,7 +3359,7 @@ class CustomAttributes
 													"STRING"
 												};
 											};
-											value="ace_cargo_enable";
+											value="ace_pylons_enabledfromammotrucks";
 										};
 									};
 									class Item205
@@ -3039,7 +3373,7 @@ class CustomAttributes
 													"STRING"
 												};
 											};
-											value="ace_cargo_paradroptimecoefficent";
+											value="ace_pylons_enabledforzeus";
 										};
 									};
 									class Item206
@@ -3053,7 +3387,7 @@ class CustomAttributes
 													"STRING"
 												};
 											};
-											value="ace_pylons_enabledfromammotrucks";
+											value="ace_pylons_rearmnewpylons";
 										};
 									};
 									class Item207
@@ -3067,7 +3401,7 @@ class CustomAttributes
 													"STRING"
 												};
 											};
-											value="ace_pylons_enabledforzeus";
+											value="ace_pylons_requireengineer";
 										};
 									};
 									class Item208
@@ -3081,7 +3415,7 @@ class CustomAttributes
 													"STRING"
 												};
 											};
-											value="ace_pylons_rearmnewpylons";
+											value="ace_pylons_requiretoolkit";
 										};
 									};
 									class Item209
@@ -3095,38 +3429,10 @@ class CustomAttributes
 													"STRING"
 												};
 											};
-											value="ace_pylons_requireengineer";
-										};
-									};
-									class Item210
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="ace_pylons_requiretoolkit";
-										};
-									};
-									class Item211
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
 											value="ace_pylons_searchdistance";
 										};
 									};
-									class Item212
+									class Item210
 									{
 										class data
 										{
@@ -3156,7 +3462,7 @@ class CustomAttributes
 								};
 								class value
 								{
-									items=213;
+									items=211;
 									class Item0
 									{
 										class data
@@ -8084,10 +8390,10 @@ class CustomAttributes
 														{
 															type[]=
 															{
-																"BOOL"
+																"SCALAR"
 															};
 														};
-														value=1;
+														value=2000;
 													};
 												};
 												class Item1
@@ -8101,7 +8407,7 @@ class CustomAttributes
 																"SCALAR"
 															};
 														};
-														value=1;
+														value=0;
 													};
 												};
 											};
@@ -8129,10 +8435,10 @@ class CustomAttributes
 														{
 															type[]=
 															{
-																"SCALAR"
+																"BOOL"
 															};
 														};
-														value=3;
+														value=1;
 													};
 												};
 												class Item1
@@ -8146,7 +8452,7 @@ class CustomAttributes
 																"SCALAR"
 															};
 														};
-														value=2;
+														value=1;
 													};
 												};
 											};
@@ -8177,7 +8483,7 @@ class CustomAttributes
 																"SCALAR"
 															};
 														};
-														value=2000;
+														value=60;
 													};
 												};
 												class Item1
@@ -8191,7 +8497,7 @@ class CustomAttributes
 																"SCALAR"
 															};
 														};
-														value=2;
+														value=1;
 													};
 												};
 											};
@@ -8264,10 +8570,10 @@ class CustomAttributes
 														{
 															type[]=
 															{
-																"SCALAR"
+																"BOOL"
 															};
 														};
-														value=60;
+														value=0;
 													};
 												};
 												class Item1
@@ -8312,7 +8618,7 @@ class CustomAttributes
 																"BOOL"
 															};
 														};
-														value=1;
+														value=0;
 													};
 												};
 												class Item1
@@ -8333,96 +8639,6 @@ class CustomAttributes
 										};
 									};
 									class Item115
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"ARRAY"
-												};
-											};
-											class value
-											{
-												items=2;
-												class Item0
-												{
-													class data
-													{
-														class type
-														{
-															type[]=
-															{
-																"BOOL"
-															};
-														};
-														value=0;
-													};
-												};
-												class Item1
-												{
-													class data
-													{
-														class type
-														{
-															type[]=
-															{
-																"SCALAR"
-															};
-														};
-														value=1;
-													};
-												};
-											};
-										};
-									};
-									class Item116
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"ARRAY"
-												};
-											};
-											class value
-											{
-												items=2;
-												class Item0
-												{
-													class data
-													{
-														class type
-														{
-															type[]=
-															{
-																"BOOL"
-															};
-														};
-														value=0;
-													};
-												};
-												class Item1
-												{
-													class data
-													{
-														class type
-														{
-															type[]=
-															{
-																"SCALAR"
-															};
-														};
-														value=1;
-													};
-												};
-											};
-										};
-									};
-									class Item117
 									{
 										class data
 										{
@@ -8467,7 +8683,7 @@ class CustomAttributes
 											};
 										};
 									};
-									class Item118
+									class Item116
 									{
 										class data
 										{
@@ -8490,6 +8706,96 @@ class CustomAttributes
 															type[]=
 															{
 																"BOOL"
+															};
+														};
+														value=1;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item117
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"ARRAY"
+												};
+											};
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=3;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item118
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"ARRAY"
+												};
+											};
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
 															};
 														};
 														value=1;
@@ -8537,7 +8843,7 @@ class CustomAttributes
 																"SCALAR"
 															};
 														};
-														value=3;
+														value=0;
 													};
 												};
 												class Item1
@@ -8551,7 +8857,7 @@ class CustomAttributes
 																"SCALAR"
 															};
 														};
-														value=1;
+														value=2;
 													};
 												};
 											};
@@ -8582,7 +8888,7 @@ class CustomAttributes
 																"SCALAR"
 															};
 														};
-														value=1;
+														value=0;
 													};
 												};
 												class Item1
@@ -8596,7 +8902,7 @@ class CustomAttributes
 																"SCALAR"
 															};
 														};
-														value=1;
+														value=2;
 													};
 												};
 											};
@@ -8669,10 +8975,10 @@ class CustomAttributes
 														{
 															type[]=
 															{
-																"SCALAR"
+																"BOOL"
 															};
 														};
-														value=0;
+														value=1;
 													};
 												};
 												class Item1
@@ -8686,7 +8992,7 @@ class CustomAttributes
 																"SCALAR"
 															};
 														};
-														value=2;
+														value=0;
 													};
 												};
 											};
@@ -8714,7 +9020,7 @@ class CustomAttributes
 														{
 															type[]=
 															{
-																"SCALAR"
+																"BOOL"
 															};
 														};
 														value=0;
@@ -8731,7 +9037,7 @@ class CustomAttributes
 																"SCALAR"
 															};
 														};
-														value=2;
+														value=0;
 													};
 												};
 											};
@@ -8776,7 +9082,7 @@ class CustomAttributes
 																"SCALAR"
 															};
 														};
-														value=0;
+														value=1;
 													};
 												};
 											};
@@ -8807,7 +9113,7 @@ class CustomAttributes
 																"BOOL"
 															};
 														};
-														value=0;
+														value=1;
 													};
 												};
 												class Item1
@@ -8821,7 +9127,7 @@ class CustomAttributes
 																"SCALAR"
 															};
 														};
-														value=0;
+														value=1;
 													};
 												};
 											};
@@ -8852,96 +9158,6 @@ class CustomAttributes
 																"BOOL"
 															};
 														};
-														value=1;
-													};
-												};
-												class Item1
-												{
-													class data
-													{
-														class type
-														{
-															type[]=
-															{
-																"SCALAR"
-															};
-														};
-														value=1;
-													};
-												};
-											};
-										};
-									};
-									class Item127
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"ARRAY"
-												};
-											};
-											class value
-											{
-												items=2;
-												class Item0
-												{
-													class data
-													{
-														class type
-														{
-															type[]=
-															{
-																"BOOL"
-															};
-														};
-														value=1;
-													};
-												};
-												class Item1
-												{
-													class data
-													{
-														class type
-														{
-															type[]=
-															{
-																"SCALAR"
-															};
-														};
-														value=1;
-													};
-												};
-											};
-										};
-									};
-									class Item128
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"ARRAY"
-												};
-											};
-											class value
-											{
-												items=2;
-												class Item0
-												{
-													class data
-													{
-														class type
-														{
-															type[]=
-															{
-																"BOOL"
-															};
-														};
 														value=0;
 													};
 												};
@@ -8962,7 +9178,7 @@ class CustomAttributes
 											};
 										};
 									};
-									class Item129
+									class Item127
 									{
 										class data
 										{
@@ -9007,7 +9223,7 @@ class CustomAttributes
 											};
 										};
 									};
-									class Item130
+									class Item128
 									{
 										class data
 										{
@@ -9033,6 +9249,96 @@ class CustomAttributes
 															};
 														};
 														value=1;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item129
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"ARRAY"
+												};
+											};
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"BOOL"
+															};
+														};
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item130
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"ARRAY"
+												};
+											};
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"BOOL"
+															};
+														};
+														value=0;
 													};
 												};
 												class Item1
@@ -9077,7 +9383,7 @@ class CustomAttributes
 																"BOOL"
 															};
 														};
-														value=0;
+														value=1;
 													};
 												};
 												class Item1
@@ -9122,7 +9428,7 @@ class CustomAttributes
 																"BOOL"
 															};
 														};
-														value=0;
+														value=1;
 													};
 												};
 												class Item1
@@ -9164,7 +9470,7 @@ class CustomAttributes
 														{
 															type[]=
 															{
-																"BOOL"
+																"SCALAR"
 															};
 														};
 														value=1;
@@ -9181,7 +9487,7 @@ class CustomAttributes
 																"SCALAR"
 															};
 														};
-														value=1;
+														value=0;
 													};
 												};
 											};
@@ -9212,7 +9518,7 @@ class CustomAttributes
 																"BOOL"
 															};
 														};
-														value=1;
+														value=0;
 													};
 												};
 												class Item1
@@ -9257,7 +9563,7 @@ class CustomAttributes
 																"SCALAR"
 															};
 														};
-														value=1;
+														value=0.5;
 													};
 												};
 												class Item1
@@ -9271,7 +9577,7 @@ class CustomAttributes
 																"SCALAR"
 															};
 														};
-														value=0;
+														value=1;
 													};
 												};
 											};
@@ -9299,10 +9605,10 @@ class CustomAttributes
 														{
 															type[]=
 															{
-																"BOOL"
+																"SCALAR"
 															};
 														};
-														value=0;
+														value=0.40000001;
 													};
 												};
 												class Item1
@@ -9344,10 +9650,10 @@ class CustomAttributes
 														{
 															type[]=
 															{
-																"SCALAR"
+																"BOOL"
 															};
 														};
-														value=0.5;
+														value=1;
 													};
 												};
 												class Item1
@@ -9389,10 +9695,10 @@ class CustomAttributes
 														{
 															type[]=
 															{
-																"SCALAR"
+																"BOOL"
 															};
 														};
-														value=0.40000001;
+														value=0;
 													};
 												};
 												class Item1
@@ -9527,7 +9833,7 @@ class CustomAttributes
 																"BOOL"
 															};
 														};
-														value=1;
+														value=0;
 													};
 												};
 												class Item1
@@ -9659,7 +9965,7 @@ class CustomAttributes
 														{
 															type[]=
 															{
-																"BOOL"
+																"SCALAR"
 															};
 														};
 														value=0;
@@ -9707,7 +10013,7 @@ class CustomAttributes
 																"BOOL"
 															};
 														};
-														value=0;
+														value=1;
 													};
 												};
 												class Item1
@@ -9749,10 +10055,10 @@ class CustomAttributes
 														{
 															type[]=
 															{
-																"SCALAR"
+																"BOOL"
 															};
 														};
-														value=0;
+														value=1;
 													};
 												};
 												class Item1
@@ -9773,96 +10079,6 @@ class CustomAttributes
 										};
 									};
 									class Item147
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"ARRAY"
-												};
-											};
-											class value
-											{
-												items=2;
-												class Item0
-												{
-													class data
-													{
-														class type
-														{
-															type[]=
-															{
-																"BOOL"
-															};
-														};
-														value=1;
-													};
-												};
-												class Item1
-												{
-													class data
-													{
-														class type
-														{
-															type[]=
-															{
-																"SCALAR"
-															};
-														};
-														value=1;
-													};
-												};
-											};
-										};
-									};
-									class Item148
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"ARRAY"
-												};
-											};
-											class value
-											{
-												items=2;
-												class Item0
-												{
-													class data
-													{
-														class type
-														{
-															type[]=
-															{
-																"BOOL"
-															};
-														};
-														value=1;
-													};
-												};
-												class Item1
-												{
-													class data
-													{
-														class type
-														{
-															type[]=
-															{
-																"SCALAR"
-															};
-														};
-														value=1;
-													};
-												};
-											};
-										};
-									};
-									class Item149
 									{
 										class data
 										{
@@ -9907,7 +10123,7 @@ class CustomAttributes
 											};
 										};
 									};
-									class Item150
+									class Item148
 									{
 										class data
 										{
@@ -9930,6 +10146,96 @@ class CustomAttributes
 															type[]=
 															{
 																"SCALAR"
+															};
+														};
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item149
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"ARRAY"
+												};
+											};
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"BOOL"
+															};
+														};
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item150
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"ARRAY"
+												};
+											};
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"BOOL"
 															};
 														};
 														value=0;
@@ -9977,7 +10283,7 @@ class CustomAttributes
 																"BOOL"
 															};
 														};
-														value=0;
+														value=1;
 													};
 												};
 												class Item1
@@ -10022,7 +10328,7 @@ class CustomAttributes
 																"BOOL"
 															};
 														};
-														value=0;
+														value=1;
 													};
 												};
 												class Item1
@@ -10154,10 +10460,10 @@ class CustomAttributes
 														{
 															type[]=
 															{
-																"BOOL"
+																"SCALAR"
 															};
 														};
-														value=1;
+														value=0.050000001;
 													};
 												};
 												class Item1
@@ -10216,7 +10522,7 @@ class CustomAttributes
 																"SCALAR"
 															};
 														};
-														value=1;
+														value=0;
 													};
 												};
 											};
@@ -10244,10 +10550,10 @@ class CustomAttributes
 														{
 															type[]=
 															{
-																"SCALAR"
+																"BOOL"
 															};
 														};
-														value=0.050000001;
+														value=1;
 													};
 												};
 												class Item1
@@ -10306,7 +10612,7 @@ class CustomAttributes
 																"SCALAR"
 															};
 														};
-														value=0;
+														value=1;
 													};
 												};
 											};
@@ -10427,7 +10733,7 @@ class CustomAttributes
 																"BOOL"
 															};
 														};
-														value=1;
+														value=0;
 													};
 												};
 												class Item1
@@ -10472,7 +10778,7 @@ class CustomAttributes
 																"BOOL"
 															};
 														};
-														value=1;
+														value=0;
 													};
 												};
 												class Item1
@@ -10514,10 +10820,10 @@ class CustomAttributes
 														{
 															type[]=
 															{
-																"BOOL"
+																"SCALAR"
 															};
 														};
-														value=0;
+														value=1;
 													};
 												};
 												class Item1
@@ -10694,10 +11000,10 @@ class CustomAttributes
 														{
 															type[]=
 															{
-																"SCALAR"
+																"BOOL"
 															};
 														};
-														value=1;
+														value=0;
 													};
 												};
 												class Item1
@@ -10739,10 +11045,10 @@ class CustomAttributes
 														{
 															type[]=
 															{
-																"BOOL"
+																"SCALAR"
 															};
 														};
-														value=0;
+														value=3;
 													};
 												};
 												class Item1
@@ -10784,7 +11090,7 @@ class CustomAttributes
 														{
 															type[]=
 															{
-																"BOOL"
+																"SCALAR"
 															};
 														};
 														value=0;
@@ -10832,7 +11138,7 @@ class CustomAttributes
 																"SCALAR"
 															};
 														};
-														value=3;
+														value=0;
 													};
 												};
 												class Item1
@@ -10891,7 +11197,7 @@ class CustomAttributes
 																"SCALAR"
 															};
 														};
-														value=1;
+														value=2;
 													};
 												};
 											};
@@ -10964,7 +11270,7 @@ class CustomAttributes
 														{
 															type[]=
 															{
-																"SCALAR"
+																"BOOL"
 															};
 														};
 														value=0;
@@ -10981,7 +11287,7 @@ class CustomAttributes
 																"SCALAR"
 															};
 														};
-														value=2;
+														value=1;
 													};
 												};
 											};
@@ -11009,10 +11315,10 @@ class CustomAttributes
 														{
 															type[]=
 															{
-																"SCALAR"
+																"BOOL"
 															};
 														};
-														value=0;
+														value=1;
 													};
 												};
 												class Item1
@@ -11054,7 +11360,7 @@ class CustomAttributes
 														{
 															type[]=
 															{
-																"BOOL"
+																"SCALAR"
 															};
 														};
 														value=0;
@@ -11099,10 +11405,10 @@ class CustomAttributes
 														{
 															type[]=
 															{
-																"BOOL"
+																"SCALAR"
 															};
 														};
-														value=1;
+														value=0;
 													};
 												};
 												class Item1
@@ -11147,7 +11453,7 @@ class CustomAttributes
 																"SCALAR"
 															};
 														};
-														value=0;
+														value=1;
 													};
 												};
 												class Item1
@@ -11192,7 +11498,7 @@ class CustomAttributes
 																"SCALAR"
 															};
 														};
-														value=0;
+														value=16;
 													};
 												};
 												class Item1
@@ -11237,7 +11543,7 @@ class CustomAttributes
 																"SCALAR"
 															};
 														};
-														value=1;
+														value=0;
 													};
 												};
 												class Item1
@@ -11282,7 +11588,7 @@ class CustomAttributes
 																"SCALAR"
 															};
 														};
-														value=16;
+														value=0;
 													};
 												};
 												class Item1
@@ -11327,7 +11633,7 @@ class CustomAttributes
 																"SCALAR"
 															};
 														};
-														value=0;
+														value=0.69999999;
 													};
 												};
 												class Item1
@@ -11372,7 +11678,7 @@ class CustomAttributes
 																"SCALAR"
 															};
 														};
-														value=0;
+														value=0.40000001;
 													};
 												};
 												class Item1
@@ -11417,7 +11723,7 @@ class CustomAttributes
 																"SCALAR"
 															};
 														};
-														value=0.69999999;
+														value=0;
 													};
 												};
 												class Item1
@@ -11462,7 +11768,7 @@ class CustomAttributes
 																"SCALAR"
 															};
 														};
-														value=0.40000001;
+														value=2;
 													};
 												};
 												class Item1
@@ -11507,7 +11813,7 @@ class CustomAttributes
 																"SCALAR"
 															};
 														};
-														value=0;
+														value=2;
 													};
 												};
 												class Item1
@@ -11528,96 +11834,6 @@ class CustomAttributes
 										};
 									};
 									class Item186
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"ARRAY"
-												};
-											};
-											class value
-											{
-												items=2;
-												class Item0
-												{
-													class data
-													{
-														class type
-														{
-															type[]=
-															{
-																"SCALAR"
-															};
-														};
-														value=2;
-													};
-												};
-												class Item1
-												{
-													class data
-													{
-														class type
-														{
-															type[]=
-															{
-																"SCALAR"
-															};
-														};
-														value=1;
-													};
-												};
-											};
-										};
-									};
-									class Item187
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"ARRAY"
-												};
-											};
-											class value
-											{
-												items=2;
-												class Item0
-												{
-													class data
-													{
-														class type
-														{
-															type[]=
-															{
-																"SCALAR"
-															};
-														};
-														value=2;
-													};
-												};
-												class Item1
-												{
-													class data
-													{
-														class type
-														{
-															type[]=
-															{
-																"SCALAR"
-															};
-														};
-														value=1;
-													};
-												};
-											};
-										};
-									};
-									class Item188
 									{
 										class data
 										{
@@ -11662,7 +11878,7 @@ class CustomAttributes
 											};
 										};
 									};
-									class Item189
+									class Item187
 									{
 										class data
 										{
@@ -11688,6 +11904,96 @@ class CustomAttributes
 															};
 														};
 														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item188
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"ARRAY"
+												};
+											};
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"BOOL"
+															};
+														};
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item189
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"ARRAY"
+												};
+											};
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=10;
 													};
 												};
 												class Item1
@@ -11777,7 +12083,7 @@ class CustomAttributes
 																"SCALAR"
 															};
 														};
-														value=10;
+														value=-1;
 													};
 												};
 												class Item1
@@ -11822,7 +12128,7 @@ class CustomAttributes
 																"BOOL"
 															};
 														};
-														value=0;
+														value=1;
 													};
 												};
 												class Item1
@@ -11864,10 +12170,10 @@ class CustomAttributes
 														{
 															type[]=
 															{
-																"SCALAR"
+																"BOOL"
 															};
 														};
-														value=-1;
+														value=1;
 													};
 												};
 												class Item1
@@ -11888,96 +12194,6 @@ class CustomAttributes
 										};
 									};
 									class Item194
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"ARRAY"
-												};
-											};
-											class value
-											{
-												items=2;
-												class Item0
-												{
-													class data
-													{
-														class type
-														{
-															type[]=
-															{
-																"BOOL"
-															};
-														};
-														value=1;
-													};
-												};
-												class Item1
-												{
-													class data
-													{
-														class type
-														{
-															type[]=
-															{
-																"SCALAR"
-															};
-														};
-														value=1;
-													};
-												};
-											};
-										};
-									};
-									class Item195
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"ARRAY"
-												};
-											};
-											class value
-											{
-												items=2;
-												class Item0
-												{
-													class data
-													{
-														class type
-														{
-															type[]=
-															{
-																"BOOL"
-															};
-														};
-														value=1;
-													};
-												};
-												class Item1
-												{
-													class data
-													{
-														class type
-														{
-															type[]=
-															{
-																"SCALAR"
-															};
-														};
-														value=1;
-													};
-												};
-											};
-										};
-									};
-									class Item196
 									{
 										class data
 										{
@@ -12022,7 +12238,7 @@ class CustomAttributes
 											};
 										};
 									};
-									class Item197
+									class Item195
 									{
 										class data
 										{
@@ -12067,7 +12283,7 @@ class CustomAttributes
 											};
 										};
 									};
-									class Item198
+									class Item196
 									{
 										class data
 										{
@@ -12112,7 +12328,7 @@ class CustomAttributes
 											};
 										};
 									};
-									class Item199
+									class Item197
 									{
 										class data
 										{
@@ -12157,7 +12373,7 @@ class CustomAttributes
 											};
 										};
 									};
-									class Item200
+									class Item198
 									{
 										class data
 										{
@@ -12183,6 +12399,96 @@ class CustomAttributes
 															};
 														};
 														value=0.679591;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item199
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"ARRAY"
+												};
+											};
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"BOOL"
+															};
+														};
+														value=1;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item200
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"ARRAY"
+												};
+											};
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"BOOL"
+															};
+														};
+														value=1;
 													};
 												};
 												class Item1
@@ -12314,10 +12620,10 @@ class CustomAttributes
 														{
 															type[]=
 															{
-																"BOOL"
+																"SCALAR"
 															};
 														};
-														value=1;
+														value=2.5;
 													};
 												};
 												class Item1
@@ -12404,10 +12710,10 @@ class CustomAttributes
 														{
 															type[]=
 															{
-																"SCALAR"
+																"BOOL"
 															};
 														};
-														value=2.5;
+														value=1;
 													};
 												};
 												class Item1
@@ -12497,7 +12803,7 @@ class CustomAttributes
 																"BOOL"
 															};
 														};
-														value=1;
+														value=0;
 													};
 												};
 												class Item1
@@ -12542,7 +12848,7 @@ class CustomAttributes
 																"BOOL"
 															};
 														};
-														value=1;
+														value=0;
 													};
 												};
 												class Item1
@@ -12563,96 +12869,6 @@ class CustomAttributes
 										};
 									};
 									class Item209
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"ARRAY"
-												};
-											};
-											class value
-											{
-												items=2;
-												class Item0
-												{
-													class data
-													{
-														class type
-														{
-															type[]=
-															{
-																"BOOL"
-															};
-														};
-														value=0;
-													};
-												};
-												class Item1
-												{
-													class data
-													{
-														class type
-														{
-															type[]=
-															{
-																"SCALAR"
-															};
-														};
-														value=1;
-													};
-												};
-											};
-										};
-									};
-									class Item210
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"ARRAY"
-												};
-											};
-											class value
-											{
-												items=2;
-												class Item0
-												{
-													class data
-													{
-														class type
-														{
-															type[]=
-															{
-																"BOOL"
-															};
-														};
-														value=0;
-													};
-												};
-												class Item1
-												{
-													class data
-													{
-														class type
-														{
-															type[]=
-															{
-																"SCALAR"
-															};
-														};
-														value=1;
-													};
-												};
-											};
-										};
-									};
-									class Item211
 									{
 										class data
 										{
@@ -12697,7 +12913,7 @@ class CustomAttributes
 											};
 										};
 									};
-									class Item212
+									class Item210
 									{
 										class data
 										{
@@ -17515,24 +17731,24 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={2693.3799,18.457335,600.41241};
+				position[]={2693.3799,13.972179,600.41241};
 				angles[]={0,5.6049519,0};
 			};
 			side="Empty";
-			flags=1;
+			flags=5;
 			class Attributes
 			{
 			};
 			id=479;
 			type="Land_LampHalogen_F";
-			atlOffset=2.23736;
+			atlOffset=4.7683716e-007;
 		};
 		class Item126
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={2620.2122,16.426622,600.77905};
+				position[]={2620.2122,13.972179,600.77905};
 				angles[]={0,4.3913689,0};
 			};
 			side="Empty";
@@ -17542,14 +17758,14 @@ class Mission
 			};
 			id=480;
 			type="Land_LampHalogen_F";
-			atlOffset=0.016293526;
+			atlOffset=4.7683716e-007;
 		};
 		class Item127
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={2620.1489,15.513988,573.38458};
+				position[]={2620.1489,13.972179,573.38458};
 				angles[]={0,4.1156998,0};
 			};
 			side="Empty";
@@ -17559,7 +17775,7 @@ class Mission
 			};
 			id=481;
 			type="Land_LampHalogen_F";
-			atlOffset=0.0071840286;
+			atlOffset=4.7683716e-007;
 		};
 		class Item128
 		{
@@ -17617,17 +17833,17 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={2651.2932,18.462589,600.3407};
+				position[]={2651.2932,13.972179,600.3407};
 				angles[]={0,4.7429895,0};
 			};
 			side="Empty";
-			flags=1;
+			flags=5;
 			class Attributes
 			{
 			};
 			id=485;
 			type="Land_LampHalogen_F";
-			atlOffset=2.2413807;
+			atlOffset=4.7683716e-007;
 		};
 		class Item132
 		{
@@ -19681,8 +19897,8 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={2636.8179,7.9899998,565.84149};
-				angles[]={0,4.7345552,0};
+				position[]={2636.8181,7.9899998,565.841};
+				angles[]={0,4.7345543,0};
 			};
 			areaSize[]={58.574001,0,58.470001};
 			areaIsRectangle=1;
@@ -20011,17 +20227,17 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={2625.418,12.995861,591.41058};
-				angles[]={0,3.1712263,0};
+				position[]={2625.418,8.5828114,591.41058};
+				angles[]={-0,3.1712263,0};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 				disableSimulation=1;
 			};
 			id=536;
 			type="ACE_medicalSupplyCrate";
-			atlOffset=1.8882132;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -20070,17 +20286,17 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={2625.9978,13.314705,587.15393};
-				angles[]={0,4.7261448,0};
+				position[]={2625.9978,8.5828114,587.15393};
+				angles[]={-0,4.7261448,0};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 				disableSimulation=1;
 			};
 			id=537;
 			type="ACE_medicalSupplyCrate";
-			atlOffset=2.207057;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -21717,7 +21933,7 @@ class Mission
 			};
 			id=572;
 			type="rhsusf_m1025_w";
-			atlOffset=0.0015330315;
+			atlOffset=0.11015892;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -29248,7 +29464,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="Rainman_Combat_Fatigues_Splinter";
+								typeName="Rainman_Combat_Fatigues_Splinter_Winter";
 								isBackpack=0;
 								class ItemCargo
 								{
@@ -29265,7 +29481,7 @@ class Mission
 							watch="ItemWatch";
 							radio="tf_anprc152";
 							gps="ItemGPS";
-							headgear="rhs_8point_marpatwd";
+							headgear="H_MilCap_gry";
 						};
 					};
 					id=665;
@@ -29373,7 +29589,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="Rainman_Combat_Fatigues_Splinter";
+								typeName="Rainman_Combat_Fatigues_Splinter_Winter";
 								isBackpack=0;
 								class ItemCargo
 								{
@@ -29390,7 +29606,7 @@ class Mission
 							watch="ItemWatch";
 							radio="tf_anprc152";
 							gps="ItemGPS";
-							headgear="rhs_8point_marpatwd";
+							headgear="H_MilCap_gry";
 						};
 					};
 					id=666;
@@ -29498,7 +29714,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="Rainman_Combat_Fatigues_Splinter";
+								typeName="Rainman_Combat_Fatigues_Splinter_Winter";
 								isBackpack=0;
 								class ItemCargo
 								{
@@ -29515,7 +29731,7 @@ class Mission
 							watch="ItemWatch";
 							radio="tf_anprc152";
 							gps="ItemGPS";
-							headgear="rhs_8point_marpatwd";
+							headgear="H_MilCap_gry";
 						};
 					};
 					id=667;
@@ -29566,7 +29782,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="Rainman_Combat_Fatigues_Splinter";
+								typeName="Rainman_Combat_Fatigues_Splinter_Winter";
 								isBackpack=0;
 								class ItemCargo
 								{
@@ -29583,7 +29799,7 @@ class Mission
 							watch="ItemWatch";
 							radio="tf_anprc152";
 							gps="ItemGPS";
-							headgear="rhs_8point_marpatwd";
+							headgear="H_MilCap_gry";
 						};
 					};
 					id=668;
@@ -29634,7 +29850,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="Rainman_Combat_Fatigues_Splinter";
+								typeName="Rainman_Combat_Fatigues_Splinter_Winter";
 								isBackpack=0;
 								class ItemCargo
 								{
@@ -29651,7 +29867,7 @@ class Mission
 							watch="ItemWatch";
 							radio="tf_anprc152";
 							gps="ItemGPS";
-							headgear="rhs_8point_marpatwd";
+							headgear="H_MilCap_gry";
 						};
 					};
 					id=669;
@@ -29759,7 +29975,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="Rainman_Combat_Fatigues_Splinter";
+								typeName="Rainman_Combat_Fatigues_Splinter_Winter";
 								isBackpack=0;
 								class ItemCargo
 								{
@@ -29776,7 +29992,7 @@ class Mission
 							watch="ItemWatch";
 							radio="tf_anprc152";
 							gps="ItemGPS";
-							headgear="rhs_8point_marpatwd";
+							headgear="H_MilCap_gry";
 						};
 					};
 					id=670;
@@ -29897,7 +30113,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="Rainman_Combat_Fatigues_Splinter";
+								typeName="Rainman_Combat_Fatigues_Splinter_Winter";
 								isBackpack=0;
 								class ItemCargo
 								{
@@ -29914,7 +30130,7 @@ class Mission
 							watch="ItemWatch";
 							radio="tf_anprc152";
 							gps="ItemGPS";
-							headgear="rhs_8point_marpatwd";
+							headgear="H_MilCap_gry";
 						};
 					};
 					id=672;
@@ -30022,7 +30238,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="Rainman_Combat_Fatigues_Splinter";
+								typeName="Rainman_Combat_Fatigues_Splinter_Winter";
 								isBackpack=0;
 								class ItemCargo
 								{
@@ -30039,7 +30255,7 @@ class Mission
 							watch="ItemWatch";
 							radio="tf_anprc152";
 							gps="ItemGPS";
-							headgear="rhs_8point_marpatwd";
+							headgear="H_MilCap_gry";
 						};
 					};
 					id=673;
@@ -30147,7 +30363,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="Rainman_Combat_Fatigues_Splinter";
+								typeName="Rainman_Combat_Fatigues_Splinter_Winter";
 								isBackpack=0;
 								class ItemCargo
 								{
@@ -30164,7 +30380,7 @@ class Mission
 							watch="ItemWatch";
 							radio="tf_anprc152";
 							gps="ItemGPS";
-							headgear="rhs_8point_marpatwd";
+							headgear="H_MilCap_gry";
 						};
 					};
 					id=674;
@@ -30215,7 +30431,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="Rainman_Combat_Fatigues_Splinter";
+								typeName="Rainman_Combat_Fatigues_Splinter_Winter";
 								isBackpack=0;
 								class ItemCargo
 								{
@@ -30232,7 +30448,7 @@ class Mission
 							watch="ItemWatch";
 							radio="tf_anprc152";
 							gps="ItemGPS";
-							headgear="rhs_8point_marpatwd";
+							headgear="H_MilCap_gry";
 						};
 					};
 					id=675;
@@ -30283,7 +30499,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="Rainman_Combat_Fatigues_Splinter";
+								typeName="Rainman_Combat_Fatigues_Splinter_Winter";
 								isBackpack=0;
 								class ItemCargo
 								{
@@ -30300,7 +30516,7 @@ class Mission
 							watch="ItemWatch";
 							radio="tf_anprc152";
 							gps="ItemGPS";
-							headgear="rhs_8point_marpatwd";
+							headgear="H_MilCap_gry";
 						};
 					};
 					id=676;
@@ -30351,7 +30567,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="Rainman_Combat_Fatigues_Splinter";
+								typeName="Rainman_Combat_Fatigues_Splinter_Winter";
 								isBackpack=0;
 								class ItemCargo
 								{
@@ -30368,7 +30584,7 @@ class Mission
 							watch="ItemWatch";
 							radio="tf_anprc152";
 							gps="ItemGPS";
-							headgear="rhs_8point_marpatwd";
+							headgear="H_MilCap_gry";
 						};
 					};
 					id=677;
@@ -30498,7 +30714,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="Rainman_Combat_Fatigues_Splinter";
+								typeName="Rainman_Combat_Fatigues_Splinter_Winter";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -30522,7 +30738,7 @@ class Mission
 							};
 							class backpack
 							{
-								typeName="OPXT_m81_1523";
+								typeName="OPXT_wht_1523";
 								isBackpack=1;
 							};
 							map="ItemMap";
@@ -30628,7 +30844,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="Rainman_Combat_Fatigues_Splinter";
+								typeName="Rainman_Combat_Fatigues_Splinter_Winter";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -30652,7 +30868,7 @@ class Mission
 							};
 							class backpack
 							{
-								typeName="OPXT_m81_1523";
+								typeName="OPXT_wht_1523";
 								isBackpack=1;
 							};
 							map="ItemMap";
@@ -30758,7 +30974,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="Rainman_Combat_Fatigues_Splinter";
+								typeName="Rainman_Combat_Fatigues_Splinter_Winter";
 								isBackpack=0;
 								class MagazineCargo
 								{
@@ -30782,7 +30998,7 @@ class Mission
 							};
 							class backpack
 							{
-								typeName="OPXT_m81_1523";
+								typeName="OPXT_wht_1523";
 								isBackpack=1;
 							};
 							map="ItemMap";
@@ -30915,7 +31131,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="Rainman_Combat_Fatigues_Splinter";
+								typeName="Rainman_Combat_Fatigues_Splinter_Winter";
 								isBackpack=0;
 								class ItemCargo
 								{
@@ -30932,7 +31148,7 @@ class Mission
 							watch="ItemWatch";
 							radio="tf_anprc152";
 							gps="ItemGPS";
-							headgear="rhs_8point_marpatwd";
+							headgear="H_MilCap_gry";
 						};
 					};
 					id=683;
@@ -31040,7 +31256,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="Rainman_Combat_Fatigues_Splinter";
+								typeName="Rainman_Combat_Fatigues_Splinter_Winter";
 								isBackpack=0;
 								class ItemCargo
 								{
@@ -31057,7 +31273,7 @@ class Mission
 							watch="ItemWatch";
 							radio="tf_anprc152";
 							gps="ItemGPS";
-							headgear="rhs_8point_marpatwd";
+							headgear="H_MilCap_gry";
 						};
 					};
 					id=684;
@@ -31108,7 +31324,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="Rainman_Combat_Fatigues_Splinter";
+								typeName="Rainman_Combat_Fatigues_Splinter_Winter";
 								isBackpack=0;
 								class ItemCargo
 								{
@@ -31125,7 +31341,7 @@ class Mission
 							watch="ItemWatch";
 							radio="tf_anprc152";
 							gps="ItemGPS";
-							headgear="rhs_8point_marpatwd";
+							headgear="H_MilCap_gry";
 						};
 					};
 					id=685;
@@ -31176,7 +31392,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="Rainman_Combat_Fatigues_Splinter";
+								typeName="Rainman_Combat_Fatigues_Splinter_Winter";
 								isBackpack=0;
 								class ItemCargo
 								{
@@ -31193,7 +31409,7 @@ class Mission
 							watch="ItemWatch";
 							radio="tf_anprc152";
 							gps="ItemGPS";
-							headgear="rhs_8point_marpatwd";
+							headgear="H_MilCap_gry";
 						};
 					};
 					id=686;
@@ -31244,7 +31460,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="Rainman_Combat_Fatigues_Splinter";
+								typeName="Rainman_Combat_Fatigues_Splinter_Winter";
 								isBackpack=0;
 								class ItemCargo
 								{
@@ -31261,7 +31477,7 @@ class Mission
 							watch="ItemWatch";
 							radio="tf_anprc152";
 							gps="ItemGPS";
-							headgear="rhs_8point_marpatwd";
+							headgear="H_MilCap_gry";
 						};
 					};
 					id=687;
@@ -31369,7 +31585,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="Rainman_Combat_Fatigues_Splinter";
+								typeName="Rainman_Combat_Fatigues_Splinter_Winter";
 								isBackpack=0;
 								class ItemCargo
 								{
@@ -31386,7 +31602,7 @@ class Mission
 							watch="ItemWatch";
 							radio="tf_anprc152";
 							gps="ItemGPS";
-							headgear="rhs_8point_marpatwd";
+							headgear="H_MilCap_gry";
 						};
 					};
 					id=688;
@@ -31507,7 +31723,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="Rainman_Combat_Fatigues_Splinter";
+								typeName="Rainman_Combat_Fatigues_Splinter_Winter";
 								isBackpack=0;
 								class ItemCargo
 								{
@@ -31524,7 +31740,7 @@ class Mission
 							watch="ItemWatch";
 							radio="tf_anprc152";
 							gps="ItemGPS";
-							headgear="rhs_8point_marpatwd";
+							headgear="H_MilCap_gry";
 						};
 					};
 					id=690;
@@ -31651,7 +31867,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="Rainman_Combat_Fatigues_Splinter";
+								typeName="Rainman_Combat_Fatigues_Splinter_Winter";
 								isBackpack=0;
 								class ItemCargo
 								{
@@ -31668,7 +31884,7 @@ class Mission
 							watch="ItemWatch";
 							radio="tf_anprc152";
 							gps="ItemGPS";
-							headgear="rhs_8point_marpatwd";
+							headgear="H_MilCap_gry";
 						};
 					};
 					id=691;
@@ -31738,7 +31954,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="Rainman_Combat_Fatigues_Splinter";
+								typeName="Rainman_Combat_Fatigues_Splinter_Winter";
 								isBackpack=0;
 								class ItemCargo
 								{
@@ -31755,7 +31971,7 @@ class Mission
 							watch="ItemWatch";
 							radio="tf_anprc152";
 							gps="ItemGPS";
-							headgear="rhs_8point_marpatwd";
+							headgear="H_MilCap_gry";
 						};
 					};
 					id=692;
@@ -31825,7 +32041,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="Rainman_Combat_Fatigues_Splinter";
+								typeName="Rainman_Combat_Fatigues_Splinter_Winter";
 								isBackpack=0;
 								class ItemCargo
 								{
@@ -31842,7 +32058,7 @@ class Mission
 							watch="ItemWatch";
 							radio="tf_anprc152";
 							gps="ItemGPS";
-							headgear="rhs_8point_marpatwd";
+							headgear="H_MilCap_gry";
 						};
 					};
 					id=693;
@@ -31912,7 +32128,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="Rainman_Combat_Fatigues_Splinter";
+								typeName="Rainman_Combat_Fatigues_Splinter_Winter";
 								isBackpack=0;
 								class ItemCargo
 								{
@@ -31929,7 +32145,7 @@ class Mission
 							watch="ItemWatch";
 							radio="tf_anprc152";
 							gps="ItemGPS";
-							headgear="rhs_8point_marpatwd";
+							headgear="H_MilCap_gry";
 						};
 					};
 					id=694;
@@ -32056,7 +32272,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="Rainman_Combat_Fatigues_Splinter";
+								typeName="Rainman_Combat_Fatigues_Splinter_Winter";
 								isBackpack=0;
 								class ItemCargo
 								{
@@ -32073,7 +32289,7 @@ class Mission
 							watch="ItemWatch";
 							radio="tf_anprc152";
 							gps="ItemGPS";
-							headgear="rhs_8point_marpatwd";
+							headgear="H_MilCap_gry";
 						};
 					};
 					id=695;
@@ -32213,7 +32429,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="Rainman_Combat_Fatigues_Splinter";
+								typeName="Rainman_Combat_Fatigues_Splinter_Winter";
 								isBackpack=0;
 								class ItemCargo
 								{
@@ -32230,7 +32446,7 @@ class Mission
 							watch="ItemWatch";
 							radio="tf_anprc152";
 							gps="ItemGPS";
-							headgear="rhs_8point_marpatwd";
+							headgear="H_MilCap_gry";
 						};
 					};
 					id=697;
@@ -32338,7 +32554,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="Rainman_Combat_Fatigues_Splinter";
+								typeName="Rainman_Combat_Fatigues_Splinter_Winter";
 								isBackpack=0;
 								class ItemCargo
 								{
@@ -32355,7 +32571,7 @@ class Mission
 							watch="ItemWatch";
 							radio="tf_anprc152";
 							gps="ItemGPS";
-							headgear="rhs_8point_marpatwd";
+							headgear="H_MilCap_gry";
 						};
 					};
 					id=698;
@@ -32406,7 +32622,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="Rainman_Combat_Fatigues_Splinter";
+								typeName="Rainman_Combat_Fatigues_Splinter_Winter";
 								isBackpack=0;
 								class ItemCargo
 								{
@@ -32423,7 +32639,7 @@ class Mission
 							watch="ItemWatch";
 							radio="tf_anprc152";
 							gps="ItemGPS";
-							headgear="rhs_8point_marpatwd";
+							headgear="H_MilCap_gry";
 						};
 					};
 					id=699;
@@ -32474,7 +32690,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="Rainman_Combat_Fatigues_Splinter";
+								typeName="Rainman_Combat_Fatigues_Splinter_Winter";
 								isBackpack=0;
 								class ItemCargo
 								{
@@ -32491,7 +32707,7 @@ class Mission
 							watch="ItemWatch";
 							radio="tf_anprc152";
 							gps="ItemGPS";
-							headgear="rhs_8point_marpatwd";
+							headgear="H_MilCap_gry";
 						};
 					};
 					id=700;
@@ -32542,7 +32758,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="Rainman_Combat_Fatigues_Splinter";
+								typeName="Rainman_Combat_Fatigues_Splinter_Winter";
 								isBackpack=0;
 								class ItemCargo
 								{
@@ -32559,7 +32775,7 @@ class Mission
 							watch="ItemWatch";
 							radio="tf_anprc152";
 							gps="ItemGPS";
-							headgear="rhs_8point_marpatwd";
+							headgear="H_MilCap_gry";
 						};
 					};
 					id=701;
@@ -32667,7 +32883,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="Rainman_Combat_Fatigues_Splinter";
+								typeName="Rainman_Combat_Fatigues_Splinter_Winter";
 								isBackpack=0;
 								class ItemCargo
 								{
@@ -32684,7 +32900,7 @@ class Mission
 							watch="ItemWatch";
 							radio="tf_anprc152";
 							gps="ItemGPS";
-							headgear="rhs_8point_marpatwd";
+							headgear="H_MilCap_gry";
 						};
 					};
 					id=702;
@@ -32805,7 +33021,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="Rainman_Combat_Fatigues_Splinter";
+								typeName="Rainman_Combat_Fatigues_Splinter_Winter";
 								isBackpack=0;
 								class ItemCargo
 								{
@@ -32822,7 +33038,7 @@ class Mission
 							watch="ItemWatch";
 							radio="tf_anprc152";
 							gps="ItemGPS";
-							headgear="rhs_8point_marpatwd";
+							headgear="H_MilCap_gry";
 						};
 					};
 					id=704;
@@ -32930,7 +33146,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="Rainman_Combat_Fatigues_Splinter";
+								typeName="Rainman_Combat_Fatigues_Splinter_Winter";
 								isBackpack=0;
 								class ItemCargo
 								{
@@ -32947,7 +33163,7 @@ class Mission
 							watch="ItemWatch";
 							radio="tf_anprc152";
 							gps="ItemGPS";
-							headgear="rhs_8point_marpatwd";
+							headgear="H_MilCap_gry";
 						};
 					};
 					id=705;
@@ -32998,7 +33214,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="Rainman_Combat_Fatigues_Splinter";
+								typeName="Rainman_Combat_Fatigues_Splinter_Winter";
 								isBackpack=0;
 								class ItemCargo
 								{
@@ -33015,7 +33231,7 @@ class Mission
 							watch="ItemWatch";
 							radio="tf_anprc152";
 							gps="ItemGPS";
-							headgear="rhs_8point_marpatwd";
+							headgear="H_MilCap_gry";
 						};
 					};
 					id=706;
@@ -33066,7 +33282,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="Rainman_Combat_Fatigues_Splinter";
+								typeName="Rainman_Combat_Fatigues_Splinter_Winter";
 								isBackpack=0;
 								class ItemCargo
 								{
@@ -33083,7 +33299,7 @@ class Mission
 							watch="ItemWatch";
 							radio="tf_anprc152";
 							gps="ItemGPS";
-							headgear="rhs_8point_marpatwd";
+							headgear="H_MilCap_gry";
 						};
 					};
 					id=707;
@@ -33191,7 +33407,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="Rainman_Combat_Fatigues_Splinter";
+								typeName="Rainman_Combat_Fatigues_Splinter_Winter";
 								isBackpack=0;
 								class ItemCargo
 								{
@@ -33208,7 +33424,7 @@ class Mission
 							watch="ItemWatch";
 							radio="tf_anprc152";
 							gps="ItemGPS";
-							headgear="rhs_8point_marpatwd";
+							headgear="H_MilCap_gry";
 						};
 					};
 					id=708;
@@ -33316,7 +33532,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="Rainman_Combat_Fatigues_Splinter";
+								typeName="Rainman_Combat_Fatigues_Splinter_Winter";
 								isBackpack=0;
 								class ItemCargo
 								{
@@ -33333,7 +33549,7 @@ class Mission
 							watch="ItemWatch";
 							radio="tf_anprc152";
 							gps="ItemGPS";
-							headgear="rhs_8point_marpatwd";
+							headgear="H_MilCap_gry";
 						};
 					};
 					id=709;
@@ -33454,7 +33670,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="Rainman_Combat_Fatigues_Splinter";
+								typeName="Rainman_Combat_Fatigues_Splinter_Winter";
 								isBackpack=0;
 								class ItemCargo
 								{
@@ -33471,7 +33687,7 @@ class Mission
 							watch="ItemWatch";
 							radio="tf_anprc152";
 							gps="ItemGPS";
-							headgear="rhs_8point_marpatwd";
+							headgear="H_MilCap_gry";
 						};
 					};
 					id=711;
@@ -33522,7 +33738,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="Rainman_Combat_Fatigues_Splinter";
+								typeName="Rainman_Combat_Fatigues_Splinter_Winter";
 								isBackpack=0;
 								class ItemCargo
 								{
@@ -33539,7 +33755,7 @@ class Mission
 							watch="ItemWatch";
 							radio="tf_anprc152";
 							gps="ItemGPS";
-							headgear="rhs_8point_marpatwd";
+							headgear="H_MilCap_gry";
 						};
 					};
 					id=712;
@@ -33628,7 +33844,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="Rainman_Combat_Fatigues_Splinter";
+								typeName="Rainman_Combat_Fatigues_Splinter_Winter";
 								isBackpack=0;
 								class ItemCargo
 								{
@@ -33645,7 +33861,7 @@ class Mission
 							watch="ItemWatch";
 							radio="tf_anprc152";
 							gps="ItemGPS";
-							headgear="rhs_8point_marpatwd";
+							headgear="H_MilCap_gry";
 						};
 					};
 					id=713;
@@ -33789,7 +34005,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="Rainman_Combat_Fatigues_Splinter";
+								typeName="Rainman_Combat_Fatigues_Splinter_Winter";
 								isBackpack=0;
 								class ItemCargo
 								{
@@ -33806,7 +34022,7 @@ class Mission
 							watch="ItemWatch";
 							radio="tf_anprc152";
 							gps="ItemGPS";
-							headgear="rhs_8point_marpatwd";
+							headgear="H_MilCap_gry";
 						};
 					};
 					id=715;
@@ -33857,7 +34073,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="Rainman_Combat_Fatigues_Splinter";
+								typeName="Rainman_Combat_Fatigues_Splinter_Winter";
 								isBackpack=0;
 								class ItemCargo
 								{
@@ -33874,7 +34090,7 @@ class Mission
 							watch="ItemWatch";
 							radio="tf_anprc152";
 							gps="ItemGPS";
-							headgear="rhs_8point_marpatwd";
+							headgear="H_MilCap_gry";
 						};
 					};
 					id=716;
@@ -33963,7 +34179,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="Rainman_Combat_Fatigues_Splinter";
+								typeName="Rainman_Combat_Fatigues_Splinter_Winter";
 								isBackpack=0;
 								class ItemCargo
 								{
@@ -33980,7 +34196,7 @@ class Mission
 							watch="ItemWatch";
 							radio="tf_anprc152";
 							gps="ItemGPS";
-							headgear="rhs_8point_marpatwd";
+							headgear="H_MilCap_gry";
 						};
 					};
 					id=717;
@@ -34124,7 +34340,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="Rainman_Combat_Fatigues_Splinter";
+								typeName="Rainman_Combat_Fatigues_Splinter_Winter";
 								isBackpack=0;
 								class ItemCargo
 								{
@@ -34141,7 +34357,7 @@ class Mission
 							watch="ItemWatch";
 							radio="tf_anprc152";
 							gps="ItemGPS";
-							headgear="rhs_8point_marpatwd";
+							headgear="H_MilCap_gry";
 						};
 					};
 					id=719;
@@ -34249,7 +34465,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="Rainman_Combat_Fatigues_Splinter";
+								typeName="Rainman_Combat_Fatigues_Splinter_Winter";
 								isBackpack=0;
 								class ItemCargo
 								{
@@ -34266,7 +34482,7 @@ class Mission
 							watch="ItemWatch";
 							radio="tf_anprc152";
 							gps="ItemGPS";
-							headgear="rhs_8point_marpatwd";
+							headgear="H_MilCap_gry";
 						};
 					};
 					id=720;
@@ -34355,7 +34571,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="Rainman_Combat_Fatigues_Splinter";
+								typeName="Rainman_Combat_Fatigues_Splinter_Winter";
 								isBackpack=0;
 								class ItemCargo
 								{
@@ -34372,7 +34588,7 @@ class Mission
 							watch="ItemWatch";
 							radio="tf_anprc152";
 							gps="ItemGPS";
-							headgear="rhs_8point_marpatwd";
+							headgear="H_MilCap_gry";
 						};
 					};
 					id=721;
@@ -34461,7 +34677,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="Rainman_Combat_Fatigues_Splinter";
+								typeName="Rainman_Combat_Fatigues_Splinter_Winter";
 								isBackpack=0;
 								class ItemCargo
 								{
@@ -34478,7 +34694,7 @@ class Mission
 							watch="ItemWatch";
 							radio="tf_anprc152";
 							gps="ItemGPS";
-							headgear="rhs_8point_marpatwd";
+							headgear="H_MilCap_gry";
 						};
 					};
 					id=722;
@@ -34567,7 +34783,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="Rainman_Combat_Fatigues_Splinter";
+								typeName="Rainman_Combat_Fatigues_Splinter_Winter";
 								isBackpack=0;
 								class ItemCargo
 								{
@@ -34584,7 +34800,7 @@ class Mission
 							watch="ItemWatch";
 							radio="tf_anprc152";
 							gps="ItemGPS";
-							headgear="rhs_8point_marpatwd";
+							headgear="H_MilCap_gry";
 						};
 					};
 					id=723;
@@ -34673,7 +34889,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="Rainman_Combat_Fatigues_Splinter";
+								typeName="Rainman_Combat_Fatigues_Splinter_Winter";
 								isBackpack=0;
 								class ItemCargo
 								{
@@ -34690,7 +34906,7 @@ class Mission
 							watch="ItemWatch";
 							radio="tf_anprc152";
 							gps="ItemGPS";
-							headgear="rhs_8point_marpatwd";
+							headgear="H_MilCap_gry";
 						};
 					};
 					id=724;
@@ -34779,7 +34995,7 @@ class Mission
 							};
 							class uniform
 							{
-								typeName="Rainman_Combat_Fatigues_Splinter";
+								typeName="Rainman_Combat_Fatigues_Splinter_Winter";
 								isBackpack=0;
 								class ItemCargo
 								{
@@ -34796,7 +35012,7 @@ class Mission
 							watch="ItemWatch";
 							radio="tf_anprc152";
 							gps="ItemGPS";
-							headgear="rhs_8point_marpatwd";
+							headgear="H_MilCap_gry";
 						};
 					};
 					id=725;
