@@ -4,8 +4,6 @@
 
 [] ExecVM "functions\fn_gcam.sqf";
 
-
-
 // Markers into grass cutters script by Sa-Matra
 {
 	if(
