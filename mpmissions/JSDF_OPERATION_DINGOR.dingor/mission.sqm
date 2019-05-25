@@ -5,14 +5,14 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=1025;
+	toggles=1153;
 	class ItemIDProvider
 	{
-		nextID=1152;
+		nextID=1153;
 	};
 	class LayerIndexProvider
 	{
-		nextID=193;
+		nextID=207;
 	};
 	class Camera
 	{
@@ -13001,7 +13001,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=316;
+		items=317;
 		class Item0
 		{
 			dataType="Layer";
@@ -13012,7 +13012,7 @@ class Mission
 		class Item1
 		{
 			dataType="Marker";
-			position[]={3077.6741,14.05,6665.3457};
+			position[]={2709.9675,6.9899998,6839.8062};
 			name="respawn_west";
 			type="Empty";
 			angle=354.75098;
@@ -13021,12 +13021,11 @@ class Mission
 		class Item2
 		{
 			dataType="Marker";
-			position[]={3055.7251,14.093,6620.2861};
+			position[]={2651.9197,6.9899998,6865.9795};
 			name="FOB_Marker_Woodland";
 			text="JSDF FOB";
 			type="flag_NATO";
 			id=520;
-			atlOffset=0.00025177002;
 		};
 		class Item3
 		{
@@ -20340,7 +20339,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={2673.127,7.5828114,6830.8516};
-				angles[]={-0,6.1002722,0};
+				angles[]={0,6.1002722,0};
 			};
 			side="Empty";
 			flags=4;
@@ -20399,7 +20398,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={2671.6619,7.5828114,6834.8896};
-				angles[]={-0,1.372005,0};
+				angles[]={0,1.372005,0};
 			};
 			side="Empty";
 			flags=4;
@@ -34148,6 +34147,18 @@ class Mission
 				};
 				nAttributes=3;
 			};
+		};
+		class Item316
+		{
+			dataType="Marker";
+			position[]={2655.1619,6.9899998,6866.7275};
+			name="grasscutter";
+			markerType="RECTANGLE";
+			type="rectangle";
+			a=49.444;
+			b=59.683998;
+			angle=78.546997;
+			id=1152;
 		};
 	};
 	class Connections

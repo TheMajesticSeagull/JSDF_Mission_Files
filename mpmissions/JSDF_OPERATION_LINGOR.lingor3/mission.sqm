@@ -8,18 +8,18 @@ class EditorData
 	toggles=1025;
 	class ItemIDProvider
 	{
-		nextID=1083;
+		nextID=1084;
 	};
 	class LayerIndexProvider
 	{
-		nextID=195;
+		nextID=209;
 	};
 	class Camera
 	{
-		pos[]={2759.2036,46.826637,6862.6021};
-		dir[]={-0.89343852,-0.35760757,-0.27185872};
-		up[]={-0.34212378,0.93386936,-0.1041045};
-		aside[]={-0.29111022,1.8072897e-006,0.95670277};
+		pos[]={2759.2036,116.27612,6862.6021};
+		dir[]={-0.69179189,-0.71380401,-0.10925342};
+		up[]={-0.70506334,0.70034516,-0.11135119};
+		aside[]={-0.15599898,1.0916556e-006,0.98777246};
 	};
 };
 binarizationWanted=0;
@@ -13016,7 +13016,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=316;
+		items=317;
 		class Item0
 		{
 			dataType="Layer";
@@ -13027,22 +13027,20 @@ class Mission
 		class Item1
 		{
 			dataType="Marker";
-			position[]={3078.2498,14.036865,6688.2236};
+			position[]={2708.3237,6.9899998,6834.9956};
 			name="respawn_west";
 			type="Empty";
 			angle=354.75098;
 			id=519;
-			atlOffset=-0.013134956;
 		};
 		class Item2
 		{
 			dataType="Marker";
-			position[]={3055.9832,14.090168,6641.9346};
+			position[]={2653.5808,6.9899998,6866.6929};
 			name="FOB_Marker_Woodland";
 			text="JSDF FOB";
 			type="flag_NATO";
 			id=520;
-			atlOffset=9.5367432e-007;
 		};
 		class Item3
 		{
@@ -20195,7 +20193,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={2671.4185,7.5828114,6831.2134};
-				angles[]={-0,6.1502633,0};
+				angles[]={0,6.1502633,0};
 			};
 			side="Empty";
 			flags=4;
@@ -20254,7 +20252,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={2670.158,7.5828114,6835.3198};
-				angles[]={-0,1.4219962,0};
+				angles[]={0,1.4219962,0};
 			};
 			side="Empty";
 			flags=4;
@@ -35148,6 +35146,18 @@ class Mission
 				};
 				nAttributes=1;
 			};
+		};
+		class Item316
+		{
+			dataType="Marker";
+			position[]={2654.7642,6.9899998,6867.624};
+			name="grasscutter";
+			markerType="RECTANGLE";
+			type="rectangle";
+			a=49.444;
+			b=59.683998;
+			angle=81.42601;
+			id=1083;
 		};
 	};
 	class Connections

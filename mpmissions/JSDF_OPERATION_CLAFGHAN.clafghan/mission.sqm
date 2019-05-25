@@ -8,18 +8,18 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=1150;
+		nextID=1151;
 	};
 	class LayerIndexProvider
 	{
-		nextID=225;
+		nextID=239;
 	};
 	class Camera
 	{
-		pos[]={16253.821,8.2853394,17687.164};
-		dir[]={-0.83182508,-0.15784885,-0.53216314};
-		up[]={-0.13297948,0.98745877,-0.085074447};
-		aside[]={-0.53891766,-6.5658242e-008,0.8423816};
+		pos[]={16391.166,30.599699,17627.301};
+		dir[]={-0.94917876,-0.2569434,0.18177915};
+		up[]={-0.25235853,0.96642619,0.048329633};
+		aside[]={0.18809409,-9.960786e-008,0.9821524};
 	};
 };
 binarizationWanted=0;
@@ -13001,7 +13001,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=316;
+		items=317;
 		class Item0
 		{
 			dataType="Layer";
@@ -13019,12 +13019,11 @@ class Mission
 		class Item2
 		{
 			dataType="Marker";
-			position[]={16234.022,6.441,17727.365};
+			position[]={16219.147,6.0559707,17699.748};
 			name="FOB_Marker_Desert";
 			text="JSDF FOB";
 			type="flag_NATO";
 			id=556;
-			atlOffset=0.00038146973;
 		};
 		class Item3
 		{
@@ -13043,11 +13042,10 @@ class Mission
 		class Item5
 		{
 			dataType="Marker";
-			position[]={16277.976,6.6276016,17715.463};
+			position[]={16279.17,6.6225924,17712.854};
 			name="respawn_west";
 			type="Empty";
 			id=565;
-			atlOffset=6.1988831e-006;
 		};
 		class Item6
 		{
@@ -20483,7 +20481,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={16255.063,6.7333817,17683.746};
-				angles[]={-0,5.4908209,0};
+				angles[]={0,5.4908209,0};
 			};
 			side="Empty";
 			flags=4;
@@ -20542,7 +20540,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={16251.55,6.7333817,17686.219};
-				angles[]={-0,0.76255357,0};
+				angles[]={0,0.76255357,0};
 			};
 			side="Empty";
 			flags=4;
@@ -34277,6 +34275,18 @@ class Mission
 				};
 				nAttributes=1;
 			};
+		};
+		class Item316
+		{
+			dataType="Marker";
+			position[]={16220.133,6.1146774,17702.045};
+			name="grasscutter";
+			markerType="RECTANGLE";
+			type="rectangle";
+			a=49.444;
+			b=59.683998;
+			angle=42.6875;
+			id=1150;
 		};
 	};
 	class Connections

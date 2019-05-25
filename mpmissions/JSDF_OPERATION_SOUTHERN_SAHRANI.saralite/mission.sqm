@@ -8,18 +8,18 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=1093;
+		nextID=1094;
 	};
 	class LayerIndexProvider
 	{
-		nextID=88;
+		nextID=92;
 	};
 	class Camera
 	{
 		pos[]={4639.9619,157.85742,7224.0996};
-		dir[]={0.98472679,-0.14409322,0.097833149};
-		up[]={0.14339402,0.98956478,0.014245271};
-		aside[]={0.098865159,-1.464432e-006,-0.99511272};
+		dir[]={0.96262789,-0.16134804,-0.21756841};
+		up[]={0.15738475,0.98689836,-0.03557235};
+		aside[]={-0.220457,-1.4675024e-006,-0.97540957};
 	};
 };
 binarizationWanted=0;
@@ -13009,11 +13009,11 @@ class Mission
 	};
 	class Entities
 	{
-		items=313;
+		items=314;
 		class Item0
 		{
 			dataType="Marker";
-			position[]={4705.3726,139.98442,7237.0869};
+			position[]={4692.3989,139.98442,7237.2329};
 			name="respawn_west";
 			type="Empty";
 			id=325;
@@ -13021,7 +13021,7 @@ class Mission
 		class Item1
 		{
 			dataType="Marker";
-			position[]={4759.7705,139.98442,7206.1465};
+			position[]={4742.127,139.98442,7211.1318};
 			name="FOB_Marker";
 			text="JSDF FOB";
 			type="flag_NATO";
@@ -20122,7 +20122,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={4730.0449,140.57722,7239.687};
-				angles[]={-0,3.149761,0};
+				angles[]={0,3.149761,0};
 			};
 			side="Empty";
 			flags=4;
@@ -20181,7 +20181,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={4730.7158,140.57722,7235.4438};
-				angles[]={-0,4.7046795,0};
+				angles[]={0,4.7046795,0};
 			};
 			side="Empty";
 			flags=4;
@@ -35052,6 +35052,18 @@ class Mission
 				};
 				nAttributes=1;
 			};
+		};
+		class Item313
+		{
+			dataType="Marker";
+			position[]={4741.3696,139.98442,7201.707};
+			name="grasscutter";
+			markerType="RECTANGLE";
+			type="rectangle";
+			a=49.444;
+			b=59.683998;
+			angle=89.104416;
+			id=1093;
 		};
 	};
 	class Connections

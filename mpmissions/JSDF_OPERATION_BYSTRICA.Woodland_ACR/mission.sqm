@@ -8,18 +8,18 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=930;
+		nextID=931;
 	};
 	class LayerIndexProvider
 	{
-		nextID=87;
+		nextID=91;
 	};
 	class Camera
 	{
-		pos[]={3131.4197,126.15804,1873.233};
-		dir[]={0.31334084,-0.56509912,-0.76323771};
-		up[]={0.21461977,0.82502168,-0.52276373};
-		aside[]={-0.92509907,2.3304892e-006,-0.37979192};
+		pos[]={3128.3267,88.166702,1862.9288};
+		dir[]={0.30779994,-0.57255465,-0.75993711};
+		up[]={0.21494821,0.81986356,-0.5306837};
+		aside[]={-0.92688805,2.4826149e-006,-0.37542042};
 	};
 };
 binarizationWanted=0;
@@ -13010,7 +13010,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=312;
+		items=313;
 		class Item0
 		{
 			dataType="Marker";
@@ -17782,6 +17782,7 @@ class Mission
 			};
 			id=676;
 			type="Land_LampHalogen_F";
+			atlOffset=4.7683716e-007;
 		};
 		class Item130
 		{
@@ -17798,7 +17799,6 @@ class Mission
 			};
 			id=677;
 			type="Land_LampHalogen_F";
-			atlOffset=-4.7683716e-007;
 		};
 		class Item131
 		{
@@ -35088,6 +35088,18 @@ class Mission
 				};
 				nAttributes=1;
 			};
+		};
+		class Item312
+		{
+			dataType="Marker";
+			position[]={3189.626,5.6809807,1721.5208};
+			name="grasscutter";
+			markerType="RECTANGLE";
+			type="rectangle";
+			a=49.444;
+			b=59.683998;
+			angle=154.11806;
+			id=930;
 		};
 	};
 	class Connections

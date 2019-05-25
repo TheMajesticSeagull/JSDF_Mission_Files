@@ -5,7 +5,7 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=1025;
+	toggles=1153;
 	class ItemIDProvider
 	{
 		nextID=1222;
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=200;
+		nextID=207;
 	};
 	class Camera
 	{
-		pos[]={5439.5244,28.879721,6088.8984};
-		dir[]={0.040921468,-0.23543102,0.97104144};
-		up[]={0.0099158892,0.97188485,0.23523246};
-		aside[]={0.99912143,-2.6281377e-006,-0.042105295};
+		pos[]={5472.7827,28.879721,6095.5625};
+		dir[]={-0.13451017,-0.30575156,0.94258028};
+		up[]={-0.043192849,0.95210516,0.30269456};
+		aside[]={0.98998302,-2.5805784e-006,0.14127377};
 	};
 };
 binarizationWanted=0;
@@ -13022,15 +13022,16 @@ class Mission
 		class Item1
 		{
 			dataType="Marker";
-			position[]={8810.0166,14.91,6442.5391};
+			position[]={5451.7627,26.691841,6130.9385};
 			name="respawn_west";
 			type="Empty";
 			id=519;
+			atlOffset=11.761841;
 		};
 		class Item2
 		{
 			dataType="Marker";
-			position[]={8832.166,14.91,6388.9653};
+			position[]={5472.1792,14.93,6196.5518};
 			name="FOB_Marker_Woodland";
 			text="JSDF FOB";
 			type="flag_NATO";
@@ -19361,14 +19362,13 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={8950.9004,14.910231,6354.1045};
-				angles[]={0,5.1796417,0};
+				position[]={5464.6611,46.174389,6522.6069};
+				angles[]={5.8308005,5.1796417,6.0166798};
 			};
 			name="curatorEditable";
 			init="curatorEditable setVariable [""showNotification"", false];";
 			id=946;
 			type="ModuleCuratorAddEditableObjects";
-			atlOffset=0.00023078918;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -19436,14 +19436,14 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={8943.2256,14.910229,6314.6904};
-				angles[]={0,5.1796417,0};
+				position[]={5456.9863,36.518036,6483.1929};
+				angles[]={5.9825797,5.1796417,6.1128521};
 			};
 			name="Arrow";
 			init="call{[this, [-1, -2, 0]] call bis_fnc_setcuratorvisionmodes; Arrow setVariable [""showNotification"", false]}";
 			id=947;
 			type="ModuleCurator_F";
-			atlOffset=0.00022888184;
+			atlOffset=-3.8146973e-006;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -19549,14 +19549,13 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={8910.3867,14.910231,6311.9668};
-				angles[]={0,5.1796417,0};
+				position[]={5424.1475,42.722092,6480.4692};
+				angles[]={5.9554467,5.1796417,6.1118813};
 			};
 			name="Buda";
 			init="call{[this, [-1, -2, 0]] call bis_fnc_setcuratorvisionmodes; buda setVariable [""showNotification"", false]}";
 			id=948;
 			type="ModuleCurator_F";
-			atlOffset=0.00023078918;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -19662,14 +19661,13 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={8933.5693,14.910231,6336.2886};
-				angles[]={0,5.1796417,0};
+				position[]={5447.3301,45.784168,6504.791};
+				angles[]={5.9926462,5.1796417,5.9880629};
 			};
 			name="Seagull";
 			init="call{[this, [-1, -2, 0]] call bis_fnc_setcuratorvisionmodes; Seagull setVariable [""showNotification"", false]}";
 			id=949;
 			type="ModuleCurator_F";
-			atlOffset=0.00023078918;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -19775,14 +19773,13 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={8922.4834,14.910233,6324.5513};
-				angles[]={0,5.1796474,0};
+				position[]={5436.2441,44.380562,6493.0537};
+				angles[]={6.0101767,5.1796474,5.9653401};
 			};
 			name="mrg";
 			init="call{[this, [-1, -2, 0]] call bis_fnc_setcuratorvisionmodes; mrg setVariable [""showNotification"", false]}";
 			id=950;
 			type="ModuleCurator_F";
-			atlOffset=0.00023269653;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -19888,14 +19885,13 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={8932.917,14.910229,6318.8223};
-				angles[]={0,5.1796417,0};
+				position[]={5446.6777,39.94635,6487.3247};
+				angles[]={6.0269446,5.1796417,6.041975};
 			};
 			name="Teal";
 			init="call{[this, [-1, -2, 0]] call bis_fnc_setcuratorvisionmodes; Teal setVariable [""showNotification"", false]}";
 			id=951;
 			type="ModuleCurator_F";
-			atlOffset=0.00022888184;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -20001,14 +19997,13 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={8946.4141,14.910231,6330.9043};
-				angles[]={0,5.1796417,0};
+				position[]={5460.1748,41.69381,6499.4067};
+				angles[]={5.9165478,5.1796417,6.1225805};
 			};
 			name="Tub";
 			init="call{[this, [-1, -2, 0]] call bis_fnc_setcuratorvisionmodes; Tub setVariable [""showNotification"", false]}";
 			id=952;
 			type="ModuleCurator_F";
-			atlOffset=0.00023078918;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -20446,7 +20441,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={5439.458,15.522812,6165.9053};
-				angles[]={-0,1.2555287,0};
+				angles[]={0,1.2555287,0};
 			};
 			side="Empty";
 			flags=4;
@@ -20505,7 +20500,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={5443.2681,15.522812,6167.8901};
-				angles[]={-0,2.8104472,0};
+				angles[]={0,2.8104472,0};
 			};
 			side="Empty";
 			flags=4;
@@ -20941,14 +20936,14 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={8939.7881,14.910231,6298.5239};
-				angles[]={0,4.5831814,0};
+				position[]={5453.5488,32.430069,6467.0264};
+				angles[]={6.0382066,4.5831814,6.1914439};
 			};
 			name="Rambi";
 			init="call{[this, [-1, -2, 0]] call bis_fnc_setcuratorvisionmodes; Rambi setVariable [""showNotification"", false]}";
 			id=971;
 			type="ModuleCurator_F";
-			atlOffset=0.00023078918;
+			atlOffset=3.8146973e-006;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -21134,14 +21129,14 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={8924.8965,14.910231,6303.4795};
-				angles[]={0,5.133379,0};
+				position[]={5438.6572,36.546154,6471.9819};
+				angles[]={6.0185418,5.133379,5.9671459};
 			};
 			name="Lime";
 			init="call{[this, [-1, -2, 0]] call bis_fnc_setcuratorvisionmodes; Lime setVariable [""showNotification"", false]}";
 			id=974;
 			type="ModuleCurator_F";
-			atlOffset=0.00023078918;
+			atlOffset=-3.8146973e-006;
 			class CustomAttributes
 			{
 				class Attribute0
