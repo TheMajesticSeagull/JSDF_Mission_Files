@@ -63,10 +63,11 @@ ace_respawn_savePreDeathGear = true;
 force ace_scopes_enabled = false;
 
 // ACE View Distance Limiter
-force ace_viewdistance_limitViewDistance = 5000;
-ace_viewdistance_viewDistanceAirVehicle = 9;
-ace_viewdistance_viewDistanceLandVehicle = 3;
-ace_viewdistance_viewDistanceOnFoot = 3;
+force force ace_viewdistance_enabled = true;
+force force ace_viewdistance_limitViewDistance = 5000;
+
+
+
 
 // ACE Weapons
 ace_common_persistentLaserEnabled = true;
