@@ -19,7 +19,7 @@ if (isMultiplayer) then {
 // ||||||| Edit these values |||||||||| //
 // vvvvvvv                   vvvvvvvvvv //
 
-[false, true, false, false, false, false, false] call JSDF_Loadouts_fnc_loadoutInit;
+[true, false, false, false, false, false, false] call JSDF_Loadouts_fnc_loadoutInit;
 
 }
 
