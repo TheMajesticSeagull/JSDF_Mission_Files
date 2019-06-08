@@ -69,6 +69,7 @@
 
 <br>
 _Symbol Desciption:_
+
 ```
 - = removed
 
