@@ -19,7 +19,7 @@
 
 \- JSDF Operation Tanoa 
 
-
+<br>
 \+ JSDF Operation Abramia
 
 \+ JSDF Operation Anizay
@@ -28,7 +28,7 @@
 
 \+ JSDF Operation Suursaari
 
-
+<br>
 ^ JSDF Operation Altis¹
 
 ^ JSDF Operation Bystrica²
