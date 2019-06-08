@@ -1,7 +1,7 @@
-#JSDF Changelog (07.06.2019):
+# JSDF Changelog (07.06.2019):
 
 
-###Mod changes:
+### Mod changes:
 
 - Hebontes
 - RHSSAF
@@ -15,7 +15,7 @@
 + ShackTack UI
 
 
-###Mission Templates: 
+### Mission Templates: 
 
 - JSDF Operation Tanoa 
 
@@ -47,17 +47,17 @@
 ¹ & ² Fixed issues with exploding vehicles on mission start and random floating objects
 
 
-###Other Fixes/changes:
+### Other Fixes/changes:
 
 - Removed vehicles and dependencies from addons we removed on all templates
 
 + Added a grasscutter script to all templates (no more grass in FOB's)
 
-^ Fixed issues with low view distance (Can now be changed under ACE Viewdistance in the addon settings, limited to 5000m)
-^ Improved the loadout template script to allow for loading of multiple templates at once
+⋅⋅⋅^ Fixed issues with low view distance (Can now be changed under ACE Viewdistance in the addon settings, limited to 5000m)
+⋅⋅⋅^ Improved the loadout template script to allow for loading of multiple templates at once
 
 
-###JSDF Recources:
+### JSDF Recources:
 
 - BlueHud
 - RHSSAF Compatibility patches
