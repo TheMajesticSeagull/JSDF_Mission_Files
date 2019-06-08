@@ -1,6 +1,7 @@
 # JSDF Changelog (07.06.2019):
 
 <br>
+
 ### Mod changes:
 
 \- Hebontes
@@ -15,11 +16,13 @@
 \+ ShackTack UI
 
 <br>
+
 ### Mission Templates: 
 
 \- JSDF Operation Tanoa 
 
 <br>
+
 \+ JSDF Operation Abramia
 
 \+ JSDF Operation Anizay
@@ -29,6 +32,7 @@
 \+ JSDF Operation Suursaari
 
 <br>
+
 ^ JSDF Operation Altis¹
 
 ^ JSDF Operation Bystrica²
@@ -64,11 +68,13 @@
 ^ JSDF Operation Zargabad²
 
 <br>
+
 ¹ Changed FOB location to allow for use of airstrip
 
 ¹ & ² Fixed issues with exploding vehicles on mission start and random floating objects
 
 <br>
+
 ### Other Fixes/changes:
 
 \- Removed vehicles and dependencies from addons we removed on all templates
@@ -80,6 +86,7 @@
 ^ Improved the loadout template script to allow for loading of multiple templates at once
 
 <br>
+
 ### JSDF Recources:
 
 \- BlueHud
@@ -89,6 +96,7 @@
 ^ Fixed our own mod/pbo, our custom units should now work again 
 
 <br>
+
 _Symbol Desciption:_
 
 ```
