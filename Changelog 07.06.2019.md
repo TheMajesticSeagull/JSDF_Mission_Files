@@ -5,14 +5,23 @@
 ### Mod changes:
 
 \- Hebontes
+
 \- RHSSAF
+
 \- Titus
+
 \- Military Gear Pack \- Extended 01
+
 \- MLO All\-In\-One
+
 \- Project OPFOR
 
+<br>
+
 \+ 3CB Factions
+
 \+ Leopard 2 Revolution MBT
+
 \+ ShackTack UI
 
 <br>
@@ -69,9 +78,9 @@
 
 <br>
 
-¹ Changed FOB location to allow for use of airstrip
+_¹ Changed FOB location to allow for use of airstrip_
 
-¹ & ² Fixed issues with exploding vehicles on mission start and random floating objects
+_¹ & ² Fixed issues with exploding vehicles on mission start and random floating objects_
 
 <br>
 
