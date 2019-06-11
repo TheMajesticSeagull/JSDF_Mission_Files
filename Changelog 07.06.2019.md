@@ -1,4 +1,4 @@
-# JSDF Changelog (07.06.2019):
+# JSDF Changelog v2.7.0 (07.06.2019):
 
 <br>
 
