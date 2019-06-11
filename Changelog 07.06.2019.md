@@ -88,7 +88,7 @@ _¹ & ² Fixed issues with exploding vehicles on mission start and random floati
 
 \- Removed vehicles and dependencies from addons we removed on all templates
 
-\+ Added a grasscutter script to all templates (no more grass in FOB's)
+\+ ~Added a grasscutter script to all templates (no more grass in FOB's)~
 
 ^ Fixed issues with low view distance (Can now be changed under [ACE Viewdistance](https://mods.jsdf.co.uk/media/ACE_ViewDistance.mp4 "watch this to see how") in the addon settings, limited to 5000m)
 
