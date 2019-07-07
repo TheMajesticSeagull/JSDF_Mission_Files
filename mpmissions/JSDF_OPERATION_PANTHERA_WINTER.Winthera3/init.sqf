@@ -90,7 +90,7 @@ ACE_maxWeightCarry = 600;
     [Rambi],
     [Kenny],
     [Sage],
-    [Lime]
+    [Huggins]
   ];
   {
   		_x params ["_curatorModuleName"];
