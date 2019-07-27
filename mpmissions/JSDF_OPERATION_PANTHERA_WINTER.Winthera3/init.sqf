@@ -82,15 +82,15 @@ ACE_maxWeightCarry = 600;
   	// [CuratorModuleName]
   	[Teal],
   	[Buda],
-  	[mrg],
   	[Arrow],
   	[Seagull],
-  	[Tub],
-    [Gil],
+  	[Zeno],
     [Rambi],
-    [Kenny],
     [Sage],
-    [Huggins]
+    [Huggins],
+    [Reserve_Zeus_1],
+    [Reserve_Zeus_2],
+    [Reserve_Zeus_3]
   ];
   {
   		_x params ["_curatorModuleName"];
