@@ -15,6 +15,7 @@ class CfgFunctions {
             class supplyBoxController;
             class arsenalBoxInit;
             class infoBriefing;
+            class teleport;
         };
     };
 };
