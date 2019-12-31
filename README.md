@@ -10,7 +10,7 @@
         <img src="https://img.shields.io/badge/Website-up-brightgreen.svg?style=flat-square"
     </a>
     <a href="https://github.com/TheMajesticSeagull/JSDF_Mission_Files/releases/latest">
-        <img src="https://img.shields.io/badge/Version-2.7.0-blue.svg?style=flat-square" alt="Version"
+        <img src="https://img.shields.io/badge/Version-2.7.2-blue.svg?style=flat-square" alt="Version"
     </a>
     <a href="https://github.com/TheMajesticSeagull/JSDF_Mission_Files/issues">
         <img src="https://img.shields.io/github/issues-raw/TheMajesticSeagull/JSDF_Mission_Files.svg?style=flat-square&label=Issues" alt="Issues">
