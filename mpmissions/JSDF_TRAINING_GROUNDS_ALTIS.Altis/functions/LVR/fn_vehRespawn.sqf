@@ -1,16 +1,19 @@
 if ( ! ( isServer ) ) exitWith {};
 
-private ["_veh","_abandonDelay","_destroyedDelay","_vehInit","_vehName","_vehDir","_vehPos","_vehtype","_abandoned","_dead"];
+params ["_veh","_abandonDelay","_destroyedDelay","_vehInit","_adaptive","_vehName","_vehDir","_vehPos","_vehtype","_abandoned","_dead"];
 
-_veh = 			 [_this, 0, objNull, [objNull]] call BIS_fnc_param;
-_abandonDelay =  	 [_this, 1, 60, [0]] call BIS_fnc_param;
-_destroyedDelay =	 [_this, 2, 60, [0]] call BIS_fnc_param;
-_vehInit =        [_this, 3, {}, [{}] ] call BIS_fnc_param;
-
+_veh = 			 param [0, objNull, []];
+_abandonDelay =  	 param [1, 60, [0]];
+_destroyedDelay =	 param [2, 60, [0]];
+_vehInit =        param [3, {}, [{}] ];
+_adaptive = 	param [4, false, [true, false] ];
 _vehName =        vehicleVarName _veh;
 _vehDir = 		 getDir _veh;
 _vehPos = 		 getPos _veh;
 _vehtype = 		 typeOf _veh;
+
+_offset = _vehPos select 2;
+	if (isNil "_offset") then {_offset = 0};
 
 while { true } Do {
 
@@ -33,8 +36,18 @@ while { true } Do {
 			sleep 1;
 			_veh = createVehicle [ _vehtype, _vehPos, [], 0, "CAN_COLLIDE" ];
 			_veh setDir _vehDir;
-			_veh setPos [ ( _vehPos select 0 ), ( _vehPos select 1 ), 0 ];
+
+			if (_adaptive) then {
+				_vehPos set [2, worldSize]; 
+				_veh setPosASL _vehPos;
+				_vehPos set [2, vectorMagnitude (_vehPos vectorDiff getPosVisual _veh) + _offset];
+				_veh setPosASL _vehPos;
+			} else {
+				_veh setVehiclePosition [_vehPos, [], 0, "CAN_COLLIDE"];
+			};
+
 			_veh call _vehInit;
+
 			if (_vehName != "") then {
 				missionNamespace setVariable [_vehName, _veh];
 				publicVariable _vehName;
@@ -59,7 +72,14 @@ while { true } Do {
 			sleep 1;
 			_veh = createVehicle [ _vehtype, _vehPos, [], 0, "CAN_COLLIDE" ];
 			_veh setDir _vehDir;
-			_veh setPos [ ( _vehPos select 0 ), (_vehPos select 1 ), 0 ];
+			if (_adaptive) then {
+				_vehPos set [2, worldSize]; 
+				_veh setPosASL _vehPos;
+				_vehPos set [2, vectorMagnitude (_vehPos vectorDiff getPosVisual _veh) + _offset];
+				_veh setPosASL _vehPos;
+			} else {
+				_veh setVehiclePosition [_vehPos, [], 0, "CAN_COLLIDE"];
+			};
 			_veh call _vehInit;
 			if (_vehName != "") then {
 				missionNamespace setVariable [_vehName, _veh];
@@ -69,3 +89,6 @@ while { true } Do {
 		};
 	};
 };
+
+
+	
