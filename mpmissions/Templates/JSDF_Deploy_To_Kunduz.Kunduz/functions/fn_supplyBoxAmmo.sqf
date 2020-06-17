@@ -24,16 +24,29 @@ clearMagazineCargoGlobal _crate;
 
 private _ammoItems = [
   // ["item", amount],
-  ["rhs_mag_30Rnd_556x45_m855_stanag", 50],
-  ["rhs_200rnd_556x45_M_SAW", 8],
-  ["20rnd_762x51_Mag", 5],
-  ["rhsusf_mag_17Rnd_9x19_JHP", 16],
-  ["MRAWS_HEAT_F", 2],
-  ["1Rnd_HE_Grenade_shell", 10],
-  ["rhs_mag_m714_White", 10],
-  ["UGL_FlareWhite_F", 2],
-  ["ACE_EarPlugs", 20],
-  ["SatchelCharge_Remote_Ammo", 8]
+	["rhs_mag_30Rnd_556x45_M855A1_Stanag", 50],
+	["rhsusf_200Rnd_556x45_soft_pouch_coyote", 10],
+	["rhsusf_20Rnd_762x51_m118_special_Mag", 10],
+	["MRAWS_HEAT55_F", 5],
+	["MRAWS_HE_F", 5],
+	["rhsusf_mag_17Rnd_9x19_FMJ", 15],
+	["rhs_mag_m67", 15],
+	["SmokeShell", 10],
+	["SmokeShellBlue", 5],
+	["SmokeShellRed", 5],
+	["tf_anprc152", 5],
+	["NVGoggles_INDEP", 2],
+	["ItemGPS", 2],
+	["ACE_EarPlugs", 5],
+	["ACE_EntrenchingTool", 2],
+	["ACE_DefusalKit", 2],
+	["ACE_Flashlight_XL50", 2],
+	["ACE_MapTools", 2],
+	["MineDetector", 2],
+	["ACE_wirecutter", 1],
+	["ACE_M26_Clacker", 2],
+	["ACE_CableTie", 10],
+	["DemoCharge_Remote_Mag", 4]
   ];
 
 {

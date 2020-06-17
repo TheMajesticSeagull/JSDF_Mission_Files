@@ -21,7 +21,7 @@ _settings = [
     "CHECKBOX", 
     "Desert", 
     "JSDF Loadouts", 
-    true, //Change this value to ture or false to toggle if its activated on startup (false = off, true = on)
+    ture, //Change this value to ture or false to toggle if its activated on startup (false = off, true = on)
     1, 
     {  
         if (isMultiplayer) then {

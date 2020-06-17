@@ -24,12 +24,15 @@ clearMagazineCargoGlobal _crate;
 
 private _ammoItems = [
   // ["item", amount],
-  ["ACE_bloodIV", 20],
-  ["ACE_morphine", 60],
-  ["ACE_epinephrine", 40],
-  ["ACE_fieldDressing", 120],
-  ["ACE_bodyBag", 10],
-  ["ACE_EarPlugs", 20]
+	["ACE_elasticBandage", 50],
+	["ACE_morphine", 30],
+	["ACE_epinephrine", 30],
+	["ACE_tourniquet", 20],
+	["ACE_bloodIV", 15],
+	["ACE_bloodIV_500", 15],
+	["ACE_bloodIV_250", 15],
+	["ACE_splint", 20],
+	["ACE_bodyBag", 10]
   ];
 
 {
