@@ -89,7 +89,7 @@ _settings = [
     "CHECKBOX", 
     "Arid", 
     "JSDF Loadouts", 
-    false, //Change this value to ture or false to toggle if its activated on startup (false = off, true = on)
+    true, //Change this value to ture or false to toggle if its activated on startup (false = off, true = on)
     1, 
     {  
         if (isMultiplayer) then {
@@ -106,7 +106,7 @@ _settings = [
     "CHECKBOX", 
     "Custom1", 
     "JSDF Loadouts", 
-    true, //Change this value to ture or false to toggle if its activated on startup (false = off, true = on)
+    false, //Change this value to ture or false to toggle if its activated on startup (false = off, true = on)
     1, 
     {  
         if (isMultiplayer) then {
