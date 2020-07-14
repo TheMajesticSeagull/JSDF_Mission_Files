@@ -8,14 +8,14 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=1314;
+		nextID=1315;
 	};
 	class Camera
 	{
-		pos[]={3891.3298,125.16861,1062.6547};
-		dir[]={0.78573501,-0.61858004,-0.0013143895};
-		up[]={0.6186251,0.78568178,-0.0010352861};
-		aside[]={-0.0016734861,1.6658305e-008,-1.0000081};
+		pos[]={4151.4941,109.35701,1047.2466};
+		dir[]={-0.68539983,-0.72820115,0.0056939959};
+		up[]={-0.72821653,0.68531275,0.0060489047};
+		aside[]={0.0083052944,-2.1131018e-007,1.0000045};
 	};
 };
 binarizationWanted=0;
@@ -30214,7 +30214,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=380;
+		items=381;
 		class Item0
 		{
 			dataType="Marker";
@@ -108389,16 +108389,128 @@ class Mission
 			};
 			id=1310;
 		};
+		class Item380
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={4110.21,5,987.08398};
+				angles[]={0,1.1177787,0};
+			};
+			name="krazycj12";
+			init="call{[this, [-1, -2, 0]] call bis_fnc_setcuratorvisionmodes; krazycj12 setVariable [""showNotification"", false]}";
+			id=1314;
+			type="ModuleCurator_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ModuleCurator_F_Owner";
+					expression="_this setVariable ['Owner',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="76561198077394504";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ModuleCurator_F_Forced";
+					expression="_this setVariable ['Forced',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ModuleCurator_F_Name";
+					expression="_this setVariable ['Name',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Zeus";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="ModuleInfo";
+					expression="false";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="ModuleCurator_F_Addons";
+					expression="_this setVariable ['Addons',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=3;
+						};
+					};
+				};
+				nAttributes=5;
+			};
+		};
 	};
 	class Connections
 	{
 		class LinkIDProvider
 		{
-			nextID=11;
+			nextID=12;
 		};
 		class Links
 		{
-			items=11;
+			items=12;
 			class Item0
 			{
 				linkID=0;
@@ -108503,6 +108615,16 @@ class Mission
 			{
 				linkID=10;
 				item0=1246;
+				item1=1235;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item11
+			{
+				linkID=11;
+				item0=1314;
 				item1=1235;
 				class CustomData
 				{
