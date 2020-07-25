@@ -30,6 +30,7 @@ ACE_maxWeightCarry = 600;
   [Teal],
   [krazycj12],
   [Buda],
+  [Bran],
   [Arrow],
   [Seagull],
   [Zeno],
