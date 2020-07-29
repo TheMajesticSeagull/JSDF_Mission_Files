@@ -1,5 +1,5 @@
 _settings = [
-[
+    [
     "JSDF_Loadout_Arid", 
     "CHECKBOX", 
     "Arid", 
@@ -11,6 +11,23 @@ _settings = [
             params ["_value"];
             if (_value) then {
             [] ExecVM "functions\fn_loadout_a.sqf";
+            };
+        };
+    }, 
+    false
+],
+[
+    "JSDF_Loadout_Desert", 
+    "CHECKBOX", 
+    "Desert", 
+    "JSDF Loadouts", 
+    false, //Change this value to ture or false to toggle if its activated on startup (false = off, true = on)
+    1, 
+    {  
+        if (isMultiplayer) then {
+            params ["_value"];
+            if (_value) then {
+            [] ExecVM "functions\fn_loadout_d.sqf";
             };
         };
     }, 
@@ -34,9 +51,9 @@ _settings = [
     false
 ],
 [
-    "JSDF_Loadout_Desert", 
+    "JSDF_Loadout_Urban", 
     "CHECKBOX", 
-    "Desert", 
+    "Urban", 
     "JSDF Loadouts", 
     false, //Change this value to ture or false to toggle if its activated on startup (false = off, true = on)
     1, 
@@ -44,7 +61,7 @@ _settings = [
         if (isMultiplayer) then {
             params ["_value"];
             if (_value) then {
-            [] ExecVM "functions\fn_loadout_d.sqf";
+            [] ExecVM "functions\fn_loadout_u.sqf";
             };
         };
     }, 
@@ -70,7 +87,7 @@ _settings = [
 [
     "JSDF_Loadout_Vehicles", 
     "CHECKBOX", 
-    "Vehicle Crew and Pilots", 
+    "Crew/Vehicles", 
     "JSDF Loadouts", 
     false, //Change this value to ture or false to toggle if its activated on startup (false = off, true = on)
     1, 
@@ -87,7 +104,7 @@ _settings = [
 [
     "JSDF_Loadout_custom", 
     "CHECKBOX", 
-    "Custom Loadouts", 
+    "Custom", 
     "JSDF Loadouts", 
     false, //Change this value to ture or false to toggle if its activated on startup (false = off, true = on)
     1, 

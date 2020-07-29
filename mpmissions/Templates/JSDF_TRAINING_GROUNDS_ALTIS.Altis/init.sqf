@@ -29,6 +29,7 @@ ACE_maxWeightCarry = 600;
   	// [CuratorModuleName]
   [Teal],
   [krazycj12],
+  [Lex],
   [Buda],
   [Bran],
   [Arrow],

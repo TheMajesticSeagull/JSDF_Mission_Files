@@ -1,16 +1,16 @@
 _settings = [
     [
-    "JSDF_Loadout_Woodland", 
+    "JSDF_Loadout_Arid", 
     "CHECKBOX", 
-    "Woodland", 
+    "Arid", 
     "JSDF Loadouts", 
-    false, //Change this value to ture or false to toggle if its activated on startup (false = off, true = on)
+    true, //Change this value to ture or false to toggle if its activated on startup (false = off, true = on)
     1, 
     {  
         if (isMultiplayer) then {
             params ["_value"];
             if (_value) then {
-            [] ExecVM "functions\fn_loadout_w.sqf";
+            [] ExecVM "functions\fn_loadout_a.sqf";
             };
         };
     }, 
@@ -28,6 +28,23 @@ _settings = [
             params ["_value"];
             if (_value) then {
             [] ExecVM "functions\fn_loadout_d.sqf";
+            };
+        };
+    }, 
+    false
+],
+[
+    "JSDF_Loadout_Woodland", 
+    "CHECKBOX", 
+    "Woodland", 
+    "JSDF Loadouts", 
+    false, //Change this value to ture or false to toggle if its activated on startup (false = off, true = on)
+    1, 
+    {  
+        if (isMultiplayer) then {
+            params ["_value"];
+            if (_value) then {
+            [] ExecVM "functions\fn_loadout_w.sqf";
             };
         };
     }, 
@@ -85,26 +102,9 @@ _settings = [
     false
 ],
 [
-    "JSDF_Loadout_Arid", 
+    "JSDF_Loadout_custom", 
     "CHECKBOX", 
-    "Arid", 
-    "JSDF Loadouts", 
-    true, //Change this value to ture or false to toggle if its activated on startup (false = off, true = on)
-    1, 
-    {  
-        if (isMultiplayer) then {
-            params ["_value"];
-            if (_value) then {
-            [] ExecVM "functions\fn_loadout_a.sqf";
-            };
-        };
-    }, 
-    false
-],
-[
-    "JSDF_Loadout_custom1", 
-    "CHECKBOX", 
-    "Custom1", 
+    "Custom", 
     "JSDF Loadouts", 
     false, //Change this value to ture or false to toggle if its activated on startup (false = off, true = on)
     1, 
@@ -112,7 +112,7 @@ _settings = [
         if (isMultiplayer) then {
             params ["_value"];
             if (_value) then {
-            [] ExecVM "functions\fn_loadout_c1.sqf";
+            [] ExecVM "functions\fn_loadout_c.sqf";
             };
         }
     }, 
