@@ -35,18 +35,18 @@ private _ammoItems = [
 	["SmokeShellBlue", 5],
 	["SmokeShellRed", 5],
 	["tf_anprc152", 5],
-	["NVGoggles_INDEP", 2],
-	["ItemGPS", 2],
+	["NVGoggles_INDEP", 5],
+	["ItemGPS", 5],
 	["ACE_EarPlugs", 5],
-	["ACE_EntrenchingTool", 2],
-	["ACE_DefusalKit", 2],
-	["ACE_Flashlight_XL50", 2],
-	["ACE_MapTools", 2],
-	["MineDetector", 2],
-	["ACE_wirecutter", 1],
-	["ACE_M26_Clacker", 2],
+	["ACE_EntrenchingTool", 5],
+	["ACE_DefusalKit", 5],
+	["ACE_Flashlight_XL50", 5],
+	["ACE_MapTools", 5],
+	["MineDetector", 5],
+	["ACE_wirecutter", 5],
+	["ACE_M26_Clacker", 5],
 	["ACE_CableTie", 10],
-	["DemoCharge_Remote_Mag", 4]
+	["DemoCharge_Remote_Mag", 5]
   ];
 
 {
