@@ -51,7 +51,7 @@ _settings = [
     false
 ],
 [
-    "JSDF_Loadout_Vehicles", 
+    "JSDF_Loadout_Air_Vehicles", 
     "CHECKBOX", 
     "Crew/Vehicles", 
     "JSDF Loadouts", 
