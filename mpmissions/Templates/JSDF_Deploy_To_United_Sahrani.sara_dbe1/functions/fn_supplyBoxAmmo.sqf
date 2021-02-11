@@ -25,16 +25,18 @@ clearMagazineCargoGlobal _crate;
 private _ammoItems = [
   // ["item", amount],
 	["rhs_mag_30Rnd_556x45_M855A1_Stanag", 50],
-	["rhsusf_200Rnd_556x45_soft_pouch_coyote", 10],
-	["rhsusf_20Rnd_762x51_m118_special_Mag", 10],
+	["rhsusf_200Rnd_556x45_soft_pouch_coyote", 20],
+	["SMA_150Rnd_762_M80A1", 20],
+	["rhsusf_20Rnd_762x51_m118_special_Mag", 20],
+	["rhsusf_5Rnd_300winmag_xm2010", 20],
 	["MRAWS_HEAT55_F", 5],
 	["MRAWS_HE_F", 5],
 	["rhsusf_mag_17Rnd_9x19_FMJ", 15],
 	["rhs_mag_m67", 15],
 	["SmokeShell", 10],
-	["SmokeShellBlue", 5],
-	["SmokeShellRed", 5],
-	["tf_anprc152", 5],
+	["SmokeShellBlue", 10],
+	["SmokeShellRed", 10],
+	["tf_anprc152", 10],
 	["NVGoggles_INDEP", 5],
 	["ItemGPS", 5],
 	["ACE_EarPlugs", 5],
@@ -45,7 +47,7 @@ private _ammoItems = [
 	["MineDetector", 5],
 	["ACE_wirecutter", 5],
 	["ACE_M26_Clacker", 5],
-	["ACE_CableTie", 10],
+	["ACE_CableTie", 30],
 	["DemoCharge_Remote_Mag", 5]
   ];
 

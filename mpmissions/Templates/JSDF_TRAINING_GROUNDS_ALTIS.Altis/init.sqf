@@ -27,7 +27,8 @@ ACE_maxWeightCarry = 600;
 [QGVAR(addToCurator), {
   private _zeusUsers = [
   	// [CuratorModuleName]
-  	[Teal],
+  	[Admin_1],
+    [Teal],
   	[Buda],
   	[Arrow],
   	[Seagull],
