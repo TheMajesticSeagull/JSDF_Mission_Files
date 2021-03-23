@@ -53,7 +53,7 @@ _settings = [
 [
     "JSDF_Loadout_Air_Vehicles", 
     "CHECKBOX", 
-    "Crew/Vehicles", 
+    "Air vehicles", 
     "JSDF Loadouts", 
     false, //Change this value to ture or false to toggle if its activated on startup (false = off, true = on)
     1, 

@@ -10,7 +10,7 @@ _settings = [
         if (isMultiplayer) then {
             params ["_value"];
             if (_value) then {
-            [] ExecVM "functions\fn_loadout_a.sqf";
+            [] ExecVM "functions\fn_loadout_main_arid.sqf";
             };
         };
     }, 
@@ -27,7 +27,7 @@ _settings = [
         if (isMultiplayer) then {
             params ["_value"];
             if (_value) then {
-            [] ExecVM "functions\fn_loadout_d.sqf";
+            [] ExecVM "functions\fn_loadout_main_desert.sqf";
             };
         };
     }, 
@@ -44,7 +44,7 @@ _settings = [
         if (isMultiplayer) then {
             params ["_value"];
             if (_value) then {
-            [] ExecVM "functions\fn_loadout_w.sqf";
+            [] ExecVM "functions\fn_loadout_main_woodland.sqf";
             };
         };
     }, 
@@ -61,7 +61,24 @@ _settings = [
         if (isMultiplayer) then {
             params ["_value"];
             if (_value) then {
-            [] ExecVM "functions\fn_loadout_v.sqf";
+            [] ExecVM "functions\fn_loadout_main_air_vehicle.sqf";
+            };
+        };
+    }, 
+    false
+],
+[
+    "JSDF_Loadout_Air_Vehicles", 
+    "CHECKBOX", 
+    "Air vehicles", 
+    "JSDF Loadouts", 
+    false, //Change this value to ture or false to toggle if its activated on startup (false = off, true = on)
+    1, 
+    {  
+        if (isMultiplayer) then {
+            params ["_value"];
+            if (_value) then {
+            [] ExecVM "functions\fn_loadout_main_air_vehicle.sqf";
             };
         };
     }, 
@@ -78,7 +95,7 @@ _settings = [
         if (isMultiplayer) then {
             params ["_value"];
             if (_value) then {
-            [] ExecVM "functions\fn_loadout_c.sqf";
+            [] ExecVM "functions\fn_loadout_custom.sqf";
             };
         }
     }, 

@@ -28,6 +28,7 @@ ACE_maxWeightCarry = 600;
   private _zeusUsers = [
   	// [CuratorModuleName]
   [Admin_1],
+  [krazycj12],
   [Teal],
   [Buda],
   [Arrow],
