@@ -6,6 +6,10 @@ class EditorData
 	scaleGridStep=1;
 	autoGroupingDist=10;
 	toggles=513;
+	mods[]=
+	{
+		"3denEnhanced"
+	};
 	class ItemIDProvider
 	{
 		nextID=4060;
@@ -16,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={3170.3081,25.854286,319.60764};
-		dir[]={0.72590697,-0.57502621,-0.3773644};
-		up[]={0.51020372,0.81813496,-0.2652306};
-		aside[]={-0.46124956,-1.4901161e-008,-0.88727039};
+		pos[]={3130.2468,99.223022,256.04327};
+		dir[]={0.39025599,-0.92070466,0.003317456};
+		up[]={0.92067355,0.39025474,0.0078263767};
+		aside[]={0.0085003506,8.0855898e-008,-0.99996829};
 	};
 };
 binarizationWanted=0;
@@ -450,10 +454,23 @@ class AddonsMetaData
 		};
 	};
 };
+dlcs[]=
+{
+	"Expansion",
+	"Heli",
+	"Contact",
+	"Enoch",
+	"RHS_USAF",
+	"UK3CB_BAF_Vehicles",
+	"UK3CB_Factions",
+	"UK3CB_Factions_Vehicles"
+};
 randomSeed=9374488;
 class ScenarioData
 {
 	author="krazycj12";
+	overviewText="JSDF Deploy To Zargabad";
+	overViewPicture="z\jsdf\JSDF_Resources\img\billboards\jsdf_billboard_logo.paa";
 	saving=0;
 	respawnDialog=0;
 	disabledAI=1;
@@ -890,7 +907,7 @@ class CustomAttributes
 								};
 								class value
 								{
-									items=593;
+									items=594;
 									class Item0
 									{
 										class data
@@ -9193,6 +9210,20 @@ class CustomAttributes
 											value="ace_medical_gui_enableactions";
 										};
 									};
+									class Item593
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="ace_medical_treatment_woundreopening";
+										};
+									};
 								};
 							};
 						};
@@ -9209,7 +9240,7 @@ class CustomAttributes
 								};
 								class value
 								{
-									items=593;
+									items=594;
 									class Item0
 									{
 										class data
@@ -19528,7 +19559,7 @@ class CustomAttributes
 																"BOOL"
 															};
 														};
-														value=0;
+														value=1;
 													};
 												};
 												class Item1
@@ -30958,7 +30989,7 @@ class CustomAttributes
 																"BOOL"
 															};
 														};
-														value=0;
+														value=1;
 													};
 												};
 												class Item1
@@ -36063,6 +36094,51 @@ class CustomAttributes
 											};
 										};
 									};
+									class Item593
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"ARRAY"
+												};
+											};
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"BOOL"
+															};
+														};
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=1;
+													};
+												};
+											};
+										};
+									};
 								};
 							};
 						};
@@ -36585,7 +36661,7 @@ class Mission
 				class Attribute2
 				{
 					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"", _value, true];";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
 					class Value
 					{
 						class data
@@ -36682,7 +36758,7 @@ class Mission
 				class Attribute1
 				{
 					property="ace_isRepairFacility";
-					expression="if (_value != (if (isNumber (configOf _this >> ""ace_repair_canRepair"")) then {getNumber (configOf _this >> ""ace_repair_canRepair"")} else {0})) then {_this setVariable ['ace_isRepairFacility', _value, true]}";
+					expression="if (_value != (if (isNumber (configFile >> 'CfgVehicles' >> typeOf _this >> ""ace_repair_canRepair"")) then {getNumber (configFile >> 'CfgVehicles' >> typeOf _this >> ""ace_repair_canRepair"")} else {0})) then {_this setVariable ['ace_isRepairFacility', _value, true]}";
 					class Value
 					{
 						class data
@@ -36739,7 +36815,7 @@ class Mission
 				class Attribute4
 				{
 					property="ace_cargo_space";
-					expression="[_this, _value] call ace_cargo_fnc_setSpace;";
+					expression="[_this,_value] call ace_cargo_fnc_setSpace;";
 					class Value
 					{
 						class data
@@ -36758,7 +36834,7 @@ class Mission
 				class Attribute5
 				{
 					property="ace_rearm_rearmCargo";
-					expression="if (_value != (if (isNumber (configOf _this >> ""ace_rearm_defaultSupply"")) then {getNumber (configOf _this >> ""ace_rearm_defaultSupply"")} else {-1})) then {[_this, _value] call ace_rearm_fnc_makeSource}";
+					expression="if (_value != (if (isNumber (configFile >> 'CfgVehicles' >> typeOf _this >> ""ace_rearm_defaultSupply"")) then {getNumber (configFile >> 'CfgVehicles' >> typeOf _this >> ""ace_rearm_defaultSupply"")} else {-1})) then {[_this, _value] call ace_rearm_fnc_makeSource}";
 					class Value
 					{
 						class data
@@ -36817,7 +36893,7 @@ class Mission
 				class Attribute1
 				{
 					property="ace_isRepairFacility";
-					expression="if (_value != (if (isNumber (configOf _this >> ""ace_repair_canRepair"")) then {getNumber (configOf _this >> ""ace_repair_canRepair"")} else {0})) then {_this setVariable ['ace_isRepairFacility', _value, true]}";
+					expression="if (_value != (if (isNumber (configFile >> 'CfgVehicles' >> typeOf _this >> ""ace_repair_canRepair"")) then {getNumber (configFile >> 'CfgVehicles' >> typeOf _this >> ""ace_repair_canRepair"")} else {0})) then {_this setVariable ['ace_isRepairFacility', _value, true]}";
 					class Value
 					{
 						class data
@@ -36913,7 +36989,7 @@ class Mission
 				class Attribute2
 				{
 					property="ace_cargo_space";
-					expression="[_this, _value] call ace_cargo_fnc_setSpace;";
+					expression="[_this,_value] call ace_cargo_fnc_setSpace;";
 					class Value
 					{
 						class data
@@ -38301,7 +38377,7 @@ class Mission
 				class Attribute2
 				{
 					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"", _value, true];";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
 					class Value
 					{
 						class data
@@ -38320,7 +38396,7 @@ class Mission
 				class Attribute3
 				{
 					property="ace_cargo_size";
-					expression="[_this, _value] call ace_cargo_fnc_setSize;";
+					expression="[_this,_value] call ace_cargo_fnc_setSize;";
 					class Value
 					{
 						class data
@@ -38400,7 +38476,7 @@ class Mission
 				class Attribute2
 				{
 					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"", _value, true];";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
 					class Value
 					{
 						class data
@@ -38419,7 +38495,7 @@ class Mission
 				class Attribute3
 				{
 					property="ace_cargo_size";
-					expression="[_this, _value] call ace_cargo_fnc_setSize;";
+					expression="[_this,_value] call ace_cargo_fnc_setSize;";
 					class Value
 					{
 						class data
@@ -38499,7 +38575,7 @@ class Mission
 				class Attribute2
 				{
 					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"", _value, true];";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
 					class Value
 					{
 						class data
@@ -38518,7 +38594,7 @@ class Mission
 				class Attribute3
 				{
 					property="ace_cargo_size";
-					expression="[_this, _value] call ace_cargo_fnc_setSize;";
+					expression="[_this,_value] call ace_cargo_fnc_setSize;";
 					class Value
 					{
 						class data
@@ -38598,7 +38674,7 @@ class Mission
 				class Attribute2
 				{
 					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"", _value, true];";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
 					class Value
 					{
 						class data
@@ -38617,7 +38693,7 @@ class Mission
 				class Attribute3
 				{
 					property="ace_cargo_size";
-					expression="[_this, _value] call ace_cargo_fnc_setSize;";
+					expression="[_this,_value] call ace_cargo_fnc_setSize;";
 					class Value
 					{
 						class data
@@ -38697,7 +38773,7 @@ class Mission
 				class Attribute2
 				{
 					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"", _value, true];";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
 					class Value
 					{
 						class data
@@ -38716,7 +38792,7 @@ class Mission
 				class Attribute3
 				{
 					property="ace_cargo_size";
-					expression="[_this, _value] call ace_cargo_fnc_setSize;";
+					expression="[_this,_value] call ace_cargo_fnc_setSize;";
 					class Value
 					{
 						class data
@@ -41158,7 +41234,7 @@ class Mission
 				class Attribute3
 				{
 					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"", _value, true];";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
 					class Value
 					{
 						class data
@@ -59602,7 +59678,7 @@ class Mission
 				class Attribute3
 				{
 					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"", _value, true];";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
 					class Value
 					{
 						class data
@@ -60936,12 +61012,13 @@ class Mission
 				angles[]={0,1.5707964,0};
 			};
 			side="Empty";
-			flags=5;
+			flags=1;
 			class Attributes
 			{
 			};
 			id=3795;
 			type="Land_Billboard_F";
+			atlOffset=2.3026714;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -69095,7 +69172,7 @@ class Mission
 						class Attribute1
 						{
 							property="ace_isEngineer";
-							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 							class Value
 							{
 								class data
@@ -69133,7 +69210,7 @@ class Mission
 						class Attribute3
 						{
 							property="ace_isEOD";
-							expression="_this setVariable ['ACE_isEOD', _value, true]";
+							expression="_this setVariable ['ACE_isEOD',_value,true]";
 							class Value
 							{
 								class data
@@ -69244,7 +69321,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=9;
+						class Attribute9
+						{
+							property="enableStamina";
+							expression="_this enablestamina _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=10;
 					};
 				};
 				class Item1
@@ -69349,7 +69445,7 @@ class Mission
 						class Attribute1
 						{
 							property="ace_isEngineer";
-							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 							class Value
 							{
 								class data
@@ -69387,7 +69483,7 @@ class Mission
 						class Attribute3
 						{
 							property="ace_isEOD";
-							expression="_this setVariable ['ACE_isEOD', _value, true]";
+							expression="_this setVariable ['ACE_isEOD',_value,true]";
 							class Value
 							{
 								class data
@@ -69498,7 +69594,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=9;
+						class Attribute9
+						{
+							property="enableStamina";
+							expression="_this enablestamina _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=10;
 					};
 				};
 				class Item2
@@ -69603,7 +69718,7 @@ class Mission
 						class Attribute1
 						{
 							property="ace_isEngineer";
-							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 							class Value
 							{
 								class data
@@ -69641,7 +69756,7 @@ class Mission
 						class Attribute3
 						{
 							property="ace_isEOD";
-							expression="_this setVariable ['ACE_isEOD', _value, true]";
+							expression="_this setVariable ['ACE_isEOD',_value,true]";
 							class Value
 							{
 								class data
@@ -69752,7 +69867,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=9;
+						class Attribute9
+						{
+							property="enableStamina";
+							expression="_this enablestamina _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=10;
 					};
 				};
 				class Item3
@@ -69857,7 +69991,7 @@ class Mission
 						class Attribute1
 						{
 							property="ace_isEngineer";
-							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 							class Value
 							{
 								class data
@@ -69895,7 +70029,7 @@ class Mission
 						class Attribute3
 						{
 							property="ace_isEOD";
-							expression="_this setVariable ['ACE_isEOD', _value, true]";
+							expression="_this setVariable ['ACE_isEOD',_value,true]";
 							class Value
 							{
 								class data
@@ -70006,7 +70140,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=9;
+						class Attribute9
+						{
+							property="enableStamina";
+							expression="_this enablestamina _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=10;
 					};
 				};
 				class Item4
@@ -70111,7 +70264,7 @@ class Mission
 						class Attribute1
 						{
 							property="ace_isEngineer";
-							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 							class Value
 							{
 								class data
@@ -70149,7 +70302,7 @@ class Mission
 						class Attribute3
 						{
 							property="ace_isEOD";
-							expression="_this setVariable ['ACE_isEOD', _value, true]";
+							expression="_this setVariable ['ACE_isEOD',_value,true]";
 							class Value
 							{
 								class data
@@ -70260,7 +70413,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=9;
+						class Attribute9
+						{
+							property="enableStamina";
+							expression="_this enablestamina _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=10;
 					};
 				};
 				class Item5
@@ -70365,7 +70537,7 @@ class Mission
 						class Attribute1
 						{
 							property="ace_isEngineer";
-							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 							class Value
 							{
 								class data
@@ -70403,7 +70575,7 @@ class Mission
 						class Attribute3
 						{
 							property="ace_isEOD";
-							expression="_this setVariable ['ACE_isEOD', _value, true]";
+							expression="_this setVariable ['ACE_isEOD',_value,true]";
 							class Value
 							{
 								class data
@@ -70514,7 +70686,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=9;
+						class Attribute9
+						{
+							property="enableStamina";
+							expression="_this enablestamina _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=10;
 					};
 				};
 				class Item6
@@ -70619,7 +70810,7 @@ class Mission
 						class Attribute1
 						{
 							property="ace_isEngineer";
-							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 							class Value
 							{
 								class data
@@ -70657,7 +70848,7 @@ class Mission
 						class Attribute3
 						{
 							property="ace_isEOD";
-							expression="_this setVariable ['ACE_isEOD', _value, true]";
+							expression="_this setVariable ['ACE_isEOD',_value,true]";
 							class Value
 							{
 								class data
@@ -70768,7 +70959,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=9;
+						class Attribute9
+						{
+							property="enableStamina";
+							expression="_this enablestamina _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=10;
 					};
 				};
 				class Item7
@@ -70873,7 +71083,7 @@ class Mission
 						class Attribute1
 						{
 							property="ace_isEngineer";
-							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 							class Value
 							{
 								class data
@@ -70911,7 +71121,7 @@ class Mission
 						class Attribute3
 						{
 							property="ace_isEOD";
-							expression="_this setVariable ['ACE_isEOD', _value, true]";
+							expression="_this setVariable ['ACE_isEOD',_value,true]";
 							class Value
 							{
 								class data
@@ -71022,7 +71232,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=9;
+						class Attribute9
+						{
+							property="enableStamina";
+							expression="_this enablestamina _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=10;
 					};
 				};
 				class Item8
@@ -71127,7 +71356,7 @@ class Mission
 						class Attribute1
 						{
 							property="ace_isEngineer";
-							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 							class Value
 							{
 								class data
@@ -71165,7 +71394,7 @@ class Mission
 						class Attribute3
 						{
 							property="ace_isEOD";
-							expression="_this setVariable ['ACE_isEOD', _value, true]";
+							expression="_this setVariable ['ACE_isEOD',_value,true]";
 							class Value
 							{
 								class data
@@ -71276,7 +71505,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=9;
+						class Attribute9
+						{
+							property="enableStamina";
+							expression="_this enablestamina _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=10;
 					};
 				};
 				class Item9
@@ -71381,7 +71629,7 @@ class Mission
 						class Attribute1
 						{
 							property="ace_isEngineer";
-							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 							class Value
 							{
 								class data
@@ -71419,7 +71667,7 @@ class Mission
 						class Attribute3
 						{
 							property="ace_isEOD";
-							expression="_this setVariable ['ACE_isEOD', _value, true]";
+							expression="_this setVariable ['ACE_isEOD',_value,true]";
 							class Value
 							{
 								class data
@@ -71530,7 +71778,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=9;
+						class Attribute9
+						{
+							property="enableStamina";
+							expression="_this enablestamina _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=10;
 					};
 				};
 				class Item10
@@ -71635,7 +71902,7 @@ class Mission
 						class Attribute1
 						{
 							property="ace_isEngineer";
-							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 							class Value
 							{
 								class data
@@ -71673,7 +71940,7 @@ class Mission
 						class Attribute3
 						{
 							property="ace_isEOD";
-							expression="_this setVariable ['ACE_isEOD', _value, true]";
+							expression="_this setVariable ['ACE_isEOD',_value,true]";
 							class Value
 							{
 								class data
@@ -71784,7 +72051,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=9;
+						class Attribute9
+						{
+							property="enableStamina";
+							expression="_this enablestamina _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=10;
 					};
 				};
 				class Item11
@@ -71889,7 +72175,7 @@ class Mission
 						class Attribute1
 						{
 							property="ace_isEngineer";
-							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 							class Value
 							{
 								class data
@@ -71927,7 +72213,7 @@ class Mission
 						class Attribute3
 						{
 							property="ace_isEOD";
-							expression="_this setVariable ['ACE_isEOD', _value, true]";
+							expression="_this setVariable ['ACE_isEOD',_value,true]";
 							class Value
 							{
 								class data
@@ -72038,7 +72324,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=9;
+						class Attribute9
+						{
+							property="enableStamina";
+							expression="_this enablestamina _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=10;
 					};
 				};
 				class Item12
@@ -72143,7 +72448,7 @@ class Mission
 						class Attribute1
 						{
 							property="ace_isEngineer";
-							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 							class Value
 							{
 								class data
@@ -72181,7 +72486,7 @@ class Mission
 						class Attribute3
 						{
 							property="ace_isEOD";
-							expression="_this setVariable ['ACE_isEOD', _value, true]";
+							expression="_this setVariable ['ACE_isEOD',_value,true]";
 							class Value
 							{
 								class data
@@ -72292,7 +72597,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=9;
+						class Attribute9
+						{
+							property="enableStamina";
+							expression="_this enablestamina _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=10;
 					};
 				};
 				class Item13
@@ -72397,7 +72721,7 @@ class Mission
 						class Attribute1
 						{
 							property="ace_isEngineer";
-							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 							class Value
 							{
 								class data
@@ -72435,7 +72759,7 @@ class Mission
 						class Attribute3
 						{
 							property="ace_isEOD";
-							expression="_this setVariable ['ACE_isEOD', _value, true]";
+							expression="_this setVariable ['ACE_isEOD',_value,true]";
 							class Value
 							{
 								class data
@@ -72546,7 +72870,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=9;
+						class Attribute9
+						{
+							property="enableStamina";
+							expression="_this enablestamina _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=10;
 					};
 				};
 				class Item14
@@ -72651,7 +72994,7 @@ class Mission
 						class Attribute1
 						{
 							property="ace_isEngineer";
-							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 							class Value
 							{
 								class data
@@ -72689,7 +73032,7 @@ class Mission
 						class Attribute3
 						{
 							property="ace_isEOD";
-							expression="_this setVariable ['ACE_isEOD', _value, true]";
+							expression="_this setVariable ['ACE_isEOD',_value,true]";
 							class Value
 							{
 								class data
@@ -72800,7 +73143,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=9;
+						class Attribute9
+						{
+							property="enableStamina";
+							expression="_this enablestamina _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=10;
 					};
 				};
 			};
@@ -72918,7 +73280,7 @@ class Mission
 						class Attribute1
 						{
 							property="ace_isEngineer";
-							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 							class Value
 							{
 								class data
@@ -72956,7 +73318,7 @@ class Mission
 						class Attribute3
 						{
 							property="ace_isEOD";
-							expression="_this setVariable ['ACE_isEOD', _value, true]";
+							expression="_this setVariable ['ACE_isEOD',_value,true]";
 							class Value
 							{
 								class data
@@ -73067,7 +73429,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=9;
+						class Attribute9
+						{
+							property="enableStamina";
+							expression="_this enablestamina _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=10;
 					};
 				};
 				class Item1
@@ -73172,7 +73553,7 @@ class Mission
 						class Attribute1
 						{
 							property="ace_isEngineer";
-							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 							class Value
 							{
 								class data
@@ -73210,7 +73591,7 @@ class Mission
 						class Attribute3
 						{
 							property="ace_isEOD";
-							expression="_this setVariable ['ACE_isEOD', _value, true]";
+							expression="_this setVariable ['ACE_isEOD',_value,true]";
 							class Value
 							{
 								class data
@@ -73321,7 +73702,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=9;
+						class Attribute9
+						{
+							property="enableStamina";
+							expression="_this enablestamina _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=10;
 					};
 				};
 				class Item2
@@ -73426,7 +73826,7 @@ class Mission
 						class Attribute1
 						{
 							property="ace_isEngineer";
-							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 							class Value
 							{
 								class data
@@ -73464,7 +73864,7 @@ class Mission
 						class Attribute3
 						{
 							property="ace_isEOD";
-							expression="_this setVariable ['ACE_isEOD', _value, true]";
+							expression="_this setVariable ['ACE_isEOD',_value,true]";
 							class Value
 							{
 								class data
@@ -73575,7 +73975,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=9;
+						class Attribute9
+						{
+							property="enableStamina";
+							expression="_this enablestamina _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=10;
 					};
 				};
 				class Item3
@@ -73680,7 +74099,7 @@ class Mission
 						class Attribute1
 						{
 							property="ace_isEngineer";
-							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 							class Value
 							{
 								class data
@@ -73718,7 +74137,7 @@ class Mission
 						class Attribute3
 						{
 							property="ace_isEOD";
-							expression="_this setVariable ['ACE_isEOD', _value, true]";
+							expression="_this setVariable ['ACE_isEOD',_value,true]";
 							class Value
 							{
 								class data
@@ -73829,7 +74248,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=9;
+						class Attribute9
+						{
+							property="enableStamina";
+							expression="_this enablestamina _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=10;
 					};
 				};
 				class Item4
@@ -73934,7 +74372,7 @@ class Mission
 						class Attribute1
 						{
 							property="ace_isEngineer";
-							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 							class Value
 							{
 								class data
@@ -73972,7 +74410,7 @@ class Mission
 						class Attribute3
 						{
 							property="ace_isEOD";
-							expression="_this setVariable ['ACE_isEOD', _value, true]";
+							expression="_this setVariable ['ACE_isEOD',_value,true]";
 							class Value
 							{
 								class data
@@ -74083,7 +74521,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=9;
+						class Attribute9
+						{
+							property="enableStamina";
+							expression="_this enablestamina _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=10;
 					};
 				};
 				class Item5
@@ -74188,7 +74645,7 @@ class Mission
 						class Attribute1
 						{
 							property="ace_isEngineer";
-							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 							class Value
 							{
 								class data
@@ -74226,7 +74683,7 @@ class Mission
 						class Attribute3
 						{
 							property="ace_isEOD";
-							expression="_this setVariable ['ACE_isEOD', _value, true]";
+							expression="_this setVariable ['ACE_isEOD',_value,true]";
 							class Value
 							{
 								class data
@@ -74337,7 +74794,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=9;
+						class Attribute9
+						{
+							property="enableStamina";
+							expression="_this enablestamina _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=10;
 					};
 				};
 				class Item6
@@ -74442,7 +74918,7 @@ class Mission
 						class Attribute1
 						{
 							property="ace_isEngineer";
-							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 							class Value
 							{
 								class data
@@ -74480,7 +74956,7 @@ class Mission
 						class Attribute3
 						{
 							property="ace_isEOD";
-							expression="_this setVariable ['ACE_isEOD', _value, true]";
+							expression="_this setVariable ['ACE_isEOD',_value,true]";
 							class Value
 							{
 								class data
@@ -74591,7 +75067,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=9;
+						class Attribute9
+						{
+							property="enableStamina";
+							expression="_this enablestamina _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=10;
 					};
 				};
 				class Item7
@@ -74696,7 +75191,7 @@ class Mission
 						class Attribute1
 						{
 							property="ace_isEngineer";
-							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 							class Value
 							{
 								class data
@@ -74734,7 +75229,7 @@ class Mission
 						class Attribute3
 						{
 							property="ace_isEOD";
-							expression="_this setVariable ['ACE_isEOD', _value, true]";
+							expression="_this setVariable ['ACE_isEOD',_value,true]";
 							class Value
 							{
 								class data
@@ -74845,7 +75340,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=9;
+						class Attribute9
+						{
+							property="enableStamina";
+							expression="_this enablestamina _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=10;
 					};
 				};
 				class Item8
@@ -74950,7 +75464,7 @@ class Mission
 						class Attribute1
 						{
 							property="ace_isEngineer";
-							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 							class Value
 							{
 								class data
@@ -74988,7 +75502,7 @@ class Mission
 						class Attribute3
 						{
 							property="ace_isEOD";
-							expression="_this setVariable ['ACE_isEOD', _value, true]";
+							expression="_this setVariable ['ACE_isEOD',_value,true]";
 							class Value
 							{
 								class data
@@ -75099,7 +75613,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=9;
+						class Attribute9
+						{
+							property="enableStamina";
+							expression="_this enablestamina _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=10;
 					};
 				};
 				class Item9
@@ -75204,7 +75737,7 @@ class Mission
 						class Attribute1
 						{
 							property="ace_isEngineer";
-							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 							class Value
 							{
 								class data
@@ -75242,7 +75775,7 @@ class Mission
 						class Attribute3
 						{
 							property="ace_isEOD";
-							expression="_this setVariable ['ACE_isEOD', _value, true]";
+							expression="_this setVariable ['ACE_isEOD',_value,true]";
 							class Value
 							{
 								class data
@@ -75353,7 +75886,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=9;
+						class Attribute9
+						{
+							property="enableStamina";
+							expression="_this enablestamina _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=10;
 					};
 				};
 				class Item10
@@ -75458,7 +76010,7 @@ class Mission
 						class Attribute1
 						{
 							property="ace_isEngineer";
-							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 							class Value
 							{
 								class data
@@ -75496,7 +76048,7 @@ class Mission
 						class Attribute3
 						{
 							property="ace_isEOD";
-							expression="_this setVariable ['ACE_isEOD', _value, true]";
+							expression="_this setVariable ['ACE_isEOD',_value,true]";
 							class Value
 							{
 								class data
@@ -75607,7 +76159,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=9;
+						class Attribute9
+						{
+							property="enableStamina";
+							expression="_this enablestamina _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=10;
 					};
 				};
 				class Item11
@@ -75712,7 +76283,7 @@ class Mission
 						class Attribute1
 						{
 							property="ace_isEngineer";
-							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 							class Value
 							{
 								class data
@@ -75750,7 +76321,7 @@ class Mission
 						class Attribute3
 						{
 							property="ace_isEOD";
-							expression="_this setVariable ['ACE_isEOD', _value, true]";
+							expression="_this setVariable ['ACE_isEOD',_value,true]";
 							class Value
 							{
 								class data
@@ -75861,7 +76432,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=9;
+						class Attribute9
+						{
+							property="enableStamina";
+							expression="_this enablestamina _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=10;
 					};
 				};
 				class Item12
@@ -75966,7 +76556,7 @@ class Mission
 						class Attribute1
 						{
 							property="ace_isEngineer";
-							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 							class Value
 							{
 								class data
@@ -76004,7 +76594,7 @@ class Mission
 						class Attribute3
 						{
 							property="ace_isEOD";
-							expression="_this setVariable ['ACE_isEOD', _value, true]";
+							expression="_this setVariable ['ACE_isEOD',_value,true]";
 							class Value
 							{
 								class data
@@ -76115,7 +76705,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=9;
+						class Attribute9
+						{
+							property="enableStamina";
+							expression="_this enablestamina _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=10;
 					};
 				};
 				class Item13
@@ -76220,7 +76829,7 @@ class Mission
 						class Attribute1
 						{
 							property="ace_isEngineer";
-							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 							class Value
 							{
 								class data
@@ -76258,7 +76867,7 @@ class Mission
 						class Attribute3
 						{
 							property="ace_isEOD";
-							expression="_this setVariable ['ACE_isEOD', _value, true]";
+							expression="_this setVariable ['ACE_isEOD',_value,true]";
 							class Value
 							{
 								class data
@@ -76369,7 +76978,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=9;
+						class Attribute9
+						{
+							property="enableStamina";
+							expression="_this enablestamina _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=10;
 					};
 				};
 				class Item14
@@ -76474,7 +77102,7 @@ class Mission
 						class Attribute1
 						{
 							property="ace_isEngineer";
-							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 							class Value
 							{
 								class data
@@ -76512,7 +77140,7 @@ class Mission
 						class Attribute3
 						{
 							property="ace_isEOD";
-							expression="_this setVariable ['ACE_isEOD', _value, true]";
+							expression="_this setVariable ['ACE_isEOD',_value,true]";
 							class Value
 							{
 								class data
@@ -76623,7 +77251,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=9;
+						class Attribute9
+						{
+							property="enableStamina";
+							expression="_this enablestamina _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=10;
 					};
 				};
 			};
@@ -76741,7 +77388,7 @@ class Mission
 						class Attribute1
 						{
 							property="ace_isEngineer";
-							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 							class Value
 							{
 								class data
@@ -76779,7 +77426,7 @@ class Mission
 						class Attribute3
 						{
 							property="ace_isEOD";
-							expression="_this setVariable ['ACE_isEOD', _value, true]";
+							expression="_this setVariable ['ACE_isEOD',_value,true]";
 							class Value
 							{
 								class data
@@ -76890,7 +77537,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=9;
+						class Attribute9
+						{
+							property="enableStamina";
+							expression="_this enablestamina _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=10;
 					};
 				};
 				class Item1
@@ -76995,7 +77661,7 @@ class Mission
 						class Attribute1
 						{
 							property="ace_isEngineer";
-							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 							class Value
 							{
 								class data
@@ -77033,7 +77699,7 @@ class Mission
 						class Attribute3
 						{
 							property="ace_isEOD";
-							expression="_this setVariable ['ACE_isEOD', _value, true]";
+							expression="_this setVariable ['ACE_isEOD',_value,true]";
 							class Value
 							{
 								class data
@@ -77144,7 +77810,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=9;
+						class Attribute9
+						{
+							property="enableStamina";
+							expression="_this enablestamina _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=10;
 					};
 				};
 				class Item2
@@ -77249,7 +77934,7 @@ class Mission
 						class Attribute1
 						{
 							property="ace_isEngineer";
-							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 							class Value
 							{
 								class data
@@ -77287,7 +77972,7 @@ class Mission
 						class Attribute3
 						{
 							property="ace_isEOD";
-							expression="_this setVariable ['ACE_isEOD', _value, true]";
+							expression="_this setVariable ['ACE_isEOD',_value,true]";
 							class Value
 							{
 								class data
@@ -77398,7 +78083,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=9;
+						class Attribute9
+						{
+							property="enableStamina";
+							expression="_this enablestamina _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=10;
 					};
 				};
 				class Item3
@@ -77503,7 +78207,7 @@ class Mission
 						class Attribute1
 						{
 							property="ace_isEngineer";
-							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 							class Value
 							{
 								class data
@@ -77541,7 +78245,7 @@ class Mission
 						class Attribute3
 						{
 							property="ace_isEOD";
-							expression="_this setVariable ['ACE_isEOD', _value, true]";
+							expression="_this setVariable ['ACE_isEOD',_value,true]";
 							class Value
 							{
 								class data
@@ -77652,7 +78356,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=9;
+						class Attribute9
+						{
+							property="enableStamina";
+							expression="_this enablestamina _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=10;
 					};
 				};
 				class Item4
@@ -77757,7 +78480,7 @@ class Mission
 						class Attribute1
 						{
 							property="ace_isEngineer";
-							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 							class Value
 							{
 								class data
@@ -77795,7 +78518,7 @@ class Mission
 						class Attribute3
 						{
 							property="ace_isEOD";
-							expression="_this setVariable ['ACE_isEOD', _value, true]";
+							expression="_this setVariable ['ACE_isEOD',_value,true]";
 							class Value
 							{
 								class data
@@ -77906,7 +78629,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=9;
+						class Attribute9
+						{
+							property="enableStamina";
+							expression="_this enablestamina _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=10;
 					};
 				};
 				class Item5
@@ -78011,7 +78753,7 @@ class Mission
 						class Attribute1
 						{
 							property="ace_isEngineer";
-							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 							class Value
 							{
 								class data
@@ -78049,7 +78791,7 @@ class Mission
 						class Attribute3
 						{
 							property="ace_isEOD";
-							expression="_this setVariable ['ACE_isEOD', _value, true]";
+							expression="_this setVariable ['ACE_isEOD',_value,true]";
 							class Value
 							{
 								class data
@@ -78160,7 +78902,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=9;
+						class Attribute9
+						{
+							property="enableStamina";
+							expression="_this enablestamina _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=10;
 					};
 				};
 				class Item6
@@ -78265,7 +79026,7 @@ class Mission
 						class Attribute1
 						{
 							property="ace_isEngineer";
-							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 							class Value
 							{
 								class data
@@ -78303,7 +79064,7 @@ class Mission
 						class Attribute3
 						{
 							property="ace_isEOD";
-							expression="_this setVariable ['ACE_isEOD', _value, true]";
+							expression="_this setVariable ['ACE_isEOD',_value,true]";
 							class Value
 							{
 								class data
@@ -78414,7 +79175,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=9;
+						class Attribute9
+						{
+							property="enableStamina";
+							expression="_this enablestamina _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=10;
 					};
 				};
 				class Item7
@@ -78519,7 +79299,7 @@ class Mission
 						class Attribute1
 						{
 							property="ace_isEngineer";
-							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 							class Value
 							{
 								class data
@@ -78557,7 +79337,7 @@ class Mission
 						class Attribute3
 						{
 							property="ace_isEOD";
-							expression="_this setVariable ['ACE_isEOD', _value, true]";
+							expression="_this setVariable ['ACE_isEOD',_value,true]";
 							class Value
 							{
 								class data
@@ -78668,7 +79448,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=9;
+						class Attribute9
+						{
+							property="enableStamina";
+							expression="_this enablestamina _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=10;
 					};
 				};
 				class Item8
@@ -78773,7 +79572,7 @@ class Mission
 						class Attribute1
 						{
 							property="ace_isEngineer";
-							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 							class Value
 							{
 								class data
@@ -78811,7 +79610,7 @@ class Mission
 						class Attribute3
 						{
 							property="ace_isEOD";
-							expression="_this setVariable ['ACE_isEOD', _value, true]";
+							expression="_this setVariable ['ACE_isEOD',_value,true]";
 							class Value
 							{
 								class data
@@ -78922,7 +79721,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=9;
+						class Attribute9
+						{
+							property="enableStamina";
+							expression="_this enablestamina _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=10;
 					};
 				};
 				class Item9
@@ -79027,7 +79845,7 @@ class Mission
 						class Attribute1
 						{
 							property="ace_isEngineer";
-							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 							class Value
 							{
 								class data
@@ -79065,7 +79883,7 @@ class Mission
 						class Attribute3
 						{
 							property="ace_isEOD";
-							expression="_this setVariable ['ACE_isEOD', _value, true]";
+							expression="_this setVariable ['ACE_isEOD',_value,true]";
 							class Value
 							{
 								class data
@@ -79176,7 +79994,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=9;
+						class Attribute9
+						{
+							property="enableStamina";
+							expression="_this enablestamina _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=10;
 					};
 				};
 				class Item10
@@ -79281,7 +80118,7 @@ class Mission
 						class Attribute1
 						{
 							property="ace_isEngineer";
-							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 							class Value
 							{
 								class data
@@ -79319,7 +80156,7 @@ class Mission
 						class Attribute3
 						{
 							property="ace_isEOD";
-							expression="_this setVariable ['ACE_isEOD', _value, true]";
+							expression="_this setVariable ['ACE_isEOD',_value,true]";
 							class Value
 							{
 								class data
@@ -79430,7 +80267,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=9;
+						class Attribute9
+						{
+							property="enableStamina";
+							expression="_this enablestamina _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=10;
 					};
 				};
 				class Item11
@@ -79535,7 +80391,7 @@ class Mission
 						class Attribute1
 						{
 							property="ace_isEngineer";
-							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 							class Value
 							{
 								class data
@@ -79573,7 +80429,7 @@ class Mission
 						class Attribute3
 						{
 							property="ace_isEOD";
-							expression="_this setVariable ['ACE_isEOD', _value, true]";
+							expression="_this setVariable ['ACE_isEOD',_value,true]";
 							class Value
 							{
 								class data
@@ -79684,7 +80540,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=9;
+						class Attribute9
+						{
+							property="enableStamina";
+							expression="_this enablestamina _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=10;
 					};
 				};
 				class Item12
@@ -79789,7 +80664,7 @@ class Mission
 						class Attribute1
 						{
 							property="ace_isEngineer";
-							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 							class Value
 							{
 								class data
@@ -79827,7 +80702,7 @@ class Mission
 						class Attribute3
 						{
 							property="ace_isEOD";
-							expression="_this setVariable ['ACE_isEOD', _value, true]";
+							expression="_this setVariable ['ACE_isEOD',_value,true]";
 							class Value
 							{
 								class data
@@ -79938,7 +80813,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=9;
+						class Attribute9
+						{
+							property="enableStamina";
+							expression="_this enablestamina _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=10;
 					};
 				};
 				class Item13
@@ -80043,7 +80937,7 @@ class Mission
 						class Attribute1
 						{
 							property="ace_isEngineer";
-							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 							class Value
 							{
 								class data
@@ -80081,7 +80975,7 @@ class Mission
 						class Attribute3
 						{
 							property="ace_isEOD";
-							expression="_this setVariable ['ACE_isEOD', _value, true]";
+							expression="_this setVariable ['ACE_isEOD',_value,true]";
 							class Value
 							{
 								class data
@@ -80192,7 +81086,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=9;
+						class Attribute9
+						{
+							property="enableStamina";
+							expression="_this enablestamina _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=10;
 					};
 				};
 				class Item14
@@ -80297,7 +81210,7 @@ class Mission
 						class Attribute1
 						{
 							property="ace_isEngineer";
-							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 							class Value
 							{
 								class data
@@ -80335,7 +81248,7 @@ class Mission
 						class Attribute3
 						{
 							property="ace_isEOD";
-							expression="_this setVariable ['ACE_isEOD', _value, true]";
+							expression="_this setVariable ['ACE_isEOD',_value,true]";
 							class Value
 							{
 								class data
@@ -80446,7 +81359,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=9;
+						class Attribute9
+						{
+							property="enableStamina";
+							expression="_this enablestamina _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=10;
 					};
 				};
 			};
@@ -80564,7 +81496,7 @@ class Mission
 						class Attribute1
 						{
 							property="ace_isEngineer";
-							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 							class Value
 							{
 								class data
@@ -80602,7 +81534,7 @@ class Mission
 						class Attribute3
 						{
 							property="ace_isEOD";
-							expression="_this setVariable ['ACE_isEOD', _value, true]";
+							expression="_this setVariable ['ACE_isEOD',_value,true]";
 							class Value
 							{
 								class data
@@ -80713,7 +81645,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=9;
+						class Attribute9
+						{
+							property="enableStamina";
+							expression="_this enablestamina _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=10;
 					};
 				};
 				class Item1
@@ -80818,7 +81769,7 @@ class Mission
 						class Attribute1
 						{
 							property="ace_isEngineer";
-							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 							class Value
 							{
 								class data
@@ -80856,7 +81807,7 @@ class Mission
 						class Attribute3
 						{
 							property="ace_isEOD";
-							expression="_this setVariable ['ACE_isEOD', _value, true]";
+							expression="_this setVariable ['ACE_isEOD',_value,true]";
 							class Value
 							{
 								class data
@@ -80929,7 +81880,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=7;
+						class Attribute7
+						{
+							property="enableStamina";
+							expression="_this enablestamina _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=8;
 					};
 				};
 				class Item2
@@ -81034,7 +82004,7 @@ class Mission
 						class Attribute1
 						{
 							property="ace_isEngineer";
-							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 							class Value
 							{
 								class data
@@ -81072,7 +82042,7 @@ class Mission
 						class Attribute3
 						{
 							property="ace_isEOD";
-							expression="_this setVariable ['ACE_isEOD', _value, true]";
+							expression="_this setVariable ['ACE_isEOD',_value,true]";
 							class Value
 							{
 								class data
@@ -81145,7 +82115,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=7;
+						class Attribute7
+						{
+							property="enableStamina";
+							expression="_this enablestamina _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=8;
 					};
 				};
 			};
@@ -81263,7 +82252,7 @@ class Mission
 						class Attribute1
 						{
 							property="ace_isEngineer";
-							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 							class Value
 							{
 								class data
@@ -81301,7 +82290,7 @@ class Mission
 						class Attribute3
 						{
 							property="ace_isEOD";
-							expression="_this setVariable ['ACE_isEOD', _value, true]";
+							expression="_this setVariable ['ACE_isEOD',_value,true]";
 							class Value
 							{
 								class data
@@ -81412,7 +82401,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=9;
+						class Attribute9
+						{
+							property="enableStamina";
+							expression="_this enablestamina _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=10;
 					};
 				};
 				class Item1
@@ -81517,7 +82525,7 @@ class Mission
 						class Attribute1
 						{
 							property="ace_isEngineer";
-							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 							class Value
 							{
 								class data
@@ -81555,7 +82563,7 @@ class Mission
 						class Attribute3
 						{
 							property="ace_isEOD";
-							expression="_this setVariable ['ACE_isEOD', _value, true]";
+							expression="_this setVariable ['ACE_isEOD',_value,true]";
 							class Value
 							{
 								class data
@@ -81647,7 +82655,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=8;
+						class Attribute8
+						{
+							property="enableStamina";
+							expression="_this enablestamina _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=9;
 					};
 				};
 				class Item2
@@ -81752,7 +82779,7 @@ class Mission
 						class Attribute1
 						{
 							property="ace_isEngineer";
-							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 							class Value
 							{
 								class data
@@ -81790,7 +82817,7 @@ class Mission
 						class Attribute3
 						{
 							property="ace_isEOD";
-							expression="_this setVariable ['ACE_isEOD', _value, true]";
+							expression="_this setVariable ['ACE_isEOD',_value,true]";
 							class Value
 							{
 								class data
@@ -81882,7 +82909,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=8;
+						class Attribute8
+						{
+							property="enableStamina";
+							expression="_this enablestamina _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=9;
 					};
 				};
 			};
@@ -82054,7 +83100,7 @@ class Mission
 						class Attribute1
 						{
 							property="ace_isEngineer";
-							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 							class Value
 							{
 								class data
@@ -82092,7 +83138,7 @@ class Mission
 						class Attribute3
 						{
 							property="ace_isEOD";
-							expression="_this setVariable ['ACE_isEOD', _value, true]";
+							expression="_this setVariable ['ACE_isEOD',_value,true]";
 							class Value
 							{
 								class data
@@ -82203,7 +83249,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=9;
+						class Attribute9
+						{
+							property="enableStamina";
+							expression="_this enablestamina _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=10;
 					};
 				};
 				class Item1
@@ -82308,7 +83373,7 @@ class Mission
 						class Attribute1
 						{
 							property="ace_isEngineer";
-							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 							class Value
 							{
 								class data
@@ -82346,7 +83411,7 @@ class Mission
 						class Attribute3
 						{
 							property="ace_isEOD";
-							expression="_this setVariable ['ACE_isEOD', _value, true]";
+							expression="_this setVariable ['ACE_isEOD',_value,true]";
 							class Value
 							{
 								class data
@@ -82457,7 +83522,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=9;
+						class Attribute9
+						{
+							property="enableStamina";
+							expression="_this enablestamina _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=10;
 					};
 				};
 			};
@@ -82629,7 +83713,7 @@ class Mission
 						class Attribute1
 						{
 							property="ace_isEngineer";
-							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 							class Value
 							{
 								class data
@@ -82667,7 +83751,7 @@ class Mission
 						class Attribute3
 						{
 							property="ace_isEOD";
-							expression="_this setVariable ['ACE_isEOD', _value, true]";
+							expression="_this setVariable ['ACE_isEOD',_value,true]";
 							class Value
 							{
 								class data
@@ -82778,7 +83862,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=9;
+						class Attribute9
+						{
+							property="enableStamina";
+							expression="_this enablestamina _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=10;
 					};
 				};
 				class Item1
@@ -82937,7 +84040,7 @@ class Mission
 						class Attribute1
 						{
 							property="ace_isEngineer";
-							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 							class Value
 							{
 								class data
@@ -82975,7 +84078,7 @@ class Mission
 						class Attribute3
 						{
 							property="ace_isEOD";
-							expression="_this setVariable ['ACE_isEOD', _value, true]";
+							expression="_this setVariable ['ACE_isEOD',_value,true]";
 							class Value
 							{
 								class data
@@ -83086,7 +84189,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=9;
+						class Attribute9
+						{
+							property="enableStamina";
+							expression="_this enablestamina _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=10;
 					};
 				};
 				class Item2
@@ -83245,7 +84367,7 @@ class Mission
 						class Attribute1
 						{
 							property="ace_isEngineer";
-							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 							class Value
 							{
 								class data
@@ -83283,7 +84405,7 @@ class Mission
 						class Attribute3
 						{
 							property="ace_isEOD";
-							expression="_this setVariable ['ACE_isEOD', _value, true]";
+							expression="_this setVariable ['ACE_isEOD',_value,true]";
 							class Value
 							{
 								class data
@@ -83394,7 +84516,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=9;
+						class Attribute9
+						{
+							property="enableStamina";
+							expression="_this enablestamina _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=10;
 					};
 				};
 			};
