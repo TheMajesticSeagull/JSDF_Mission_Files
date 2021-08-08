@@ -12,7 +12,7 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=43570;
+		nextID=43572;
 	};
 	class MarkerIDProvider
 	{
@@ -20,14 +20,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=1549;
+		nextID=1550;
 	};
 	class Camera
 	{
-		pos[]={14266.732,87.654793,16423.516};
-		dir[]={0.7842446,-0.62015235,0.020345114};
-		up[]={0.61996138,0.78446209,0.016082589};
-		aside[]={0.025934285,-2.8718205e-007,-0.99968559};
+		pos[]={8501.9688,446.6792,24941.932};
+		dir[]={0.68944144,-0.72358149,0.033293169};
+		up[]={0.72274864,0.69023168,0.034901731};
+		aside[]={0.048234429,1.0527037e-007,-0.99884003};
 	};
 };
 binarizationWanted=0;
@@ -169,7 +169,8 @@ addons[]=
 	"ace_common",
 	"acex_field_rations",
 	"ace_captives",
-	"ace_nightvision"
+	"ace_nightvision",
+	"A3_Supplies_F_Heli_CargoNets"
 };
 class AddonsMetaData
 {
@@ -1349,7 +1350,7 @@ class CustomAttributes
 								};
 								class value
 								{
-									items=631;
+									items=669;
 									class Item0
 									{
 										class data
@@ -10125,7 +10126,7 @@ class CustomAttributes
 													"STRING"
 												};
 											};
-											value="ace_medical_painunconsciouschance";
+											value="zen_compat_ace_hidemodules";
 										};
 									};
 									class Item627
@@ -10139,7 +10140,7 @@ class CustomAttributes
 													"STRING"
 												};
 											};
-											value="ace_medical_feedback_bloodvolumeeffecttype";
+											value="ace_medical_gui_enableactions";
 										};
 									};
 									class Item628
@@ -10153,7 +10154,7 @@ class CustomAttributes
 													"STRING"
 												};
 											};
-											value="ace_medical_treatment_locationiv";
+											value="lambs_main_disableaigestures";
 										};
 									};
 									class Item629
@@ -10167,7 +10168,7 @@ class CustomAttributes
 													"STRING"
 												};
 											};
-											value="zen_compat_ace_hidemodules";
+											value="lambs_main_disableaicallouts";
 										};
 									};
 									class Item630
@@ -10181,7 +10182,539 @@ class CustomAttributes
 													"STRING"
 												};
 											};
-											value="ace_medical_gui_enableactions";
+											value="lambs_main_disableaidodge";
+										};
+									};
+									class Item631
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="lambs_main_disableaifleeing";
+										};
+									};
+									class Item632
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="lambs_main_indoormove";
+										};
+									};
+									class Item633
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="lambs_main_disableplayergroupsuppression";
+										};
+									};
+									class Item634
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="lambs_main_minsuppressionrange";
+										};
+									};
+									class Item635
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="lambs_main_minfriendlysuppressiondistance";
+										};
+									};
+									class Item636
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="lambs_main_radiodisabled";
+										};
+									};
+									class Item637
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="lambs_main_maxrevealvalue";
+										};
+									};
+									class Item638
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="lambs_main_combatsharerange";
+										};
+									};
+									class Item639
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="lambs_main_radioshout";
+										};
+									};
+									class Item640
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="lambs_main_radiowest";
+										};
+									};
+									class Item641
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="lambs_main_radioeast";
+										};
+									};
+									class Item642
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="lambs_main_radioguer";
+										};
+									};
+									class Item643
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="lambs_main_radiobackpack";
+										};
+									};
+									class Item644
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="lambs_main_debug_fsm";
+										};
+									};
+									class Item645
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="lambs_main_debug_functions";
+										};
+									};
+									class Item646
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="lambs_main_debug_fsm_civ";
+										};
+									};
+									class Item647
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="lambs_main_debug_drawing";
+										};
+									};
+									class Item648
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="lambs_main_debug_renderexpecteddestination";
+										};
+									};
+									class Item649
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="lambs_main_debug_drawallunitsinvehicles";
+										};
+									};
+									class Item650
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="sfx_ironsights";
+										};
+									};
+									class Item651
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="sfx_inventory";
+										};
+									};
+									class Item652
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="sfx_hod";
+										};
+									};
+									class Item653
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="sfx_shelshock";
+										};
+									};
+									class Item654
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="sfx_mapsnd";
+										};
+									};
+									class Item655
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="sfx_breathsnd";
+										};
+									};
+									class Item656
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="sfx_suppressionsnd";
+										};
+									};
+									class Item657
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="lambs_danger_disableaiplayergroup";
+										};
+									};
+									class Item658
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="lambs_danger_disableaiplayergroupreaction";
+										};
+									};
+									class Item659
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="lambs_danger_disableaiautonomousmanoeuvres";
+										};
+									};
+									class Item660
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="lambs_danger_disableaihidefromtanksandaircraft";
+										};
+									};
+									class Item661
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="lambs_danger_disableaideploystaticweapons";
+										};
+									};
+									class Item662
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="lambs_danger_disableaifindstaticweapons";
+										};
+									};
+									class Item663
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="lambs_danger_disableautonomousflares";
+										};
+									};
+									class Item664
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="lambs_danger_cqbrange";
+										};
+									};
+									class Item665
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="lambs_danger_panicchance";
+										};
+									};
+									class Item666
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="lambs_eventhandlers_explosioneventhandlerenabled";
+										};
+									};
+									class Item667
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="lambs_eventhandlers_explosionreactiontime";
+										};
+									};
+									class Item668
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="lambs_wp_autoaddartillery";
 										};
 									};
 								};
@@ -10200,7 +10733,7 @@ class CustomAttributes
 								};
 								class value
 								{
-									items=631;
+									items=669;
 									class Item0
 									{
 										class data
@@ -18461,7 +18994,7 @@ class CustomAttributes
 																"BOOL"
 															};
 														};
-														value=1;
+														value=0;
 													};
 												};
 												class Item1
@@ -18475,7 +19008,7 @@ class CustomAttributes
 																"SCALAR"
 															};
 														};
-														value=2;
+														value=1;
 													};
 												};
 											};
@@ -26549,7 +27082,7 @@ class CustomAttributes
 																"SCALAR"
 															};
 														};
-														value=1;
+														value=0;
 													};
 												};
 												class Item1
@@ -34064,7 +34597,7 @@ class CustomAttributes
 																"SCALAR"
 															};
 														};
-														value=1.69731;
+														value=5;
 													};
 												};
 												class Item1
@@ -35189,7 +35722,7 @@ class CustomAttributes
 																"SCALAR"
 															};
 														};
-														value=1800;
+														value=900;
 													};
 												};
 												class Item1
@@ -35639,7 +36172,7 @@ class CustomAttributes
 																"BOOL"
 															};
 														};
-														value=1;
+														value=0;
 													};
 												};
 												class Item1
@@ -38561,10 +39094,10 @@ class CustomAttributes
 														{
 															type[]=
 															{
-																"SCALAR"
+																"BOOL"
 															};
 														};
-														value=0.1;
+														value=0;
 													};
 												};
 												class Item1
@@ -38651,7 +39184,7 @@ class CustomAttributes
 														{
 															type[]=
 															{
-																"SCALAR"
+																"BOOL"
 															};
 														};
 														value=0;
@@ -38741,10 +39274,1720 @@ class CustomAttributes
 														{
 															type[]=
 															{
-																"SCALAR"
+																"BOOL"
 															};
 														};
 														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item631
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"ARRAY"
+												};
+											};
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"BOOL"
+															};
+														};
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item632
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"ARRAY"
+												};
+											};
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=0.1;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item633
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"ARRAY"
+												};
+											};
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"BOOL"
+															};
+														};
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item634
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"ARRAY"
+												};
+											};
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=50;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item635
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"ARRAY"
+												};
+											};
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=5;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item636
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"ARRAY"
+												};
+											};
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"BOOL"
+															};
+														};
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item637
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"ARRAY"
+												};
+											};
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=1;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item638
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"ARRAY"
+												};
+											};
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=200;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item639
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"ARRAY"
+												};
+											};
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=100;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item640
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"ARRAY"
+												};
+											};
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=500;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item641
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"ARRAY"
+												};
+											};
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=500;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item642
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"ARRAY"
+												};
+											};
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=500;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item643
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"ARRAY"
+												};
+											};
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=2000;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item644
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"ARRAY"
+												};
+											};
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"BOOL"
+															};
+														};
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item645
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"ARRAY"
+												};
+											};
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"BOOL"
+															};
+														};
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item646
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"ARRAY"
+												};
+											};
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"BOOL"
+															};
+														};
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item647
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"ARRAY"
+												};
+											};
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"BOOL"
+															};
+														};
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item648
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"ARRAY"
+												};
+											};
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"BOOL"
+															};
+														};
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item649
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"ARRAY"
+												};
+											};
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"BOOL"
+															};
+														};
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item650
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"ARRAY"
+												};
+											};
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"BOOL"
+															};
+														};
+														value=1;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item651
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"ARRAY"
+												};
+											};
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"BOOL"
+															};
+														};
+														value=1;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item652
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"ARRAY"
+												};
+											};
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"BOOL"
+															};
+														};
+														value=1;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item653
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"ARRAY"
+												};
+											};
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"BOOL"
+															};
+														};
+														value=1;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item654
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"ARRAY"
+												};
+											};
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"BOOL"
+															};
+														};
+														value=1;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item655
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"ARRAY"
+												};
+											};
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"BOOL"
+															};
+														};
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item656
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"ARRAY"
+												};
+											};
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"BOOL"
+															};
+														};
+														value=1;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item657
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"ARRAY"
+												};
+											};
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"BOOL"
+															};
+														};
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item658
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"ARRAY"
+												};
+											};
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"BOOL"
+															};
+														};
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item659
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"ARRAY"
+												};
+											};
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"BOOL"
+															};
+														};
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item660
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"ARRAY"
+												};
+											};
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"BOOL"
+															};
+														};
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item661
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"ARRAY"
+												};
+											};
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"BOOL"
+															};
+														};
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item662
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"ARRAY"
+												};
+											};
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"BOOL"
+															};
+														};
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item663
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"ARRAY"
+												};
+											};
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"BOOL"
+															};
+														};
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item664
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"ARRAY"
+												};
+											};
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=60;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item665
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"ARRAY"
+												};
+											};
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=0.1;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item666
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"ARRAY"
+												};
+											};
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"BOOL"
+															};
+														};
+														value=1;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item667
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"ARRAY"
+												};
+											};
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=9;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item668
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"ARRAY"
+												};
+											};
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"BOOL"
+															};
+														};
+														value=1;
 													};
 												};
 												class Item1
@@ -38956,7 +41199,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=771;
+		items=768;
 		class Item0
 		{
 			dataType="Marker";
@@ -42923,7 +45166,7 @@ class Mission
 				class Attribute8
 				{
 					property="ace_isRepairFacility";
-					expression="if (_value != (if (isNumber (configFile >> 'CfgVehicles' >> typeOf _this >> ""ace_repair_canRepair"")) then {getNumber (configFile >> 'CfgVehicles' >> typeOf _this >> ""ace_repair_canRepair"")} else {0})) then {_this setVariable ['ace_isRepairFacility', _value, true]}";
+					expression="if (_value != (if (isNumber (configOf _this >> ""ace_repair_canRepair"")) then {getNumber (configOf _this >> ""ace_repair_canRepair"")} else {0})) then {_this setVariable ['ace_isRepairFacility', _value, true]}";
 					class Value
 					{
 						class data
@@ -43153,7 +45396,7 @@ class Mission
 				class Attribute10
 				{
 					property="ace_isRepairFacility";
-					expression="if (_value != (if (isNumber (configFile >> 'CfgVehicles' >> typeOf _this >> ""ace_repair_canRepair"")) then {getNumber (configFile >> 'CfgVehicles' >> typeOf _this >> ""ace_repair_canRepair"")} else {0})) then {_this setVariable ['ace_isRepairFacility', _value, true]}";
+					expression="if (_value != (if (isNumber (configOf _this >> ""ace_repair_canRepair"")) then {getNumber (configOf _this >> ""ace_repair_canRepair"")} else {0})) then {_this setVariable ['ace_isRepairFacility', _value, true]}";
 					class Value
 					{
 						class data
@@ -43195,7 +45438,7 @@ class Mission
 				class Attribute0
 				{
 					property="ace_isRepairFacility";
-					expression="if (_value != (if (isNumber (configFile >> 'CfgVehicles' >> typeOf _this >> ""ace_repair_canRepair"")) then {getNumber (configFile >> 'CfgVehicles' >> typeOf _this >> ""ace_repair_canRepair"")} else {0})) then {_this setVariable ['ace_isRepairFacility', _value, true]}";
+					expression="if (_value != (if (isNumber (configOf _this >> ""ace_repair_canRepair"")) then {getNumber (configOf _this >> ""ace_repair_canRepair"")} else {0})) then {_this setVariable ['ace_isRepairFacility', _value, true]}";
 					class Value
 					{
 						class data
@@ -53882,7 +56125,7 @@ class Mission
 				class Attribute2
 				{
 					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"", _value, true];";
 					class Value
 					{
 						class data
@@ -91392,7 +93635,7 @@ class Mission
 				class Attribute2
 				{
 					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"", _value, true];";
 					class Value
 					{
 						class data
@@ -91430,7 +93673,7 @@ class Mission
 				class Attribute4
 				{
 					property="ace_cargo_size";
-					expression="[_this,_value] call ace_cargo_fnc_setSize;";
+					expression="[_this, _value] call ace_cargo_fnc_setSize;";
 					class Value
 					{
 						class data
@@ -91510,7 +93753,7 @@ class Mission
 				class Attribute2
 				{
 					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"", _value, true];";
 					class Value
 					{
 						class data
@@ -91548,7 +93791,7 @@ class Mission
 				class Attribute4
 				{
 					property="ace_cargo_size";
-					expression="[_this,_value] call ace_cargo_fnc_setSize;";
+					expression="[_this, _value] call ace_cargo_fnc_setSize;";
 					class Value
 					{
 						class data
@@ -91627,7 +93870,7 @@ class Mission
 				class Attribute2
 				{
 					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"", _value, true];";
 					class Value
 					{
 						class data
@@ -91665,7 +93908,7 @@ class Mission
 				class Attribute4
 				{
 					property="ace_cargo_size";
-					expression="[_this,_value] call ace_cargo_fnc_setSize;";
+					expression="[_this, _value] call ace_cargo_fnc_setSize;";
 					class Value
 					{
 						class data
@@ -91745,7 +93988,7 @@ class Mission
 				class Attribute2
 				{
 					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"", _value, true];";
 					class Value
 					{
 						class data
@@ -91783,7 +94026,7 @@ class Mission
 				class Attribute4
 				{
 					property="ace_cargo_size";
-					expression="[_this,_value] call ace_cargo_fnc_setSize;";
+					expression="[_this, _value] call ace_cargo_fnc_setSize;";
 					class Value
 					{
 						class data
@@ -91863,7 +94106,7 @@ class Mission
 				class Attribute2
 				{
 					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"", _value, true];";
 					class Value
 					{
 						class data
@@ -91901,7 +94144,7 @@ class Mission
 				class Attribute4
 				{
 					property="ace_cargo_size";
-					expression="[_this,_value] call ace_cargo_fnc_setSize;";
+					expression="[_this, _value] call ace_cargo_fnc_setSize;";
 					class Value
 					{
 						class data
@@ -91981,7 +94224,7 @@ class Mission
 				class Attribute2
 				{
 					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"", _value, true];";
 					class Value
 					{
 						class data
@@ -92019,7 +94262,7 @@ class Mission
 				class Attribute4
 				{
 					property="ace_cargo_size";
-					expression="[_this,_value] call ace_cargo_fnc_setSize;";
+					expression="[_this, _value] call ace_cargo_fnc_setSize;";
 					class Value
 					{
 						class data
@@ -92099,7 +94342,7 @@ class Mission
 				class Attribute2
 				{
 					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"", _value, true];";
 					class Value
 					{
 						class data
@@ -92137,7 +94380,7 @@ class Mission
 				class Attribute4
 				{
 					property="ace_cargo_size";
-					expression="[_this,_value] call ace_cargo_fnc_setSize;";
+					expression="[_this, _value] call ace_cargo_fnc_setSize;";
 					class Value
 					{
 						class data
@@ -92217,7 +94460,7 @@ class Mission
 				class Attribute2
 				{
 					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"", _value, true];";
 					class Value
 					{
 						class data
@@ -92255,7 +94498,7 @@ class Mission
 				class Attribute4
 				{
 					property="ace_cargo_size";
-					expression="[_this,_value] call ace_cargo_fnc_setSize;";
+					expression="[_this, _value] call ace_cargo_fnc_setSize;";
 					class Value
 					{
 						class data
@@ -92335,7 +94578,7 @@ class Mission
 				class Attribute2
 				{
 					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"", _value, true];";
 					class Value
 					{
 						class data
@@ -92373,7 +94616,7 @@ class Mission
 				class Attribute4
 				{
 					property="ace_cargo_size";
-					expression="[_this,_value] call ace_cargo_fnc_setSize;";
+					expression="[_this, _value] call ace_cargo_fnc_setSize;";
 					class Value
 					{
 						class data
@@ -92452,7 +94695,7 @@ class Mission
 				class Attribute2
 				{
 					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"", _value, true];";
 					class Value
 					{
 						class data
@@ -92490,7 +94733,7 @@ class Mission
 				class Attribute4
 				{
 					property="ace_cargo_size";
-					expression="[_this,_value] call ace_cargo_fnc_setSize;";
+					expression="[_this, _value] call ace_cargo_fnc_setSize;";
 					class Value
 					{
 						class data
@@ -92569,7 +94812,7 @@ class Mission
 				class Attribute2
 				{
 					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"", _value, true];";
 					class Value
 					{
 						class data
@@ -92607,7 +94850,7 @@ class Mission
 				class Attribute4
 				{
 					property="ace_cargo_size";
-					expression="[_this,_value] call ace_cargo_fnc_setSize;";
+					expression="[_this, _value] call ace_cargo_fnc_setSize;";
 					class Value
 					{
 						class data
@@ -92687,7 +94930,7 @@ class Mission
 				class Attribute2
 				{
 					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"", _value, true];";
 					class Value
 					{
 						class data
@@ -92725,7 +94968,7 @@ class Mission
 				class Attribute4
 				{
 					property="ace_cargo_size";
-					expression="[_this,_value] call ace_cargo_fnc_setSize;";
+					expression="[_this, _value] call ace_cargo_fnc_setSize;";
 					class Value
 					{
 						class data
@@ -92804,7 +95047,7 @@ class Mission
 				class Attribute2
 				{
 					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"", _value, true];";
 					class Value
 					{
 						class data
@@ -92842,7 +95085,7 @@ class Mission
 				class Attribute4
 				{
 					property="ace_cargo_size";
-					expression="[_this,_value] call ace_cargo_fnc_setSize;";
+					expression="[_this, _value] call ace_cargo_fnc_setSize;";
 					class Value
 					{
 						class data
@@ -92922,7 +95165,7 @@ class Mission
 				class Attribute2
 				{
 					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"", _value, true];";
 					class Value
 					{
 						class data
@@ -92960,7 +95203,7 @@ class Mission
 				class Attribute4
 				{
 					property="ace_cargo_size";
-					expression="[_this,_value] call ace_cargo_fnc_setSize;";
+					expression="[_this, _value] call ace_cargo_fnc_setSize;";
 					class Value
 					{
 						class data
@@ -93039,7 +95282,7 @@ class Mission
 				class Attribute2
 				{
 					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"", _value, true];";
 					class Value
 					{
 						class data
@@ -93077,7 +95320,7 @@ class Mission
 				class Attribute4
 				{
 					property="ace_cargo_size";
-					expression="[_this,_value] call ace_cargo_fnc_setSize;";
+					expression="[_this, _value] call ace_cargo_fnc_setSize;";
 					class Value
 					{
 						class data
@@ -93156,7 +95399,7 @@ class Mission
 				class Attribute2
 				{
 					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"", _value, true];";
 					class Value
 					{
 						class data
@@ -93194,7 +95437,7 @@ class Mission
 				class Attribute4
 				{
 					property="ace_cargo_size";
-					expression="[_this,_value] call ace_cargo_fnc_setSize;";
+					expression="[_this, _value] call ace_cargo_fnc_setSize;";
 					class Value
 					{
 						class data
@@ -93273,7 +95516,7 @@ class Mission
 				class Attribute2
 				{
 					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"", _value, true];";
 					class Value
 					{
 						class data
@@ -93311,7 +95554,7 @@ class Mission
 				class Attribute4
 				{
 					property="ace_cargo_size";
-					expression="[_this,_value] call ace_cargo_fnc_setSize;";
+					expression="[_this, _value] call ace_cargo_fnc_setSize;";
 					class Value
 					{
 						class data
@@ -93390,7 +95633,7 @@ class Mission
 				class Attribute2
 				{
 					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"", _value, true];";
 					class Value
 					{
 						class data
@@ -93428,7 +95671,7 @@ class Mission
 				class Attribute4
 				{
 					property="ace_cargo_size";
-					expression="[_this,_value] call ace_cargo_fnc_setSize;";
+					expression="[_this, _value] call ace_cargo_fnc_setSize;";
 					class Value
 					{
 						class data
@@ -93507,7 +95750,7 @@ class Mission
 				class Attribute2
 				{
 					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"", _value, true];";
 					class Value
 					{
 						class data
@@ -93545,7 +95788,7 @@ class Mission
 				class Attribute4
 				{
 					property="ace_cargo_size";
-					expression="[_this,_value] call ace_cargo_fnc_setSize;";
+					expression="[_this, _value] call ace_cargo_fnc_setSize;";
 					class Value
 					{
 						class data
@@ -93624,7 +95867,7 @@ class Mission
 				class Attribute2
 				{
 					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"", _value, true];";
 					class Value
 					{
 						class data
@@ -93662,7 +95905,7 @@ class Mission
 				class Attribute4
 				{
 					property="ace_cargo_size";
-					expression="[_this,_value] call ace_cargo_fnc_setSize;";
+					expression="[_this, _value] call ace_cargo_fnc_setSize;";
 					class Value
 					{
 						class data
@@ -93741,7 +95984,7 @@ class Mission
 				class Attribute2
 				{
 					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"", _value, true];";
 					class Value
 					{
 						class data
@@ -93779,7 +96022,7 @@ class Mission
 				class Attribute4
 				{
 					property="ace_cargo_size";
-					expression="[_this,_value] call ace_cargo_fnc_setSize;";
+					expression="[_this, _value] call ace_cargo_fnc_setSize;";
 					class Value
 					{
 						class data
@@ -93858,7 +96101,7 @@ class Mission
 				class Attribute2
 				{
 					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"", _value, true];";
 					class Value
 					{
 						class data
@@ -93896,7 +96139,7 @@ class Mission
 				class Attribute4
 				{
 					property="ace_cargo_size";
-					expression="[_this,_value] call ace_cargo_fnc_setSize;";
+					expression="[_this, _value] call ace_cargo_fnc_setSize;";
 					class Value
 					{
 						class data
@@ -93975,7 +96218,7 @@ class Mission
 				class Attribute2
 				{
 					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"", _value, true];";
 					class Value
 					{
 						class data
@@ -94013,7 +96256,7 @@ class Mission
 				class Attribute4
 				{
 					property="ace_cargo_size";
-					expression="[_this,_value] call ace_cargo_fnc_setSize;";
+					expression="[_this, _value] call ace_cargo_fnc_setSize;";
 					class Value
 					{
 						class data
@@ -94092,7 +96335,7 @@ class Mission
 				class Attribute2
 				{
 					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"", _value, true];";
 					class Value
 					{
 						class data
@@ -94130,7 +96373,7 @@ class Mission
 				class Attribute4
 				{
 					property="ace_cargo_size";
-					expression="[_this,_value] call ace_cargo_fnc_setSize;";
+					expression="[_this, _value] call ace_cargo_fnc_setSize;";
 					class Value
 					{
 						class data
@@ -94210,7 +96453,7 @@ class Mission
 				class Attribute2
 				{
 					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"", _value, true];";
 					class Value
 					{
 						class data
@@ -94248,7 +96491,7 @@ class Mission
 				class Attribute4
 				{
 					property="ace_cargo_size";
-					expression="[_this,_value] call ace_cargo_fnc_setSize;";
+					expression="[_this, _value] call ace_cargo_fnc_setSize;";
 					class Value
 					{
 						class data
@@ -94328,7 +96571,7 @@ class Mission
 				class Attribute2
 				{
 					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"", _value, true];";
 					class Value
 					{
 						class data
@@ -94366,7 +96609,7 @@ class Mission
 				class Attribute4
 				{
 					property="ace_cargo_size";
-					expression="[_this,_value] call ace_cargo_fnc_setSize;";
+					expression="[_this, _value] call ace_cargo_fnc_setSize;";
 					class Value
 					{
 						class data
@@ -94446,7 +96689,7 @@ class Mission
 				class Attribute2
 				{
 					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"", _value, true];";
 					class Value
 					{
 						class data
@@ -94484,7 +96727,7 @@ class Mission
 				class Attribute4
 				{
 					property="ace_cargo_size";
-					expression="[_this,_value] call ace_cargo_fnc_setSize;";
+					expression="[_this, _value] call ace_cargo_fnc_setSize;";
 					class Value
 					{
 						class data
@@ -94564,7 +96807,7 @@ class Mission
 				class Attribute2
 				{
 					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"", _value, true];";
 					class Value
 					{
 						class data
@@ -94602,7 +96845,7 @@ class Mission
 				class Attribute4
 				{
 					property="ace_cargo_size";
-					expression="[_this,_value] call ace_cargo_fnc_setSize;";
+					expression="[_this, _value] call ace_cargo_fnc_setSize;";
 					class Value
 					{
 						class data
@@ -98279,7 +100522,7 @@ class Mission
 				class Attribute2
 				{
 					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"", _value, true];";
 					class Value
 					{
 						class data
@@ -98317,7 +100560,7 @@ class Mission
 				class Attribute4
 				{
 					property="ace_cargo_size";
-					expression="[_this,_value] call ace_cargo_fnc_setSize;";
+					expression="[_this, _value] call ace_cargo_fnc_setSize;";
 					class Value
 					{
 						class data
@@ -98396,7 +100639,7 @@ class Mission
 				class Attribute2
 				{
 					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"", _value, true];";
 					class Value
 					{
 						class data
@@ -98434,7 +100677,7 @@ class Mission
 				class Attribute4
 				{
 					property="ace_cargo_size";
-					expression="[_this,_value] call ace_cargo_fnc_setSize;";
+					expression="[_this, _value] call ace_cargo_fnc_setSize;";
 					class Value
 					{
 						class data
@@ -98592,7 +100835,7 @@ class Mission
 				class Attribute1
 				{
 					property="ace_isRepairFacility";
-					expression="if (_value != (if (isNumber (configFile >> 'CfgVehicles' >> typeOf _this >> ""ace_repair_canRepair"")) then {getNumber (configFile >> 'CfgVehicles' >> typeOf _this >> ""ace_repair_canRepair"")} else {0})) then {_this setVariable ['ace_isRepairFacility', _value, true]}";
+					expression="if (_value != (if (isNumber (configOf _this >> ""ace_repair_canRepair"")) then {getNumber (configOf _this >> ""ace_repair_canRepair"")} else {0})) then {_this setVariable ['ace_isRepairFacility', _value, true]}";
 					class Value
 					{
 						class data
@@ -98649,7 +100892,7 @@ class Mission
 				class Attribute4
 				{
 					property="ace_cargo_space";
-					expression="[_this,_value] call ace_cargo_fnc_setSpace;";
+					expression="[_this, _value] call ace_cargo_fnc_setSpace;";
 					class Value
 					{
 						class data
@@ -98668,7 +100911,7 @@ class Mission
 				class Attribute5
 				{
 					property="ace_rearm_rearmCargo";
-					expression="if (_value != (if (isNumber (configFile >> 'CfgVehicles' >> typeOf _this >> ""ace_rearm_defaultSupply"")) then {getNumber (configFile >> 'CfgVehicles' >> typeOf _this >> ""ace_rearm_defaultSupply"")} else {-1})) then {[_this, _value] call ace_rearm_fnc_makeSource}";
+					expression="if (_value != (if (isNumber (configOf _this >> ""ace_rearm_defaultSupply"")) then {getNumber (configOf _this >> ""ace_rearm_defaultSupply"")} else {-1})) then {[_this, _value] call ace_rearm_fnc_makeSource}";
 					class Value
 					{
 						class data
@@ -98728,7 +100971,7 @@ class Mission
 				class Attribute1
 				{
 					property="ace_isRepairFacility";
-					expression="if (_value != (if (isNumber (configFile >> 'CfgVehicles' >> typeOf _this >> ""ace_repair_canRepair"")) then {getNumber (configFile >> 'CfgVehicles' >> typeOf _this >> ""ace_repair_canRepair"")} else {0})) then {_this setVariable ['ace_isRepairFacility', _value, true]}";
+					expression="if (_value != (if (isNumber (configOf _this >> ""ace_repair_canRepair"")) then {getNumber (configOf _this >> ""ace_repair_canRepair"")} else {0})) then {_this setVariable ['ace_isRepairFacility', _value, true]}";
 					class Value
 					{
 						class data
@@ -98825,7 +101068,7 @@ class Mission
 				class Attribute2
 				{
 					property="ace_cargo_space";
-					expression="[_this,_value] call ace_cargo_fnc_setSpace;";
+					expression="[_this, _value] call ace_cargo_fnc_setSpace;";
 					class Value
 					{
 						class data
@@ -99513,7 +101756,7 @@ class Mission
 				class Attribute2
 				{
 					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"", _value, true];";
 					class Value
 					{
 						class data
@@ -99551,7 +101794,7 @@ class Mission
 				class Attribute4
 				{
 					property="ace_cargo_size";
-					expression="[_this,_value] call ace_cargo_fnc_setSize;";
+					expression="[_this, _value] call ace_cargo_fnc_setSize;";
 					class Value
 					{
 						class data
@@ -101938,7 +104181,7 @@ class Mission
 				class Attribute2
 				{
 					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"", _value, true];";
 					class Value
 					{
 						class data
@@ -101976,7 +104219,7 @@ class Mission
 				class Attribute4
 				{
 					property="ace_cargo_size";
-					expression="[_this,_value] call ace_cargo_fnc_setSize;";
+					expression="[_this, _value] call ace_cargo_fnc_setSize;";
 					class Value
 					{
 						class data
@@ -102056,7 +104299,7 @@ class Mission
 				class Attribute2
 				{
 					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"", _value, true];";
 					class Value
 					{
 						class data
@@ -102094,7 +104337,7 @@ class Mission
 				class Attribute4
 				{
 					property="ace_cargo_size";
-					expression="[_this,_value] call ace_cargo_fnc_setSize;";
+					expression="[_this, _value] call ace_cargo_fnc_setSize;";
 					class Value
 					{
 						class data
@@ -102173,7 +104416,7 @@ class Mission
 				class Attribute2
 				{
 					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"", _value, true];";
 					class Value
 					{
 						class data
@@ -102211,7 +104454,7 @@ class Mission
 				class Attribute4
 				{
 					property="ace_cargo_size";
-					expression="[_this,_value] call ace_cargo_fnc_setSize;";
+					expression="[_this, _value] call ace_cargo_fnc_setSize;";
 					class Value
 					{
 						class data
@@ -102576,8 +104819,8 @@ class Mission
 			{
 				class Attribute0
 				{
-					property="MELB_clan";
-					expression="_this animate ['hide_clan',_value,true]";
+					property="MELB_SN_Nose";
+					expression="_this animate ['hide_SN_nose',_value,true]";
 					class Value
 					{
 						class data
@@ -102671,8 +104914,8 @@ class Mission
 				};
 				class Attribute5
 				{
-					property="MELB_SN_Nose";
-					expression="_this animate ['hide_SN_nose',_value,true]";
+					property="MELB_clan";
+					expression="_this animate ['hide_clan',_value,true]";
 					class Value
 					{
 						class data
@@ -102730,7 +104973,7 @@ class Mission
 				class Attribute1
 				{
 					property="ace_isRepairVehicle";
-					expression="if (_value != (if (isNumber (configFile >> 'CfgVehicles' >> typeOf _this >> ""ace_repair_canRepair"")) then {getNumber (configFile >> 'CfgVehicles' >> typeOf _this >> ""ace_repair_canRepair"")} else {0})) then {_this setVariable ['ace_isRepairVehicle', _value, true]}";
+					expression="if (_value != (if (isNumber (configOf _this >> ""ace_repair_canRepair"")) then {getNumber (configOf _this >> ""ace_repair_canRepair"")} else {0})) then {_this setVariable ['ace_isRepairVehicle', _value, true]}";
 					class Value
 					{
 						class data
@@ -102788,7 +105031,7 @@ class Mission
 				class Attribute1
 				{
 					property="ace_isRepairVehicle";
-					expression="if (_value != (if (isNumber (configFile >> 'CfgVehicles' >> typeOf _this >> ""ace_repair_canRepair"")) then {getNumber (configFile >> 'CfgVehicles' >> typeOf _this >> ""ace_repair_canRepair"")} else {0})) then {_this setVariable ['ace_isRepairVehicle', _value, true]}";
+					expression="if (_value != (if (isNumber (configOf _this >> ""ace_repair_canRepair"")) then {getNumber (configOf _this >> ""ace_repair_canRepair"")} else {0})) then {_this setVariable ['ace_isRepairVehicle', _value, true]}";
 					class Value
 					{
 						class data
@@ -106585,8 +108828,8 @@ class Mission
 			{
 				class Attribute0
 				{
-					property="MELB_clan";
-					expression="_this animate ['hide_clan',_value,true]";
+					property="MELB_SN_Nose";
+					expression="_this animate ['hide_SN_nose',_value,true]";
 					class Value
 					{
 						class data
@@ -106680,8 +108923,8 @@ class Mission
 				};
 				class Attribute5
 				{
-					property="MELB_SN_Nose";
-					expression="_this animate ['hide_SN_nose',_value,true]";
+					property="MELB_clan";
+					expression="_this animate ['hide_clan',_value,true]";
 					class Value
 					{
 						class data
@@ -106722,8 +108965,8 @@ class Mission
 			{
 				class Attribute0
 				{
-					property="MELB_clan";
-					expression="_this animate ['hide_clan',_value,true]";
+					property="MELB_SN_Nose";
+					expression="_this animate ['hide_SN_nose',_value,true]";
 					class Value
 					{
 						class data
@@ -106817,8 +109060,8 @@ class Mission
 				};
 				class Attribute5
 				{
-					property="MELB_SN_Nose";
-					expression="_this animate ['hide_SN_nose',_value,true]";
+					property="MELB_clan";
+					expression="_this animate ['hide_clan',_value,true]";
 					class Value
 					{
 						class data
@@ -106859,8 +109102,8 @@ class Mission
 			{
 				class Attribute0
 				{
-					property="MELB_clan";
-					expression="_this animate ['hide_clan',_value,true]";
+					property="MELB_SN_Nose";
+					expression="_this animate ['hide_SN_nose',_value,true]";
 					class Value
 					{
 						class data
@@ -106954,8 +109197,8 @@ class Mission
 				};
 				class Attribute5
 				{
-					property="MELB_SN_Nose";
-					expression="_this animate ['hide_SN_nose',_value,true]";
+					property="MELB_clan";
+					expression="_this animate ['hide_clan',_value,true]";
 					class Value
 					{
 						class data
@@ -106996,8 +109239,8 @@ class Mission
 			{
 				class Attribute0
 				{
-					property="MELB_clan";
-					expression="_this animate ['hide_clan',_value,true]";
+					property="MELB_SN_Nose";
+					expression="_this animate ['hide_SN_nose',_value,true]";
 					class Value
 					{
 						class data
@@ -107091,8 +109334,8 @@ class Mission
 				};
 				class Attribute5
 				{
-					property="MELB_SN_Nose";
-					expression="_this animate ['hide_SN_nose',_value,true]";
+					property="MELB_clan";
+					expression="_this animate ['hide_clan',_value,true]";
 					class Value
 					{
 						class data
@@ -112527,7 +114770,7 @@ class Mission
 				class Attribute2
 				{
 					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"", _value, true];";
 					class Value
 					{
 						class data
@@ -112565,7 +114808,7 @@ class Mission
 				class Attribute4
 				{
 					property="ace_cargo_size";
-					expression="[_this,_value] call ace_cargo_fnc_setSize;";
+					expression="[_this, _value] call ace_cargo_fnc_setSize;";
 					class Value
 					{
 						class data
@@ -112644,7 +114887,7 @@ class Mission
 				class Attribute2
 				{
 					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"", _value, true];";
 					class Value
 					{
 						class data
@@ -112682,7 +114925,7 @@ class Mission
 				class Attribute4
 				{
 					property="ace_cargo_size";
-					expression="[_this,_value] call ace_cargo_fnc_setSize;";
+					expression="[_this, _value] call ace_cargo_fnc_setSize;";
 					class Value
 					{
 						class data
@@ -115160,118 +117403,6 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={8521.5752,105.4268,25130.736};
-				angles[]={0,1.1177787,0};
-			};
-			name="Rachid";
-			init="call{[this, [-1, -2, 0]] call bis_fnc_setcuratorvisionmodes; Rachid setVariable [""showNotification"", false]}";
-			id=43446;
-			type="ModuleCurator_F";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ModuleCurator_F_Owner";
-					expression="_this setVariable ['Owner',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="76561198125932695";
-						};
-					};
-				};
-				class Attribute1
-				{
-					property="ModuleCurator_F_Forced";
-					expression="_this setVariable ['Forced',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute2
-				{
-					property="ModuleCurator_F_Name";
-					expression="_this setVariable ['Name',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="Zeus";
-						};
-					};
-				};
-				class Attribute3
-				{
-					property="ModuleInfo";
-					expression="false";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=1;
-						};
-					};
-				};
-				class Attribute4
-				{
-					property="ModuleCurator_F_Addons";
-					expression="_this setVariable ['Addons',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=3;
-						};
-					};
-				};
-				nAttributes=5;
-			};
-		};
-		class Item758
-		{
-			dataType="Logic";
-			class PositionInfo
-			{
 				position[]={8529.5762,105.37559,25128.734};
 				angles[]={0,1.1177816,0};
 			};
@@ -115379,231 +117510,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item759
-		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={8529.582,105.33877,25130.723};
-				angles[]={0,1.1177787,0};
-			};
-			name="Reserve_Zeus_2";
-			init="call{[this, [-1, -2, 0]] call bis_fnc_setcuratorvisionmodes; Reserve_Zeus_2 setVariable [""showNotification"", false]}";
-			id=43447;
-			type="ModuleCurator_F";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ModuleCurator_F_Owner";
-					expression="_this setVariable ['Owner',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="empty_steamid";
-						};
-					};
-				};
-				class Attribute1
-				{
-					property="ModuleCurator_F_Forced";
-					expression="_this setVariable ['Forced',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute2
-				{
-					property="ModuleCurator_F_Name";
-					expression="_this setVariable ['Name',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="Zeus";
-						};
-					};
-				};
-				class Attribute3
-				{
-					property="ModuleInfo";
-					expression="false";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=1;
-						};
-					};
-				};
-				class Attribute4
-				{
-					property="ModuleCurator_F_Addons";
-					expression="_this setVariable ['Addons',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=3;
-						};
-					};
-				};
-				nAttributes=5;
-			};
-		};
-		class Item760
-		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={8529.5801,105.25785,25132.73};
-				angles[]={0,1.1177787,0};
-			};
-			name="Reserve_Zeus_3";
-			init="call{[this, [-1, -2, 0]] call bis_fnc_setcuratorvisionmodes; Reserve_Zeus_3 setVariable [""showNotification"", false]}";
-			id=43448;
-			type="ModuleCurator_F";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ModuleCurator_F_Owner";
-					expression="_this setVariable ['Owner',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="empty_steamid";
-						};
-					};
-				};
-				class Attribute1
-				{
-					property="ModuleCurator_F_Forced";
-					expression="_this setVariable ['Forced',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute2
-				{
-					property="ModuleCurator_F_Name";
-					expression="_this setVariable ['Name',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="Zeus";
-						};
-					};
-				};
-				class Attribute3
-				{
-					property="ModuleInfo";
-					expression="false";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=1;
-						};
-					};
-				};
-				class Attribute4
-				{
-					property="ModuleCurator_F_Addons";
-					expression="_this setVariable ['Addons',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=3;
-						};
-					};
-				};
-				nAttributes=5;
-			};
-		};
-		class Item761
+		class Item758
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -115715,7 +117622,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item762
+		class Item759
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -115827,120 +117734,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item763
-		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={8521.583,106.05128,25126.727};
-				angles[]={0,1.1177816,0};
-			};
-			name="Zeno";
-			init="call{[this, [-1, -2, 0]] call bis_fnc_setcuratorvisionmodes; Zeno setVariable [""showNotification"", false]}";
-			id=43443;
-			type="ModuleCurator_F";
-			atlOffset=-7.6293945e-006;
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ModuleCurator_F_Owner";
-					expression="_this setVariable ['Owner',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="76561198271826654";
-						};
-					};
-				};
-				class Attribute1
-				{
-					property="ModuleCurator_F_Forced";
-					expression="_this setVariable ['Forced',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute2
-				{
-					property="ModuleCurator_F_Name";
-					expression="_this setVariable ['Name',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="Zeus";
-						};
-					};
-				};
-				class Attribute3
-				{
-					property="ModuleInfo";
-					expression="false";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=1;
-						};
-					};
-				};
-				class Attribute4
-				{
-					property="ModuleCurator_F_Addons";
-					expression="_this setVariable ['Addons',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=3;
-						};
-					};
-				};
-				nAttributes=5;
-			};
-		};
-		class Item764
+		class Item760
 		{
 			dataType="Group";
 			side="West";
@@ -116050,7 +117844,7 @@ class Mission
 						class Attribute1
 						{
 							property="ace_isEngineer";
-							expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 							class Value
 							{
 								class data
@@ -116088,7 +117882,7 @@ class Mission
 						class Attribute3
 						{
 							property="ace_isEOD";
-							expression="_this setVariable ['ACE_isEOD',_value,true]";
+							expression="_this setVariable ['ACE_isEOD', _value, true]";
 							class Value
 							{
 								class data
@@ -116323,7 +118117,7 @@ class Mission
 						class Attribute1
 						{
 							property="ace_isEngineer";
-							expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 							class Value
 							{
 								class data
@@ -116361,7 +118155,7 @@ class Mission
 						class Attribute3
 						{
 							property="ace_isEOD";
-							expression="_this setVariable ['ACE_isEOD',_value,true]";
+							expression="_this setVariable ['ACE_isEOD', _value, true]";
 							class Value
 							{
 								class data
@@ -116596,7 +118390,7 @@ class Mission
 						class Attribute1
 						{
 							property="ace_isEngineer";
-							expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 							class Value
 							{
 								class data
@@ -116634,7 +118428,7 @@ class Mission
 						class Attribute3
 						{
 							property="ace_isEOD";
-							expression="_this setVariable ['ACE_isEOD',_value,true]";
+							expression="_this setVariable ['ACE_isEOD', _value, true]";
 							class Value
 							{
 								class data
@@ -116869,7 +118663,7 @@ class Mission
 						class Attribute1
 						{
 							property="ace_isEngineer";
-							expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 							class Value
 							{
 								class data
@@ -116907,7 +118701,7 @@ class Mission
 						class Attribute3
 						{
 							property="ace_isEOD";
-							expression="_this setVariable ['ACE_isEOD',_value,true]";
+							expression="_this setVariable ['ACE_isEOD', _value, true]";
 							class Value
 							{
 								class data
@@ -117142,7 +118936,7 @@ class Mission
 						class Attribute1
 						{
 							property="ace_isEngineer";
-							expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 							class Value
 							{
 								class data
@@ -117180,7 +118974,7 @@ class Mission
 						class Attribute3
 						{
 							property="ace_isEOD";
-							expression="_this setVariable ['ACE_isEOD',_value,true]";
+							expression="_this setVariable ['ACE_isEOD', _value, true]";
 							class Value
 							{
 								class data
@@ -117415,7 +119209,7 @@ class Mission
 						class Attribute1
 						{
 							property="ace_isEngineer";
-							expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 							class Value
 							{
 								class data
@@ -117453,7 +119247,7 @@ class Mission
 						class Attribute3
 						{
 							property="ace_isEOD";
-							expression="_this setVariable ['ACE_isEOD',_value,true]";
+							expression="_this setVariable ['ACE_isEOD', _value, true]";
 							class Value
 							{
 								class data
@@ -117688,7 +119482,7 @@ class Mission
 						class Attribute1
 						{
 							property="ace_isEngineer";
-							expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 							class Value
 							{
 								class data
@@ -117726,7 +119520,7 @@ class Mission
 						class Attribute3
 						{
 							property="ace_isEOD";
-							expression="_this setVariable ['ACE_isEOD',_value,true]";
+							expression="_this setVariable ['ACE_isEOD', _value, true]";
 							class Value
 							{
 								class data
@@ -117961,7 +119755,7 @@ class Mission
 						class Attribute1
 						{
 							property="ace_isEngineer";
-							expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 							class Value
 							{
 								class data
@@ -117999,7 +119793,7 @@ class Mission
 						class Attribute3
 						{
 							property="ace_isEOD";
-							expression="_this setVariable ['ACE_isEOD',_value,true]";
+							expression="_this setVariable ['ACE_isEOD', _value, true]";
 							class Value
 							{
 								class data
@@ -118234,7 +120028,7 @@ class Mission
 						class Attribute1
 						{
 							property="ace_isEngineer";
-							expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 							class Value
 							{
 								class data
@@ -118272,7 +120066,7 @@ class Mission
 						class Attribute3
 						{
 							property="ace_isEOD";
-							expression="_this setVariable ['ACE_isEOD',_value,true]";
+							expression="_this setVariable ['ACE_isEOD', _value, true]";
 							class Value
 							{
 								class data
@@ -118507,7 +120301,7 @@ class Mission
 						class Attribute1
 						{
 							property="ace_isEngineer";
-							expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 							class Value
 							{
 								class data
@@ -118545,7 +120339,7 @@ class Mission
 						class Attribute3
 						{
 							property="ace_isEOD";
-							expression="_this setVariable ['ACE_isEOD',_value,true]";
+							expression="_this setVariable ['ACE_isEOD', _value, true]";
 							class Value
 							{
 								class data
@@ -118780,7 +120574,7 @@ class Mission
 						class Attribute1
 						{
 							property="ace_isEngineer";
-							expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 							class Value
 							{
 								class data
@@ -118818,7 +120612,7 @@ class Mission
 						class Attribute3
 						{
 							property="ace_isEOD";
-							expression="_this setVariable ['ACE_isEOD',_value,true]";
+							expression="_this setVariable ['ACE_isEOD', _value, true]";
 							class Value
 							{
 								class data
@@ -119053,7 +120847,7 @@ class Mission
 						class Attribute1
 						{
 							property="ace_isEngineer";
-							expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 							class Value
 							{
 								class data
@@ -119091,7 +120885,7 @@ class Mission
 						class Attribute3
 						{
 							property="ace_isEOD";
-							expression="_this setVariable ['ACE_isEOD',_value,true]";
+							expression="_this setVariable ['ACE_isEOD', _value, true]";
 							class Value
 							{
 								class data
@@ -119326,7 +121120,7 @@ class Mission
 						class Attribute1
 						{
 							property="ace_isEngineer";
-							expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 							class Value
 							{
 								class data
@@ -119364,7 +121158,7 @@ class Mission
 						class Attribute3
 						{
 							property="ace_isEOD";
-							expression="_this setVariable ['ACE_isEOD',_value,true]";
+							expression="_this setVariable ['ACE_isEOD', _value, true]";
 							class Value
 							{
 								class data
@@ -119599,7 +121393,7 @@ class Mission
 						class Attribute1
 						{
 							property="ace_isEngineer";
-							expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 							class Value
 							{
 								class data
@@ -119637,7 +121431,7 @@ class Mission
 						class Attribute3
 						{
 							property="ace_isEOD";
-							expression="_this setVariable ['ACE_isEOD',_value,true]";
+							expression="_this setVariable ['ACE_isEOD', _value, true]";
 							class Value
 							{
 								class data
@@ -119872,7 +121666,7 @@ class Mission
 						class Attribute1
 						{
 							property="ace_isEngineer";
-							expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 							class Value
 							{
 								class data
@@ -119910,7 +121704,7 @@ class Mission
 						class Attribute3
 						{
 							property="ace_isEOD";
-							expression="_this setVariable ['ACE_isEOD',_value,true]";
+							expression="_this setVariable ['ACE_isEOD', _value, true]";
 							class Value
 							{
 								class data
@@ -120049,7 +121843,7 @@ class Mission
 			};
 			id=43506;
 		};
-		class Item765
+		class Item761
 		{
 			dataType="Group";
 			side="West";
@@ -120158,7 +121952,7 @@ class Mission
 						class Attribute1
 						{
 							property="ace_isEngineer";
-							expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 							class Value
 							{
 								class data
@@ -120196,7 +121990,7 @@ class Mission
 						class Attribute3
 						{
 							property="ace_isEOD";
-							expression="_this setVariable ['ACE_isEOD',_value,true]";
+							expression="_this setVariable ['ACE_isEOD', _value, true]";
 							class Value
 							{
 								class data
@@ -120431,7 +122225,7 @@ class Mission
 						class Attribute1
 						{
 							property="ace_isEngineer";
-							expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 							class Value
 							{
 								class data
@@ -120469,7 +122263,7 @@ class Mission
 						class Attribute3
 						{
 							property="ace_isEOD";
-							expression="_this setVariable ['ACE_isEOD',_value,true]";
+							expression="_this setVariable ['ACE_isEOD', _value, true]";
 							class Value
 							{
 								class data
@@ -120704,7 +122498,7 @@ class Mission
 						class Attribute1
 						{
 							property="ace_isEngineer";
-							expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 							class Value
 							{
 								class data
@@ -120742,7 +122536,7 @@ class Mission
 						class Attribute3
 						{
 							property="ace_isEOD";
-							expression="_this setVariable ['ACE_isEOD',_value,true]";
+							expression="_this setVariable ['ACE_isEOD', _value, true]";
 							class Value
 							{
 								class data
@@ -120977,7 +122771,7 @@ class Mission
 						class Attribute1
 						{
 							property="ace_isEngineer";
-							expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 							class Value
 							{
 								class data
@@ -121015,7 +122809,7 @@ class Mission
 						class Attribute3
 						{
 							property="ace_isEOD";
-							expression="_this setVariable ['ACE_isEOD',_value,true]";
+							expression="_this setVariable ['ACE_isEOD', _value, true]";
 							class Value
 							{
 								class data
@@ -121250,7 +123044,7 @@ class Mission
 						class Attribute1
 						{
 							property="ace_isEngineer";
-							expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 							class Value
 							{
 								class data
@@ -121288,7 +123082,7 @@ class Mission
 						class Attribute3
 						{
 							property="ace_isEOD";
-							expression="_this setVariable ['ACE_isEOD',_value,true]";
+							expression="_this setVariable ['ACE_isEOD', _value, true]";
 							class Value
 							{
 								class data
@@ -121523,7 +123317,7 @@ class Mission
 						class Attribute1
 						{
 							property="ace_isEngineer";
-							expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 							class Value
 							{
 								class data
@@ -121561,7 +123355,7 @@ class Mission
 						class Attribute3
 						{
 							property="ace_isEOD";
-							expression="_this setVariable ['ACE_isEOD',_value,true]";
+							expression="_this setVariable ['ACE_isEOD', _value, true]";
 							class Value
 							{
 								class data
@@ -121796,7 +123590,7 @@ class Mission
 						class Attribute1
 						{
 							property="ace_isEngineer";
-							expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 							class Value
 							{
 								class data
@@ -121834,7 +123628,7 @@ class Mission
 						class Attribute3
 						{
 							property="ace_isEOD";
-							expression="_this setVariable ['ACE_isEOD',_value,true]";
+							expression="_this setVariable ['ACE_isEOD', _value, true]";
 							class Value
 							{
 								class data
@@ -122069,7 +123863,7 @@ class Mission
 						class Attribute1
 						{
 							property="ace_isEngineer";
-							expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 							class Value
 							{
 								class data
@@ -122107,7 +123901,7 @@ class Mission
 						class Attribute3
 						{
 							property="ace_isEOD";
-							expression="_this setVariable ['ACE_isEOD',_value,true]";
+							expression="_this setVariable ['ACE_isEOD', _value, true]";
 							class Value
 							{
 								class data
@@ -122342,7 +124136,7 @@ class Mission
 						class Attribute1
 						{
 							property="ace_isEngineer";
-							expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 							class Value
 							{
 								class data
@@ -122380,7 +124174,7 @@ class Mission
 						class Attribute3
 						{
 							property="ace_isEOD";
-							expression="_this setVariable ['ACE_isEOD',_value,true]";
+							expression="_this setVariable ['ACE_isEOD', _value, true]";
 							class Value
 							{
 								class data
@@ -122615,7 +124409,7 @@ class Mission
 						class Attribute1
 						{
 							property="ace_isEngineer";
-							expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 							class Value
 							{
 								class data
@@ -122653,7 +124447,7 @@ class Mission
 						class Attribute3
 						{
 							property="ace_isEOD";
-							expression="_this setVariable ['ACE_isEOD',_value,true]";
+							expression="_this setVariable ['ACE_isEOD', _value, true]";
 							class Value
 							{
 								class data
@@ -122888,7 +124682,7 @@ class Mission
 						class Attribute1
 						{
 							property="ace_isEngineer";
-							expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 							class Value
 							{
 								class data
@@ -122926,7 +124720,7 @@ class Mission
 						class Attribute3
 						{
 							property="ace_isEOD";
-							expression="_this setVariable ['ACE_isEOD',_value,true]";
+							expression="_this setVariable ['ACE_isEOD', _value, true]";
 							class Value
 							{
 								class data
@@ -123161,7 +124955,7 @@ class Mission
 						class Attribute1
 						{
 							property="ace_isEngineer";
-							expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 							class Value
 							{
 								class data
@@ -123199,7 +124993,7 @@ class Mission
 						class Attribute3
 						{
 							property="ace_isEOD";
-							expression="_this setVariable ['ACE_isEOD',_value,true]";
+							expression="_this setVariable ['ACE_isEOD', _value, true]";
 							class Value
 							{
 								class data
@@ -123434,7 +125228,7 @@ class Mission
 						class Attribute1
 						{
 							property="ace_isEngineer";
-							expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 							class Value
 							{
 								class data
@@ -123472,7 +125266,7 @@ class Mission
 						class Attribute3
 						{
 							property="ace_isEOD";
-							expression="_this setVariable ['ACE_isEOD',_value,true]";
+							expression="_this setVariable ['ACE_isEOD', _value, true]";
 							class Value
 							{
 								class data
@@ -123707,7 +125501,7 @@ class Mission
 						class Attribute1
 						{
 							property="ace_isEngineer";
-							expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 							class Value
 							{
 								class data
@@ -123745,7 +125539,7 @@ class Mission
 						class Attribute3
 						{
 							property="ace_isEOD";
-							expression="_this setVariable ['ACE_isEOD',_value,true]";
+							expression="_this setVariable ['ACE_isEOD', _value, true]";
 							class Value
 							{
 								class data
@@ -123980,7 +125774,7 @@ class Mission
 						class Attribute1
 						{
 							property="ace_isEngineer";
-							expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 							class Value
 							{
 								class data
@@ -124018,7 +125812,7 @@ class Mission
 						class Attribute3
 						{
 							property="ace_isEOD";
-							expression="_this setVariable ['ACE_isEOD',_value,true]";
+							expression="_this setVariable ['ACE_isEOD', _value, true]";
 							class Value
 							{
 								class data
@@ -124157,7 +125951,7 @@ class Mission
 			};
 			id=43522;
 		};
-		class Item766
+		class Item762
 		{
 			dataType="Group";
 			side="West";
@@ -124266,7 +126060,7 @@ class Mission
 						class Attribute1
 						{
 							property="ace_isEngineer";
-							expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 							class Value
 							{
 								class data
@@ -124304,7 +126098,7 @@ class Mission
 						class Attribute3
 						{
 							property="ace_isEOD";
-							expression="_this setVariable ['ACE_isEOD',_value,true]";
+							expression="_this setVariable ['ACE_isEOD', _value, true]";
 							class Value
 							{
 								class data
@@ -124539,7 +126333,7 @@ class Mission
 						class Attribute1
 						{
 							property="ace_isEngineer";
-							expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 							class Value
 							{
 								class data
@@ -124577,7 +126371,7 @@ class Mission
 						class Attribute3
 						{
 							property="ace_isEOD";
-							expression="_this setVariable ['ACE_isEOD',_value,true]";
+							expression="_this setVariable ['ACE_isEOD', _value, true]";
 							class Value
 							{
 								class data
@@ -124812,7 +126606,7 @@ class Mission
 						class Attribute1
 						{
 							property="ace_isEngineer";
-							expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 							class Value
 							{
 								class data
@@ -124850,7 +126644,7 @@ class Mission
 						class Attribute3
 						{
 							property="ace_isEOD";
-							expression="_this setVariable ['ACE_isEOD',_value,true]";
+							expression="_this setVariable ['ACE_isEOD', _value, true]";
 							class Value
 							{
 								class data
@@ -125085,7 +126879,7 @@ class Mission
 						class Attribute1
 						{
 							property="ace_isEngineer";
-							expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 							class Value
 							{
 								class data
@@ -125123,7 +126917,7 @@ class Mission
 						class Attribute3
 						{
 							property="ace_isEOD";
-							expression="_this setVariable ['ACE_isEOD',_value,true]";
+							expression="_this setVariable ['ACE_isEOD', _value, true]";
 							class Value
 							{
 								class data
@@ -125358,7 +127152,7 @@ class Mission
 						class Attribute1
 						{
 							property="ace_isEngineer";
-							expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 							class Value
 							{
 								class data
@@ -125396,7 +127190,7 @@ class Mission
 						class Attribute3
 						{
 							property="ace_isEOD";
-							expression="_this setVariable ['ACE_isEOD',_value,true]";
+							expression="_this setVariable ['ACE_isEOD', _value, true]";
 							class Value
 							{
 								class data
@@ -125631,7 +127425,7 @@ class Mission
 						class Attribute1
 						{
 							property="ace_isEngineer";
-							expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 							class Value
 							{
 								class data
@@ -125669,7 +127463,7 @@ class Mission
 						class Attribute3
 						{
 							property="ace_isEOD";
-							expression="_this setVariable ['ACE_isEOD',_value,true]";
+							expression="_this setVariable ['ACE_isEOD', _value, true]";
 							class Value
 							{
 								class data
@@ -125904,7 +127698,7 @@ class Mission
 						class Attribute1
 						{
 							property="ace_isEngineer";
-							expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 							class Value
 							{
 								class data
@@ -125942,7 +127736,7 @@ class Mission
 						class Attribute3
 						{
 							property="ace_isEOD";
-							expression="_this setVariable ['ACE_isEOD',_value,true]";
+							expression="_this setVariable ['ACE_isEOD', _value, true]";
 							class Value
 							{
 								class data
@@ -126177,7 +127971,7 @@ class Mission
 						class Attribute1
 						{
 							property="ace_isEngineer";
-							expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 							class Value
 							{
 								class data
@@ -126215,7 +128009,7 @@ class Mission
 						class Attribute3
 						{
 							property="ace_isEOD";
-							expression="_this setVariable ['ACE_isEOD',_value,true]";
+							expression="_this setVariable ['ACE_isEOD', _value, true]";
 							class Value
 							{
 								class data
@@ -126450,7 +128244,7 @@ class Mission
 						class Attribute1
 						{
 							property="ace_isEngineer";
-							expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 							class Value
 							{
 								class data
@@ -126488,7 +128282,7 @@ class Mission
 						class Attribute3
 						{
 							property="ace_isEOD";
-							expression="_this setVariable ['ACE_isEOD',_value,true]";
+							expression="_this setVariable ['ACE_isEOD', _value, true]";
 							class Value
 							{
 								class data
@@ -126723,7 +128517,7 @@ class Mission
 						class Attribute1
 						{
 							property="ace_isEngineer";
-							expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 							class Value
 							{
 								class data
@@ -126761,7 +128555,7 @@ class Mission
 						class Attribute3
 						{
 							property="ace_isEOD";
-							expression="_this setVariable ['ACE_isEOD',_value,true]";
+							expression="_this setVariable ['ACE_isEOD', _value, true]";
 							class Value
 							{
 								class data
@@ -126996,7 +128790,7 @@ class Mission
 						class Attribute1
 						{
 							property="ace_isEngineer";
-							expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 							class Value
 							{
 								class data
@@ -127034,7 +128828,7 @@ class Mission
 						class Attribute3
 						{
 							property="ace_isEOD";
-							expression="_this setVariable ['ACE_isEOD',_value,true]";
+							expression="_this setVariable ['ACE_isEOD', _value, true]";
 							class Value
 							{
 								class data
@@ -127269,7 +129063,7 @@ class Mission
 						class Attribute1
 						{
 							property="ace_isEngineer";
-							expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 							class Value
 							{
 								class data
@@ -127307,7 +129101,7 @@ class Mission
 						class Attribute3
 						{
 							property="ace_isEOD";
-							expression="_this setVariable ['ACE_isEOD',_value,true]";
+							expression="_this setVariable ['ACE_isEOD', _value, true]";
 							class Value
 							{
 								class data
@@ -127542,7 +129336,7 @@ class Mission
 						class Attribute1
 						{
 							property="ace_isEngineer";
-							expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 							class Value
 							{
 								class data
@@ -127580,7 +129374,7 @@ class Mission
 						class Attribute3
 						{
 							property="ace_isEOD";
-							expression="_this setVariable ['ACE_isEOD',_value,true]";
+							expression="_this setVariable ['ACE_isEOD', _value, true]";
 							class Value
 							{
 								class data
@@ -127815,7 +129609,7 @@ class Mission
 						class Attribute1
 						{
 							property="ace_isEngineer";
-							expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 							class Value
 							{
 								class data
@@ -127853,7 +129647,7 @@ class Mission
 						class Attribute3
 						{
 							property="ace_isEOD";
-							expression="_this setVariable ['ACE_isEOD',_value,true]";
+							expression="_this setVariable ['ACE_isEOD', _value, true]";
 							class Value
 							{
 								class data
@@ -128088,7 +129882,7 @@ class Mission
 						class Attribute1
 						{
 							property="ace_isEngineer";
-							expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 							class Value
 							{
 								class data
@@ -128126,7 +129920,7 @@ class Mission
 						class Attribute3
 						{
 							property="ace_isEOD";
-							expression="_this setVariable ['ACE_isEOD',_value,true]";
+							expression="_this setVariable ['ACE_isEOD', _value, true]";
 							class Value
 							{
 								class data
@@ -128265,7 +130059,7 @@ class Mission
 			};
 			id=43538;
 		};
-		class Item767
+		class Item763
 		{
 			dataType="Group";
 			side="West";
@@ -128374,7 +130168,7 @@ class Mission
 						class Attribute1
 						{
 							property="ace_isEngineer";
-							expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 							class Value
 							{
 								class data
@@ -128412,7 +130206,7 @@ class Mission
 						class Attribute3
 						{
 							property="ace_isEOD";
-							expression="_this setVariable ['ACE_isEOD',_value,true]";
+							expression="_this setVariable ['ACE_isEOD', _value, true]";
 							class Value
 							{
 								class data
@@ -128647,7 +130441,7 @@ class Mission
 						class Attribute1
 						{
 							property="ace_isEngineer";
-							expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 							class Value
 							{
 								class data
@@ -128685,7 +130479,7 @@ class Mission
 						class Attribute3
 						{
 							property="ace_isEOD";
-							expression="_this setVariable ['ACE_isEOD',_value,true]";
+							expression="_this setVariable ['ACE_isEOD', _value, true]";
 							class Value
 							{
 								class data
@@ -128882,7 +130676,7 @@ class Mission
 						class Attribute1
 						{
 							property="ace_isEngineer";
-							expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 							class Value
 							{
 								class data
@@ -128920,7 +130714,7 @@ class Mission
 						class Attribute3
 						{
 							property="ace_isEOD";
-							expression="_this setVariable ['ACE_isEOD',_value,true]";
+							expression="_this setVariable ['ACE_isEOD', _value, true]";
 							class Value
 							{
 								class data
@@ -129021,7 +130815,7 @@ class Mission
 			};
 			id=43554;
 		};
-		class Item768
+		class Item764
 		{
 			dataType="Group";
 			side="West";
@@ -129130,7 +130924,7 @@ class Mission
 						class Attribute1
 						{
 							property="ace_isEngineer";
-							expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 							class Value
 							{
 								class data
@@ -129168,7 +130962,7 @@ class Mission
 						class Attribute3
 						{
 							property="ace_isEOD";
-							expression="_this setVariable ['ACE_isEOD',_value,true]";
+							expression="_this setVariable ['ACE_isEOD', _value, true]";
 							class Value
 							{
 								class data
@@ -129403,7 +131197,7 @@ class Mission
 						class Attribute1
 						{
 							property="ace_isEngineer";
-							expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 							class Value
 							{
 								class data
@@ -129441,7 +131235,7 @@ class Mission
 						class Attribute3
 						{
 							property="ace_isEOD";
-							expression="_this setVariable ['ACE_isEOD',_value,true]";
+							expression="_this setVariable ['ACE_isEOD', _value, true]";
 							class Value
 							{
 								class data
@@ -129657,7 +131451,7 @@ class Mission
 						class Attribute1
 						{
 							property="ace_isEngineer";
-							expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 							class Value
 							{
 								class data
@@ -129695,7 +131489,7 @@ class Mission
 						class Attribute3
 						{
 							property="ace_isEOD";
-							expression="_this setVariable ['ACE_isEOD',_value,true]";
+							expression="_this setVariable ['ACE_isEOD', _value, true]";
 							class Value
 							{
 								class data
@@ -129815,7 +131609,7 @@ class Mission
 			};
 			id=43558;
 		};
-		class Item769
+		class Item765
 		{
 			dataType="Group";
 			side="West";
@@ -129978,7 +131772,7 @@ class Mission
 						class Attribute1
 						{
 							property="ace_isEngineer";
-							expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 							class Value
 							{
 								class data
@@ -130016,7 +131810,7 @@ class Mission
 						class Attribute3
 						{
 							property="ace_isEOD";
-							expression="_this setVariable ['ACE_isEOD',_value,true]";
+							expression="_this setVariable ['ACE_isEOD', _value, true]";
 							class Value
 							{
 								class data
@@ -130251,7 +132045,7 @@ class Mission
 						class Attribute1
 						{
 							property="ace_isEngineer";
-							expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 							class Value
 							{
 								class data
@@ -130289,7 +132083,7 @@ class Mission
 						class Attribute3
 						{
 							property="ace_isEOD";
-							expression="_this setVariable ['ACE_isEOD',_value,true]";
+							expression="_this setVariable ['ACE_isEOD', _value, true]";
 							class Value
 							{
 								class data
@@ -130428,7 +132222,7 @@ class Mission
 			};
 			id=43562;
 		};
-		class Item770
+		class Item766
 		{
 			dataType="Group";
 			side="West";
@@ -130591,7 +132385,7 @@ class Mission
 						class Attribute1
 						{
 							property="ace_isEngineer";
-							expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 							class Value
 							{
 								class data
@@ -130629,7 +132423,7 @@ class Mission
 						class Attribute3
 						{
 							property="ace_isEOD";
-							expression="_this setVariable ['ACE_isEOD',_value,true]";
+							expression="_this setVariable ['ACE_isEOD', _value, true]";
 							class Value
 							{
 								class data
@@ -130918,7 +132712,7 @@ class Mission
 						class Attribute1
 						{
 							property="ace_isEngineer";
-							expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 							class Value
 							{
 								class data
@@ -130956,7 +132750,7 @@ class Mission
 						class Attribute3
 						{
 							property="ace_isEOD";
-							expression="_this setVariable ['ACE_isEOD',_value,true]";
+							expression="_this setVariable ['ACE_isEOD', _value, true]";
 							class Value
 							{
 								class data
@@ -131245,7 +133039,7 @@ class Mission
 						class Attribute1
 						{
 							property="ace_isEngineer";
-							expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 							class Value
 							{
 								class data
@@ -131283,7 +133077,7 @@ class Mission
 						class Attribute3
 						{
 							property="ace_isEOD";
-							expression="_this setVariable ['ACE_isEOD',_value,true]";
+							expression="_this setVariable ['ACE_isEOD', _value, true]";
 							class Value
 							{
 								class data
@@ -131422,16 +133216,124 @@ class Mission
 			};
 			id=43565;
 		};
+		class Item767
+		{
+			dataType="Layer";
+			name="Arsenal";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={8756.085,24.847563,25001.426};
+						angles[]={0.2804116,0,6.0742788};
+					};
+					side="Empty";
+					flags=4;
+					class Attributes
+					{
+						init="call{[""AmmoboxInit"",[this,true]] call BIS_fnc_arsenal;}";
+						disableSimulation=1;
+					};
+					id=43570;
+					type="B_CargoNet_01_ammo_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="allowDamage";
+							expression="_this allowdamage _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ammoBox";
+							expression="[_this,_value] call bis_fnc_initAmmoBox;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="[[[[""arifle_MXC_F"",""arifle_MXM_F"",""arifle_MX_F"",""arifle_MX_GL_F"",""arifle_MX_SW_F"",""arifle_SDAR_F"",""hgun_P07_F"",""hgun_Pistol_heavy_01_F"",""launch_NLAW_F"",""launch_Titan_F"",""launch_Titan_short_F"",""SMG_01_F"",""srifle_EBR_F"",""srifle_LRR_camo_F"",""srifle_LRR_F"",""FirstAidKit"",""Medikit""],[4,2,8,4,4,2,2,2,2,2,2,2,2,2,2,10,1]],[[""100Rnd_65x39_caseless_mag_Tracer"",""11Rnd_45ACP_Mag"",""16Rnd_9x21_Mag"",""1Rnd_HE_Grenade_shell"",""1Rnd_SmokeBlue_Grenade_shell"",""1Rnd_SmokeGreen_Grenade_shell"",""1Rnd_SmokeOrange_Grenade_shell"",""1Rnd_SmokePurple_Grenade_shell"",""1Rnd_SmokeRed_Grenade_shell"",""1Rnd_SmokeYellow_Grenade_shell"",""1Rnd_Smoke_Grenade_shell"",""20Rnd_556x45_UW_mag"",""20Rnd_762x51_Mag"",""30Rnd_45ACP_Mag_SMG_01"",""30Rnd_556x45_Stanag_red"",""30Rnd_65x39_caseless_mag"",""3Rnd_HE_Grenade_shell"",""7Rnd_408_Mag"",""APERSBoundingMine_Range_Mag"",""APERSMine_Range_Mag"",""APERSTripMine_Wire_Mag"",""ATMine_Range_Mag"",""B_IR_Grenade"",""ClaymoreDirectionalMine_Remote_Mag"",""DemoCharge_Remote_Mag"",""HandGrenade"",""Laserbatteries"",""MiniGrenade"",""SatchelCharge_Remote_Mag"",""SLAMDirectionalMine_Wire_Mag"",""SmokeShell"",""SmokeShellBlue"",""SmokeShellGreen"",""SmokeShellOrange"",""SmokeShellPurple"",""SmokeShellRed"",""SmokeShellYellow"",""Titan_AA"",""Titan_AP"",""Titan_AT"",""UGL_FlareGreen_F"",""UGL_FlareWhite_F""],[16,14,14,15,2,2,2,2,2,2,2,6,24,14,6,52,3,12,5,5,5,5,8,5,5,24,5,24,5,5,2,2,2,2,2,2,2,6,6,6,2,2]],[[""Binocular"",""Laserdesignator"",""Rangefinder"",""acc_flashlight"",""acc_pointer_IR"",""ItemGPS"",""MineDetector"",""muzzle_snds_acp"",""muzzle_snds_B"",""muzzle_snds_H"",""muzzle_snds_H_SW"",""muzzle_snds_L"",""optic_Aco"",""optic_Aco_smg"",""optic_DMS"",""optic_Hamr"",""optic_Holosight"",""optic_LRPS"",""optic_MRD"",""optic_NVS"",""optic_SOS"",""optic_tws"",""optic_tws_mg"",""ToolKit""],[1,1,1,5,5,5,1,5,5,5,1,5,2,2,2,2,2,2,2,2,2,2,2,1]],[[],[]]],false]";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="ace_isMedicalFacility";
+							expression="_this setVariable [""ace_medical_isMedicalFacility"", _value, true];";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="ace_cookoff_enableAmmoCookoff";
+							expression="if !(_value) then {_this setVariable ['ace_cookoff_enableAmmoCookoff', _value, true];};";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=4;
+					};
+				};
+			};
+			id=43571;
+		};
 	};
 	class Connections
 	{
 		class LinkIDProvider
 		{
-			nextID=197;
+			nextID=193;
 		};
 		class Links
 		{
-			items=197;
+			items=193;
 			class Item0
 			{
 				linkID=0;
@@ -133285,7 +135187,7 @@ class Mission
 			class Item185
 			{
 				linkID=185;
-				item0=43443;
+				item0=43444;
 				item1=43438;
 				class CustomData
 				{
@@ -133295,7 +135197,7 @@ class Mission
 			class Item186
 			{
 				linkID=186;
-				item0=43444;
+				item0=43445;
 				item1=43438;
 				class CustomData
 				{
@@ -133305,7 +135207,7 @@ class Mission
 			class Item187
 			{
 				linkID=187;
-				item0=43445;
+				item0=43449;
 				item1=43438;
 				class CustomData
 				{
@@ -133315,7 +135217,7 @@ class Mission
 			class Item188
 			{
 				linkID=188;
-				item0=43446;
+				item0=40097;
 				item1=43438;
 				class CustomData
 				{
@@ -133325,7 +135227,7 @@ class Mission
 			class Item189
 			{
 				linkID=189;
-				item0=43447;
+				item0=42478;
 				item1=43438;
 				class CustomData
 				{
@@ -133335,8 +135237,8 @@ class Mission
 			class Item190
 			{
 				linkID=190;
-				item0=43438;
-				item1=43448;
+				item0=43454;
+				item1=43364;
 				class CustomData
 				{
 					type="Sync";
@@ -133345,8 +135247,8 @@ class Mission
 			class Item191
 			{
 				linkID=191;
-				item0=43449;
-				item1=43438;
+				item0=43453;
+				item1=43364;
 				class CustomData
 				{
 					type="Sync";
@@ -133355,46 +135257,6 @@ class Mission
 			class Item192
 			{
 				linkID=192;
-				item0=40097;
-				item1=43438;
-				class CustomData
-				{
-					type="Sync";
-				};
-			};
-			class Item193
-			{
-				linkID=193;
-				item0=42478;
-				item1=43438;
-				class CustomData
-				{
-					type="Sync";
-				};
-			};
-			class Item194
-			{
-				linkID=194;
-				item0=43454;
-				item1=43364;
-				class CustomData
-				{
-					type="Sync";
-				};
-			};
-			class Item195
-			{
-				linkID=195;
-				item0=43453;
-				item1=43364;
-				class CustomData
-				{
-					type="Sync";
-				};
-			};
-			class Item196
-			{
-				linkID=196;
 				item0=43452;
 				item1=43364;
 				class CustomData

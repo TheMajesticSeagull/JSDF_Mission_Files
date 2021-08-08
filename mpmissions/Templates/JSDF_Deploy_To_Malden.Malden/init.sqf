@@ -30,16 +30,12 @@ ACE_maxWeightCarry = 600;
   [Admin_1],
   [krazycj12],
   [Teal],
+  [Bran],
   [Buda],
   [Arrow],
   [Seagull],
-  [Zeno],
-	[Rambi],
-	[Sage],
 	[Huggins],
-	[Reserve_Zeus_1],
-	[Reserve_Zeus_2],
-	[Reserve_Zeus_3]
+	[Reserve_Zeus_1]
   ];
   {
   		_x params ["_curatorModuleName"];
